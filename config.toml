@@ -1,0 +1,40 @@
+# Amphoreus · 永恒之地翁法罗斯 —— 本地演算体配置
+# 改完保存后重启进程生效：python3 main.py restart
+
+[world]
+# 演算种子。0 表示首次启动时随机生成，从此这个世界的因果就固定了。
+seed = 0
+# 首次启动时先回溯演算多少世界日，让世界一开场就有历史。（0 = 随机 300~900）
+backfill_days = 0
+
+[pace]
+# 节奏模式：
+#   "realtime"     现实时间与世界时间 1:1（默认）
+#   "accelerated"  加速，速度由 world_days_per_real_second 决定
+mode = "realtime"
+# 仅 accelerated 模式生效：现实每过 1 秒，世界推进多少天。
+world_days_per_real_second = 1.0
+# true = 网页端不显示任何调速控件（默认）；false = 允许在网页上调倍速。
+lock_speed = true
+# 后台心跳间隔（秒）。这是进程醒来的频率，不是世界推进的速度。
+heartbeat = 5
+
+[narrative]
+# 用本地 Ollama 把规则事件写成「如我所书」体文本。
+enabled = true
+endpoint = "http://127.0.0.1:11434"
+model = "qwen3.5:4b"
+# 单次请求超时（秒）。超时即降级为模板文本，模拟不会中断。
+timeout = 120
+# 每个世界日最多生成几段叙事。
+max_per_day = 2
+# 关闭思维链，否则小模型会把算力全花在思考上。
+think = false
+
+[web]
+host = "127.0.0.1"
+port = 8760
+
+[log]
+# DEBUG / INFO / WARN / ERROR
+level = "INFO"

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如我所书 · 翁法罗斯</title>
+<link rel="stylesheet" href="/codex.css">
+</head>
+<body>
+<div class="book" id="book">
+
+  <!-- 书脊 / 首页 -->
+  <section class="spread home" id="view-home">
+    <div class="dedication">
+      <p class="lead">谨以此书献给</p>
+      <p class="who">逐星的无名客<br>开拓者</p>
+    </div>
+
+    <div class="archives" id="archives"></div>
+
+    <p class="colophon">我会将永恒之地的故事，<br>带往群星。</p>
+  </section>
+
+  <!-- 目录 -->
+  <section class="spread hidden" id="view-catalog">
+    <header class="spread-head">
+      <button class="back" data-go="home">← 书</button>
+      <h1>翁法罗斯英雄纪<span class="ext">.exe</span></h1>
+      <span class="meta" id="cat-meta"></span>
+    </header>
+    <div class="catalog" id="catalog"></div>
+  </section>
+
+  <!-- 单卷 -->
+  <section class="spread hidden" id="view-volume">
+    <header class="spread-head">
+      <button class="back" data-go="catalog">← 目录</button>
+      <h1 id="vol-title"></h1>
+      <span class="meta" id="vol-meta"></span>
+    </header>
+    <div class="volume-body">
+      <aside class="verse-col">
+        <div class="verse" id="verse"></div>
+        <div class="epigraph" id="epigraph"></div>
+      </aside>
+      <div class="sections" id="sections"></div>
+    </div>
+  </section>
+
+  <!-- 逐火者的命路 -->
+  <section class="spread hidden" id="view-path">
+    <header class="spread-head">
+      <button class="back" data-go="home">← 书</button>
+      <h1>逐火者的命路<span class="ext">.exe</span></h1>
+      <span class="meta">十三人，各四行</span>
+    </header>
+    <div class="paths" id="paths"></div>
+  </section>
+
+  <!-- 管理员批注 -->
+  <section class="spread hidden" id="view-warden">
+    <header class="spread-head">
+      <button class="back" data-go="home">← 书</button>
+      <h1>管理员批注<span class="ext">.wav</span></h1>
+      <span class="meta">无署名 · 无应答</span>
+    </header>
+    <div class="warden" id="warden"></div>
+  </section>
+
+  <!-- δ-me13 -->
+  <section class="spread hidden" id="view-me13">
+    <header class="spread-head">
+      <button class="back" data-go="home">← 书</button>
+      <h1>δ-me13<span class="ext">.exe</span></h1>
+      <span class="meta" id="me13-meta"></span>
+    </header>
+    <div class="pipeline" id="pipeline"></div>
+  </section>
+
+  <!-- 迷迷 -->
+  <section class="spread hidden" id="view-mimi">
+    <header class="spread-head">
+      <button class="back" data-go="home">← 书</button>
+      <h1>迷迷<span class="ext">.exe</span></h1>
+      <span class="meta">她记得的比写下来的多</span>
+    </header>
+    <div class="mimi" id="mimi"></div>
+  </section>
+
+  <!-- 邮箱：官方书写指引 -->
+  <section class="spread hidden" id="view-mail">
+    <header class="spread-head">
+      <button class="back" data-go="home">← 书</button>
+      <h1>邮箱<span class="ext">.exe</span></h1>
+      <span class="meta" id="mail-meta"></span>
+    </header>
+    <div class="mail" id="mail"></div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="book-foot">
+    <span id="foot-left">如我所书</span>
+    <span id="foot-right"></span>
+  </footer>
+</div>
+<script src="/codex.js"></script>
+</body>
+</html>
