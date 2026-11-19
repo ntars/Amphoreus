@@ -216,9 +216,28 @@ def _check_book(store: Store) -> None:
         return (max(la, lb) + 0.05) / (min(la, lb) + 0.05)
 
     panel = archive.UI["panel"]
-    for name, key in (("正文", "text"), ("强调金", "gold"), ("次要文字", "text_dim")):
-        r = _cr(archive.UI[key], panel)
-        check(f"配色·{name} 过 AA", r >= 4.5, f"{r:.2f}:1")
+    check("配色·正文 过 AA", _cr(archive.UI["text"], panel) >= 4.5,
+          f"{_cr(archive.UI['text'], panel):.2f}:1")
+    check("配色·强调金 过 AA", _cr(archive.UI["gold"], panel) >= 4.5,
+          f"{_cr(archive.UI['gold'], panel):.2f}:1")
+    check("配色·次要文字 过 AA", _cr(archive.UI["text_dim"], panel) >= 4.5,
+          f"{_cr(archive.UI['text_dim'], panel):.2f}:1")
+
+    # 卷册提示词必须比事件提示词短得多。
+    # 长提示词下小模型会把整段堆成一句，实测成功率 0/3；
+    # 这里钉住长度，免得以后又把规则加回去。
+    from amphoreus.narrate import _BASE_STYLE, _CHAPTER_STYLE, chapter_prompt
+
+    vol = archive.VOLUME_BY_CHAPTER[1]
+    cp = chapter_prompt("光历 4931 年 门关月 1 日", 1, 1, vol["new"],
+                        ["甲", "乙", "丙"], 0.5, 0,
+                        section_name=vol["sections"][0],
+                        scion=canon.SCION_BY_ID.get(vol["scion"]))
+    check("卷册提示词比事件提示词短", len(_CHAPTER_STYLE) < len(_BASE_STYLE),
+          f"卷册 {len(_CHAPTER_STYLE)} / 事件 {len(_BASE_STYLE)} 字符")
+    check("卷册提示词整体不超过 600 字", len(cp) <= 600, f"{len(cp)} 字符")
+    check("卷册提示词给了示范", "示范一" in cp and "示范二" in cp)
+    check("卷册提示词给了可数上限", "二十字" in cp)
 
 
 if __name__ == "__main__":

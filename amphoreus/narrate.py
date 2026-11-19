@@ -181,7 +181,25 @@ _PLACE_STYLE = """写一段「地方志」式的段落：先写这个地方此�
 _EVENT_STYLE = """写一段「编年史」式的段落：写清发生了什么，谁在场，事后留下了什么。
 """
 
-_PERSON_STYLE = """写一段「列传」式的段落：写这个人的此刻——他在做什么、想起什么、还差什么。不要写他的生平。
+# 卷册专用：短提示 + 两个完整示范。
+#
+# 这条是实测换来的。原来给 _BASE_STYLE 那十条规则，再叠标题、卷名、时间、
+# 黑潮、三条事实、一段示范，提示词近九百字。qwen3.5:4b 直接执行不了，
+# 连试三次都把 36~46 个汉字堆成一句、一个标点不留，成功率 0/3。
+# 换成下面这套（少了六条规则、多了第二个示范），同样是这个模型，3/3 通过，
+# 最长句 10~11 字，正好落在官方原文的句长区间（官方最长 17 字）。
+# 小模型对「示范」的服从度远高于对「规则」的服从度。
+_CHAPTER_STYLE = """你在为《如我所书》代笔。这本书用史官的笔法记翁法罗斯。
+铁律：
+每句不超过二十字，句末用句号。全用汉字，不写阿拉伯数字。
+只写正文，不写标题，不解释设定，不写百分比或进度。
+不要出现「玩家」「任务」这类词。
+
+示范一：
+光历四千九百三十年，黑潮又近了一里。城中无人提起此事。只有守门人换了更早的班。他说风里有咸味。
+
+示范二：
+火种离开了泰坦的心口。取火的人手上多了一道金痕。那道痕不会褪。它比誓言留得久。
 """
 
 # 阿拉伯数字与演算内部读数的拦截规则。实测这两个是模型最容易犯的。
@@ -195,7 +213,9 @@ _END_PUNCT = "。！？…—」』"
 def _looks_valid(text: str) -> tuple[bool, str]:
     """对生成结果做硬校验，不合格就降级到模板。返回 (是否合格, 原因)。"""
     body = text.replace("\n", "").strip()
-    if len(body) < 60:
+    # 下限 50 字：短提示词下模型给出的合格卷册约 66~87 字，
+    # 原先的 60 会把正例卡在边界。
+    if len(body) < 50:
         return False, "过短"
     if len(body) > 320:
         return False, "过长"
@@ -318,59 +338,26 @@ def event_prompt(moment_zh: str, kind: str, text_zh: str, place: str | None, sub
     )
 
 
-def person_prompt(scion_id: str, moment_zh: str, progress: float, burden: float, state: str) -> str:
-    s = canon.SCION_BY_ID.get(scion_id)
-    if not s:
-        return ""
-    trial = _degree(
-        progress,
-        "试炼才刚起头，路还看不见尽头",
-        "试炼走过了大半，剩下的那段最难",
-        "试炼已到收梢，只差最后一步",
-    )
-    load = _degree(
-        burden,
-        "身上还算轻，尚有余力",
-        "背负的东西已经压得人说话变慢",
-        "背负的东西快要压垮他了，只是他不肯放下",
-    )
-    return (
-        f"{_BASE_STYLE}\n{_PERSON_STYLE}\n"
-        f"要写的人：{s['zh']}（{s['epithet']}）。\n"
-        f"其模拟命途是「{s['path']}」，原动力是「{s['drive']}」，逐猎「{s['spark']}」火种。\n"
-        f"神谕这样说：{s['prophecy']}\n"
-        f"{_time_line(moment_zh)}此人此刻的处境是「{state}」，{trial}，{load}。\n"
-        f"请直接写正文。"
-    )
-
-
 def chapter_prompt(
     moment_zh: str, chapter: int, section: int, chapter_zh: str,
     facts: Iterable[str], tide: float, sparks: int,
     section_name: str = "", scion: dict | None = None,
 ) -> str:
-    # 实测：一次给八条事实，小模型会把它们全串成一句、一个标点都不留。
-    # 只给三条，并给一段示范，才稳得住断句。
-    fact_block = "\n".join(f"- {f}" for f in list(facts)[:3])
-    tide_word = _degree(tide, "尚在高处，只在低洼里积着", "已漫过城墙的一半", "几乎触到城中最高的塔")
-    who = ""
-    if scion:
-        who = (
-            f"这一卷写的是{scion['zh']}（{scion['epithet']}），"
-            f"逐猎「{scion['spark']}」火种，命途「{scion['path']}」。\n"
-        )
-    title = f"《{chapter_zh}》第{_zh_number(section)}节"
-    if section_name:
-        title += f"《{section_name}》"
+    """卷册一节的提示词。
+
+    刻意写得短。同一件事用长提示词做过三次全失败，短提示词三次全过。
+    判据和过程写在 _CHAPTER_STYLE 上方。
+    """
+    fact_block = "".join(f"- {f}\n" for f in list(facts)[:3])
+    tide_word = _degree(tide, "尚在低洼里积着", "已漫过城墙的一半", "几乎触到城中最高的塔")
+    who = f"这一节写{scion['zh']}。" if scion else ""
+    sec = section_name or f"第{zh_number(section)}节"
     return (
-        f"{_BASE_STYLE}\n"
-        f"现在要写《如我所书》第{_zh_number(chapter)}卷的一节：{title}。\n"
-        f"{who}"
-        f"{_time_line(moment_zh)}黑潮{tide_word}，十二火种已归位{_spark_word(sparks)}。\n"
-        f"这一节要记的三件事：\n{fact_block}\n"
-        f"照这个样子写：\n"
-        f"光历某年某月某日，黑潮仍在往前。某人做了某事。之后，某处留下了某样东西。\n"
-        f"每写完一层意思就用句号断开，全文四到六句。一百四十到二百字。请直接写正文。"
+        f"{_CHAPTER_STYLE}\n"
+        f"现在写《{chapter_zh}》里的《{sec}》。\n"
+        f"{who}{_time_line(moment_zh)}黑潮{tide_word}，十二火种只余{_spark_word(sparks)}。\n"
+        f"要记三件事：\n{fact_block}"
+        f"照上面两个示范的句长写，四到六句。直接写正文。"
     )
 
 

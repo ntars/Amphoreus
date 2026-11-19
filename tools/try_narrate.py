@@ -11,14 +11,14 @@ import time
 
 sys.path.insert(0, ".")
 
-from amphoreus import canon
+from amphoreus import archive, canon
 from amphoreus.narrate import (
     Narrator,
     NarratorConfig,
+    chapter_prompt,
     event_prompt,
     fallback_event,
     fallback_place,
-    person_prompt,
     place_prompt,
 )
 
@@ -76,32 +76,32 @@ def main() -> int:
         n,
     )
 
-    show(
-        "列传 · 万敌",
-        person_prompt("mydeimos", MOMENT, progress=0.62, burden=0.78, state="仍在数自己还剩几次重启"),
-        n,
-    )
-
     # 降级模板也要看一眼
     print(f"\n{'=' * 70}\n[模板兜底]")
     print("  " + fallback_place("kremnos", "践行时", 0.82))
     print("  " + fallback_event("夺火", "白厄自扎格列斯处取走「负世」火种。", None))
     print("  " + fallback_event("失守", "城门破了。", "janusopolis"))
 
-    # 校验所有神话人物的 prompt 都能构造，不残留未替换字段
+    # 校验所有提示词都能构造，不残留未替换字段
     print(f"\n{'=' * 70}\n[全量构造检查]")
     bad = 0
-    for s in canon.SCIONS:
-        p = person_prompt(s["id"], MOMENT, 0.5, 0.5, "在")
-        if not p or "{" in p or "None" in p:
-            print(f"  !! {s['id']} 构造异常")
-            bad += 1
     for c in canon.CITIES:
         p = place_prompt(c["id"], MOMENT, 0.4, "静", ["a", "b"])
         if not p or "{" in p:
             print(f"  !! {c['id']} 构造异常")
             bad += 1
-    print(f"  13 名黄金裔 + {len(canon.CITIES)} 座城邦，异常 {bad} 处")
+    # 卷册提示词：十三卷的第一节都要能构造出来
+    for ch in archive.CATALOG_ORDER:
+        v = archive.VOLUME_BY_CHAPTER[ch]
+        p = chapter_prompt(
+            MOMENT, ch, 1, v["new"], ["甲", "乙", "丙"], 0.5, 3,
+            section_name=v["sections"][0],
+            scion=canon.SCION_BY_ID.get(v["scion"]),
+        )
+        if not p or "{" in p:
+            print(f"  !! 卷 {ch} 提示词异常")
+            bad += 1
+    print(f"  {len(canon.CITIES)} 座城邦 + {len(archive.CATALOG_ORDER)} 卷卷册，异常 {bad} 处")
     return 0
 
 
