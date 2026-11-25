@@ -43,8 +43,10 @@ _MIME: dict[str, str] = {
     ".jpeg": "image/jpeg",
     ".webp": "image/webp",
     ".ico": "image/x-icon",
+    ".webp": "image/webp",
     ".woff2": "font/woff2",
     ".woff": "font/woff",
+    ".ttf": "font/ttf",
     ".txt": "text/plain; charset=utf-8",
 }
 
@@ -332,12 +334,43 @@ class Handler(BaseHTTPRequestHandler):
         # 书是独立入口。给它一个短路径，也便于直接收藏。
         if rel == "book":
             rel = "codex.html"
+        # 静态资源放在子目录里；只允许读取 web/ 内的文件，防目录穿越。
+        if rel.startswith("assets/"):
+            asset = (self.web_dir / rel).resolve()
+            try:
+                asset.relative_to(self.web_dir.resolve())
+            except ValueError:
+                asset = None
+            if asset is not None and asset.is_file():
+                self._send(HTTPStatus.OK, asset.read_bytes(), _mime_of(asset.name))
+                return
         hit = self.assets.get(rel)
         if hit is None:
             self._error(HTTPStatus.NOT_FOUND, "没有这个文件")
             return
-        body, ctype = hit
+        # 常驻缓存保证文件暂时读不到时页面仍可用；但开发/验证期间改了
+        # CSS 或 JS，下一次请求必须拿到新版本，不能一直发启动时的旧字节。
+        body, ctype = self._fresh_asset(rel, hit)
         self._send(HTTPStatus.OK, body, ctype)
+
+    def _fresh_asset(self, rel: str, cached: tuple[bytes, str]) -> tuple[bytes, str]:
+        asset = (self.web_dir / rel).resolve()
+        try:
+            asset.relative_to(self.web_dir.resolve())
+            stat = asset.stat()
+        except (OSError, ValueError):
+            return cached
+        version = (stat.st_mtime_ns, stat.st_size)
+        if self.asset_versions.get(rel) == version:
+            return cached
+        try:
+            body = asset.read_bytes()
+        except OSError:
+            return cached
+        ctype = _mime_of(asset.name)
+        self.assets[rel] = (body, ctype)
+        self.asset_versions[rel] = version
+        return body, ctype
 
 
 def _int(q: dict[str, list[str]], key: str, default: int, lo: int, hi: int) -> int:
@@ -379,11 +412,19 @@ class Server:
                 except OSError as exc:
                     log.warn("asset skipped", "静态文件读取失败", file=f.name, err=str(exc)[:80])
 
+        versions = {}
+        for name in assets:
+            try:
+                stat = (web_dir / name).stat()
+                versions[name] = (stat.st_mtime_ns, stat.st_size)
+            except OSError:
+                pass
         handler = type("BoundHandler", (Handler,), {})
         handler.store = store
         handler.web_dir = web_dir
         handler.cfg = cfg
         handler.assets = assets
+        handler.asset_versions = versions
         self._httpd = ThreadingHTTPServer((cfg.web.host, cfg.web.port), handler)
         self._httpd.daemon_threads = True
         self._thread: threading.Thread | None = None

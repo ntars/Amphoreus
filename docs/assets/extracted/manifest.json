@@ -1,0 +1,18 @@
+{
+  "EntryTarotBookIcon.png": {
+    "sha256": "31d8e23bcb440e14e00bde0bb45e4b75b7fac8b4b8bcc9d67681ed827ce4c41d",
+    "bytes": 52904
+  },
+  "TarotBookIconWait.png": {
+    "sha256": "0c26bae4d821f9f927d76ecad4265fb32990f033d57eaf5ebc4966c558342743",
+    "bytes": 2130
+  },
+  "TarotBookIconWaitLight.png": {
+    "sha256": "5a2d00604a865860291c753d254f43ea3719df81248a975047a3e3c6da4a41d4",
+    "bytes": 9353
+  },
+  "hsr-hit-asset-map.json": {
+    "sha256": "7b81e6771740c402f6e0bb8e274661369e58b439d1117b56e2c3c2bbd95cdf8d",
+    "bytes": 346728
+  }
+}

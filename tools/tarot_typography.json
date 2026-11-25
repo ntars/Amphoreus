@@ -1,0 +1,325 @@
+{
+  "generatedFrom": {
+    "block": "6b642bb3192c13322893776c629617fb.block",
+    "blockSha256": "09580b3580917db448ac02759ac34d6bd99dae4290b8224c32e2ba4e71410224",
+    "localizedTextScript": "2163569534093517469",
+    "component": "RPG.Client.LocalizedText",
+    "layoutValidation": "color,size,style,alignment,bestFit,minSize,maxSize,lineSpacing"
+  },
+  "extraction": {
+    "sourceBlock": "~/Downloads/hsr-ui-extract/StarRailGame-full/StarRail_Data/StreamingAssets/Asb/Windows/6b642bb3192c13322893776c629617fb.block",
+    "extracted": "/tmp/hsr-tarot-block-check-1795559374"
+  },
+  "styles": [
+    {
+      "name": "CountText",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "-4965029772048922489",
+      "rawBytes": 344,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          0.45098
+        ],
+        "css": "rgba(255, 255, 255, 0.45098)"
+      },
+      "fontSize": 20,
+      "fontStyle": 0,
+      "alignment": 0,
+      "alignmentName": "upper-left",
+      "bestFit": false,
+      "minSize": 2,
+      "maxSize": 40,
+      "lineSpacing": 1.0,
+      "textKey": "主界面",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "FunctionName",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "-8563846737091274800",
+      "rawBytes": 312,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "css": "rgba(255, 255, 255, 1.0)"
+      },
+      "fontSize": 20,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 12,
+      "maxSize": 20,
+      "lineSpacing": 1.0,
+      "textKey": "DevUI_Name",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "FunctionName",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "-7031224392270236321",
+      "rawBytes": 356,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "css": "rgba(255, 255, 255, 1.0)"
+      },
+      "fontSize": 20,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 12,
+      "maxSize": 20,
+      "lineSpacing": 1.0,
+      "textKey": "逐火者的命路.exe",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "HintText",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "-8700595830538266401",
+      "rawBytes": 316,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "css": "rgba(255, 255, 255, 1.0)"
+      },
+      "fontSize": 22,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 16,
+      "maxSize": 22,
+      "lineSpacing": 1.0,
+      "textKey": "DevUI_TipContent",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "InputText",
+      "cab": "bundle-0021-0x000fb1ed",
+      "pathId": "1819404181423998808",
+      "rawBytes": 384,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "css": "rgba(255, 255, 255, 1.0)"
+      },
+      "fontSize": 20,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 12,
+      "maxSize": 20,
+      "lineSpacing": 1.0
+    },
+    {
+      "name": "Text",
+      "cab": "bundle-0023-0x001251d3",
+      "pathId": "7982698219745513280",
+      "rawBytes": 312,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          0.070588,
+          0.070588,
+          0.070588,
+          1.0
+        ],
+        "css": "rgba(18, 18, 18, 1.0)"
+      },
+      "fontSize": 18,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 12,
+      "maxSize": 18,
+      "lineSpacing": 0.9,
+      "textKey": "DevUI_Text",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "Text",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "699684659280063208",
+      "rawBytes": 336,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "css": "rgba(255, 255, 255, 1.0)"
+      },
+      "fontSize": 20,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 12,
+      "maxSize": 20,
+      "lineSpacing": 0.9,
+      "textKey": "前往查看",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "Text",
+      "cab": "bundle-0021-0x000fb1ed",
+      "pathId": "1697814954424704003",
+      "rawBytes": 356,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "css": "rgba(255, 255, 255, 1.0)"
+      },
+      "fontSize": 26,
+      "fontStyle": 0,
+      "alignment": 0,
+      "alignmentName": "upper-left",
+      "bestFit": false,
+      "minSize": 2,
+      "maxSize": 60,
+      "lineSpacing": 1.0,
+      "textKey": "翻开这本书吧，",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "Text",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "-7009905781013109196",
+      "rawBytes": 348,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "css": "rgba(255, 255, 255, 1.0)"
+      },
+      "fontSize": 20,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 16,
+      "maxSize": 20,
+      "lineSpacing": 0.95,
+      "textKey": "著者的菲仪",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "Text",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "3264540404045878128",
+      "rawBytes": 344,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          0.070588,
+          0.070588,
+          0.070588,
+          1.0
+        ],
+        "css": "rgba(18, 18, 18, 1.0)"
+      },
+      "fontSize": 18,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 12,
+      "maxSize": 18,
+      "lineSpacing": 0.9,
+      "textKey": "载入",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "TitleText",
+      "cab": "bundle-0024-0x001269d8",
+      "pathId": "1601372321967841905",
+      "rawBytes": 316,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          0.639216,
+          0.764706,
+          1.0,
+          0.768627
+        ],
+        "css": "rgba(163, 195, 255, 0.768627)"
+      },
+      "fontSize": 24,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 14,
+      "maxSize": 24,
+      "lineSpacing": 1.0,
+      "textKey": "DevUI_TimeTitle",
+      "textKeyOffset": 144
+    },
+    {
+      "name": "TitleText",
+      "cab": "bundle-0022-0x0010bfb0",
+      "pathId": "-5742074783241067530",
+      "rawBytes": 336,
+      "layout": "localized-text-v1",
+      "color": {
+        "rgba": [
+          0.990566,
+          0.875436,
+          0.630785,
+          0.901961
+        ],
+        "css": "rgba(253, 223, 161, 0.901961)"
+      },
+      "fontSize": 16,
+      "fontStyle": 0,
+      "alignment": 1,
+      "alignmentName": "upper-center",
+      "bestFit": false,
+      "minSize": 12,
+      "maxSize": 16,
+      "lineSpacing": 1.0,
+      "textKey": "如我所书",
+      "textKeyOffset": 144
+    }
+  ]
+}

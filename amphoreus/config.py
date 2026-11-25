@@ -22,7 +22,7 @@ WEB_DIR = ROOT / "web"
 # 默认配置文件内容。注释面向使用者，因此用中文。
 DEFAULT_CONFIG = """\
 # Amphoreus · 永恒之地翁法罗斯 —— 本地演算体配置
-# 改完保存后重启进程生效：python3 main.py restart
+# 改完保存后重启进程生效：python3 main.py stop && python3 main.py daemon
 
 [world]
 # 演算种子。0 表示首次启动时随机生成，从此这个世界的因果就固定了。

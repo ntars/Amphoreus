@@ -1,0 +1,14 @@
+{
+  "baseline": "docs/screenshots/baseline/path.png",
+  "current": "docs/screenshots/current/P33-path.png",
+  "size": [
+    1280,
+    800
+  ],
+  "threshold": 2,
+  "changed_pixels": 948617,
+  "total_pixels": 1024000,
+  "diff_rate": 0.926384,
+  "mean_abs_channel_diff": 27.7198,
+  "exact": false
+}

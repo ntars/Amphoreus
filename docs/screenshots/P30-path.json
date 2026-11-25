@@ -1,0 +1,14 @@
+{
+  "baseline": "docs/screenshots/baseline/path.png",
+  "current": "docs/screenshots/current/P30-path.png",
+  "size": [
+    1280,
+    800
+  ],
+  "threshold": 2,
+  "changed_pixels": 948618,
+  "total_pixels": 1024000,
+  "diff_rate": 0.926385,
+  "mean_abs_channel_diff": 27.7044,
+  "exact": false
+}

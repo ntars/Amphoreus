@@ -160,7 +160,8 @@ VOLUMES: Final[list[dict]] = [
 
 VOLUME_BY_CHAPTER: Final[dict[int, dict]] = {v["chapter"]: v for v in VOLUMES}
 
-# 官方目录里，第 13 卷排在第一位展示（她是书本身）。
+# 官方目录里，第 13 卷排在第一位展示（她是书本身）。命路页只取前十二卷作为外圈，
+# 并把第 13 卷单独放到中心，不应改变这里的目录顺序。
 CATALOG_ORDER: Final[list[int]] = [13, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 # 书的题献。原界面居中、两行、带黑幕。

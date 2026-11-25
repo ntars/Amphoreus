@@ -1,0 +1,14 @@
+{
+  "baseline": "docs/screenshots/baseline/path.png",
+  "current": "docs/screenshots/current/P20-path.png",
+  "size": [
+    1280,
+    800
+  ],
+  "threshold": 2,
+  "changed_pixels": 971334,
+  "total_pixels": 1024000,
+  "diff_rate": 0.948568,
+  "mean_abs_channel_diff": 30.5957,
+  "exact": false
+}

@@ -1,0 +1,14 @@
+{
+  "baseline": "docs/screenshots/baseline/path.png",
+  "current": "docs/screenshots/current/cur8-path.png",
+  "size": [
+    1280,
+    800
+  ],
+  "threshold": 2,
+  "changed_pixels": 1023907,
+  "total_pixels": 1024000,
+  "diff_rate": 0.999909,
+  "mean_abs_channel_diff": 38.3479,
+  "exact": false
+}

@@ -1,0 +1,14 @@
+{
+  "baseline": "docs/screenshots/baseline/path.png",
+  "current": "docs/screenshots/current/P26-path.png",
+  "size": [
+    1280,
+    800
+  ],
+  "threshold": 2,
+  "changed_pixels": 948231,
+  "total_pixels": 1024000,
+  "diff_rate": 0.926007,
+  "mean_abs_channel_diff": 28.9685,
+  "exact": false
+}

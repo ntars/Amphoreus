@@ -8,42 +8,336 @@
 </head>
 <body>
 <div class="book" id="book">
+  <div class="chrome" aria-hidden="true">
+    <span class="chrome-mark">如我所书</span>
+    <span class="chrome-title" id="chrome-title">档案</span>
+  </div>
+
+  <nav class="archive-tabs hidden" id="archive-tabs" aria-label="如我所书档案">
+    <button data-arc="hero">翁法罗斯英雄纪</button>
+    <button data-arc="path">逐火者的命路</button>
+    <button data-arc="mimi">迷迷</button>
+    <button data-arc="warden">管理员批注</button>
+    <button data-arc="me13">δ-me13</button>
+    <button data-arc="mail">邮箱</button>
+  </nav>
+
+  <!-- 游戏内的入口是一册立在星空里的书封；展开后才进入档案。 -->
+  <section class="spread cover-view" id="view-cover">
+    <div class="cover-scene" aria-hidden="true">
+      <span class="cover-official-pattern"></span>
+      <span class="cover-official-bg" aria-hidden="true"></span>
+      <span class="cover-official-deco-item" aria-hidden="true"></span>
+      <span class="tarot-eff-panel"></span>
+      <span class="cover-star s1"></span><span class="cover-star s2"></span>
+      <span class="cover-star s3"></span><span class="cover-star s4"></span>
+      <span class="cover-star s5"></span><span class="cover-star s6"></span>
+      <span class="cover-aurora-star"><i></i></span>
+      <span class="cover-flare left"></span><span class="cover-flare right"></span>
+      <span class="cover-shard s1"></span><span class="cover-shard s2"></span>
+    </div>
+    <!-- 游戏内入口是屏幕左上的书册徽记、标题和「展开」按钮。
+         下方保留原有的书写故事流程，供读者继续浏览书页。 -->
+    <div class="entry-hud">
+      <button type="button" class="entry-book" id="entry-book" aria-label="如我所书书册">
+        <span class="book-pages"></span><span class="book-cover"></span><span class="book-gold"></span>
+        <span class="book-beads"></span><span class="book-sigil"></span><span class="book-ribbon"></span>
+        <span class="book-charm"></span><span class="book-tassel"></span>
+      </button>
+      <div class="entry-title" aria-hidden="true">如我所书</div>
+      <span class="entry-left-tab" aria-hidden="true"></span>
+      <span class="entry-top-tab" aria-hidden="true"></span>
+      <span class="entry-shortcut-hint" aria-hidden="true"><i></i></span>
+      <span class="entry-main-deco-rect" aria-hidden="true"></span><span class="entry-select-frame" aria-hidden="true"></span><span class="entry-entrance-line" aria-hidden="true"></span>
+      <button type="button" class="entry-expand" id="entry-expand" aria-expanded="false">
+        <i class="expand-text-bg" aria-hidden="true"></i><i class="expand-source-deco" aria-hidden="true"></i><i class="expand-underline" aria-hidden="true"></i>展开<span class="entry-caret" aria-hidden="true">⌄</span>
+      </button>
+      <div class="entry-menu hidden" id="entry-menu">
+        <button type="button" data-open-archive="hero">英雄纪</button>
+        <button type="button" data-open-archive="path">命路</button>
+        <button type="button" data-open-archive="mimi">迷迷</button>
+        <button type="button" data-open-archive="warden">管理员批注</button>
+        <button type="button" data-open-archive="me13">δ-me13</button>
+        <button type="button" data-open-archive="mail">邮箱</button>
+      </div>
+    </div>
+    <button type="button" class="book-cover" id="book-cover" aria-label="展开如我所书">
+      <span class="cover-metal t1"></span><span class="cover-metal t2"></span>
+      <span class="cover-metal b1"></span><span class="cover-metal b2"></span>
+      <span class="cover-sigil">
+        <span class="sigil-outer"></span><span class="sigil-inner"></span>
+        <span class="sigil-core"></span><span class="sigil-star">✦</span>
+        <span class="cover-deco cover-deco-center"></span><span class="cover-deco cover-deco-people"></span>
+      </span>
+      <span class="cover-label">如我所书</span>
+    </button>
+    <button type="button" class="cover-open hidden" id="cover-open" aria-label="打开书页">
+      <span class="open-binding left" aria-hidden="true"></span>
+      <span class="open-binding right" aria-hidden="true"></span>
+      <span class="open-feather" aria-hidden="true"></span>
+      <span class="open-source-card-bg" aria-hidden="true"></span>
+      <span class="open-page open-l">
+        <span class="open-corner tl"></span><span class="open-corner br"></span>
+        <span class="open-frame" aria-hidden="true"></span>
+        <span class="open-flourish top" aria-hidden="true"></span>
+        <span class="open-flourish bottom" aria-hidden="true"></span>
+        <span class="open-sigil"><i></i></span><span class="open-title">书页</span>
+        <span class="open-card">
+          <span class="open-insert-flash" aria-hidden="true"></span>
+          <span class="open-card-frame"></span>
+          <span class="open-card-ornament" aria-hidden="true"></span>
+          <span class="open-card-figure" aria-hidden="true"><i></i></span>
+          <span class="open-card-portrait" id="open-card-portrait" aria-hidden="true"></span>
+          <span class="open-card-label">逐火者的命路</span>
+        </span>
+        <span class="open-slot" aria-hidden="true"><span>＋</span></span>
+      </span>
+      <span class="open-page open-r">
+        <span class="open-corner tr"></span><span class="open-corner bl"></span>
+        <span class="open-frame" aria-hidden="true"></span>
+        <span class="open-pillar left" aria-hidden="true"></span>
+        <span class="open-pillar right" aria-hidden="true"></span>
+        <span class="open-base" aria-hidden="true"></span>
+        <span class="open-arch">∞</span><span class="open-caption">翻开书页，故事将在指尖醒来</span>
+        <span class="open-prompt">那逐火的人们……<br>被遗忘的记述……</span>
+        <button type="button" class="open-confirm" id="open-confirm"><span class="confirm-pattern" aria-hidden="true"></span><span class="confirm-circle" aria-hidden="true"></span><span class="confirm-label">确认</span></button>
+      </span>
+    </button>
+    <p class="cover-hint">点击书封展开，或选择档案</p>
+    <button type="button" class="floating-card hidden" id="floating-card" aria-label="选择如我所书卡片">
+      <span class="floating-card-book-deco" aria-hidden="true"></span>
+      <span class="floating-card-source-bg" aria-hidden="true"></span>
+      <span class="floating-card-frame"></span>
+      <span class="floating-card-ornament" aria-hidden="true"></span>
+      <span class="floating-card-figure" aria-hidden="true"><i></i></span>
+      <span class="floating-card-portrait" id="floating-card-portrait" aria-hidden="true"></span>
+      <span class="floating-card-label">逐火者的命路</span>
+    </button>
+    <div class="cover-menu">
+      <button type="button" data-open-archive="hero">英雄纪</button>
+      <button type="button" data-open-archive="path">命路</button>
+      <button type="button" data-open-archive="mimi">迷迷</button>
+    </div>
+  </section>
 
   <!-- 书脊 / 首页 -->
-  <section class="spread home" id="view-home">
-    <div class="dedication">
-      <p class="lead">谨以此书献给</p>
-      <p class="who">逐星的无名客<br>开拓者</p>
+  <section class="spread home hidden" id="view-home">
+    <div class="home-stage">
+      <div class="home-canvas" aria-hidden="true">
+        <span class="home-eff-open"></span>
+        <span class="home-galaxy"></span><span class="home-star s1"></span>
+        <span class="home-star s2"></span><span class="home-star s3"></span>
+        <span class="home-star s4"></span><span class="home-star s5"></span>
+        <span class="home-mountain left"></span><span class="home-mountain right"></span>
+        <span class="home-rock"></span><span class="home-horizon"></span>
+        <span class="home-castle left" aria-hidden="true"></span>
+        <span class="home-castle right" aria-hidden="true"></span>
+        <span class="home-water" aria-hidden="true"></span>
+        <span class="home-petal-field" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span class="home-crystals" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+      </div>
+      <span class="home-top-streak" aria-hidden="true"></span>
+      <button type="button" class="home-close" data-go="cover" aria-label="返回书封"></button>
+      <div class="home-logo" aria-label="如我所书">
+        <span class="home-logo-mark" aria-hidden="true"></span>
+        <span>如我所书</span>
+      </div>
+      <header class="home-head">
+        <div class="dedication">
+          <p class="lead">谨以此书献给</p>
+          <p class="who">逐星的无名客<br>开拓者</p>
+        </div>
+        <p class="epithet">此刻的翁法罗斯<br><span id="home-cycle"></span></p>
+      </header>
+
+      <nav class="home-nav" aria-label="如我所书入口"></nav>
+      <div class="home-book" aria-hidden="true">
+        <div class="home-book-shell">
+          <div class="home-book-arch" aria-hidden="true">
+            <span class="home-book-arch-dome"></span>
+            <span class="home-book-arch-outline"></span>
+            <span class="home-book-arch-medallion"></span>
+            <span class="home-book-arch-clasp"></span>
+          </div>
+          <div class="home-book-arch-panels" aria-hidden="true"></div>
+          <div class="home-book-header" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="home-book-face">
+            <span class="home-book-architecture" aria-hidden="true"></span>
+            <span class="home-book-outer-ring" aria-hidden="true"></span>
+            <span class="home-book-moons" aria-hidden="true"></span>
+            <span class="home-book-moon-shutters" aria-hidden="true"></span>
+            <span class="home-book-crescent" aria-hidden="true"></span>
+            <span class="home-book-core-glow" aria-hidden="true"></span>
+            <span class="home-book-rings"></span>
+            <span class="home-book-source-frame" aria-hidden="true"></span>
+            <span class="home-book-source-frame source-frame-inner" aria-hidden="true"></span>
+            <span class="home-book-source-circle source-circle-a" aria-hidden="true"></span>
+            <span class="home-book-source-circle source-circle-b" aria-hidden="true"></span>
+            <span class="home-book-ticks"></span>
+            <span class="home-book-checker" aria-hidden="true"></span>
+            <span class="home-book-gold-arc" aria-hidden="true"></span>
+            <span class="home-book-constellations"></span>
+            <span class="home-book-star" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="home-book-star-cyan" aria-hidden="true"></span>
+            <span class="home-book-star-gold" aria-hidden="true"></span>
+            <span class="home-book-blue-star" aria-hidden="true"></span>
+            <span class="home-book-blue-comet" aria-hidden="true"></span>
+            <span class="home-book-star-flare" aria-hidden="true"></span>
+            <span class="home-book-comet" aria-hidden="true"></span>
+            <span class="home-book-ribbon" aria-hidden="true"></span>
+            <span class="home-book-triangles" aria-hidden="true"></span>
+            <span class="home-book-orbit-lines" aria-hidden="true"></span>
+            <span class="home-book-dial"></span>
+          </div>
+          <div class="home-book-corner t1"></div>
+          <div class="home-book-corner t2"></div>
+          <div class="home-book-corner b1"></div>
+          <div class="home-book-corner b2"></div>
+          <div class="home-book-foot"></div>
+        </div>
+        <div class="home-book-reflection"></div>
+      </div>
+      <div class="home-status" aria-label="故事状态">
+        <span class="home-status-mark">✓</span>
+        <span class="home-status-copy"><strong>故事已落下句点</strong><small>A STORY ENDS HERE</small></span>
+      </div>
+      <div class="home-reward" aria-hidden="true">
+        <span class="home-reward-bg"></span>
+        <span class="home-reward-text"></span>
+        <span class="home-reward-go"></span>
+        <span class="reward-check-icon" aria-hidden="true"></span><span class="reward-check-outline" aria-hidden="true"></span><span class="reward-item-bg" aria-hidden="true"></span><span class="reward-item-outline" aria-hidden="true"></span><span class="reward-center" aria-hidden="true"></span><span class="review-btn-bg" aria-hidden="true"></span><span class="review-btn-icon" aria-hidden="true"></span>
+        <span class="reward-source-ring" aria-hidden="true"></span><span class="reward-source-bow left" aria-hidden="true"></span><span class="reward-source-bow right" aria-hidden="true"></span><span class="reward-source-tick" aria-hidden="true"></span>
+        <span class="home-mail-hint" aria-hidden="true">
+          <i class="hint-bg"></i><i class="hint-bg-pattern"></i><i class="hint-bg-detail"></i><i class="hint-deco-pattern"></i>
+          <i class="hint-deco"></i><i class="hint-star"></i>
+          <i class="hint-wave wave1"></i><i class="hint-wave wave2"></i>
+          <i class="hint-dot"></i><i class="hint-panel"></i><i class="hint-switch-mail"></i><i class="hint-energy-orb"></i>
+        </span>
+      </div>
+      <button type="button" class="home-rule"><i class="rule-bg" aria-hidden="true"></i><i class="rule-icon" aria-hidden="true"></i><i class="rule-frame-left" aria-hidden="true"></i><i class="rule-frame-right" aria-hidden="true"></i><span>规则说明</span></button>
+      <button type="button" class="home-load"><i class="load-auto-glow" aria-hidden="true"></i><i class="load-auto-outline" aria-hidden="true"></i><i class="load-auto-shadow" aria-hidden="true"></i><i class="load-auto-bg" aria-hidden="true"></i><i class="load-switch-icon" aria-hidden="true"></i><span>载入「神话之外」</span></button>
+      <div class="home-bottom-hint" aria-hidden="true">
+        <span class="hint-panel-multi-bg"></span>
+        <span class="hint-panel-bg"></span>
+        <span class="hint-panel-text">前往「如我所书」</span>
+        <span class="hint-panel-button">前往</span>
+        <span class="hint-wait" aria-hidden="true">
+          <i class="wait-ring"></i><i class="wait-light"></i><i class="wait-progress"></i>
+        </span>
+      </div>
+      <div class="home-author">
+        <span class="home-author-mark">▣</span>
+        <span class="home-author-copy">著者的菲仪<small>THE AUTHOR'S GIFT</small></span>
+      </div>
+      <span class="home-toast-mark" aria-hidden="true"></span>
+      <span class="home-end-page-border" aria-hidden="true"></span>
+      <div class="home-bottom-bar" aria-hidden="true">
+        <span class="home-bottom-bar-count"></span>
+        <span class="home-bottom-bar-time"></span>
+      </div>
+      <span class="home-uid">UID: 152981314</span>
+      <div class="archives hidden" id="archives"></div>
+
+      <p class="colophon">我会将永恒之地的故事，<br>带往群星。</p>
     </div>
-
-    <div class="archives" id="archives"></div>
-
-    <p class="colophon">我会将永恒之地的故事，<br>带往群星。</p>
   </section>
+
+  <!-- 逐火者的命路 -->
 
   <!-- 目录 -->
   <section class="spread hidden" id="view-catalog">
     <header class="spread-head">
       <button class="back" data-go="home">← 书</button>
       <h1>翁法罗斯英雄纪<span class="ext">.exe</span></h1>
+      <div class="catalog-views" role="group" aria-label="目录视图">
+        <span class="catalog-tab-cata-bg" aria-hidden="true"></span><span class="catalog-tab-bg" aria-hidden="true"></span>
+        <span class="catalog-tab-outline" aria-hidden="true"></span><span class="catalog-tab-pattern" aria-hidden="true"></span><span class="catalog-tab-finish-icon" aria-hidden="true"></span><span class="catalog-tab-lock-icon" aria-hidden="true"></span>
+        <button type="button" class="catalog-view active" data-view="heroes">英雄</button>
+        <button type="button" class="catalog-view" data-view="paths">命路</button>
+      </div>
       <span class="meta" id="cat-meta"></span>
     </header>
-    <div class="catalog" id="catalog"></div>
+    <div class="catalog-stage">
+      <span class="catalog-official-bg" aria-hidden="true"></span>
+      <span class="catalog-side-deco" aria-hidden="true"></span>
+      <span class="catalog-eff-panel" aria-hidden="true"></span>
+      <span class="catalog-shortcut-hint" aria-hidden="true"><i></i></span>
+      <span class="catalog-left-tab" aria-hidden="true"></span>
+      <span class="catalog-top-tab" aria-hidden="true"></span>
+      <div class="catalog-book" aria-hidden="true">
+        <span class="catalog-book-pillar"></span>
+        <span class="catalog-title-deco"><i></i><i></i></span>
+        <span class="catalog-book-page"></span>
+        <span class="catalog-book-feather"></span>
+        <span class="catalog-book-banner"><i></i><i></i><i></i></span>
+        <span class="catalog-book-figure left"><i></i><i></i><i></i></span>
+        <span class="catalog-book-figure right"><i></i><i></i><i></i></span>
+      </div>
+      <div class="catalog-content">
+        <div class="catalog-title"><span>In every age</span><strong>目录</strong></div>
+        <div class="catalog" id="catalog"></div>
+        <div class="catalog hidden" id="catalog-paths"></div>
+      </div>
+    </div>
   </section>
 
   <!-- 单卷 -->
   <section class="spread hidden" id="view-volume">
-    <header class="spread-head">
+    <header class="spread-head volume-head">
       <button class="back" data-go="catalog">← 目录</button>
-      <h1 id="vol-title"></h1>
+      <h1>书页</h1>
       <span class="meta" id="vol-meta"></span>
     </header>
-    <div class="volume-body">
-      <aside class="verse-col">
-        <div class="verse" id="verse"></div>
-        <div class="epigraph" id="epigraph"></div>
-      </aside>
-      <div class="sections" id="sections"></div>
+    <div class="volume-return">
+      <button type="button" class="volume-return-label" data-go="catalog"><i class="volume-next-outline" aria-hidden="true"></i>回到目录</button>
+      <button type="button" class="volume-back" data-go="catalog" aria-label="回到目录">‹</button>
+      <button type="button" class="volume-next" id="vol-next-floating" aria-label="下一页"><span class="volume-next-source" aria-hidden="true"></span><i>›</i></button>
+    </div>
+    <div class="volume-stage">
+      <span class="volume-wings" aria-hidden="true"></span>
+      <div class="volume-tabs" id="volume-tabs" aria-label="章节导航"></div>
+      <div class="paper">
+      <span class="paper-binding left" aria-hidden="true"></span>
+      <span class="paper-binding right" aria-hidden="true"></span>
+      <span class="page-frame-pattern left" aria-hidden="true"></span>
+      <span class="page-frame-pattern right" aria-hidden="true"></span>
+      <span class="paper-feather" aria-hidden="true"></span>
+      <div class="aivw-page aivw-lpage">
+        <div class="aivw-top-deco"></div>
+        <span class="aivw-hidden">&nbsp;</span>
+        <span class="aivw-content">
+          <div class="verse-col">
+            <div class="aivw-title-border"><p class="aivw-title"><span class="aivw-title-deco"></span><span id="vol-title"></span><span class="aivw-title-deco aivw-title-deco-right"></span></p></div>
+            <div class="verse" id="verse"></div>
+            <div class="epigraph" id="epigraph"></div>
+          </div>
+        </span>
+        <span class="aivw-hidden">&nbsp;</span>
+      </div>
+      <div class="aivw-page aivw-rpage">
+        <div class="aivw-top-deco"></div>
+        <span class="aivw-hidden">&nbsp;</span>
+        <span class="aivw-content">
+          <div class="hero-art" id="volume-art"></div>
+          <div class="sections" id="sections"></div>
+        </span>
+        <span class="aivw-hidden">&nbsp;</span>
+      </div>
+      <div class="volume-foot">
+        <button type="button" id="vol-prev">← 上一页</button>
+        <span id="vol-page">1 / 5</span>
+        <button type="button" id="vol-next">下一页 →</button>
+      </div>
+      </div>
     </div>
   </section>
 
@@ -54,7 +348,40 @@
       <h1>逐火者的命路<span class="ext">.exe</span></h1>
       <span class="meta">十三人，各四行</span>
     </header>
-    <div class="paths" id="paths"></div>
+    <div class="path-starmap">
+      <span class="path-uid" aria-hidden="true">UID:152981314</span>
+      <div class="starmap-disc" aria-hidden="true">
+        <span class="disc-ring r1"></span><span class="disc-ring r2"></span><span class="disc-ring r3"></span>
+        <span class="disc-segments"></span><span class="disc-swirl"></span>
+        <span class="disc-core"></span><span class="disc-spokes"></span>
+        <span class="disc-source-light" aria-hidden="true"></span>
+      </div>
+      <div class="starmap-links" aria-hidden="true">
+        <span class="link l1"></span><span class="link l2"></span><span class="link l3"></span>
+        <span class="link l4"></span><span class="link l5"></span><span class="link l6"></span>
+        <span class="link l7"></span><span class="link l8"></span><span class="link l9"></span>
+        <span class="link l10"></span><span class="link l11"></span><span class="link l12"></span>
+        <span class="link l13"></span>
+      </div>
+      <div class="paths" id="paths"></div>
+      <div class="starmap-zoom" aria-label="星图缩放">
+        <button type="button" id="starmap-zoom-out" aria-label="缩小星图">−</button>
+        <span class="zoom-track"><span class="zoom-thumb"></span></span>
+        <button type="button" id="starmap-zoom-in" aria-label="放大星图">+</button>
+      </div>
+    </div>
+    <div class="path-lightbox hidden" id="path-lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightbox-close" aria-label="关闭">×</button>
+      <div class="path-detail">
+        <button type="button" class="path-detail-return" data-go="path">回到目录</button>
+        <div class="path-detail-card" id="lightbox-art"></div>
+        <div class="path-detail-copy">
+          <h2 id="lightbox-caption"></h2>
+          <div class="path-detail-rule" aria-hidden="true"><span class="path-detail-meta" id="lightbox-meta"></span></div>
+          <p class="path-detail-poem" id="lightbox-poem"></p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- 管理员批注 -->
@@ -102,7 +429,21 @@
     <span id="foot-left">如我所书</span>
     <span id="foot-right"></span>
   </footer>
+  <div class="sign-longpress" id="sign-longpress" aria-hidden="true">
+    <span class="sign-longpress-page-bg"></span>
+    <span class="sign-longpress-bg-light" aria-hidden="true"></span>
+    <span class="sign-longpress-bg-pattern" aria-hidden="true"></span>
+    <span class="sign-longpress-center-icon" aria-hidden="true"></span>
+    <span class="sign-longpress-center-star" aria-hidden="true"></span>
+    <span class="sign-longpress-light-star" aria-hidden="true"></span>
+    <span class="sign-longpress-dot-pattern" aria-hidden="true"></span>
+    <span class="sign-longpress-press-circle" aria-hidden="true"></span>
+    <span class="sign-longpress-field"><span class="sign-line-bg" aria-hidden="true"></span><span class="sign-line-effect" aria-hidden="true"></span><span class="sign-line-glow" aria-hidden="true"></span></span>
+  </div>
 </div>
+<script src="/codex-art.js"></script>
+<script src="/codex-portraits.js"></script>
+<script src="/codex-source.js"></script>
 <script src="/codex.js"></script>
 </body>
 </html>

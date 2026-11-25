@@ -1,0 +1,25 @@
+{
+  "decisions": [
+    {
+      "id": "D001",
+      "date": "2026-11-25",
+      "title": "以开发手册 v2.0 为新架构真相",
+      "impact": "旧 web/codex*.js 不复用；新建 app/ 数据驱动架构。",
+      "status": "accepted"
+    },
+    {
+      "id": "D002",
+      "date": "2026-11-25",
+      "title": "使用本机复制数据做 host-side 静态解包",
+      "impact": "不使用虚拟机、不读截图猜布局；Oodle/UnityPy 只读取 ~/Downloads/hsr-ui-extract。",
+      "status": "accepted"
+    },
+    {
+      "id": "D003",
+      "date": "2026-11-25",
+      "title": "M1 证据不足时标记 BLOCKED",
+      "impact": "10 个 P0 状态未全部达到手册 7.7 前，不进入 M3/M4，不宣称完成。",
+      "status": "accepted"
+    }
+  ]
+}

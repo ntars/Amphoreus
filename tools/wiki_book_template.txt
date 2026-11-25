@@ -1,0 +1,125 @@
+<includeonly>{{#vardefine:如我所书轮播编号|{{#expr:{{#var:如我所书轮播编号}}+1}}}}
+<div id="aivw-carousel-{{#var:如我所书轮播编号}}" class="carousel big-carousel" data-ride="false" data-interval="false">
+<div class="carousel-inner" role="listbox">{{#vardefine:如我所书单章封面|0}}
+{{#forargs:页码|编号|页码|
+<div class="item {{#ifexpr:{{#vardefineecho:如我所书单章封面|{{#expr:{{#var:如我所书单章封面}}+1}}}}=1|active}}"><div class="aivw"><div class="aivw-page aivw-lpage"><div class="aivw-top-deco"></div><span class="aivw-hidden">&nbsp;</span><span class="aivw-content">{{#if:{{#var:页码}}|<div class="aivw-title-border"><p class="aivw-title"><span class="aivw-title-deco"></span>
+{{#var:页码}}<span class="aivw-title-deco aivw-title-deco-right"></span></p></div>}}
+{{{左页{{#var:编号}}|}}}</span><span class="aivw-hidden">&nbsp;</span></div><div class="aivw-page aivw-rpage"><div class="aivw-top-deco"></div><span class="aivw-hidden">&nbsp;</span><span class="aivw-content">
+{{{右页{{#var:编号}}|}}}</span><span class="aivw-hidden">&nbsp;</span></div></div></div>
+}}
+</div>{{#vardefine:如我所书单章封面|0}}
+<ol class="carousel-indicators">{{#forargs:页码|||<li data-target="#aivw-carousel-{{#var:如我所书轮播编号}}" data-slide-to="{{#var:如我所书单章封面}}" {{#ifexpr:{{#vardefineecho:如我所书单章封面|{{#expr:{{#var:如我所书单章封面}}+1}}}}=1|class="active"}}>}}</li></ol>
+<div class="left carousel-control" data-target="#aivw-carousel-{{#var:如我所书轮播编号}}" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div><div class="right carousel-control" data-target="#aivw-carousel-{{#var:如我所书轮播编号}}" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+</div>{{#if:{{#var:如我所书样式}}||{{#vardefine:如我所书样式|1}}{{#css:
+.aivw {
+  display: flex;
+  text-align: center;
+}
+
+.aivw .aivw-page {
+  width: 50%;
+  min-height: 50em;
+  background-repeat: no-repeat;
+  color: #6b5f4a;
+}
+
+.aivw .aivw-top-deco {
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+.aivw .aivw-page .aivw-hidden {
+  line-height: calc(50em - 50px);
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .aivw {
+      flex-direction: column;
+  }
+  .aivw .aivw-page {
+    width: 100%;
+    min-height: calc(20em - 50px);
+  }
+  .aivw .aivw-page .aivw-hidden {
+    line-height: 24em;
+  }
+}
+
+.aivw .aivw-page .aivw-content {
+  display: inline-block;
+  margin: 1em 0;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+.aivw .aivw-page .aivw-title-deco {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  left: 1px;
+  top: 2px;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: left;
+  opacity: 0.25;
+}
+
+.aivw .aivw-page .aivw-title-deco.aivw-title-deco-right {
+  left: initial;
+  right: 1px;
+  background-position: right;
+  transform: scaleX(-1);
+}
+
+.aivw .aivw-page .aivw-title-border {
+  margin: auto;
+  margin-bottom: 1em;
+  width: 100px;
+  height: 24px;
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #a18454;
+}
+
+.aivw .aivw-page .aivw-title {
+  position: relative;
+  border-radius: 9px;
+  width: 94px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a18454;
+  color: #e0d6ca;
+}
+
+.carousel.big-carousel ol.carousel-indicators > li {
+  border-color: #999999;
+  background-color: #999999;
+}
+
+.carousel.big-carousel ol.carousel-indicators > li.active {
+  border-color: #d4ad60;
+  background-color: white;
+}
+}}{{#tag:bstyle|<nowiki>
+.aivw .aivw-lpage .aivw-top-deco {
+  background-image: </nowiki>url({{文件路径:如我所书-左页阴影.png}}), url({{文件路径:如我所书-左页装饰.png}});<nowiki>
+  background-position: right -3px top -2px, left top;
+}
+.aivw .aivw-rpage .aivw-top-deco {
+  background-image: </nowiki>url({{文件路径:如我所书-右页阴影.png}}), url({{文件路径:如我所书-右页装饰.png}});<nowiki>
+  background-position: left -4px top -14px, right top;
+}
+.aivw .aivw-page.aivw-lpage {
+  background-image: </nowiki>url({{文件路径:如我所书-左页阴影.png}}), url({{文件路径:如我所书-左页.png}});<nowiki>
+  background-position: right -3px top -2px, top;
+}
+.aivw .aivw-page.aivw-rpage {
+  background-image: </nowiki>url({{文件路径:如我所书-右页阴影.png}}), url({{文件路径:如我所书-右页装饰.png}}), url({{文件路径:如我所书-右页.png}});<nowiki>
+  background-position: left -4px top -14px, left top, top;
+}
+.aivw .aivw-page .aivw-title-deco {
+  background-image: </nowiki>url({{文件路径:如我所书-标题装饰.png}})<nowiki>;
+</nowiki>}}}}</includeonly><noinclude>{{模板说明}}</noinclude>

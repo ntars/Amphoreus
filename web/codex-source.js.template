@@ -1,0 +1,1513 @@
+/* 解包资料到 CSS 的桥接层。只读取构建期生成的 codex-source.json，
+   不在运行时加载任何图片、SVG 或外部资源。 */
+const TAROT_SOURCE = __TAROT_SOURCE__;
+
+function tarotTextStyle(name, textKey) {
+  const styles = TAROT_SOURCE.typography?.styles || [];
+  return styles.find((style) => style.name === name && (!textKey || style.textKey === textKey)) || null;
+}
+
+function tarotTypography() {
+  return {
+    title: tarotTextStyle('TitleText', '如我所书'),
+    status: tarotTextStyle('TitleText', 'DevUI_TimeTitle'),
+    functionName: tarotTextStyle('FunctionName', '逐火者的命路.exe'),
+    hint: tarotTextStyle('HintText', 'DevUI_TipContent'),
+    count: tarotTextStyle('CountText', '主界面'),
+    caption: tarotTextStyle('Text', '前往查看'),
+    author: tarotTextStyle('Text', '著者的菲仪'),
+    load: tarotTextStyle('Text', '载入'),
+    introBody: tarotTextStyle('Text', '翻开这本书吧，'),
+  };
+}
+
+function tarotCurve(clipName, path, attribute) {
+  const clip = TAROT_SOURCE.animations.find((item) => item.file === clipName);
+  return clip && clip.curves.find((curve) => curve.path === path && curve.attribute === attribute);
+}
+
+function tarotFloatCurve(clipName, path, attribute) {
+  const curve = tarotCurve(clipName, path, attribute);
+  if (!curve || curve.collection !== 'm_FloatCurves') return null;
+  // Unity writes constant alpha 0 as a string; normalise it before timing math.
+  if (Array.isArray(curve.keys)) {
+    for (const key of curve.keys) {
+      if (typeof key.value === 'string' && key.value.trim() !== '' && Number.isFinite(Number(key.value))) {
+        key.value = Number(key.value);
+      }
+    }
+  }
+  return curve;
+}
+
+function tarotTiming(clipName, path, attribute) {
+  const curve = tarotFloatCurve(clipName, path, attribute);
+  const keys = curve?.keys ?? [];
+  if (!keys.length) return { delay: 0, duration: 0, keys: [] };
+  const start = Number(keys[0].time);
+  const end = Number(keys[keys.length - 1].time);
+  return { delay: start, duration: Math.max(0.05, end - start), keys };
+}
+
+// FunctionList button order is BtnBook, BtnStar, BtnMem, BtnPaper, BtnWiki,
+// BtnMail. Loop1 animates Icon1..Icon6 in that same source order; expose both
+// names so consumers can map by button without guessing.
+const TAROT_ICON_ORDER = ['Icon1', 'Icon2', 'Icon3', 'Icon4', 'Icon5', 'Icon6'];
+const TAROT_BUTTON_ORDER = ['BtnBook', 'BtnStar', 'BtnMem', 'BtnPaper', 'BtnWiki', 'BtnMail'];
+
+function tarotIconCurve(name, attribute) {
+  return tarotCurve('TarotBookRealMainPageIcon_Loop1.anim', name, attribute);
+}
+
+function vectorAxis(value, axis) {
+  const match = String(value).match(new RegExp(`${axis}:\\s*([-\\d.e]+)`));
+  return match ? Number(match[1]) : 0;
+}
+
+function tarotIconTimingByName(name) {
+  const out = {};
+  for (const attribute of ['m_AnchoredPosition.x', 'm_AnchoredPosition.y']) {
+    const curve = tarotIconCurve(name, attribute);
+    const keys = curve?.keys ?? [];
+    if (!keys.length) continue;
+    out[attribute] = {
+      ...tarotTiming('TarotBookRealMainPageIcon_Loop1.anim', name, attribute),
+      values: keys.map((key) => Number(key.value) || 0),
+      timePeak: Number(keys[1]?.time ?? keys[0]?.time ?? 0),
+    };
+  }
+  // Loop1 also animates each icon's Euler rotation and scale; keep the axis
+  // values so CSS can reproduce the official peak instead of a generic wobble.
+  const rotation = tarotCurve('TarotBookRealMainPageIcon_Loop1.anim', name, '');
+  if (rotation && rotation.collection === 'm_EulerCurves') {
+    out.rotation = {
+      values: rotation.keys.map((key) => vectorAxis(key.value, 'z')),
+      timePeak: Number(rotation.keys[1]?.time ?? rotation.keys[0]?.time ?? 0),
+      duration: Number(rotation.keys[rotation.keys.length - 1]?.time ?? 0) - Number(rotation.keys[0]?.time ?? 0),
+    };
+  }
+  const scaleCurve = tarotCurve('TarotBookRealMainPageIcon_Loop1.anim', name, '') === rotation
+    ? (TAROT_SOURCE.animations.find((item) => item.file === 'TarotBookRealMainPageIcon_Loop1.anim')?.curves || [])
+        .find((curve) => curve.path === name && curve.collection === 'm_ScaleCurves')
+    : null;
+  if (scaleCurve) {
+    out.scale = {
+      valuesX: scaleCurve.keys.map((key) => vectorAxis(key.value, 'x')),
+      valuesY: scaleCurve.keys.map((key) => vectorAxis(key.value, 'y')),
+      timePeak: Number(scaleCurve.keys[1]?.time ?? scaleCurve.keys[0]?.time ?? 0),
+      duration: Number(scaleCurve.keys[scaleCurve.length - 1]?.time ?? 0) - Number(scaleCurve.keys[0]?.time ?? 0) || 3.266667,
+    };
+  }
+  return out;
+}
+
+function tarotIconTimings() {
+  const out = {};
+  TAROT_ICON_ORDER.forEach((icon, index) => {
+    const timing = tarotIconTimingByName(icon);
+    out[icon] = timing;
+    out[TAROT_BUTTON_ORDER[index]] = timing;
+  });
+  return out;
+}
+
+// Decorative loops target sub-icons inside the six function buttons. The
+// prefab paths distinguish otherwise identical Icon1/Icon2 names, so keep the
+// full path in each specification instead of guessing by basename.
+const TAROT_DECORATIVE_LOOPS = [
+  { file: 'TarotBookRealMainPageIcon_Loop2.anim', button: 'BtnStar', path: 'TarotBookMainIconStar/Deco1', duration: 60.116665, durationSeconds: true },
+  { file: 'TarotBookRealMainPageIcon_Loop3.anim', button: 'BtnMem', path: 'Icon5', children: ['Icon5/Icon4', 'Icon5/Icon6', 'Icon7', 'Icon7/Icon2', 'Icon7/Icon3'], duration: 4 },
+  { file: 'TarotBookRealMainPageIcon_Loop4.anim', button: 'BtnPaper', path: 'Icon1', children: ['Icon1/Icon4', 'Icon2', 'Icon2/Icon3'], duration: 6.85 },
+  { file: 'TarotBookRealMainPageIcon_Loop5.anim', button: 'BtnMail', path: 'Icon1', duration: 3.7 },
+  { file: 'TarotBookRealMainPageIcon_Loop6.anim', button: 'BtnMail', path: 'Icon1', children: ['Icon3', 'Icon3/Icon3 (1)'], duration: 9.983334 },
+];
+
+function tarotDecorativeLoopTimings() {
+  const out = {};
+  for (const spec of TAROT_DECORATIVE_LOOPS) {
+    const clip = TAROT_SOURCE.animations.find((item) => item.file === spec.file);
+    const paths = [spec.path, ...(spec.children || [])];
+    const curves = (clip?.curves || []).filter((curve) => paths.includes(curve.path));
+    const position = curves.filter((curve) => curve.collection === 'm_FloatCurves' && curve.attribute.startsWith('m_AnchoredPosition.'));
+    const rotationCurves = curves.filter((curve) => curve.collection === 'm_EulerCurves');
+    const rotation = rotationCurves.find((curve) => curve.path === spec.path) || rotationCurves[0];
+    const scale = curves.find((curve) => curve.collection === 'm_ScaleCurves');
+    const alpha = curves.find((curve) => curve.collection === 'm_FloatCurves' && curve.attribute === 'm_Color.a');
+    const keys = (curve) => (curve?.keys || []).map((key) => ({
+      time: Number(key.time),
+      value: Number(key.value) || 0,
+    }));
+    const entry = {
+      button: spec.button,
+      file: spec.file,
+      path: spec.path,
+      duration: spec.duration,
+      keys: position.map((curve) => ({
+        attribute: curve.attribute,
+        values: keys(curve),
+      })),
+      rotation: rotation ? {
+        values: rotation.keys.map((key) => vectorAxis(key.value, 'z')),
+        times: rotation.keys.map((key) => Number(key.time)),
+      } : null,
+      childRotations: rotationCurves
+        .filter((curve) => curve !== rotation)
+        .map((curve) => ({
+          path: curve.path,
+          values: curve.keys.map((key) => ({ x: vectorAxis(key.value, 'x'), y: vectorAxis(key.value, 'y'), z: vectorAxis(key.value, 'z') })),
+          times: curve.keys.map((key) => Number(key.time)),
+        })),
+      childAlphas: curves
+        .filter((curve) => curve.collection === 'm_FloatCurves' && curve.attribute === 'm_Color.a' && curve.path !== spec.path)
+        .map((curve) => ({
+          path: curve.path,
+          values: keys(curve),
+        })),
+      childPositions: position
+        .filter((curve) => curve.path !== spec.path)
+        .map((curve) => ({
+          path: curve.path,
+          attribute: curve.attribute,
+          values: keys(curve),
+        })),
+      scale: scale ? {
+        valuesX: scale.keys.map((key) => vectorAxis(key.value, 'x')),
+        valuesY: scale.keys.map((key) => vectorAxis(key.value, 'y')),
+        times: scale.keys.map((key) => Number(key.time)),
+      } : null,
+      alpha: alpha ? keys(alpha) : null,
+    };
+    if (!out[spec.button]) out[spec.button] = [];
+    out[spec.button].push(entry);
+  }
+  return out;
+}
+
+function tarotButtonEffTimings() {
+  const clip = 'TarotBookRealMainPage_FadeIn.anim';
+  const out = {};
+  for (const name of TAROT_BUTTON_ORDER) {
+    const prefix = `Root/PanelContent/DesktopPanel/FunctionList/${name}/Root/IconPanel/Eff`;
+    const read = (attribute, path = prefix) => {
+      const curve = tarotCurve(clip, path, attribute);
+      const keys = curve?.keys ?? [];
+      return {
+        keys: keys.map((key) => ({ time: Number(key.time), value: Number(key.value) || 0 })),
+        delay: Number(keys[0]?.time ?? 0),
+        duration: Number(keys[keys.length - 1]?.time ?? 0) - Number(keys[0]?.time ?? 0),
+      };
+    };
+    out[name] = {
+      ...read('m_Color.a'),
+      bgHint: read('m_Color.a', `${prefix}/BgHint`),
+      deco: read('m_Color.a', `${prefix}/Deco`),
+    };
+  }
+  return out;
+}
+
+// FunctionList buttons use different alpha/eff windows in each official
+// homepage entrance clip. Keep them per variant instead of stamping the
+// opening clip's times onto every state.
+function tarotHomeEntranceButtonTimings() {
+  const variants = {
+    opening: 'TarotBookRealMainPage_FadeIn.anim',
+    firstTime: 'TarotBookRealMainPage_FadeIn_FirstTime.anim',
+    returning: 'TarotBookRealMainPage_FadeIn_Switch.anim',
+    resume: 'TarotBookRealMainPage_FadeIn3.anim',
+  };
+  const out = {};
+  for (const [variant, clip] of Object.entries(variants)) {
+    out[variant] = {};
+    for (const name of TAROT_BUTTON_ORDER) {
+      const base = `Root/PanelContent/DesktopPanel/FunctionList/${name}`;
+      const read = (attribute, path = base) => {
+        const keys = tarotCurve(clip, path, attribute)?.keys ?? [];
+        return {
+          delay: Number(keys[0]?.time ?? 0),
+          duration: Number(keys[keys.length - 1]?.time ?? 0) - Number(keys[0]?.time ?? 0),
+          keys: keys.map((key) => ({ time: Number(key.time), value: Number(key.value) || 0 })),
+        };
+      };
+      const effBase = `${base}/Root/IconPanel/Eff`;
+      out[variant][name] = {
+        reveal: read('m_Alpha'),
+        eff: read('m_Color.a', effBase),
+        bgHint: read('m_Color.a', `${effBase}/BgHint`),
+        deco: read('m_Color.a', `${effBase}/Deco`),
+      };
+    }
+  }
+  return out;
+}
+
+// The official Error clip is not a route in the fanwork; it is exported so the
+// runtime failure state can use the same button/scanline windows and colors.
+function tarotErrorTiming() {
+  const clip = 'TarotBookRealMainPage_FadeIn_Error.anim';
+  const keysFor = (path, attribute) => (tarotCurve(clip, path, attribute)?.keys ?? [])
+    .map((key) => ({ time: Number(key.time), value: Number(key.value) || 0 }));
+  const curveFor = (path, attribute) => {
+    const keys = keysFor(path, attribute);
+    if (keys.length < 2) return null;
+    return {
+      delay: Number(keys[0].time),
+      duration: Number((Number(keys[keys.length - 1].time) - Number(keys[0].time)).toFixed(6)),
+      keys,
+    };
+  };
+  const buttons = {};
+  for (const name of TAROT_BUTTON_ORDER) {
+    const icon = `Root/PanelContent/DesktopPanel/FunctionList/${name}/Root/IconPanel`;
+    const frame = `${icon}/Frame`;
+    const errorIcon = `${icon}/Error/EffErrorIcon`;
+    const glitch = `${icon}/Error/Glitch`;
+    buttons[name] = {
+      reveal: curveFor(`Root/PanelContent/DesktopPanel/FunctionList/${name}`, 'm_Alpha'),
+      error: curveFor(`${icon}/Error`, 'm_Alpha'),
+      errorActive: curveFor(`${icon}/Error`, 'm_IsActive'),
+      errorIconActive: curveFor(errorIcon, 'm_IsActive'),
+      glitchW: keysFor(glitch, 'material._DisTex_ST.w'),
+      frameR: keysFor(frame, 'm_Color.r'),
+      frameG: keysFor(frame, 'm_Color.g'),
+      frameB: keysFor(frame, 'm_Color.b'),
+      frameAlpha: curveFor(frame, 'm_Color.a'),
+      scanlineW: keysFor(`${icon}/Error/Scanline`, 'material._MaskTex_ST.w'),
+    };
+  }
+  return {
+    buttons,
+    background: curveFor('Root/ErrorBg', 'm_Alpha'),
+    backgroundActive: curveFor('Root/ErrorBg', 'm_IsActive'),
+    errorOpen: keysFor('Root/ErrorBg/EffErrorOpen', 'm_IsActive'),
+    screenBackground: curveFor('Bg/ScreenBg/RevertMask/ErrorBg', 'm_IsActive'),
+    effLoop: curveFor('Bg/ScreenBg/RevertMask/BgRoot/EffLoop', '_TargetAlpha'),
+    scanline: {
+      w: keysFor('Root/ErrorBg/Scanline', 'material._MaskTex_ST.w'),
+      x: keysFor('Root/ErrorBg/Scanline', 'material._MaskTex_ST.x'),
+      y: keysFor('Root/ErrorBg/Scanline', 'material._MaskTex_ST.y'),
+      z: keysFor('Root/ErrorBg/Scanline', 'material._MaskTex_ST.z'),
+    },
+    scanlineW: keysFor('Root/ErrorBg/Scanline', 'material._MaskTex_ST.w'),
+  };
+}
+
+function tarotDialogTiming() {
+  const floatKeys = (clipName, path, attribute) => (tarotCurve(clipName, path, attribute)?.keys ?? [])
+    .map((key) => ({ time: Number(key.time), value: Number(key.value) || 0 }));
+  const floatCurve = (clipName, path, attribute) => {
+    const keys = floatKeys(clipName, path, attribute);
+    if (keys.length < 2) return null;
+    return { delay: Number(keys[0].time), duration: Number((Number(keys[keys.length - 1].time) - Number(keys[0].time)).toFixed(6)), keys };
+  };
+  const scaleCurve = (clipName, path) => (tarotCurve(clipName, path, '')?.keys ?? []);
+  const dialogFade = 'TarotBookMainEntranceErrorDialog_FadeIn.anim';
+  const dialogLoop = 'TarotBookMainEntranceErrorDialog_Loop.anim';
+  const dialogExit = 'TarotBookMainEntranceErrorDialog_FadeOut.anim';
+  const mailFade = 'TarotBookMailDialog_FadeIn.anim';
+  const guide = 'TarotBookGuideBtnTypeRect.anim';
+  return {
+    dialog: {
+      contentsAlpha: floatCurve(dialogFade, 'Contents', 'm_Alpha'),
+      contentsY: floatKeys(dialogFade, 'Contents', 'm_AnchoredPosition.y'),
+      frameWidth: floatKeys(dialogFade, 'Contents/DataHintPanel/Frame', 'm_SizeDelta.x'),
+      frameHeight: floatKeys(dialogFade, 'Contents/DataHintPanel/Frame', 'm_SizeDelta.y'),
+      titleScaleX: scaleCurve(dialogFade, 'Contents/DataHintPanel/TitlePanel/Frame/Bg'),
+      frameWobbleX: floatKeys(dialogLoop, 'DataHintPanel/Frame', 'm_AnchoredPosition.x'),
+      frameWobbleY: floatKeys(dialogLoop, 'DataHintPanel/Frame', 'm_AnchoredPosition.y'),
+      titleFlicker: floatCurve(dialogLoop, 'DataHintPanel/TitlePanel/Frame/Bg', 'm_Alpha'),
+      exitGlowScaleY: scaleCurve(dialogExit, 'Closing/Frame/Black/Glow'),
+      exitGlowScaleY2: scaleCurve(dialogExit, 'Closing/Frame/Black/Glow_02'),
+    },
+    mail: {
+      panelAlpha: floatKeys(mailFade, 'Root', 'm_Alpha'),
+      pageInfoAlpha: floatCurve(mailFade, 'Root/PageInfo', 'm_Alpha'),
+      lineScaleX: scaleCurve(mailFade, 'Root/Contents/Line'),
+      iconScale: scaleCurve(mailFade, 'Root/Contents/MailContent/BaseInfo/IconPanel/Icon'),
+    },
+    guide: {
+      frameScale: scaleCurve(guide, 'FrameLoop/Frame'),
+      whiteFlash: floatCurve(guide, 'FrameLoop/Frame/FrameWhite', 'm_Alpha'),
+      rootAlpha: floatCurve(guide, 'Root', 'm_Alpha'),
+    },
+  };
+}
+
+function tarotMimiTiming() {
+  const floatKeys = (clipName, path, attribute) => (tarotCurve(clipName, path, attribute)?.keys ?? []).map((key) => ({ time: Number(key.time), value: Number(key.value) || 0 }));
+  const floatCurve = (clipName, path, attribute) => {
+    const keys = floatKeys(clipName, path, attribute);
+    if (keys.length < 2) return null;
+    return { delay: Number(keys[0].time), duration: Number((Number(keys[keys.length - 1].time) - Number(keys[0].time)).toFixed(6)), keys };
+  };
+  const scaleKeys = (clipName, path) => (tarotCurve(clipName, path, '')?.keys ?? []);
+  const page = 'TarotBookMimiTalkPage_FadeIn2.anim';
+  const unlock = 'TarotBookTalkSelectTab_UnlockHint.anim';
+  const item = 'TarotBookTalkInfoItem_FadeIn.anim';
+  const guideIn = 'TarotBookGuideTalkDialogFadeIn.anim';
+  const guideOut = 'TarotBookGuideTalkDialogFadeOut.anim';
+  const voice = 'TarotBookVoiceLoop.anim';
+  const assistantNormal = 'TarotBookAssistantIconLoop_Normal.anim';
+  const assistantSp = 'TarotBookAssistantIconLoop_SP.anim';
+  const floatKeysFor = (clipName, path, attribute) => (tarotFloatCurve(clipName, path, attribute)?.keys ?? []).map((key) => ({ time: Number(key.time), value: Number(key.value) || 0 }));
+  const vectorValues = (clipName, path, axis) => (tarotCurve(clipName, path, '')?.keys ?? []).map((key) => ({ time: Number(key.time), value: Number(String(key.value).match(new RegExp(`${axis}:\\s*([-\\d.e]+)`))?.[1] ?? 0) }));
+  return {
+    page: {
+      talkPanelScale: scaleKeys(page, 'Root/PanelContent/FunctionPanel/TalkPanel'),
+      talkPanelAlpha: floatCurve(page, 'Root/PanelContent/BookPanel/BtnPanel', 'm_Alpha'),
+      btnPanelX: floatKeys(page, 'Root/PanelContent/BookPanel/BtnPanel', 'm_AnchoredPosition.x'),
+      spineScale: scaleKeys(page, 'Root/PanelContent/BookPanel/Frame/PageFrame/Left/SpinePge'),
+      circle2Scale: scaleKeys(page, 'Root/PanelContent/FunctionPanel/TalkPanel/Frame/Deco/Mask/Circle2'),
+    },
+    unlock: {
+      circleScale: scaleKeys(unlock, 'UnlockHint/Circle1'),
+      lockAlpha: floatCurve(unlock, 'IconPanel/LockIcon', 'm_Color.a'),
+      talkIconAlpha: floatCurve(unlock, 'IconPanel/TalkIcon', 'm_Color.a'),
+      slideAlpha: floatCurve(unlock, 'UnlockHint/Slide', 'm_Alpha'),
+      starAlpha: floatCurve(unlock, 'UnlockHint/Star', 'm_Alpha'),
+      star2Alpha: floatCurve(unlock, 'UnlockHint/Star2', 'm_Alpha'),
+    },
+    item: {
+      lineScale: scaleKeys(item, 'Line'),
+    },
+    guide: {
+      bgAlpha: floatCurve(guideIn, 'Root/HintPanel/Bg', 'm_Alpha'),
+      iconAlpha: floatCurve(guideIn, 'Root/HintPanel/IconPanel', 'm_Alpha'),
+      hintTextAlpha: floatCurve(guideIn, 'Root/HintPanel/TextPanel/HintText', 'm_Alpha'),
+      functionAlpha: floatCurve(guideIn, 'Root/HintPanel/FunctionPanel', 'm_Alpha'),
+      glowAlpha: floatCurve(guideIn, 'Root/HintPanel/Bg/Mask/GlowFlow', 'm_Alpha'),
+      bgScaleX: [...(tarotCurve(guideIn, 'Root/HintPanel/Bg', '')?.keys ?? []), ...(tarotCurve(guideOut, 'Root/HintPanel/Bg', '')?.keys ?? [])].map((key) => ({ time: Number(key.time), value: Number(String(key.value).match(/x:\s*([-\d.e]+)/)?.[1] ?? 0) })),
+      iconScale: [...(tarotCurve(guideIn, 'Root/HintPanel/IconPanel/EffSiriSP', '')?.keys ?? []), ...(tarotCurve(guideOut, 'Root/HintPanel/IconPanel/EffSiriSP', '')?.keys ?? [])].map((key) => ({ time: Number(key.time), value: Number(String(key.value).match(/x:\s*([-\d.e]+)/)?.[1] ?? 0) })),
+      exitIconAlpha: floatCurve(guideOut, 'Root/HintPanel/IconPanel', 'm_Alpha'),
+      exitTextAlpha: floatCurve(guideOut, 'Root/HintPanel/TextPanel/HintText', 'm_Alpha'),
+    },
+    voice: {
+      outline1: floatKeysFor(voice, 'LoopEffs/Outline_01', 'm_SizeDelta.x'),
+      outline2: floatKeysFor(voice, 'LoopEffs/Outline_02', 'm_SizeDelta.x'),
+      circle: floatKeysFor(voice, 'LoopEffs/Circle', 'm_SizeDelta.x'),
+      circleAlpha: floatKeysFor(voice, 'LoopEffs/Circle', 'm_Color.a'),
+      outline1Alpha: floatKeysFor(voice, 'LoopEffs/Outline_01', 'm_Color.a'),
+      outline2Alpha: floatKeysFor(voice, 'LoopEffs/Outline_02', 'm_Color.a'),
+      icon1: floatCurve(voice, 'IconPanel/Icon_1', 'm_Color.a'),
+      icon2: floatCurve(voice, 'IconPanel/Icon_2', 'm_Color.a'),
+    },
+    assistant: {
+      normalLight: vectorValues(assistantNormal, 'Light', 'x'),
+      normalRing: vectorValues(assistantNormal, 'Ring', 'x'),
+      spLight: vectorValues(assistantSp, 'Light', 'x'),
+    },
+  };
+}
+
+function tarotTimelineTiming() {
+  const clip = 'TarotBookTimelineInfoItem_FadeIn.anim';
+  const keys = (path, attribute) => (tarotCurve(clip, path, attribute)?.keys ?? []).map((key) => ({ time: Number(key.time), value: Number(key.value) || 0 }));
+  const scale = (path) => (tarotCurve(clip, path, '')?.keys ?? []).map((key) => ({ time: Number(key.time), value: Number(String(key.value).match(/x:\s*([-\d.e]+)/)?.[1] ?? 0) }));
+  const rows = ['Left1', 'Left2', 'Left3', 'Right1', 'Right2', 'Right3', 'Active1', 'Active2', 'Active3', 'Active4'];
+  return {
+    title: scale('Main/MainTitle'),
+    rows: Object.fromEntries(rows.map((row) => [row, {
+      root: scale(`Main/DataList/${row}/Root`),
+      outline: keys(`Main/DataList/${row}/Root/Fill/Outline`, 'm_Alpha'),
+    }])),
+    icon: scale('Main/IconPanel'),
+  };
+}
+
+function tarotReverseTiming(clipName, path, attribute) {
+  const curve = tarotFloatCurve(clipName, path, attribute);
+  const keys = curve?.keys ?? [];
+  if (keys.length < 2) return null;
+  const start = Number(keys[0].time);
+  const end = Number(keys[keys.length - 1].time);
+  const values = keys.map((key) => Number(key.value) || 0);
+  return { delay: start, duration: Math.max(0.05, end - start), values, path };
+}
+
+function tarotHomeExitAllCurves() {
+  const clip = 'TarotBookRealMainPage_FadeOutAll.anim';
+  // Scale keys hold Unity vector strings; tarotCurveValues would coerce them
+  // to 0, so keep the raw values for the runtime CSS scale generator.
+  const scale = (path) => (tarotCurve(clip, path, '')?.keys ?? []).map((key) => ({ time: Number(key.time), value: key.value }));
+  const alpha = (path, attribute = 'm_Alpha') => tarotCurveValues(clip, path, attribute);
+  return {
+    bgScale: scale('Bg'),
+    desktopBgScale: scale('Root/PanelContent/DesktopPanel/Bg'),
+    root: alpha('Root'),
+    bg: alpha('Bg'),
+    effOpen: alpha('Bg/EffOpen', 'm_IsActive'),
+    screen: alpha('Bg/ScreenBg'),
+    bottomBar: alpha('Bg/ScreenBg/BottomBar'),
+    bgRootEff: alpha('Bg/ScreenBg/RevertMask/BgRoot/EffLoop', '_TargetAlpha'),
+    close: alpha('Outside/BtnClose'),
+    pageInfo: alpha('Outside/PageInfo'),
+    pageInfoX: alpha('Outside/PageInfo', 'm_AnchoredPosition.x'),
+    reward: alpha('Outside/RewardPanel'),
+    rewardX: alpha('Outside/RewardPanel', 'm_AnchoredPosition.x'),
+    desktop: alpha('Root/PanelContent/DesktopPanel'),
+    desktopBg: alpha('Root/PanelContent/DesktopPanel/Bg'),
+    goToPanel: alpha('Root/PanelContent/GoToPanel'),
+  };
+}
+
+function tarotHomeExitTimings() {
+  const out = {};
+  for (const [name, clip] of [['normal', 'TarotBookRealMainPage_FadeOut.anim'], ['all', 'TarotBookRealMainPage_FadeOutAll.anim']]) {
+    out[name] = {
+      root: tarotReverseTiming(clip, 'Root', 'm_Alpha'),
+      screen: tarotReverseTiming(clip, 'Bg/ScreenBg', 'm_Alpha'),
+      close: tarotReverseTiming(clip, 'Outside/BtnClose', 'm_Alpha'),
+      pageInfo: tarotReverseTiming(clip, 'Outside/PageInfo', 'm_Alpha'),
+      pageInfoX: tarotReverseTiming(clip, 'Outside/PageInfo', 'm_AnchoredPosition.x'),
+      reward: tarotReverseTiming(clip, 'Outside/RewardPanel', 'm_Alpha'),
+      rewardX: tarotReverseTiming(clip, 'Outside/RewardPanel', 'm_AnchoredPosition.x'),
+      bottomBar: tarotReverseTiming(clip, 'Bg/ScreenBg/BottomBar', 'm_Alpha'),
+    };
+  }
+  return out;
+}
+
+function tarotEffPanelRgb(clipName) {
+  return ['Par', 'Shine'].reduce((out, part) => {
+    const path = `Bg/EffPanel/${part}`;
+    out[part.toLowerCase()] = ['r', 'g', 'b'].map((channel) => (
+      tarotCurveValues(clipName, path, `material._MainColor.${channel}`)[0]?.value ?? 1
+    ));
+    return out;
+  }, {});
+}
+
+function tarotExitTimings() {
+  const out = {};
+  for (const [name, clip] of [['cover', 'TBBookletCoverPageContent_FadeOut.anim'], ['catalog', 'TBBookletCatalogContent_FadeOut.anim']]) {
+    out[name] = {
+      root: tarotReverseTiming(clip, 'Root', 'm_Alpha'),
+      rootY: tarotReverseTiming(clip, 'Root', 'm_AnchoredPosition.y'),
+      topTabAlpha: tarotReverseTiming(clip, 'Root/TopTabArea', 'm_Alpha'),
+      topTab: tarotReverseTiming(clip, 'Root/TopTabArea', 'm_AnchoredPosition.y'),
+      pageInfoAlpha: tarotReverseTiming(clip, 'Root/PageInfo', 'm_Alpha'),
+      pageInfo: tarotReverseTiming(clip, 'Root/PageInfo', 'm_AnchoredPosition.y'),
+      leftTab: tarotReverseTiming(clip, 'Root/LeftTabArea', 'm_Alpha'),
+      hint: tarotReverseTiming(clip, 'ShortCutHintFullScreenPanel(Clone)', 'm_AnchoredPosition.y'),
+      parAlpha: tarotReverseTiming(clip, 'Bg/EffPanel/Par', 'material._MainColor.a'),
+      shineAlpha: tarotReverseTiming(clip, 'Bg/EffPanel/Shine', 'material._MainColor.a'),
+      colors: tarotEffPanelRgb(clip),
+    };
+  }
+  return out;
+}
+
+function tarotButtonSources() {
+  const order = TAROT_SOURCE.layout.hierarchy.functionList.map((item) => item.name);
+  return order.map((entry, index) => {
+    const name = typeof entry === 'string' ? entry : entry.name;
+    const { delay, duration } = tarotTiming(
+      'TarotBookRealMainPage_FadeIn.anim',
+      `Root/PanelContent/DesktopPanel/FunctionList/${name}`,
+      'm_Alpha',
+    );
+    const geometry = TAROT_SOURCE.layout.hierarchy.functionList[index] || {};
+    return {
+      name,
+      delay,
+      duration,
+      x: Number(geometry.x ?? 0),
+      y: Number(geometry.y ?? 0),
+    };
+  });
+}
+
+function tarotPanelSource(name) {
+  return TAROT_SOURCE.layout.hierarchy.panels?.[name] || { x: 0, y: 0 };
+}
+
+function tarotHomeFadeTiming() {
+  const clip = 'TarotBookRealMainPage_FadeIn.anim';
+  return {
+    root: tarotTiming(clip, 'Root', 'm_Alpha'),
+    screen: tarotTiming(clip, 'Bg/ScreenBg', 'm_Alpha'),
+    close: tarotTiming(clip, 'Outside/BtnClose', 'm_Alpha'),
+    reward: tarotTiming(clip, 'Outside/RewardPanel', 'm_Alpha'),
+    desktop: tarotTiming(clip, 'Root/PanelContent/DesktopPanel', 'm_Alpha'),
+  };
+}
+
+function tarotHomeFadeCurves() {
+  const clip = 'TarotBookRealMainPage_FadeIn.anim';
+  return {
+    screenAlpha: tarotCurveValues(clip, 'Bg/ScreenBg', 'm_Alpha'),
+    screenScale: tarotCurveValues(clip, 'Bg', 'm_Scale'),
+    pageInfoX: tarotCurveValues(clip, 'Outside/PageInfo', 'm_AnchoredPosition.x'),
+    pageInfoAlpha: tarotCurveValues(clip, 'Outside/PageInfo', 'm_Alpha'),
+    closeAlpha: tarotCurveValues(clip, 'Outside/BtnClose', 'm_Alpha'),
+    rewardX: tarotCurveValues(clip, 'Outside/RewardPanel', 'm_AnchoredPosition.x'),
+    rewardAlpha: tarotCurveValues(clip, 'Outside/RewardPanel', 'm_Alpha'),
+  };
+}
+
+// The app enters the homepage through three official entrance variants: the
+// initial cover reveal, a return from another archive, and a cover-to-home
+// transition. Keep each clip's real key times instead of copying one timing
+// into every state.
+function tarotHomeEntranceTimings() {
+  const variants = {
+    opening: 'TarotBookRealMainPage_FadeIn.anim',
+    firstTime: 'TarotBookRealMainPage_FadeIn_FirstTime.anim',
+    returning: 'TarotBookRealMainPage_FadeIn_Switch.anim',
+    resume: 'TarotBookRealMainPage_FadeIn3.anim',
+  };
+  const out = {};
+  for (const [name, clip] of Object.entries(variants)) {
+    out[name] = {
+      root: tarotTiming(clip, 'Root', 'm_Alpha'),
+      screen: tarotTiming(clip, 'Bg/ScreenBg', 'm_Alpha'),
+      close: tarotTiming(clip, 'Outside/BtnClose', 'm_Alpha'),
+      pageInfo: tarotTiming(clip, 'Outside/PageInfo', 'm_Alpha'),
+      reward: tarotTiming(clip, 'Outside/RewardPanel', 'm_Alpha'),
+      desktop: tarotTiming(clip, 'Root/PanelContent/DesktopPanel', 'm_Alpha'),
+      pageInfoX: tarotCurveValues(clip, 'Outside/PageInfo', 'm_AnchoredPosition.x'),
+      rewardX: tarotCurveValues(clip, 'Outside/RewardPanel', 'm_AnchoredPosition.x'),
+      bottomBar: tarotTiming(clip, 'Bg/ScreenBg/BottomBar', 'm_Alpha'),
+      // Unity stores transform scales as vector strings; tarotCurveValues()
+      // coerces them to numbers, so preserve the raw key values for CSS.
+      screenScale: (tarotCurve(clip, 'Bg', '')?.keys ?? []).map((key) => ({ time: Number(key.time), value: key.value })),
+      desktopScale: (tarotCurve(clip, 'Root/PanelContent/DesktopPanel/Bg', '')?.keys ?? []).map((key) => ({ time: Number(key.time), value: key.value })),
+      backgroundAlpha: tarotTiming(clip, 'Bg', 'm_Alpha'),
+      goToPanel: tarotTiming(clip, 'Root/PanelContent/GoToPanel', 'm_Alpha'),
+      newMailHint: tarotTiming(clip, 'Root/PanelContent/DesktopPanel/NewMailHint', 'm_Alpha'),
+      newMailEff: tarotTiming(clip, 'Root/PanelContent/DesktopPanel/NewMailHint/IconPanel/EffLoop', '_TargetAlpha'),
+      outsideContent: tarotTiming(clip, 'Outside/Content', 'm_Alpha'),
+      effOpen: (() => {
+        const keys = (tarotCurve(clip, 'Bg/EffOpen', 'm_IsActive')?.keys ?? []).map((key) => ({
+          time: Number(key.time),
+          value: Number(key.value) || 0,
+        }));
+        const active = keys.find((key) => key.value) || keys[keys.length - 1];
+        const off = keys.find((key) => key.time > (active?.time ?? Infinity) && !key.value);
+        return {
+          keys,
+          delay: Number(keys[0]?.time ?? 0),
+          duration: Number((active?.time ?? keys[keys.length - 1]?.time ?? 0)) - Number(keys[0]?.time ?? 0),
+          activeTime: Number(active?.time ?? 0),
+          offDelay: Number(off?.time ?? active?.time ?? 0),
+        };
+      })(),
+      bgRootEff: (() => {
+        const keys = (tarotCurve(clip, 'Bg/ScreenBg/RevertMask/BgRoot/EffLoop', '_TargetAlpha')?.keys ?? []).map((key) => ({
+          time: Number(key.time),
+          value: Number(key.value) || 0,
+        }));
+        return {
+          keys,
+          delay: Number(keys[0]?.time ?? 0),
+          duration: Number(keys[keys.length - 1]?.time ?? 0) - Number(keys[0]?.time ?? 0),
+        };
+      })(),
+    };
+  }
+  return out;
+}
+
+function tarotSubtitleTiming() {
+  return tarotTiming(
+    'TarotBookRealMainPage_FadeIn.anim',
+    'Outside/PageInfo',
+    'm_AnchoredPosition.x',
+  );
+}
+
+function tarotCurveValues(clipName, path, attribute) {
+  const curve = tarotCurve(clipName, path, attribute);
+  const keys = curve?.keys ?? [];
+  return keys.map((key) => ({
+    time: Number(key.time),
+    value: Number(key.value) || 0,
+    offset: keys.length ? Number(key.time) - Number(keys[0].time) : 0,
+    percent: keys.length > 1 ? (Number(key.time) - Number(keys[0].time)) / (Number(keys[keys.length - 1].time) - Number(keys[0].time)) * 100 : 0,
+  }));
+}
+
+function tarotEulerValues(clipName, path, axis) {
+  const curve = tarotCurve(clipName, path, '');
+  if (!curve) return [];
+  const numbers = String(axis).split('.');
+  return (curve.keys ?? []).map((key) => ({
+    time: Number(key.time),
+    value: vectorAxis(key.value, numbers[numbers.length - 1]),
+  })).filter((key) => Number.isFinite(key.value));
+}
+
+// The bottom GoTo hint and the waiting spinner are separate official clips:
+// the hint expands HintPanel/Bg and MultiBg from the source scaleX value, while
+// the spinner rotates two rings once per 0.833333s cycle.
+function tarotBottomHintTiming() {
+  const clip = 'TarotBookBottomGoToHintFadeIn.anim';
+  const scale = (path) => tarotCurveValues(clip, path, '');
+  const bgScale = (tarotCurve(clip, 'HintPanel/Bg', '')?.keys ?? []).map((key) => ({
+    time: Number(key.time),
+    value: vectorAxis(key.value, 'x'),
+  }));
+  const multiBgScale = (tarotCurve(clip, 'HintPanel/MultiBg', '')?.keys ?? []).map((key) => ({
+    time: Number(key.time),
+    value: vectorAxis(key.value, 'x'),
+  }));
+  return {
+    bg: tarotTiming(clip, 'HintPanel/Bg', 'm_Alpha'),
+    text: tarotTiming(clip, 'HintPanel/TextPanel/HintText', 'm_Alpha'),
+    button: tarotTiming(clip, 'HintPanel/BtnPanel', 'm_Alpha'),
+    multiBg: tarotTiming(clip, 'HintPanel/MultiBg', 'm_Alpha'),
+    bgScale,
+    multiBgScale,
+  };
+}
+
+function tarotWaitingLoopTiming() {
+  const clip = 'TarotBookWaitingLoop.anim';
+  const rotation = (path) => (tarotCurve(clip, path, '')?.keys ?? []).map((key) => ({
+    time: Number(key.time),
+    value: vectorAxis(key.value, 'z'),
+  }));
+  const ring = rotation('Ring/RingRotate');
+  const light = rotation('Light/LightRotate');
+  const duration = Number(ring[ring.length - 1]?.time ?? 0) - Number(ring[0]?.time ?? 0);
+  return {
+    duration,
+    ringStart: Number(ring[0]?.value ?? 0),
+    ringEnd: Number(ring[ring.length - 1]?.value ?? 0),
+    lightStart: Number(light[0]?.value ?? 0),
+    lightEnd: Number(light[light.length - 1]?.value ?? 0),
+  };
+}
+
+// Official selectable-state clips share the same hashed node paths. The
+// highlighted/pressed pulse drives the visible selection ring, while the four
+// script RGBA channels supply the official disabled/pressed/selected palette.
+function tarotButtonStates() {
+  const read = (file) => {
+    const channels = {};
+    for (const clip of TAROT_SOURCE.animations || []) {
+      if (clip.file !== file) continue;
+      for (const curve of clip.curves || []) {
+        if (!curve.keys?.length) continue;
+        const value = Number(curve.keys[curve.keys.length - 1].value);
+        if (curve.attribute.startsWith('script_')) channels[curve.attribute] = value;
+        if (curve.attribute === 'm_IsActive' && curve.path === 'path_2774779617') {
+          channels.active = value;
+        }
+        if (curve.attribute === 'typetree_1574349066' && curve.path === 'path_2774779617') {
+          channels.pulse = (curve.keys || []).map((key) => ({
+            time: Number(key.time),
+            value: Number(key.value),
+          }));
+        }
+      }
+    }
+    return channels;
+  };
+  const states = Object.fromEntries(['Normal', 'Disabled', 'Highlighted', 'Pressed', 'Selected'].map((name) => [name, read(`${name}.anim`)]));
+  const parts = (channels) => {
+    const values = [channels.script_2526845255, channels.script_4215373228, channels.script_2334886179, channels.script_304273561]
+      .map((value) => Number(value ?? 0));
+    return {
+      rgba: values.join(' '),
+      rgb: values.slice(0, 3).join(' '),
+      alpha: values[3],
+      points: (channels.pulse || []).map((point, index) => ({
+        at: `${((point.time / (channels.pulse?.[channels.pulse.length - 1]?.time || 1)) * 100).toFixed(4)}%`,
+        value: point.value,
+      })),
+    };
+  };
+  return Object.fromEntries(Object.entries(states).map(([name, state]) => {
+    const color = parts(state);
+    return [name, {
+      ...color,
+      active: Number(state.active ?? 0),
+      pulse: state.pulse || [],
+      duration: state.pulse?.[state.pulse.length - 1]?.time ?? 0,
+    }];
+  }));
+}
+
+// The long-press signing flow is a separate official interaction. Its hashed
+// paths are preserved as raw nodes; only the four readable size/material curves
+// are mapped to a CSS overlay so no hashed data is silently interpreted.
+// PageFrame/Left|Right/Pattern use a single m_Color.a key each. Preserve the
+// source time as the exact off switch instead of folding it into the page fade.
+function tarotPageFramePatternTiming() {
+  const clips = ['TarotBookBookletPage_FadeIn.anim', 'TarotBookBookletPage_FadeIn3.anim', 'TarotBookBookletPage_FadeOut.anim'];
+  const read = (side) => Object.fromEntries(clips.map((file) => {
+    const curve = tarotCurve(file, `Root/PanelContent/MainBookPanel/PagePanel/PageFrame/${side}/Pattern`, 'm_Color.a');
+    const point = curve?.keys?.[0];
+    return [file, point ? {
+      time: Number(point.time),
+      value: Number(point.value),
+    } : null];
+  }));
+  return { left: read('Left'), right: read('Right') };
+}
+
+function tarotSignLongPress() {
+  const clip = 'TarotBookSignLongPressNew.anim';
+  const values = (path, attribute) => (tarotCurve(clip, path, attribute)?.keys ?? []).map((key) => ({
+    time: Number(key.time),
+    value: Number(key.value),
+  }));
+  const sizeX = values('path_2180234471', 'm_SizeDelta.x');
+  const sizeY = values('path_2180234471', 'm_SizeDelta.y');
+  const alpha = values('path_2762592850', 'material.897882559');
+  // The same RectTransform also carries a script pulse and anchored-position
+  // curves. Keep their hashed source paths instead of guessing their UI names.
+  const scriptPulse = values('path_2180234471', 'script_3127566275');
+  const anchorX = values('path_2180234471', 'm_AnchoredPosition.x');
+  const anchorY = values('path_2180234471', 'm_AnchoredPosition.y');
+  const duration = Number(sizeX[sizeX.length - 1]?.time ?? alpha[alpha.length - 1]?.time ?? 0);
+  return {
+    duration,
+    sizeX,
+    sizeY,
+    alpha,
+    scriptPulse,
+    anchorX,
+    anchorY,
+    widthStart: Number(sizeX[0]?.value ?? 0),
+    widthEnd: Number(sizeX[sizeX.length - 1]?.value ?? 0),
+    alphaStart: Number(alpha[0]?.value ?? 0),
+    alphaEnd: Number(alpha[alpha.length - 1]?.value ?? 0),
+  };
+}
+
+function tarotCatalogTiming() {
+  const clip = 'TBBookletCatalogContent_FadeIn.anim';
+  const rootY = tarotTiming(clip, 'Root', 'm_AnchoredPosition.y');
+  return {
+    root: tarotTiming(clip, 'Root', 'm_Alpha'),
+    rootY,
+    rootYValues: tarotCurveValues(clip, 'Root', 'm_AnchoredPosition.y'),
+    pageInfoValues: tarotCurveValues(clip, 'Root/PageInfo', 'm_AnchoredPosition.y'),
+    topTab: tarotTiming(clip, 'Root/TopTabArea', 'm_AnchoredPosition.y'),
+    topTabAlpha: tarotTiming(clip, 'Root/TopTabArea', 'm_Alpha'),
+    pageInfo: tarotTiming(clip, 'Root/PageInfo', 'm_AnchoredPosition.y'),
+    pageInfoAlpha: tarotTiming(clip, 'Root/PageInfo', 'm_Alpha'),
+    leftTab: tarotTiming(clip, 'Root/LeftTabArea', 'm_AnchoredPosition.y'),
+    leftTabAlpha: tarotTiming(clip, 'Root/LeftTabArea', 'm_Alpha'),
+    hint: tarotTiming(clip, 'ShortCutHintFullScreenPanel(Clone)', 'm_AnchoredPosition.y'),
+    hintValues: tarotCurveValues(clip, 'ShortCutHintFullScreenPanel(Clone)', 'm_AnchoredPosition.y'),
+    parAlpha: tarotTiming(clip, 'Bg/EffPanel/Par', 'material._MainColor.a'),
+    shineAlpha: tarotTiming(clip, 'Bg/EffPanel/Shine', 'material._MainColor.a'),
+    parValues: tarotCurveValues(clip, 'Bg/EffPanel/Par', 'material._MainColor.a'),
+    shineValues: tarotCurveValues(clip, 'Bg/EffPanel/Shine', 'material._MainColor.a'),
+    colors: tarotEffPanelRgb(clip),
+  };
+}
+
+function tarotBookletTiming() {
+  const clip = 'TarotBookBookletPage_FadeIn.anim';
+  return {
+    bookTab: tarotTiming(clip, 'Root/PanelContent/MainBookPanel/BookTabPanel', 'm_Alpha'),
+    functionPanel: tarotTiming(clip, 'Root/PanelContent/FunctionPanel', 'm_Alpha'),
+    backDeco: tarotTiming(clip, 'Root/PanelContent/MainBookPanel/Frame/BackItemDeco', 'm_Alpha'),
+    bookPage: tarotTiming(clip, 'Root/PanelContent/MainBookPanel/PagePanel/BookPage', 'm_Alpha'),
+    pageScale: tarotTiming(clip, 'Root/PanelContent/MainBookPanel/PagePanel/BookPage', 'm_Scale'),
+  };
+}
+
+// FadeOut is the fast booklet close used when returning to the catalogue;
+// FadeIn3 is the already-open booklet entrance used by a direct #volN route.
+function tarotBookletVariantTimings() {
+  const outClip = 'TarotBookBookletPage_FadeOut.anim';
+  const inClip = 'TarotBookBookletPage_FadeIn3.anim';
+  const initialClip = 'TarotBookBookletPage_FadeIn.anim';
+  const pagePath = 'Root/PanelContent/MainBookPanel/PagePanel/BookPage';
+  const tabPath = 'Root/PanelContent/MainBookPanel/BookTabPanel';
+  const infoPath = 'Outside/PageInfo';
+  const scaleKeys = (clip, path) => (TAROT_SOURCE.animations.find((item) => item.file === clip)?.curves || [])
+    .filter((item) => item.path === path && item.collection === 'm_ScaleCurves')
+    .flatMap((item) => item.keys.map((key) => ({ time: Number(key.time), value: key.value })));
+  const scaleX = (clip, path) => scaleKeys(clip, path).map((key) => ({
+    time: key.time,
+    value: vectorAxis(key.value, 'x'),
+  }));
+  const scaleXY = (clip, path) => scaleKeys(clip, path).map((key) => ({
+    time: key.time,
+    x: vectorAxis(key.value, 'x'),
+    y: vectorAxis(key.value, 'y'),
+  }));
+  const functionX = (clip) => tarotCurveValues(clip, 'Root/PanelContent/FunctionPanel/Root', 'm_AnchoredPosition.x');
+  const functionWidth = (clip) => tarotCurveValues(clip, 'Root/PanelContent/FunctionPanel/Root', 'm_SizeDelta.x');
+  return {
+    out: {
+      page: tarotReverseTiming(outClip, pagePath, 'm_Alpha'),
+      tab: tarotReverseTiming(outClip, tabPath, 'm_Alpha'),
+      btnPanel: tarotReverseTiming(outClip, 'Root/PanelContent/MainBookPanel/BtnPanel', 'm_Alpha'),
+      functionPanel: tarotReverseTiming(outClip, 'Root/PanelContent/FunctionPanel', 'm_Alpha'),
+      close: tarotReverseTiming(outClip, 'Outside/BtnClose', 'm_Alpha'),
+      back: tarotReverseTiming(outClip, 'Outside/BtnBack', 'm_Alpha'),
+      tabY: tarotCurveValues(outClip, tabPath, 'm_AnchoredPosition.y'),
+      pageInfo: tarotReverseTiming(outClip, infoPath, 'm_Alpha'),
+      pageInfoX: tarotCurveValues(outClip, infoPath, 'm_AnchoredPosition.x'),
+      functionX: functionX(outClip),
+      functionWidth: functionWidth(outClip),
+    },
+    directIn: {
+      page: tarotTiming(inClip, pagePath, 'm_Alpha'),
+      pageScale: scaleX(inClip, pagePath),
+      coverScale: scaleX(inClip, 'Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCoverPageContent(Clone)'),
+      catalogScale: scaleX(inClip, 'Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCatalogContent(Clone)'),
+      tab: tarotTiming(inClip, tabPath, 'm_Alpha'),
+      btnPanel: tarotTiming(inClip, 'Root/PanelContent/MainBookPanel/BtnPanel', 'm_Alpha'),
+      btnReset: tarotTiming(inClip, 'Root/PanelContent/MainBookPanel/BtnPanel/BtnReset', 'm_Alpha'),
+      functionPanel: tarotTiming(inClip, 'Root/PanelContent/FunctionPanel', 'm_Alpha'),
+      close: tarotTiming(inClip, 'Outside/BtnClose', 'm_Alpha'),
+      back: tarotTiming(inClip, 'Outside/BtnBack', 'm_Alpha'),
+      tabY: tarotCurveValues(inClip, tabPath, 'm_AnchoredPosition.y'),
+      pageInfo: tarotTiming(inClip, infoPath, 'm_Alpha'),
+      pageInfoX: tarotCurveValues(inClip, infoPath, 'm_AnchoredPosition.x'),
+      backDecoRotationZ: tarotEulerValues(inClip, 'Root/PanelContent/MainBookPanel/Frame/BackItemDeco', 'z'),
+      mainBookEnabled: tarotTiming(inClip, 'Root/PanelContent/MainBookPanel', 'm_Enabled'),
+      backDecoX: tarotCurveValues(inClip, 'Root/PanelContent/MainBookPanel/Frame/BackItemDeco', 'm_AnchoredPosition.x'),
+      backDecoY: tarotCurveValues(inClip, 'Root/PanelContent/MainBookPanel/Frame/BackItemDeco', 'm_AnchoredPosition.y'),
+      backShadowAlpha: tarotCurveValues(inClip, 'Root/PanelContent/MainBookPanel/Frame/BackItemDeco/Shadow', 'm_Alpha'),
+      abovePageAlpha: tarotCurveValues(inClip, 'Root/PanelContent/MainBookPanel/PagePanel/AbovePage', 'm_Alpha'),
+      functionX: functionX(inClip),
+      functionWidth: functionWidth(inClip),
+      pageFrameShadowAlpha: tarotCurveValues(inClip, 'Root/PanelContent/MainBookPanel/PagePanel/PageFrame/Shadow', 'm_Alpha'),
+      bookShadowAlpha: tarotCurveValues(inClip, 'Root/PanelContent/MainBookPanel/PagePanel/BookShadow', 'm_Alpha'),
+      leftSpineScale: scaleXY(inClip, 'Root/PanelContent/MainBookPanel/PagePanel/PageFrame/Left/SpinePge'),
+      rightSpineScale: scaleXY(inClip, 'Root/PanelContent/MainBookPanel/PagePanel/PageFrame/Right/SpinePge'),
+    },
+    initialIn: {
+      functionX: functionX(initialClip),
+      functionWidth: functionWidth(initialClip),
+      pageScale: scaleX(initialClip, pagePath),
+      coverScale: scaleX(initialClip, 'Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCoverPageContent(Clone)'),
+      catalogScale: scaleX(initialClip, 'Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCatalogContent(Clone)'),
+      leftSpineScale: scaleXY(initialClip, 'Root/PanelContent/MainBookPanel/PagePanel/PageFrame/Left/SpinePge'),
+      rightSpineScale: scaleXY(initialClip, 'Root/PanelContent/MainBookPanel/PagePanel/PageFrame/Right/SpinePge'),
+    },
+  };
+}
+
+function tarotVector(name) {
+  return TAROT_SOURCE.vectors?.[name] || null;
+}
+
+function tarotCoverTiming() {
+  const clip = 'TBBookletCoverPageContent_FadeIn.anim';
+  return {
+    root: tarotTiming(clip, 'Root', 'm_Alpha'),
+    rootY: tarotTiming(clip, 'Root', 'm_AnchoredPosition.y'),
+    topTab: tarotTiming(clip, 'Root/TopTabArea', 'm_AnchoredPosition.y'),
+    pageInfo: tarotTiming(clip, 'Root/PageInfo', 'm_AnchoredPosition.y'),
+    pageInfoAlpha: tarotTiming(clip, 'Root/PageInfo', 'm_Alpha'),
+    leftTab: tarotTiming(clip, 'Root/LeftTabArea', 'm_AnchoredPosition.y'),
+    leftTabAlpha: tarotTiming(clip, 'Root/LeftTabArea', 'm_Alpha'),
+    shortcutHint: tarotTiming(clip, 'ShortCutHintFullScreenPanel(Clone)', 'm_AnchoredPosition.y'),
+    parAlpha: tarotTiming(clip, 'Bg/EffPanel/Par', 'material._MainColor.a'),
+    shineAlpha: tarotTiming(clip, 'Bg/EffPanel/Shine', 'material._MainColor.a'),
+    pageInfoValues: tarotCurveValues(clip, 'Root/PageInfo', 'm_AnchoredPosition.y'),
+    shortcutValues: tarotCurveValues(clip, 'ShortCutHintFullScreenPanel(Clone)', 'm_AnchoredPosition.y'),
+    parValues: tarotCurveValues(clip, 'Bg/EffPanel/Par', 'material._MainColor.a'),
+    shineValues: tarotCurveValues(clip, 'Bg/EffPanel/Shine', 'material._MainColor.a'),
+    colors: tarotEffPanelRgb(clip),
+  };
+}
+
+function tarotStarPanelTiming() {
+  const clip = 'TarotBookStarPanelPage_FadeIn.anim';
+  const eulerOf = (curve, axis) => (curve?.keys ?? [])
+    .map((key) => ({
+      time: Number(key.time),
+      value: Number(String(key.value).match(new RegExp(`${axis}:\\s*([-\\d.e]+)`))?.[1] ?? 0),
+    }))
+    .filter((key) => Number.isFinite(key.value));
+  const euler = tarotCurve(clip, 'Root/CenterPanel/Content/StarContent', '');
+  const rotation = eulerOf(euler, 'z');
+  const effectEuler = tarotCurve(clip, 'Root/CenterPanel/Content/StarContentEff', '');
+  const effectRotation = eulerOf(effectEuler, 'z');
+  const rootAlpha = tarotTiming(clip, 'Root', 'm_Alpha');
+  const pageAlpha = tarotTiming(clip, 'Root/Page', 'm_Alpha');
+  const backAlpha = tarotTiming(clip, 'Outside/BtnBack', 'm_Alpha');
+  const pageInfo = tarotTiming(clip, 'Outside/PageInfo', 'm_Alpha');
+  const pageInfoX = tarotTiming(clip, 'Outside/PageInfo', 'm_AnchoredPosition.x');
+  const pageInfoXValues = tarotCurveValues(clip, 'Outside/PageInfo', 'm_AnchoredPosition.x');
+  const storyPanels = [];
+  for (let i = 1; i <= 12; i += 1) {
+    const path = `Root/CenterPanel/Content/StarContent/StoryStarPanel${i}/Progress`;
+    const timing = tarotTiming(clip, path, 'm_Alpha');
+    if (timing.keys.length) storyPanels.push({
+      ...timing,
+      values: tarotCurveValues(clip, path, 'm_Alpha'),
+    });
+  }
+  return {
+    star: tarotTiming(clip, 'Root/CenterPanel/Content/StarContent', 'm_Alpha'),
+    particleOpen: (tarotCurve(clip, 'Root/CenterPanel/Content/StarContentEff/ParticleOpen', 'm_IsActive')?.keys ?? []).map((key) => ({
+      time: Number(key.time),
+      value: Number(key.value) || 0,
+    })),
+    story: tarotTiming(clip, 'Root/CenterPanel/Content/StarContent/StoryStarPanel6/Progress', 'm_Alpha'),
+    rotation,
+    effectRotation,
+    rootAlpha,
+    pageAlpha,
+    backAlpha,
+    pageInfo,
+    pageInfoX,
+    pageInfoXValues,
+    storyPanels,
+  };
+}
+
+// Path-page exit follows TarotBookStarPanelPage_FadeOut.anim: the star canvas
+// fades/scales down while the official header slides left and disappears.
+function tarotStarPanelExitTimings() {
+  const clip = 'TarotBookStarPanelPage_FadeOut.anim';
+  const scaleCurve = tarotCurve(clip, 'Root/CenterPanel/Content/StarContent', 'm_Scale');
+  const scaleKeys = (scaleCurve?.keys ?? []).map((key) => ({
+    time: Number(key.time),
+    value: vectorAxis(key.value, 'x'),
+  }));
+  return {
+    all: {
+      star: tarotReverseTiming(clip, 'Root/CenterPanel/Content/StarContent', 'm_Alpha'),
+      starScale: scaleKeys.length >= 2 ? {
+        delay: scaleKeys[0].time,
+        duration: scaleKeys[scaleKeys.length - 1].time - scaleKeys[0].time,
+        values: scaleKeys.map((key) => key.value),
+      } : null,
+    },
+    normal: {
+      back: tarotReverseTiming(clip, 'Outside/BtnBack', 'm_Alpha'),
+      pageInfo: tarotReverseTiming(clip, 'Outside/PageInfo', 'm_Alpha'),
+      pageInfoX: tarotReverseTiming(clip, 'Outside/PageInfo', 'm_AnchoredPosition.x'),
+    },
+  };
+}
+
+function tarotBookletRefreshTiming() {
+  const outClip = 'TarotBookBookletPageRefresh_FadeOut.anim';
+  const inClip = 'TarotBookBookletPageRefresh_FadeIn.anim';
+  const backDecoPath = 'MainBookPanel/Frame/BackItemDeco';
+  const shadowPath = `${backDecoPath}/Shadow`;
+  return {
+    out: tarotTiming(outClip, 'MainBookPanel', 'm_Alpha'),
+    outLeftTab: tarotTiming(outClip, 'MainBookPanel/BookTabPanel/LeftTabArea', 'm_Alpha'),
+    outRightTab: tarotTiming(outClip, 'MainBookPanel/BookTabPanel/RightTabArea', 'm_Alpha'),
+    outBackDeco: tarotTiming(outClip, backDecoPath, 'm_Alpha'),
+    outBackShadow: tarotTiming(outClip, shadowPath, 'm_Color.a'),
+    in: tarotTiming(inClip, 'MainBookPanel', 'm_Alpha'),
+    inLeftTab: tarotTiming(inClip, 'MainBookPanel/BookTabPanel/LeftTabArea', 'm_Alpha'),
+    inRightTab: tarotTiming(inClip, 'MainBookPanel/BookTabPanel/RightTabArea', 'm_Alpha'),
+    inBackDeco: tarotTiming(inClip, backDecoPath, 'm_Alpha'),
+    inBackShadow: tarotTiming(inClip, shadowPath, 'm_Color.a'),
+  };
+}
+
+function tarotBookletBtnTiming() {
+  const clip = 'TarotBookBookletBtn_FadeIn.anim';
+  return {
+    ...tarotTiming(clip, 'Root', 'm_Alpha'),
+    sizeX: tarotTiming(clip, 'Root', 'm_SizeDelta.x'),
+    sizeXValues: tarotCurveValues(clip, 'Root', 'm_SizeDelta.x'),
+  };
+}
+
+// Booklet top tabs animate from separate official curves: root alpha, left X,
+// and right Y. Preserve each path and key time for CSS keyframes.
+function tarotTopBtnTiming() {
+  const clip = 'TarotBookBookletTopBtn_FadeIn.anim';
+  return {
+    root: tarotTiming(clip, 'Root', 'm_Alpha'),
+    leftX: tarotTiming(clip, 'LeftTabArea', 'm_AnchoredPosition.x'),
+    rightY: tarotTiming(clip, 'RightTabArea', 'm_AnchoredPosition.y'),
+    leftXValues: tarotCurveValues(clip, 'LeftTabArea', 'm_AnchoredPosition.x'),
+    rightYValues: tarotCurveValues(clip, 'RightTabArea', 'm_AnchoredPosition.y'),
+  };
+}
+
+function tarotStoryStarTiming() {
+  const clip = 'TarotBookStoryStarShow.anim';
+  const clipData = TAROT_SOURCE.animations.find((item) => item.file === clip);
+  const scaleCurve = (clipData?.curves || []).find((curve) => curve.path === 'Star' && curve.collection === 'm_ScaleCurves');
+  const scale = (scaleCurve?.keys ?? []).map((key) => ({
+    time: Number(key.time),
+    value: vectorAxis(key.value, 'x'),
+  }));
+  const alpha = tarotTiming(clip, 'Frame', 'm_Alpha');
+  return {
+    ...alpha,
+    scale,
+    scaleDelay: scale[0]?.time ?? 0,
+    scaleDuration: (scale[scale.length - 1]?.time ?? 0) - (scale[0]?.time ?? 0),
+    effActive: (tarotCurve(clip, 'Eff', 'm_IsActive')?.keys ?? []).map((key) => ({
+      time: Number(key.time),
+      value: Number(key.value) || 0,
+    })),
+  };
+}
+
+function tarotMaterialColors() {
+  const materials = TAROT_SOURCE.materials || {};
+  const out = {};
+  for (const [key, value] of Object.entries(materials)) {
+    if (!value || key === 'scene') continue;
+    if (value.css) {
+      out[key] = value.css;
+      continue;
+    }
+    if (!value.color) continue;
+    const [r, g, b] = value.color;
+    out[key] = `rgba(${r}, ${g}, ${b}, ${value.alpha})`;
+  }
+  return out;
+}
+
+function tarotSpriteSamples() {
+  const out = {};
+  for (const [key, value] of Object.entries(TAROT_SOURCE.sprites || {})) {
+    const alpha = value?.alpha || [];
+    const colors = value?.colors || [];
+    out[`${key}Alpha`] = alpha;
+    out[`${key}Colors`] = colors;
+  }
+  return out;
+}
+
+function tarotSceneColors() {
+  const scene = TAROT_SOURCE.materials?.scene || {};
+  return Object.fromEntries(Object.entries(scene).map(([name, value]) => [name, value?.css || 'transparent']));
+}
+
+// Average the unpacked texture samples into CSS-ready colors. The source is
+// sampled at build time; runtime still draws every particle with CSS only.
+function tarotTextureColors() {
+  const out = {};
+  for (const [name, texture] of Object.entries(TAROT_SOURCE.textures || {})) {
+    const samples = (texture?.colors || []).flat().filter((sample) => sample?.color?.length === 3);
+    if (!samples.length) continue;
+    const sum = samples.reduce((acc, sample) => {
+      acc.rgb[0] += Number(sample.color[0]) || 0;
+      acc.rgb[1] += Number(sample.color[1]) || 0;
+      acc.rgb[2] += Number(sample.color[2]) || 0;
+      acc.alpha += Number(sample.alpha) || 0;
+      return acc;
+    }, { rgb: [0, 0, 0], alpha: 0 });
+    const rgb = sum.rgb.map((channel) => Math.round(channel / samples.length));
+    const alpha = Math.min(1, Math.max(0, sum.alpha / samples.length));
+    out[name] = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${Number(alpha.toFixed(4))})`;
+  }
+  return out;
+}
+
+function tarotOutsideGeometry() {
+  const outside = TAROT_SOURCE.layout.hierarchy.outsideGeometry || {};
+  const pageInfo = TAROT_SOURCE.layout.hierarchy.pageInfoGeometry || {};
+  const bottom = TAROT_SOURCE.layout.hierarchy.bottomBar || {};
+  const bottomChildren = TAROT_SOURCE.layout.hierarchy.bottomBarGeometry || {};
+  return {
+    closeX: Number(outside.BtnClose?.x ?? 0),
+    closeY: Number(outside.BtnClose?.y ?? 0),
+    rewardY: Number(outside.RewardPanel?.y ?? 0),
+    contentY: Number(outside.Content?.y ?? 0),
+    rewardX: Number(TAROT_SOURCE.layout.hierarchy.panels?.BtnReward?.x ?? 0),
+    titleX: Number(pageInfo.Title?.x ?? 0) - Number(pageInfo.IconPanel?.x ?? 0),
+    titleY: Number(pageInfo.Title?.y ?? 0) - Number(pageInfo.IconPanel?.y ?? 0),
+    subtitleX: Number(pageInfo.TitleType?.x ?? 0) - Number(pageInfo.IconPanel?.x ?? 0),
+    subtitleY: Number(pageInfo.TitleType?.y ?? 0) - Number(pageInfo.IconPanel?.y ?? 0),
+    bottomBarX: Number(bottom.x ?? 0),
+    bottomBarY: Number(bottom.y ?? 0),
+    bottomBarTimeX: Number(bottomChildren.TimeText?.x ?? 0),
+    bottomBarTimeY: Number(bottomChildren.TimeText?.y ?? 0),
+    bottomBarCountX: Number(bottomChildren.CountText?.x ?? 0),
+    bottomBarCountY: Number(bottomChildren.CountText?.y ?? 0),
+  };
+}
+
+function tarotHomeGeometry() {
+  // FunctionList(0,60) is nested under DesktopPanel(0,-20); together they put
+  // the six-button grid 40 source units above the prefab center. Convert that
+  // local origin into CSS custom properties so layout stays source-driven.
+  const desktop = tarotPanelSource('DesktopPanel');
+  const list = tarotPanelSource('FunctionList');
+  const center = tarotPanelSource('CenterPanel');
+  const title = tarotPanelSource('Title');
+  const icon = tarotPanelSource('IconPanel');
+  const titleType = tarotPanelSource('TitleType');
+  const reward = tarotPanelSource('RewardPanel');
+  const go = tarotPanelSource('BtnGo');
+  const close = tarotPanelSource('BtnClose');
+  return {
+    originX: Number(desktop.x ?? 0) + Number(list.x ?? 0),
+    originY: Number(desktop.y ?? 0) + Number(list.y ?? 0),
+    bookY: Number(center.y ?? 0),
+    titleX: Number(title.x ?? 0) - Number(icon.x ?? 0),
+    titleY: Number(title.y ?? 0) - Number(icon.y ?? 0),
+    subtitleX: Number(titleType.x ?? 0) - Number(title.x ?? 0),
+    subtitleY: Number(titleType.y ?? 0) - Number(title.y ?? 0),
+    rewardY: Number(reward.y ?? 0),
+    goY: Number(go.y ?? 0),
+    closeY: Number(close.y ?? 0),
+  };
+}
+
+function tarotButtonVectors() {
+  return {
+    BtnBook: tarotVector('buttonBook'),
+    BtnStar: tarotVector('buttonStar'),
+    BtnPaper: tarotVector('buttonPaper'),
+    BtnWiki: tarotVector('buttonWiki'),
+    BtnMail: tarotVector('buttonMail'),
+    BtnMem: tarotVector('buttonMem'),
+  };
+}
+
+function tarotSpriteColors() {
+  const colors = TAROT_SOURCE.colors || {};
+  return Object.fromEntries(Object.entries(colors).map(([name, value]) => [name, value?.css || 'transparent']));
+}
+
+function tarotRewardVectors() {
+  return {
+    button: tarotVector('rewardButton'),
+    text: tarotVector('rewardTextBg'),
+    hintBackground: tarotVector('mailHintBg'),
+    hintDeco: tarotVector('mailHintDeco'),
+    hintStar: tarotVector('mailHintStar'),
+  };
+}
+
+function tarotChapterColors() {
+  const colors = TAROT_SOURCE.colors || {};
+  const chapters = ['1', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13'];
+  const keys = ['banner', 'circle', 'backCircle', 'deco', 'symbol', 'spSymbol', 'character'];
+  const result = {};
+  for (const chapter of chapters) {
+    const chapterKey = chapter === '01' ? '1' : chapter;
+    const entry = result[chapterKey] || (result[chapterKey] = {});
+    for (const key of keys) {
+      for (const suffix of ['', 'Active']) {
+        const name = 'chapter' + chapter + key + suffix;
+        // Some official card folders only ship the Active silhouette. Reusing
+        // that same source color is preferable to inventing an inactive shade.
+        entry[key + suffix] = colors[name]?.css || colors[name + 'Active']?.css || 'transparent';
+      }
+    }
+  }
+  return result;
+}
+
+function tarotChapterVectors() {
+  const chapters = ['1', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13'];
+  const keys = ['banner', 'circle', 'backCircle', 'deco', 'symbol', 'spSymbol'];
+  const activeKeys = ['symbol', 'spSymbol', 'character'];
+  const result = {};
+  for (const chapter of chapters) {
+    const chapterKey = chapter === '01' ? '1' : chapter;
+    const entry = result[chapterKey] || (result[chapterKey] = {});
+    for (const key of keys) {
+      entry[key] = tarotVector('chapter' + chapter + key) || tarotVector('chapter' + chapter + key + 'Active');
+      entry[key + 'Active'] = tarotVector('chapter' + chapter + key + 'Active');
+    }
+    for (const key of activeKeys) entry[key] = tarotVector('chapter' + chapter + key);
+  }
+  return result;
+}
+
+function tarotEntranceVectors() {
+  return {
+    background: tarotVector('entranceBg'),
+    backgroundGlow: tarotVector('entranceGlow'),
+    decoBottom: tarotVector('entranceDecoBot'),
+    decoCircle: tarotVector('entranceDecoCircle'),
+    decoTop: tarotVector('entranceDecoTop'),
+    icon: tarotVector('entranceIcon'),
+    replay: tarotVector('replayIcon'),
+    replayOutline: tarotVector('replayOutline'),
+    finish: tarotVector('endFinishIcon'),
+    downloadArrow: tarotVector('mainDownloadArrow'),
+    downloadBase: tarotVector('mainDownloadBase'),
+    crystal: tarotVector('crystalMini'),
+    rewardDeco: tarotVector('rewardDeco'),
+    rewardGet: tarotVector('rewardGet'),
+    endFinishBg: tarotVector('endFinishBg'),
+    entranceWaterShadow: tarotVector('entranceWaterShadow'),
+    entranceIcon1: tarotVector('entranceIcon1'),
+    entranceIcon2: tarotVector('entranceIcon2'),
+    menuGradient: tarotVector('menuGradient'),
+    openCrystalShadow: tarotVector('openCrystalShadow'),
+    entranceBgT2: tarotVector('entranceBgT2'),
+    entranceDecoBotT2: tarotVector('entranceDecoBotT2'),
+    entranceDecoCircleT2: tarotVector('entranceDecoCircleT2'),
+    entranceDecoTopT2: tarotVector('entranceDecoTopT2'),
+    dataStoryInnerOutline: tarotVector('dataStoryInnerOutline'),
+    dataStoryBg: tarotVector('dataStoryBg'),
+    dataStoryOutlineL: tarotVector('dataStoryOutlineL'),
+    dataStoryOutlineR: tarotVector('dataStoryOutlineR'),
+    roundDecoL: tarotVector('roundDecoL'),
+    roundDecoR: tarotVector('roundDecoR'),
+    cornerOutlineRight: tarotVector('cornerOutlineRight'),
+    imgShadow: tarotVector('imgShadow'),
+    coverCloud1: tarotVector('coverCloud1'),
+    coverPeople1: tarotVector('coverPeople1'),
+    hintStarDeco2: tarotVector('hintStarDeco2'),
+    autoBg: tarotVector('autoBg'),
+    book2: tarotVector('book2'),
+  };
+}
+
+function tarotHomeIconVariants() {
+  return {
+    BtnStar: [tarotVector('buttonStar2')],
+    BtnBook: [tarotVector('buttonBook1'), tarotVector('book2'), tarotVector('buttonBook4'), tarotVector('buttonBook5'), tarotVector('buttonBook6')],
+    BtnMail: [tarotVector('buttonMail2'), tarotVector('buttonMail3'), tarotVector('buttonMail4')],
+    BtnMem: [tarotVector('buttonMem2'), tarotVector('buttonMem3'), tarotVector('buttonMem4'), tarotVector('buttonMem5'), tarotVector('buttonMem6')],
+    BtnPaper: [tarotVector('buttonPaper2'), tarotVector('buttonPaper3'), tarotVector('buttonPaper4')],
+    BtnWiki: [tarotVector('buttonWiki2')],
+  };
+}
+
+function tarotWaitingVectors() {
+  return {
+    icon: tarotVector('waitingIcon'),
+    light: tarotVector('waitingLight'),
+    signDecoLine: tarotVector('signDecoLine'),
+    signLightLine: tarotVector('signLightLine'),
+    signLineOutline: tarotVector('signLineOutline'),
+    closeIcon: tarotVector('closeIcon'),
+    buttonDecoIcon: tarotVector('buttonDecoIcon'),
+    cardBack: tarotVector('cardBack'),
+    cardOutline: tarotVector('cardOutline'),
+    cardSelectOutline: tarotVector('cardSelectOutline'),
+    cardStar: tarotVector('cardStar'),
+    cardBg: tarotVector('cardBg'),
+    cardIcon: tarotVector('cardIcon'),
+    cardMask: tarotVector('cardMask'),
+    cardShadow: tarotVector('cardShadow'),
+    cardLightStar: tarotVector('cardLightStar'),
+    cardLightIcon: tarotVector('cardLightIcon'),
+    coverPagePattern: tarotVector('coverPagePattern'),
+    catalogBg: tarotVector('catalogBg'),
+    signPageBg: tarotVector('signPageBg'),
+    endPageDeco: tarotVector('endPageDeco'),
+    catalogItemMask: tarotVector('catalogItemMask'),
+    catalogItem13Mask: tarotVector('catalogItem13Mask'),
+    confirmBg: tarotVector('confirmBg'),
+    confirmCircle: tarotVector('confirmCircle'),
+    buttonPattern: tarotVector('buttonPattern'),
+    bookDecoItem: tarotVector('bookDecoItem'),
+    signCenterIcon: tarotVector('signCenterIcon'),
+    signCenterStar: tarotVector('signCenterStar'),
+    signDotPattern: tarotVector('signDotPattern'),
+    errorDialogBg: tarotVector('errorDialogBg'),
+    errorHintBg: tarotVector('errorHintBg'),
+    errorHintIcon: tarotVector('errorHintIcon'),
+    errorIconEff: tarotVector('errorIconEff'),
+    buttonComDeco1: tarotVector('buttonComDeco1'),
+    buttonComDeco2: tarotVector('buttonComDeco2'),
+    buttonLargePattern: tarotVector('buttonLargePattern'),
+    mailStarIcon: tarotVector('mailStarIcon'),
+    signBgLight: tarotVector('signBgLight'),
+    signBgPattern: tarotVector('signBgPattern'),
+    signDecoIcon: tarotVector('signDecoIcon'),
+    signLineBg: tarotVector('signLineBg'),
+    signLineEffect: tarotVector('signLineEffect'),
+    signLineOutlineGlow: tarotVector('signLineOutlineGlow'),
+    signCenterStarLight: tarotVector('signCenterStarLight'),
+    signPressCircle2: tarotVector('signPressCircle2'),
+    coverPageBg: tarotVector('coverPageBg'),
+    coverPageDecoItem: tarotVector('coverPageDecoItem'),
+    endPageBorder: tarotVector('endPageBorder'),
+    energyHintPattern: tarotVector('energyHintPattern'),
+    energyHintDecoPattern: tarotVector('energyHintDecoPattern'),
+    catalogSideDeco: tarotVector('catalogSideDeco'),
+    toastIcon: tarotVector('toastIcon'),
+    autoIcon: tarotVector('autoIcon'),
+    autoIconGlow: tarotVector('autoIconGlow'),
+    autoIconOutline: tarotVector('autoIconOutline'),
+    autoShadow: tarotVector('autoShadow'),
+    checkIcon: tarotVector('checkIcon'),
+    checkOutline: tarotVector('checkOutline'),
+    waitProgress: tarotVector('waitProgress'),
+    mailHintPanel: tarotVector('mailHintPanel'),
+    mainDecoRect: tarotVector('mainDecoRect'),
+    entranceBtnLine: tarotVector('entranceBtnLine'),
+    selectFrame: tarotVector('selectFrame'),
+    openBookHintTextBg: tarotVector('openBookHintTextBg'),
+    textUnderLine: tarotVector('textUnderLine'),
+    guideClickFrame: tarotVector('guideClickFrame'),
+    guideClickGlow: tarotVector('guideClickGlow'),
+    guideClickInnerGlow: tarotVector('guideClickInnerGlow'),
+    guideClickSolidBg: tarotVector('guideClickSolidBg'),
+    guideArrow: tarotVector('guideArrow'),
+    guideArrowTexture: tarotVector('guideArrowTexture'),
+    guideTalkFrame: tarotVector('guideTalkFrame'),
+    guideLight: tarotVector('guideLight'),
+    collectRewardDeco: tarotVector('collectRewardDeco'),
+    collectRewardDecoCenterCircle: tarotVector('collectRewardDecoCenterCircle'),
+    collectRewardMask: tarotVector('collectRewardMask'),
+    collectRewardNumbg: tarotVector('collectRewardNumbg'),
+    rewardAvatarMask: tarotVector('rewardAvatarMask'),
+    crystalItemGlow: tarotVector('crystalItemGlow'),
+    crystalItemIcon: tarotVector('crystalItemIcon'),
+    crystalItemImgmask: tarotVector('crystalItemImgmask'),
+    comHintPanelBg: tarotVector('comHintPanelBg'),
+    comToastStarDeco: tarotVector('comToastStarDeco'),
+    chartBookPaperBg: tarotVector('chartBookPaperBg'),
+    chartBookPaperBgLeft: tarotVector('chartBookPaperBgLeft'),
+    chartBookPaperBgShadow: tarotVector('chartBookPaperBgShadow'),
+    chartBookPaperBgShadowR: tarotVector('chartBookPaperBgShadowR'),
+    chartBookPaperTopPatternLeft: tarotVector('chartBookPaperTopPatternLeft'),
+    chartBookPaperTopPatternRight: tarotVector('chartBookPaperTopPatternRight'),
+    chartCatalogPaperBgLeft: tarotVector('chartCatalogPaperBgLeft'),
+    chartCatalogPaperBgLeftDeco: tarotVector('chartCatalogPaperBgLeftDeco'),
+    chartCatalogPaperBgRight: tarotVector('chartCatalogPaperBgRight'),
+    chartTitleDeco: tarotVector('chartTitleDeco'),
+    chartCataTabDeco: tarotVector('chartCataTabDeco'),
+    chartCataTabOutline: tarotVector('chartCataTabOutline'),
+    chartTabBgShadow: tarotVector('chartTabBgShadow'),
+    chartTabDecoIcon: tarotVector('chartTabDecoIcon'),
+    chartTabFinishIcon: tarotVector('chartTabFinishIcon'),
+    chartTabLockIcon: tarotVector('chartTabLockIcon'),
+    chartTabOutline: tarotVector('chartTabOutline'),
+    chartTabOutlineR: tarotVector('chartTabOutlineR'),
+    chartTabPattern: tarotVector('chartTabPattern'),
+    questRewardTabLine: tarotVector('questRewardTabLine'),
+    questRewardTabLineCopy: tarotVector('questRewardTabLineCopy'),
+    questRewardTabOutline: tarotVector('questRewardTabOutline'),
+    pageNextBtnOutline: tarotVector('pageNextBtnOutline'),
+    talkTabFrame: tarotVector('talkTabFrame'),
+    collectRewardDecoCenter: tarotVector('collectRewardDecoCenter'),
+    collectRewardDecoCenterBg: tarotVector('collectRewardDecoCenterBg'),
+    collectRewardDecoCenterBgCircle: tarotVector('collectRewardDecoCenterBgCircle'),
+    rewardItemBg: tarotVector('rewardItemBg'),
+    rewardItemOutline: tarotVector('rewardItemOutline'),
+    reviewBtnBg: tarotVector('reviewBtnBg'),
+    reviewBtnIcon: tarotVector('reviewBtnIcon'),
+    unloadBtnBg: tarotVector('unloadBtnBg'),
+    mimiBookDeco1: tarotVector('mimiBookDeco1'),
+    mimiBookDeco3: tarotVector('mimiBookDeco3'),
+    mimiBookDeco41: tarotVector('mimiBookDeco41'),
+    mimiBookDeco42: tarotVector('mimiBookDeco42'),
+    mimiBookDeco43: tarotVector('mimiBookDeco43'),
+    mimiTalkBtnChooseBg: tarotVector('mimiTalkBtnChooseBg'),
+    mimiTalkChooseDeco: tarotVector('mimiTalkChooseDeco'),
+    mimiTalkChooseIcon: tarotVector('mimiTalkChooseIcon'),
+    mimiTalkPanelArrow: tarotVector('mimiTalkPanelArrow'),
+    mimiTalkPanelBgDeco: tarotVector('mimiTalkPanelBgDeco'),
+    mimiTalkPanelHintArrow: tarotVector('mimiTalkPanelHintArrow'),
+    mimiTalkPanelOutline: tarotVector('mimiTalkPanelOutline'),
+  };
+}
+
+function tarotMailHintTiming() {
+  const fade = 'TarotBookMailHintFadeIn.anim';
+  const loop = 'TarotBookMailHintLoop.anim';
+  return {
+    icon: tarotTiming(fade, 'IconPanel', 'm_Alpha'),
+    iconScale: tarotTiming(fade, 'IconPanel', 'm_Scale'),
+    button: tarotTiming(fade, 'BtnGo', 'm_Alpha'),
+    eff: tarotTiming(fade, 'IconPanel/EffLoop', '_TargetAlpha'),
+    dotRotation: tarotTiming(loop, 'DotHint', ''),
+    dotRotationValues: (() => {
+      const curve = tarotCurve(loop, 'DotHint', '');
+      return (curve?.keys || []).map((key) => ({ time: Number(key.time), value: vectorAxis(key.value, 'z') }));
+    })(),
+    wave1: tarotTiming(loop, 'Wave1', 'm_Color.a'),
+    wave2: tarotTiming(loop, 'Wave2', 'm_Color.a'),
+    wave1Values: tarotCurveValues(loop, 'Wave1', 'm_Color.a'),
+    wave2Values: tarotCurveValues(loop, 'Wave2', 'm_Color.a'),
+    wave1Scale: tarotEulerValues(loop, 'Wave1', 'x'),
+    wave2Scale: tarotEulerValues(loop, 'Wave2', 'x'),
+  };
+}
+
+function tarotCatalogDecorations() {
+  return {
+    background: tarotVector('catalogBgDeco'),
+    item: tarotVector('catalogItem'),
+    corner: tarotVector('catalogCorner'),
+    background13: tarotVector('catalogBgDeco13'),
+    item13: tarotVector('catalogItem13'),
+  };
+}
+
+function tarotCoverDecorations() {
+  return {
+    centerDeco1: tarotVector('coverCenterDeco1'),
+    centerDeco2: tarotVector('coverCenterDeco2'),
+    cloud: tarotVector('coverCloud'),
+    fire: tarotVector('coverFire'),
+    people: tarotVector('coverPeople'),
+    mainRing: tarotVector('mainRing'),
+    catalogTextDeco: tarotVector('catalogTextDeco'),
+    catalogItemIcon: tarotVector('catalogItemIcon'),
+  };
+}
+
+function tarotStarPanelVectors() {
+  return {
+    emptyStar: tarotVector('starItemEmptyStar'),
+    lightStar: tarotVector('starItemLightStar'),
+    outline4px: tarotVector('starItemOutline4px'),
+    lightOutline: tarotVector('starLightItemOutline'),
+    itemCircle: tarotVector('starItemCircle'),
+    frame: tarotVector('mainScreenFrame'),
+    frame2: tarotVector('mainScreenFrame2'),
+    subFrame: tarotVector('subScreenFrame'),
+    cardBack: tarotVector('starPanelCardBack'),
+    cardFront: tarotVector('starPanelCardFront'),
+    cardCenterBack: tarotVector('starPanelCardCenterBack'),
+    cardCenterItem: tarotVector('starPanelCardCenterItem'),
+    cardCenterSun: tarotVector('starPanelCardCenterSun'),
+    cardIcon: tarotVector('starPanelCardIcon'),
+    cardUpDotBg: tarotVector('cardUpDotBg'),
+    cardUpHalfCircle: tarotVector('cardUpHalfCircle'),
+    cardUpPattern: tarotVector('cardUpPattern'),
+    catalog13CardMask: tarotVector('catalog13CardMask'),
+    switchMailIcon: tarotVector('switchMailIcon'),
+    switchMailOutline2: tarotVector('switchMailOutline2'),
+    switchMailOutline3: tarotVector('switchMailOutline3'),
+  };
+}
+
+function tarotUiLayerVectors() {
+  return {
+    rewardButtonBgRing: tarotVector('rewardButtonBgRing'),
+    diamondPattern: tarotVector('diamondPattern'),
+    titleDecoItem: tarotVector('titleDecoItem'),
+    buttonDecoItem: tarotVector('buttonDecoItem'),
+    storyBgOutline: tarotVector('storyBgOutline'),
+    storyFinishIcon: tarotVector('storyFinishIcon'),
+    storyHintIcon: tarotVector('storyHintIcon'),
+    storyLeftDeco: tarotVector('storyLeftDeco'),
+    storyRightDeco: tarotVector('storyRightDeco'),
+    chartCataTabBg: tarotVector('chartCataTabBg'),
+    chartTabBg: tarotVector('chartTabBg'),
+    roundBrownDecoL: tarotVector('roundBrownDecoL'),
+    roundBrownDecoR: tarotVector('roundBrownDecoR'),
+    energyOrb: tarotVector('energyOrb'),
+    mainSwitchIcon: tarotVector('mainSwitchIcon'),
+    mainMailIcon: tarotVector('mainMailIcon'),
+    mimiBookDeco2: tarotVector('mimiBookDeco2'),
+    mimiBookDeco5: tarotVector('mimiBookDeco5'),
+    mimiTalkDeco: tarotVector('mimiTalkDeco'),
+    mimiTalkPanelBg: tarotVector('mimiTalkPanelBg'),
+    nextPageBg: tarotVector('nextPageBg'),
+    openBookCardBg: tarotVector('openBookCardBg'),
+    rewardDecoRect: tarotVector('rewardDecoRect'),
+    rewardDecoRect2: tarotVector('rewardDecoRect2'),
+    rewardDecoRect3: tarotVector('rewardDecoRect3'),
+    signLightStar: tarotVector('signLightStar'),
+  };
+}
+
+function tarotStarRings() {
+  const rings = TAROT_SOURCE.layout.hierarchy.starRings || [];
+  return Object.fromEntries(rings.map((ring) => [ring.name, {
+    x: Number(ring.x ?? 0),
+    y: Number(ring.y ?? 0),
+    scaleX: Number(ring.scale?.[0] ?? 1),
+    scaleY: Number(ring.scale?.[1] ?? 1),
+  }]));
+}

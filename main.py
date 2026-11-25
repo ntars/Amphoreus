@@ -10,6 +10,7 @@
     python3 main.py install      装成开机自启（launchd）
     python3 main.py uninstall    卸掉开机自启
     python3 main.py once N       只推进 N 拍然后退出，用于验证
+    python3 main.py check        回归自检 + 服务冒烟，不碰真实世界
 
 设计上只做调度，不碰模拟与叙事。
 """
@@ -18,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import shutil
 import signal
 import subprocess
 import sys
@@ -202,6 +204,81 @@ def do_once(n: int) -> int:
     return 0
 
 
+def do_check() -> int:
+    """一条命令验证：语法、源码链、端到端回归、真实 HTTP 冒烟、运行时零图片。"""
+    import json
+    import tempfile
+    import urllib.request
+
+    rc = subprocess.run(
+        [sys.executable, "-m", "compileall", "-q", str(ROOT / "amphoreus"),
+         str(ROOT / "tools"), str(ROOT / "main.py")],
+        cwd=str(ROOT),
+    ).returncode
+    if rc:
+        return rc
+    if shutil.which("node"):
+        source_check = ROOT / "tools" / "verify_tarot_source.cjs"
+        rc = subprocess.run(["node", str(source_check)], cwd=str(ROOT)).returncode
+        if rc:
+            print("TarotBook 源码链检查失败。")
+            return rc
+        print("TarotBook 源码链检查通过。")
+    rc = subprocess.run([sys.executable, "-m", "tools.selftest"], cwd=str(ROOT)).returncode
+    if rc:
+        return rc
+
+    # 用随机高端口和临时数据库，避免碰真实世界或占用默认端口。
+    import socket
+    with socket.socket() as s:
+        s.bind(("127.0.0.1", 0))
+        port = s.getsockname()[1]
+    cfg = C.load()
+    cfg.web.port = port
+    with tempfile.TemporaryDirectory(prefix="amphoreus-http-") as td:
+        store = Store(Path(td) / "world.db")
+        srv = Server(cfg, store, C.WEB_DIR)
+        try:
+            srv.start(background=True)
+            paths = (
+                "/", "/book", "/style.css", "/app.js", "/codex.css", "/codex.js",
+                "/codex-source.js", "/codex-art.js", "/codex-portraits.js",
+                "/api/state", "/api/events", "/api/ledger", "/api/canon",
+                "/api/archive", "/api/archive/volume?chapter=13", "/api/warden",
+            )
+            for path in paths:
+                with urllib.request.urlopen(f"http://{cfg.web.host}:{port}{path}", timeout=5) as r:
+                    body = r.read()
+                    if r.status != 200 or not body:
+                        raise RuntimeError(f"HTTP {path} 返回异常")
+                    if path.startswith("/api/"):
+                        json.loads(body)
+        except Exception as exc:
+            print(f"服务冒烟失败：{exc}")
+            return 1
+        finally:
+            srv.stop()
+    print("服务冒烟通过。")
+    if shutil.which("node"):
+        runtime_check = ROOT / "tools" / "runtime_no_images.cjs"
+        env = os.environ.copy()
+        env["AMPHOREUS_URL"] = f"http://{cfg.web.host}:{port}/book"
+        # 上面的临时服务已停止；复用同端口启动只用于浏览器检查，仍不碰真实世界。
+        with tempfile.TemporaryDirectory(prefix="amphoreus-runtime-") as td:
+            runtime_store = Store(Path(td) / "world.db")
+            runtime_srv = Server(cfg, runtime_store, C.WEB_DIR)
+            try:
+                runtime_srv.start(background=True)
+                rc = subprocess.run(["node", str(runtime_check)], cwd=str(ROOT), env=env).returncode
+            finally:
+                runtime_srv.stop()
+        if rc:
+            print("运行时零图片检查失败。")
+            return rc
+        print("运行时零图片检查通过。")
+    return 0
+
+
 def do_reset() -> int:
     if not DB.exists():
         print("没有可重置的世界。")
@@ -281,6 +358,7 @@ def main() -> int:
     sub.add_parser("uninstall", help="取消开机自启")
     p_once = sub.add_parser("once", help="只推进若干拍")
     p_once.add_argument("n", type=int, nargs="?", default=1)
+    sub.add_parser("check", help="回归自检 + 服务冒烟（不碰真实世界）")
 
     args = ap.parse_args()
     cmd = args.cmd or "start"
@@ -301,6 +379,8 @@ def main() -> int:
         return do_uninstall()
     if cmd == "once":
         return do_once(args.n)
+    if cmd == "check":
+        return do_check()
     ap.print_help()
     return 1
 

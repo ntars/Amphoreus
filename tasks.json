@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "manual": "Amphoreus Web 复刻开发手册 v2.0",
+  "tasks": [
+    {
+      "id": "T0.1",
+      "stage": "M0",
+      "title": "归档旧代码到 attic",
+      "files": ["attic/2026-11-legacy"],
+      "verify": "ls attic/2026-11-legacy",
+      "status": "blocked",
+      "note": "工作树含用户未提交改动；不执行 git mv，避免破坏现有状态"
+    },
+    {
+      "id": "T0.2",
+      "stage": "M0",
+      "title": "建目录骨架",
+      "files": ["app", "tools/lib", "docs", "dump", "verify/shots"],
+      "verify": "test -d app && test -d tools/lib && test -d dump",
+      "status": "done"
+    },
+    {
+      "id": "T0.3",
+      "stage": "M0",
+      "title": "写 .gitignore",
+      "files": [".gitignore"],
+      "verify": "git status --short | grep -v '^?? dump/' | grep -v '^?? app/assets/'",
+      "status": "done"
+    },
+    {
+      "id": "T0.4",
+      "stage": "M0",
+      "title": "写 BASELINE.md",
+      "files": ["docs/BASELINE.md"],
+      "verify": "test -s docs/BASELINE.md",
+      "status": "done"
+    },
+    {
+      "id": "T0.5",
+      "stage": "M0",
+      "title": "环境自检",
+      "files": ["tools/env_check.mjs"],
+      "verify": "node tools/env_check.mjs",
+      "status": "done"
+    },
+    {
+      "id": "T0.8",
+      "stage": "M0",
+      "title": "零依赖 CDP 驱动与测试",
+      "files": ["tools/lib/cdp.mjs", "tools/lib/cdp.test.mjs"],
+      "verify": "node tools/lib/cdp.test.mjs",
+      "status": "done"
+    },
+    {
+      "id": "T0.9",
+      "stage": "M0",
+      "title": "门禁三态出口与测试",
+      "files": ["tools/lib/gate.mjs", "tools/lib/gate.test.mjs"],
+      "verify": "node tools/lib/gate.test.mjs",
+      "status": "done"
+    },
+    {
+      "id": "T0.6",
+      "stage": "M0",
+      "title": "冒烟脚本",
+      "files": ["tools/smoke.mjs"],
+      "verify": "node tools/smoke.mjs --state entrance --allow-missing",
+      "status": "blocked",
+      "note": "需要 app 静态服务器就绪；M4 前允许空页"
+    },
+    {
+      "id": "T0.7",
+      "stage": "M0",
+      "title": "门禁骨架",
+      "files": ["tools/verify_geometry.mjs", "tools/verify_clips.mjs", "tools/verify_states.mjs", "tools/verify_assets.mjs"],
+      "verify": "node tools/run_all.mjs",
+      "status": "done"
+    },
+    {
+      "id": "T0.10",
+      "stage": "M0",
+      "title": "任务卡自检",
+      "files": ["tools/agent/lint_tasks.mjs"],
+      "verify": "node tools/agent/lint_tasks.mjs tasks.json",
+      "status": "done"
+    },
+    {
+      "id": "T1.1",
+      "stage": "M1",
+      "title": "从复制 block 导出 RectTransform 树",
+      "files": ["tools/import_unitypy_dump.py", "dump/entrance.json"],
+      "verify": "python3 tools/import_unitypy_dump.py --state entrance --root-transform 546751728318039107 --block 5320cb981bb270df4950407fb5853c71.block",
+      "status": "partial",
+      "note": "23 个节点；未达到 50 节点门禁"
+    },
+    {
+      "id": "T1.2",
+      "stage": "M1",
+      "title": "十个状态均取得证据完整 dump",
+      "files": ["dump/*.json", "docs/STATES.md"],
+      "verify": "node tools/check_dump.mjs dump/",
+      "status": "blocked",
+      "note": "禁止用截图或猜坐标补齐"
+    }
+  ]
+}

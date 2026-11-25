@@ -1,0 +1,14 @@
+{
+  "baseline": "docs/screenshots/baseline/home.png",
+  "current": "docs/screenshots/current/cur3-home.png",
+  "size": [
+    1280,
+    800
+  ],
+  "threshold": 2,
+  "changed_pixels": 1023881,
+  "total_pixels": 1024000,
+  "diff_rate": 0.999884,
+  "mean_abs_channel_diff": 61.8774,
+  "exact": false
+}

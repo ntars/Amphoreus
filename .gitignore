@@ -15,3 +15,20 @@ __MACOSX/
 
 .venv/
 venv/
+
+# Amphoreus Web v2.0 source-derived build
+dump/
+app/assets/
+app/css/clips/
+verify/shots/
+node_modules/
+
+# 迭代截图与外部参考素材（体积大，不入库）
+docs/screenshots/review/
+docs/screenshots/current/
+tools/reference/
+web/assets/codex/
+
+# 本地工作与智能体数据
+.workbuddy/
+.learnings/
