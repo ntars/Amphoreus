@@ -1,0 +1,38 @@
+{
+  "name": "UI_TarotBookSiri_1003_Trail",
+  "kind": "Trail",
+  "sourceFile": "UI_TarotBookSiri_1003_Trail.json",
+  "sha1": "8844dd314bc72d1fd620944d2fd54f58bbf74da9",
+  "floats": {
+    "_CL": 1,
+    "_Cull": 0,
+    "_DstBlend": 10,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 1.5,
+      "a": 1
+    },
+    "_MaskChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

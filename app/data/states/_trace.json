@@ -1,0 +1,3977 @@
+[
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance1/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 8,
+      "t": 0,
+      "w": 0,
+      "h": 78
+    },
+    "resolved": [
+      236,
+      78
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance1/Root/TextPanel/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      216,
+      10
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance1/Root/TextPanel/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      140,
+      16.15
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance1/Root/TextPanel/TextPanel/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      216,
+      10
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance2/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 8,
+      "t": 0,
+      "w": 0,
+      "h": 78
+    },
+    "resolved": [
+      204,
+      78
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance2/Root/TextPanel/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      184,
+      10
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance2/Root/TextPanel/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      16.15
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance2/Root/TextPanel/TextPanel/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      184,
+      10
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 172,
+      "t": 15,
+      "w": 0,
+      "h": 64
+    },
+    "resolved": [
+      196,
+      64
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      132,
+      50
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -25,
+      "w": 0,
+      "h": 50
+    },
+    "resolved": [
+      132,
+      50
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/TextPanel/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      10
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/MainText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      44
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/MainText/DecoArrow",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/MainText/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      16.15
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/MainText/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -12,
+      "w": 80,
+      "h": 12
+    },
+    "resolved": [
+      168,
+      12
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": -24,
+      "t": 15,
+      "w": 196,
+      "h": 30.8
+    },
+    "resolved": [
+      196,
+      79.8
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      132,
+      50
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -25,
+      "w": 0,
+      "h": 50
+    },
+    "resolved": [
+      132,
+      50
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/TextPanel/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      10
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/MainText/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -12,
+      "w": 140,
+      "h": 12
+    },
+    "resolved": [
+      168,
+      12
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/RewardPanel/BtnReward",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 40.0002,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      169.5
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/RewardPanel/BtnReward/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      88,
+      88
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/RewardPanel/BtnReward/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      100,
+      33
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/RewardPanel/BtnReward/TextPanel/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      33
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/RewardPanel/BtnReward/TextPanel/Root/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      100,
+      18.05
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/HintPanel/Root/DescrText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 24.5,
+      "t": 13,
+      "w": 407,
+      "h": 22
+    },
+    "resolved": [
+      774,
+      22
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/SwitchPanel/BtnSwitch/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      310,
+      52
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/SwitchPanel/BtnSwitch/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      229,
+      60
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PanelContent/SwitchPanel/BtnSwitch/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      160,
+      38
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      19
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      84,
+      34
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/TopBtnList",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      53.5
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/TopBtnList/BtnRuleTip_ResBar",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      32
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/TopBtnList/BtnRuleTip_ResBar/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      28,
+      28
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/TopBtnList/BtnRuleTip_ResBar/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      8
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/TopBtnList/BtnRuleTip_ResBar/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      17.1
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/ResBarArea",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      34
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/ResBarArea/KeyMapZoom",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      40,
+      32
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/ResBarArea/KeyMapZoom/Bg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 40,
+      "t": -1,
+      "w": 0,
+      "h": 34
+    },
+    "resolved": [
+      4,
+      34
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/ResBarArea/KeyMapZoom/Bg/FrameBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": -4,
+      "t": 0,
+      "w": -8,
+      "h": 34
+    },
+    "resolved": [
+      4,
+      34
+    ]
+  },
+  {
+    "state": "entrance",
+    "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/ResBarArea/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/FunctionList/BtnWiki/Root/TextPanel/FunctionName",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 220,
+      "h": 54
+    },
+    "resolved": [
+      380,
+      54
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/NewMailHint/BtnGo/TextPanel/Blank",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      6,
+      0
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/NewMailHint/BtnGo/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      48
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/NewMailHint/BtnGo/TextPanel/Blank",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      6,
+      0
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Root/PanelContent/GoToPanel/HintPanel/BtnPanel/BtnGo/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -18,
+      "w": 0,
+      "h": 36
+    },
+    "resolved": [
+      36,
+      36
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      1921.9968,
+      1081.1097
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/Content/SwitchPanel/BtnSwitch/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      310,
+      52
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/Content/SwitchPanel/BtnSwitch/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      229,
+      60
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/Content/SwitchPanel/BtnSwitch/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      160,
+      38
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/RewardPanel/BtnReward",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 89,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      194.5
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/RewardPanel/BtnReward/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      120
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/RewardPanel/BtnReward/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      100,
+      33
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/RewardPanel/BtnReward/TextPanel/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      33
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/RewardPanel/BtnReward/TextPanel/Root/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      100,
+      18.05
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "catalog",
+    "path": "TarotBookRealMainPage/Outside/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      17.1
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/LeftTabArea",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1073.5,
+      "t": 565.453,
+      "w": 110,
+      "h": 0
+    },
+    "resolved": [
+      110,
+      65
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 202,
+      "h": 80
+    },
+    "resolved": [
+      224,
+      80
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      102,
+      0
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      102,
+      4.56
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page7/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page6/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page5/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page4/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page3/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page2/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page1/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page0/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/FinishText/DecoLineL",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      16,
+      4
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/FinishText/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      54,
+      17.1
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/FinishText/DecoLineR",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      16,
+      4
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 12,
+      "t": 0,
+      "w": 1082,
+      "h": 88
+    },
+    "resolved": [
+      1082,
+      129.5
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      19
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel/KeyMapHIntInfo/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 4,
+      "t": 0,
+      "w": 80,
+      "h": 80
+    },
+    "resolved": [
+      120,
+      80
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 16,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      311.0001,
+      56
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -28,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      176,
+      56
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1160,
+      "t": 16.0001,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      311.0001,
+      56
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -28,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      176,
+      56
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": -8,
+      "t": 16,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      112,
+      56
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      308,
+      296.5
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1168,
+      "t": 16,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      112,
+      56
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      308,
+      296.5
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      1921.9968,
+      1081.1097
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Outside/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletCover",
+    "path": "TarotBookBookletPage/Outside/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      140,
+      17.1
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/LeftTabArea",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1073.5,
+      "t": 565.453,
+      "w": 110,
+      "h": 0
+    },
+    "resolved": [
+      110,
+      65
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 202,
+      "h": 80
+    },
+    "resolved": [
+      224,
+      80
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      102,
+      0
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      80,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      102,
+      4.56
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page7/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page6/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page5/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page4/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page3/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page2/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page1/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page0/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 191.375,
+      "t": 305.7265,
+      "w": 160,
+      "h": 30
+    },
+    "resolved": [
+      396,
+      34.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/FinishText/DecoLineL",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      16,
+      4
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/FinishText/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      54,
+      17.1
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/FinishText/DecoLineR",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      16,
+      4
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 12,
+      "t": 0,
+      "w": 1082,
+      "h": 88
+    },
+    "resolved": [
+      1082,
+      129.5
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      19
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel/KeyMapHIntInfo/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 4,
+      "t": 0,
+      "w": 80,
+      "h": 80
+    },
+    "resolved": [
+      120,
+      80
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 16,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      311.0001,
+      56
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -28,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      176,
+      56
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1160,
+      "t": 16.0001,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      311.0001,
+      56
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -28,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      176,
+      56
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": -8,
+      "t": 16,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      112,
+      56
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      308,
+      296.5
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1168,
+      "t": 16,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      112,
+      56
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      308,
+      296.5
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text/BackText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text/DecoText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0,
+      6
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      1921.9968,
+      1081.1097
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Outside/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "bookletPage",
+    "path": "TarotBookBookletPage/Outside/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      140,
+      17.1
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/BookPanel/BtnPanel/BtnReview",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1016,
+      "t": 605,
+      "w": 0,
+      "h": 56
+    },
+    "resolved": [
+      110,
+      56
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/BookPanel/BtnPanel/BtnReview/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -16,
+      "w": 0,
+      "h": 32
+    },
+    "resolved": [
+      40,
+      32
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/BookPanel/BtnPanel/BtnReview/TextPanel/IconPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -16,
+      "w": 0,
+      "h": 32
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/BookPanel/BtnPanel/BtnReview/TextPanel/IconPanel/NeedHideRoot",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      32
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/BookPanel/BtnPanel/BtnReview/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -16,
+      "w": 0,
+      "h": 32
+    },
+    "resolved": [
+      40,
+      32
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 480,
+      "t": 485,
+      "w": 600,
+      "h": 0
+    },
+    "resolved": [
+      760,
+      622.2
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel/TextPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      514,
+      124
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel/TextPanel/DescrText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      200,
+      19
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel/HintPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 740,
+      "t": 12,
+      "w": 0,
+      "h": 30
+    },
+    "resolved": [
+      44,
+      30
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel/HintPanel/HintText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      36,
+      13.68
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel/HintPanel/Arrow",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      24,
+      24
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/DialogueSelectPanel/ListPanel/Content/LeftTabArea/ListTitle/Left",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      72,
+      2
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/DialogueSelectPanel/ListPanel/Content/LeftTabArea/ListTitle/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      72,
+      17.1
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/DialogueSelectPanel/ListPanel/Content/LeftTabArea/ListTitle/Right",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      72,
+      2
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": -0.0001,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      1922.0209,
+      1081.1232
+    ]
+  },
+  {
+    "state": "talk",
+    "path": "TarotBookMimiTalkPage/Outside/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0.6667,
+      "w": 80.6667,
+      "h": 24.6667
+    },
+    "resolved": [
+      120,
+      24.6667
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/Contents/Timeline/ProgressPanel/ProgressBar/FillArea/HandleRect/NumText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 14,
+      "t": -30,
+      "w": 100,
+      "h": 60
+    },
+    "resolved": [
+      128,
+      60
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/Contents/Timeline/ProgressPanel/ProgressBar/FillArea/HandleRect/ErrorDesc",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 138,
+      "t": -14.5,
+      "w": 180,
+      "h": 29
+    },
+    "resolved": [
+      264,
+      29
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/TitlePanel/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      360,
+      22.8
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/TitlePanel/Line",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/ScrollView/Viewport/Content",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 397.6,
+      "w": 1144.2,
+      "h": 0
+    },
+    "resolved": [
+      1144.2,
+      26
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/ScrollView/Viewport/Content/TextContent",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      340,
+      22.8
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "wikiDialog",
+    "path": "TarotBookWikiDialog/Root/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      380,
+      17.1
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/Contents/Timeline/ProgressPanel/ProgressBar/FillArea/HandleRect/NumText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 14,
+      "t": -30,
+      "w": 100,
+      "h": 60
+    },
+    "resolved": [
+      128,
+      60
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/Contents/Timeline/ProgressPanel/ProgressBar/FillArea/HandleRect/ErrorDesc",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 138,
+      "t": -14.5,
+      "w": 180,
+      "h": 29
+    },
+    "resolved": [
+      264,
+      29
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/TitlePanel/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      360,
+      22.8
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/TitlePanel/Line",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      60,
+      0
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/ScrollView/Viewport/Content",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 397.6,
+      "w": 1144.2,
+      "h": 0
+    },
+    "resolved": [
+      1144.2,
+      26
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/ScrollView/Viewport/Content/TextContent",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      340,
+      22.8
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "wikiError",
+    "path": "TarotBookWikiDialog/Root/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      380,
+      17.1
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      1921.9968,
+      1081.1097
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      390,
+      40
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      160,
+      24
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From/DescText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      48,
+      15.2
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From/NameText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      160,
+      15.2
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      160,
+      24
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To/DescText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      48,
+      15.2
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To/NameText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      160,
+      15.2
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      17.1
+    ]
+  },
+  {
+    "state": "mail",
+    "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      140,
+      19
+    ]
+  },
+  {
+    "state": "star",
+    "path": "TarotBookStarPanelPage/Root/HintPanel/Root/DescrText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      774,
+      17.1
+    ]
+  },
+  {
+    "state": "star",
+    "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/NumPanel/Volume",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 1,
+      "t": -1,
+      "w": 72.8,
+      "h": 22
+    },
+    "resolved": [
+      128,
+      22
+    ]
+  },
+  {
+    "state": "star",
+    "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      1921.9968,
+      1081.1097
+    ]
+  },
+  {
+    "state": "star",
+    "path": "TarotBookStarPanelPage/Outside/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "star",
+    "path": "TarotBookStarPanelPage/Outside/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      120,
+      17.1
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Bg/PictureBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      1920,
+      1079.9865
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/AvatarInfo",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      274,
+      99.5
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/AvatarInfo/NamePanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      274,
+      99.5
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/AvatarInfo/NamePanel/RoleNameInfo",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      274,
+      77.5
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/AvatarInfo/NamePanel/RoleNameInfo/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      180,
+      17.1
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/ProfessionPanel/TitlePanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 73.2,
+      "h": 22
+    },
+    "resolved": [
+      73.2,
+      33.3
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/ProfessionPanel/TitlePanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 30,
+      "t": 11.5,
+      "w": 35.2,
+      "h": 21.6
+    },
+    "resolved": [
+      36,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/BtnGo/TextPanel/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -18,
+      "w": 0,
+      "h": 36
+    },
+    "resolved": [
+      108,
+      36
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/HintPanel/HintText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      140,
+      19
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/HintPanel/RankPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      256,
+      43
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/HintPanel/RankPanel/ItemName",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      260,
+      19
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/TipText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 284.5,
+      "t": 4.2,
+      "w": 131.2,
+      "h": 21.6
+    },
+    "resolved": [
+      252,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Day",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 2.2667,
+      "w": 20,
+      "h": 19.3333
+    },
+    "resolved": [
+      36,
+      19.3333
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/DayText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 21,
+      "t": 2.2667,
+      "w": 16,
+      "h": 19.3333
+    },
+    "resolved": [
+      18,
+      19.3333
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Hour",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 38,
+      "t": 2.2667,
+      "w": 20,
+      "h": 19.3333
+    },
+    "resolved": [
+      36,
+      19.3333
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Minute",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 20.8,
+      "h": 21.6
+    },
+    "resolved": [
+      36,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/MinuteText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 21.8,
+      "t": 0,
+      "w": 35.2,
+      "h": 21.6
+    },
+    "resolved": [
+      36,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Second",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 58,
+      "t": 0,
+      "w": 20.8,
+      "h": 21.6
+    },
+    "resolved": [
+      36,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/SecondText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 79.8,
+      "t": 0,
+      "w": 17.6,
+      "h": 21.6
+    },
+    "resolved": [
+      18,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/RewardPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      61,
+      21
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 144,
+      "w": 386,
+      "h": 188
+    },
+    "resolved": [
+      616.1667,
+      188
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/RankPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      128,
+      104
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/RankPanel/NumPanel/Num1",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      66,
+      31.35
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/RankPanel/NumPanel/Slash",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      33,
+      31.35
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/RankPanel/NumPanel/Num2",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      66,
+      31.35
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/HintText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      252,
+      17.1
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/TipText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 309.7,
+      "t": 4.2,
+      "w": 131.2,
+      "h": 21.6
+    },
+    "resolved": [
+      252,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Day",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 2.2667,
+      "w": 20,
+      "h": 19.3333
+    },
+    "resolved": [
+      36,
+      19.3333
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/DayText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 21,
+      "t": 2.2667,
+      "w": 16,
+      "h": 19.3333
+    },
+    "resolved": [
+      18,
+      19.3333
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Hour",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 38,
+      "t": 2.2667,
+      "w": 20,
+      "h": 19.3333
+    },
+    "resolved": [
+      36,
+      19.3333
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/HourText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 59,
+      "t": 2.2667,
+      "w": 32,
+      "h": 19.3333
+    },
+    "resolved": [
+      36,
+      19.3333
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Minute",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 20.8,
+      "h": 21.6
+    },
+    "resolved": [
+      36,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/MinuteText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 21.8,
+      "t": 0,
+      "w": 35.2,
+      "h": 21.6
+    },
+    "resolved": [
+      36,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Second",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 58,
+      "t": 0,
+      "w": 20.8,
+      "h": 21.6
+    },
+    "resolved": [
+      36,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/SecondText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 79.8,
+      "t": 0,
+      "w": 17.6,
+      "h": 21.6
+    },
+    "resolved": [
+      18,
+      21.6
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/RewardPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      25,
+      21
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/TopTabPanel/TopTabArea/KeyMapInfo_Left",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/TopTabPanel/TopTabArea/TabControl",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      593,
+      52
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PanelContent/TopTabPanel/TopTabArea/KeyMapInfo_Right",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/TopBarArea/AreaPanel",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      36,
+      34
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/TopBarArea/AreaPanel/ResBarArea",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      32,
+      34
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/TopBarArea/AreaPanel/ResBarArea/KeyMapZoom",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      40,
+      32
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/TopBarArea/AreaPanel/ResBarArea/KeyMapZoom/Bg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 40,
+      "t": -1,
+      "w": 0,
+      "h": 34
+    },
+    "resolved": [
+      4,
+      34
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/TopBarArea/AreaPanel/ResBarArea/KeyMapZoom/Bg/FrameBg",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": -4,
+      "t": 0,
+      "w": -8,
+      "h": 34
+    },
+    "resolved": [
+      4,
+      34
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/TopBarArea/AreaPanel/ResBarArea/Root",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/Title/TitleText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      64,
+      15.2
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      74.4,
+      42
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": -42,
+      "w": 0,
+      "h": 42
+    },
+    "resolved": [
+      74.4,
+      42
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/Icon",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      10,
+      10
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      73.4,
+      19.2
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Day",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 19.2,
+      "h": 19.2
+    },
+    "resolved": [
+      36,
+      19.2
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/DayText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 20.2,
+      "t": 0,
+      "w": 16,
+      "h": 19.2
+    },
+    "resolved": [
+      18,
+      19.2
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Hour",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 37.2,
+      "t": 0,
+      "w": 19.2,
+      "h": 19.2
+    },
+    "resolved": [
+      36,
+      19.2
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/HourText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 57.4,
+      "t": 0,
+      "w": 16,
+      "h": 19.2
+    },
+    "resolved": [
+      36,
+      19.2
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Minute",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      36,
+      17.1
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/MinuteText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      36,
+      17.1
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Second",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      36,
+      17.1
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/SecondText",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      18,
+      17.1
+    ]
+  },
+  {
+    "state": "reward",
+    "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/Text",
+    "kind": "resolvedLayoutSize",
+    "raw": {
+      "l": 0,
+      "t": 0,
+      "w": 0,
+      "h": 0
+    },
+    "resolved": [
+      100,
+      17.1
+    ]
+  }
+]

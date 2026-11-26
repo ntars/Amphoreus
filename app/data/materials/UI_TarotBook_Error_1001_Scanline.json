@@ -1,0 +1,76 @@
+{
+  "name": "UI_TarotBook_Error_1001_Scanline",
+  "kind": "Scanline",
+  "sourceFile": "UI_TarotBook_Error_1001_Scanline.json",
+  "sha1": "defc1e7e307af637f5db270a6a9b7330e926b54e",
+  "floats": {
+    "_Cull": 0,
+    "_DstBlend": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.2
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": -0.1,
+      "b": 1,
+      "a": 0
+    },
+    "_MaskChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 2,
+      "a": 0
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": -0.3,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 2
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 0.71,
+        "Y": -1
+      },
+      "offset": {
+        "X": 0.18,
+        "Y": 1.01
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 0.5,
+        "Y": 0.6
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

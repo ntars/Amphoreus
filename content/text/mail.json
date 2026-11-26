@@ -1,0 +1,72 @@
+{
+  "state": "mail",
+  "source": "dump/mail.json",
+  "entries": [
+    {
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar/CountText",
+      "text": "test_1封邮件",
+      "key": "UIText_TarotBook_Desktop_MailNum",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar/TimeText",
+      "text": "0000",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/TitleText",
+      "text": "DevUI_MailTitle",
+      "key": "DevUI_MailTitle",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From/DescText",
+      "text": "发件人",
+      "key": "UIText_TarotBook_Mail_SenderName",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From/NameText",
+      "text": "DevUI_Name",
+      "key": "DevUI_Name",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To/DescText",
+      "text": "收件人",
+      "key": "UIText_TarotBook_Mail_ReceiverName",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To/NameText",
+      "text": "DevUI_Name",
+      "key": "DevUI_Name",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/PageInfo/Title/TitleText",
+      "text": "如我所书",
+      "key": "UIText_TarotBook_Title_Entrance",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/PageInfo/TitleType/Text",
+      "text": "邮箱.exe",
+      "key": "UIText_TarotBook_Appname_Mailbox",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/Text",
+      "text": "点击空白处继续",
+      "key": "UIText_RogueExploreBattleFinishDialog_Tips",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/KeyMapHIntInfo/Text",
+      "text": "按下关闭",
+      "key": "UIText_JoyStickClose",
+      "source": "dump/Text.text"
+    }
+  ]
+}

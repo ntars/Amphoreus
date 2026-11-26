@@ -1,0 +1,76 @@
+{
+  "name": "UI_TarotBookWiki_1006_UVMove_Glitch",
+  "kind": "Glitch",
+  "sourceFile": "UI_TarotBookWiki_1006_UVMove_Glitch.json",
+  "sha1": "175f62c086a214a6b62cee45838782ee292c5013",
+  "floats": {
+    "_CL": 1,
+    "_DstBlend": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_MainChannelRGB": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.13725491
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0.4,
+      "b": 1,
+      "a": 1
+    },
+    "_MaskSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": -0.04,
+      "a": 1
+    },
+    "_NoiseSpeed": {
+      "r": -2,
+      "g": 0,
+      "b": 0.1,
+      "a": 1
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 8
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 0,
+        "Y": 12
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

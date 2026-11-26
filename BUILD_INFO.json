@@ -1,0 +1,19 @@
+{
+  "manualVersion": "2.0",
+  "gameVersion": "Star Rail 2019.4.34f1",
+  "dumpSchemaVersion": 1,
+  "generatedAt": "2026-11-26T00:00:00Z",
+  "source": "/Users/ntars/Downloads/hsr-ui-extract",
+  "assetPolicy": "runtime assets stay outside repository",
+  "gate": "tools/run_all.mjs (includes smoke_matrix.mjs)",
+  "cssRules": 405,
+  "cssBytes": 862699,
+  "browserAnimationFrames": 5640,
+  "browserAnimationMaxErrorPx": 0.0742,
+  "commit": "dirty-worktree",
+  "sourceMirror": "/Users/ntars/Downloads/hsr-ui-extract-all",
+  "sourceMirrorEntries": 150959,
+  "sourceMirrorVerified": true,
+  "sdfFonts": 8,
+  "sdfGlyphs": 376
+}

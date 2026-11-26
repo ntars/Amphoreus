@@ -18,9 +18,12 @@ venv/
 
 # Amphoreus Web v2.0 source-derived build
 dump/
+out/
 app/assets/
+app/data/spine.json
 app/css/clips/
 verify/shots/
+docs/assets/extracted/
 node_modules/
 
 # 迭代截图与外部参考素材（体积大，不入库）
@@ -32,3 +35,6 @@ web/assets/codex/
 # 本地工作与智能体数据
 .workbuddy/
 .learnings/
+dist/
+app/css/clips.css
+dump.old/

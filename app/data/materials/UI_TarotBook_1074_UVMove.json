@@ -1,0 +1,86 @@
+{
+  "name": "UI_TarotBook_1074_UVMove",
+  "kind": "UVMove",
+  "sourceFile": "UI_TarotBook_1074_UVMove.json",
+  "sha1": "1ca8f609f2c7721c650d2b33dab416d8bdde888d",
+  "floats": {
+    "_CL2": 2,
+    "_Cull": 0,
+    "_CustomData": 1,
+    "_DstBlend": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5,
+    "_Stencil": 7,
+    "_StencilComp": 0
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 1,
+      "g": 1,
+      "b": 0,
+      "a": 0
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.101960786
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 3.25,
+      "a": 1
+    },
+    "_MaskChannel": {
+      "r": 2,
+      "g": 0,
+      "b": 1,
+      "a": 1
+    },
+    "_MaskSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0.7
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0.2,
+      "b": 0.3,
+      "a": 0.3
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 2,
+        "Y": 0.8
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 2,
+        "Y": -1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 1.04
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 1,
+        "Y": 2
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

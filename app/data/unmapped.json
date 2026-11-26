@@ -1,0 +1,6018 @@
+[
+  {
+    "clip": "Disabled",
+    "path": "path_113326032",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Disabled",
+    "path": "path_113326032",
+    "attribute": "script_4215373228",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Disabled",
+    "path": "path_113326032",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Disabled",
+    "path": "path_113326032",
+    "attribute": "script_304273561",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "Highlighted",
+    "path": "path_113326032",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Highlighted",
+    "path": "path_113326032",
+    "attribute": "script_4215373228",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Highlighted",
+    "path": "path_113326032",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Highlighted",
+    "path": "path_113326032",
+    "attribute": "script_304273561",
+    "min": 0.1,
+    "max": 0.1,
+    "keys": 2
+  },
+  {
+    "clip": "Normal",
+    "path": "path_113326032",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Normal",
+    "path": "path_113326032",
+    "attribute": "script_4215373228",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Normal",
+    "path": "path_113326032",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Normal",
+    "path": "path_113326032",
+    "attribute": "script_304273561",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "Pressed",
+    "path": "path_113326032",
+    "attribute": "script_2526845255",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "Pressed",
+    "path": "path_113326032",
+    "attribute": "script_4215373228",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "Pressed",
+    "path": "path_113326032",
+    "attribute": "script_2334886179",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "Pressed",
+    "path": "path_113326032",
+    "attribute": "script_304273561",
+    "min": 0.2,
+    "max": 0.2,
+    "keys": 2
+  },
+  {
+    "clip": "Selected",
+    "path": "path_113326032",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Selected",
+    "path": "path_113326032",
+    "attribute": "script_4215373228",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Selected",
+    "path": "path_113326032",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "Selected",
+    "path": "path_113326032",
+    "attribute": "script_304273561",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_4215373228",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_2334886179",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_3465042689",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_3465042689",
+    "attribute": "script_4215373228",
+    "min": 0.6313726,
+    "max": 0.6313726,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_3465042689",
+    "attribute": "script_2334886179",
+    "min": 0.5529412,
+    "max": 0.5529412,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_3465042689",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_4215373228",
+    "min": 0.6037736,
+    "max": 0.6037736,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_2334886179",
+    "min": 0.6460668,
+    "max": 0.6460668,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1972018964",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1972018964",
+    "attribute": "script_4215373228",
+    "min": 0.4528302,
+    "max": 0.4528302,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1972018964",
+    "attribute": "script_2334886179",
+    "min": 0.4582754,
+    "max": 0.4582754,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Error",
+    "path": "path_1972018964",
+    "attribute": "script_304273561",
+    "min": 0.63529414,
+    "max": 0.63529414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_2526845255",
+    "min": 0.43137255,
+    "max": 0.43137255,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_4215373228",
+    "min": 0.7607843,
+    "max": 0.7607843,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_2334886179",
+    "min": 0.99607843,
+    "max": 0.99607843,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_3465042689",
+    "attribute": "script_2526845255",
+    "min": 0.29411766,
+    "max": 0.29411766,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_3465042689",
+    "attribute": "script_4215373228",
+    "min": 0.7411765,
+    "max": 0.7411765,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_3465042689",
+    "attribute": "script_2334886179",
+    "min": 0.97647065,
+    "max": 0.97647065,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_3465042689",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1972018964",
+    "attribute": "script_2526845255",
+    "min": 0.2830189,
+    "max": 0.2830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1972018964",
+    "attribute": "script_4215373228",
+    "min": 0.7132075,
+    "max": 0.7132075,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1972018964",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_1972018964",
+    "attribute": "script_304273561",
+    "min": 0.49411765,
+    "max": 0.49411765,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_2526845255",
+    "min": 0.40989634,
+    "max": 0.40989634,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_4215373228",
+    "min": 0.34901965,
+    "max": 0.34901965,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_4215373228",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_2334886179",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_1893270669",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_4215373228",
+    "min": 0.6037736,
+    "max": 0.6037736,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_2334886179",
+    "min": 0.6460668,
+    "max": 0.6460668,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_2244614850",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_4270658433",
+    "attribute": "script_2526845255",
+    "min": 0.8470589,
+    "max": 0.8470589,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_4270658433",
+    "attribute": "script_4215373228",
+    "min": 0.69411767,
+    "max": 0.69411767,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_4270658433",
+    "attribute": "script_2334886179",
+    "min": 0.7294118,
+    "max": 0.7294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Error",
+    "path": "path_4270658433",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_2526845255",
+    "min": 0.43137255,
+    "max": 0.43137255,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_4215373228",
+    "min": 0.7607843,
+    "max": 0.7607843,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_2334886179",
+    "min": 0.99607843,
+    "max": 0.99607843,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_1893270669",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_2526845255",
+    "min": 0.40989634,
+    "max": 0.40989634,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_4215373228",
+    "min": 0.34901965,
+    "max": 0.34901965,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_2244614850",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_4270658433",
+    "attribute": "script_2526845255",
+    "min": 0.73333335,
+    "max": 0.73333335,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_4270658433",
+    "attribute": "script_4215373228",
+    "min": 0.827451,
+    "max": 0.827451,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_4270658433",
+    "attribute": "script_2334886179",
+    "min": 0.8862745,
+    "max": 0.8862745,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookDataTitleInfoItemColor_Normal",
+    "path": "path_4270658433",
+    "attribute": "script_304273561",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_299566654",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_299566654",
+    "attribute": "script_4215373228",
+    "min": 0.6431373,
+    "max": 0.6431373,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_299566654",
+    "attribute": "script_2334886179",
+    "min": 0.7254902,
+    "max": 0.7254902,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3807383214",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3807383214",
+    "attribute": "script_4215373228",
+    "min": 0.6431373,
+    "max": 0.6431373,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3807383214",
+    "attribute": "script_2334886179",
+    "min": 0.7254902,
+    "max": 0.7254902,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2601092418",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2601092418",
+    "attribute": "script_4215373228",
+    "min": 0.6132076,
+    "max": 0.6132076,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2601092418",
+    "attribute": "script_2334886179",
+    "min": 0.63596004,
+    "max": 0.63596004,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3389022694",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3389022694",
+    "attribute": "script_4215373228",
+    "min": 0.764151,
+    "max": 0.764151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3389022694",
+    "attribute": "script_2334886179",
+    "min": 0.7687468,
+    "max": 0.7687468,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1393111132",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1393111132",
+    "attribute": "script_4215373228",
+    "min": 0.69411767,
+    "max": 0.69411767,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1393111132",
+    "attribute": "script_2334886179",
+    "min": 0.6991964,
+    "max": 0.6991964,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3579838006",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3579838006",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3579838006",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_349250038",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_349250038",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_349250038",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2368948215",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2368948215",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2368948215",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3431348977",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3431348977",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3431348977",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2498396976",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2498396976",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2498396976",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1432640752",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1432640752",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1432640752",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3579838006",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_349250038",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2368948215",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3431348977",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2498396976",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1432640752",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_728768732",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_728768732",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_728768732",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3334099622",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3334099622",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3334099622",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2953038344",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2953038344",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2953038344",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1570052577",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1570052577",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1570052577",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3682250868",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3682250868",
+    "attribute": "script_4215373228",
+    "min": 0.23584908,
+    "max": 0.23584908,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3682250868",
+    "attribute": "script_2334886179",
+    "min": 0.27917734,
+    "max": 0.27917734,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2855083062",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2855083062",
+    "attribute": "script_4215373228",
+    "min": 0.23584908,
+    "max": 0.23584908,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2855083062",
+    "attribute": "script_2334886179",
+    "min": 0.27917734,
+    "max": 0.27917734,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2199259573",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2199259573",
+    "attribute": "script_4215373228",
+    "min": 0.23584908,
+    "max": 0.23584908,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2199259573",
+    "attribute": "script_2334886179",
+    "min": 0.27917734,
+    "max": 0.27917734,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1117312629",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1117312629",
+    "attribute": "script_4215373228",
+    "min": 0.23584908,
+    "max": 0.23584908,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1117312629",
+    "attribute": "script_2334886179",
+    "min": 0.27917734,
+    "max": 0.27917734,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3682250868",
+    "attribute": "script_304273561",
+    "min": 0.8235294,
+    "max": 0.8235294,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2855083062",
+    "attribute": "script_304273561",
+    "min": 0.8235294,
+    "max": 0.8235294,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2199259573",
+    "attribute": "script_304273561",
+    "min": 0.8235294,
+    "max": 0.8235294,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1117312629",
+    "attribute": "script_304273561",
+    "min": 0.8235294,
+    "max": 0.8235294,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_728768732",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3334099622",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2953038344",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1570052577",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2601092418",
+    "attribute": "script_304273561",
+    "min": 0.7176471,
+    "max": 0.7176471,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1393111132",
+    "attribute": "script_304273561",
+    "min": 0.12941177,
+    "max": 0.12941177,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3389022694",
+    "attribute": "script_304273561",
+    "min": 0.29803923,
+    "max": 0.29803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1682248033",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1682248033",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1682248033",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1682248033",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4281793461",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4281793461",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4281793461",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4281793461",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2312356488",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2312356488",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2312356488",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2312356488",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_536411212",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_536411212",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_536411212",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_536411212",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2223707800",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2223707800",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2223707800",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2223707800",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4067307429",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4067307429",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4067307429",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4067307429",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2164709914",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2164709914",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2164709914",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2164709914",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_111607673",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_111607673",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_111607673",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_111607673",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2832101096",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2832101096",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2832101096",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2832101096",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_977547303",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_977547303",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_977547303",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_977547303",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2485952950",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2485952950",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2485952950",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2485952950",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3185841476",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3185841476",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3185841476",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3185841476",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2231545805",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2231545805",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2231545805",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2029737912",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2029737912",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2029737912",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3600008745",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3600008745",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3600008745",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4284183259",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4284183259",
+    "attribute": "script_4215373228",
+    "min": 0.90588236,
+    "max": 0.90588236,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4284183259",
+    "attribute": "script_2334886179",
+    "min": 0.9114345,
+    "max": 0.9114345,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2231545805",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2029737912",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3600008745",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4284183259",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4229792477",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4006688709",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4294316584",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_31750824",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2556997483",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3603761067",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_674025050",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4002256470",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1328505258",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3605959794",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1252397075",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2355963018",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2252627915",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1979612290",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2392964714",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1909213114",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1245967014",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2255992397",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_576532062",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2810806492",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1858239502",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4134298329",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2815762767",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3726315404",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2352332751",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1023044104",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2941035470",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1383404364",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1973607697",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1048104424",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3752121899",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3509590130",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1207527821",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2022049251",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3520461511",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1306786634",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1476719432",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1017564059",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_529911884",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_194353836",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3513563617",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4146076175",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2945248057",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_52118975",
+    "attribute": "script_2526845255",
+    "min": 0.7830189,
+    "max": 0.7830189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_390322283",
+    "attribute": "script_2526845255",
+    "min": 0.3584906,
+    "max": 0.3584906,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4229792477",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4006688709",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4294316584",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_31750824",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2556997483",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3603761067",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_674025050",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4002256470",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1328505258",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3605959794",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1252397075",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2355963018",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2252627915",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1979612290",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2392964714",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1909213114",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1245967014",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2255992397",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_576532062",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2810806492",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1858239502",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4134298329",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2815762767",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3726315404",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2352332751",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1023044104",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2941035470",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1383404364",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1973607697",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1048104424",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3752121899",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3509590130",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1207527821",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2022049251",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3520461511",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1306786634",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1476719432",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1017564059",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_529911884",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_194353836",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3513563617",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4146076175",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2945248057",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_52118975",
+    "attribute": "script_4215373228",
+    "min": 0.5244749,
+    "max": 0.5244749,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_390322283",
+    "attribute": "script_4215373228",
+    "min": 0.17248133,
+    "max": 0.17248133,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4229792477",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4006688709",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4294316584",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_31750824",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2556997483",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3603761067",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_674025050",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4002256470",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1328505258",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3605959794",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1252397075",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2355963018",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2252627915",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1979612290",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2392964714",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1909213114",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1245967014",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2255992397",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_576532062",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2810806492",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1858239502",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4134298329",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2815762767",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3726315404",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2352332751",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1023044104",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2941035470",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1383404364",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1973607697",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1048104424",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3752121899",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3509590130",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1207527821",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2022049251",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3520461511",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1306786634",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1476719432",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1017564059",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_529911884",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_194353836",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3513563617",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4146076175",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2945248057",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_52118975",
+    "attribute": "script_2334886179",
+    "min": 0.5589474,
+    "max": 0.5589474,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_390322283",
+    "attribute": "script_2334886179",
+    "min": 0.20455189,
+    "max": 0.20455189,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4229792477",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4006688709",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4294316584",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_31750824",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2556997483",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3603761067",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_674025050",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4002256470",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1328505258",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3605959794",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1252397075",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2355963018",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2252627915",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1979612290",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2392964714",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1909213114",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1245967014",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2255992397",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_576532062",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2810806492",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1858239502",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4134298329",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2815762767",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3726315404",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2352332751",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1023044104",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2941035470",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1383404364",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1973607697",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1048104424",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3752121899",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3509590130",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1207527821",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2022049251",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3520461511",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1306786634",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1476719432",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1017564059",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_529911884",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_194353836",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_3513563617",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4146076175",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_2945248057",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_52118975",
+    "attribute": "script_304273561",
+    "min": 0.31764707,
+    "max": 0.31764707,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_390322283",
+    "attribute": "script_304273561",
+    "min": 0.52156866,
+    "max": 0.52156866,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3807383214",
+    "attribute": "script_2526845255",
+    "min": 0.7490196,
+    "max": 0.7490196,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3807383214",
+    "attribute": "script_4215373228",
+    "min": 0.8509804,
+    "max": 0.8509804,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3807383214",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_299566654",
+    "attribute": "script_2526845255",
+    "min": 0.6156863,
+    "max": 0.6156863,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_299566654",
+    "attribute": "script_4215373228",
+    "min": 0.6862745,
+    "max": 0.6862745,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_299566654",
+    "attribute": "script_2334886179",
+    "min": 0.9098039,
+    "max": 0.9098039,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_728768732",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3334099622",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2953038344",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1570052577",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3579838006",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_349250038",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2368948215",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3682250868",
+    "attribute": "script_2526845255",
+    "min": 0.37584552,
+    "max": 0.37584552,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3431348977",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2498396976",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1432640752",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2855083062",
+    "attribute": "script_2526845255",
+    "min": 0.37584552,
+    "max": 0.37584552,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2199259573",
+    "attribute": "script_2526845255",
+    "min": 0.37584552,
+    "max": 0.37584552,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1117312629",
+    "attribute": "script_2526845255",
+    "min": 0.37584552,
+    "max": 0.37584552,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_728768732",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3334099622",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2953038344",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1570052577",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3579838006",
+    "attribute": "script_4215373228",
+    "min": 0.12353151,
+    "max": 0.12353151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_349250038",
+    "attribute": "script_4215373228",
+    "min": 0.12353151,
+    "max": 0.12353151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2368948215",
+    "attribute": "script_4215373228",
+    "min": 0.12353151,
+    "max": 0.12353151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3682250868",
+    "attribute": "script_4215373228",
+    "min": 0.6113539,
+    "max": 0.6113539,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3431348977",
+    "attribute": "script_4215373228",
+    "min": 0.12353151,
+    "max": 0.12353151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2498396976",
+    "attribute": "script_4215373228",
+    "min": 0.12353151,
+    "max": 0.12353151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1432640752",
+    "attribute": "script_4215373228",
+    "min": 0.12353151,
+    "max": 0.12353151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2855083062",
+    "attribute": "script_4215373228",
+    "min": 0.6113539,
+    "max": 0.6113539,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2199259573",
+    "attribute": "script_4215373228",
+    "min": 0.6113539,
+    "max": 0.6113539,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1117312629",
+    "attribute": "script_4215373228",
+    "min": 0.6113539,
+    "max": 0.6113539,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_728768732",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3334099622",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2953038344",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1570052577",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3579838006",
+    "attribute": "script_2334886179",
+    "min": 0.20754719,
+    "max": 0.20754719,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_349250038",
+    "attribute": "script_2334886179",
+    "min": 0.20754719,
+    "max": 0.20754719,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2368948215",
+    "attribute": "script_2334886179",
+    "min": 0.20754719,
+    "max": 0.20754719,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3682250868",
+    "attribute": "script_2334886179",
+    "min": 0.9716981,
+    "max": 0.9716981,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3431348977",
+    "attribute": "script_2334886179",
+    "min": 0.20754719,
+    "max": 0.20754719,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2498396976",
+    "attribute": "script_2334886179",
+    "min": 0.20754719,
+    "max": 0.20754719,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1432640752",
+    "attribute": "script_2334886179",
+    "min": 0.20754719,
+    "max": 0.20754719,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2855083062",
+    "attribute": "script_2334886179",
+    "min": 0.9716981,
+    "max": 0.9716981,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2199259573",
+    "attribute": "script_2334886179",
+    "min": 0.9716981,
+    "max": 0.9716981,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1117312629",
+    "attribute": "script_2334886179",
+    "min": 0.9716981,
+    "max": 0.9716981,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_728768732",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3334099622",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2953038344",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1570052577",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3579838006",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_349250038",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2368948215",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3682250868",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3431348977",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2498396976",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1432640752",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2855083062",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2199259573",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1117312629",
+    "attribute": "script_304273561",
+    "min": 0.69803923,
+    "max": 0.69803923,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2601092418",
+    "attribute": "script_2526845255",
+    "min": 0.5990566,
+    "max": 0.5990566,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1393111132",
+    "attribute": "script_2526845255",
+    "min": 0.6933962,
+    "max": 0.6933962,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3389022694",
+    "attribute": "script_2526845255",
+    "min": 0.48584908,
+    "max": 0.48584908,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2601092418",
+    "attribute": "script_4215373228",
+    "min": 0.81180215,
+    "max": 0.81180215,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1393111132",
+    "attribute": "script_4215373228",
+    "min": 0.8575776,
+    "max": 0.8575776,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3389022694",
+    "attribute": "script_4215373228",
+    "min": 0.76269966,
+    "max": 0.76269966,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2601092418",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1393111132",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3389022694",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2601092418",
+    "attribute": "script_304273561",
+    "min": 0.7176471,
+    "max": 0.7176471,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1393111132",
+    "attribute": "script_304273561",
+    "min": 0.1294118,
+    "max": 0.1294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3389022694",
+    "attribute": "script_304273561",
+    "min": 0.2980392,
+    "max": 0.2980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4067307429",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4067307429",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4067307429",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4067307429",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2223707800",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2223707800",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2223707800",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2223707800",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_536411212",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_536411212",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_536411212",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_536411212",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2312356488",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2312356488",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2312356488",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2312356488",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4281793461",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4281793461",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4281793461",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4281793461",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1682248033",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1682248033",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1682248033",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1682248033",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2164709914",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_111607673",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2832101096",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_977547303",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2485952950",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3185841476",
+    "attribute": "script_2526845255",
+    "min": 0.49341404,
+    "max": 0.49341404,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2164709914",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_111607673",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2832101096",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_977547303",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2485952950",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3185841476",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2164709914",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_111607673",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2832101096",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_977547303",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2485952950",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3185841476",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2164709914",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_111607673",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2832101096",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_977547303",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2485952950",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3185841476",
+    "attribute": "script_304273561",
+    "min": 0.23921569,
+    "max": 0.23921569,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2231545805",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2029737912",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3600008745",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4284183259",
+    "attribute": "script_2526845255",
+    "min": 0.9056604,
+    "max": 0.9056604,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2231545805",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2029737912",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3600008745",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4284183259",
+    "attribute": "script_4215373228",
+    "min": 0.9449686,
+    "max": 0.9449686,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2231545805",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2029737912",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3600008745",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4284183259",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2231545805",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2029737912",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3600008745",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4284183259",
+    "attribute": "script_304273561",
+    "min": 0.6980392,
+    "max": 0.6980392,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4229792477",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4006688709",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4294316584",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_31750824",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2556997483",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3603761067",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_674025050",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4002256470",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1328505258",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3605959794",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1252397075",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2355963018",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2252627915",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1979612290",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2392964714",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1909213114",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1245967014",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2255992397",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_576532062",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2810806492",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1858239502",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4134298329",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2815762767",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3726315404",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2352332751",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1023044104",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2941035470",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1383404364",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1973607697",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1048104424",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3752121899",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3509590130",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1207527821",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2022049251",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3520461511",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1306786634",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1476719432",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1017564059",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_529911884",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_194353836",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3513563617",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4146076175",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2945248057",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_52118975",
+    "attribute": "script_2526845255",
+    "min": 0.493414,
+    "max": 0.493414,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_390322283",
+    "attribute": "script_2526845255",
+    "min": 0.09202564,
+    "max": 0.09202564,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4229792477",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4006688709",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4294316584",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_31750824",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2556997483",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3603761067",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_674025050",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4002256470",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1328505258",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3605959794",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1252397075",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2355963018",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2252627915",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1979612290",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2392964714",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1909213114",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1245967014",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2255992397",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_576532062",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2810806492",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1858239502",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4134298329",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2815762767",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3726315404",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2352332751",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1023044104",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2941035470",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1383404364",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1973607697",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1048104424",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3752121899",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3509590130",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1207527821",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2022049251",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3520461511",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1306786634",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1476719432",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1017564059",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_529911884",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_194353836",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3513563617",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4146076175",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2945248057",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_52118975",
+    "attribute": "script_4215373228",
+    "min": 0.5969701,
+    "max": 0.5969701,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_390322283",
+    "attribute": "script_4215373228",
+    "min": 0.1235315,
+    "max": 0.1235315,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4229792477",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4006688709",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4294316584",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_31750824",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2556997483",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3603761067",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_674025050",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4002256470",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1328505258",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3605959794",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1252397075",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2355963018",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2252627915",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1979612290",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2392964714",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1909213114",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1245967014",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2255992397",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_576532062",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2810806492",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1858239502",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4134298329",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2815762767",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3726315404",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2352332751",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1023044104",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2941035470",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1383404364",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1973607697",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1048104424",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3752121899",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3509590130",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1207527821",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2022049251",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3520461511",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1306786634",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1476719432",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1017564059",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_529911884",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_194353836",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3513563617",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4146076175",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2945248057",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_52118975",
+    "attribute": "script_2334886179",
+    "min": 0.7264151,
+    "max": 0.7264151,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_390322283",
+    "attribute": "script_2334886179",
+    "min": 0.2075472,
+    "max": 0.2075472,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4229792477",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4006688709",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4294316584",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_31750824",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2556997483",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3603761067",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_674025050",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4002256470",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1328505258",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3605959794",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1252397075",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2355963018",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2252627915",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1979612290",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2392964714",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1909213114",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1245967014",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2255992397",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_576532062",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2810806492",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1858239502",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4134298329",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2815762767",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3726315404",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2352332751",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1023044104",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2941035470",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1383404364",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1973607697",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1048104424",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3752121899",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3509590130",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1207527821",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2022049251",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3520461511",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1306786634",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1476719432",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1017564059",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_529911884",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_194353836",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_3513563617",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4146076175",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_2945248057",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_52118975",
+    "attribute": "script_304273561",
+    "min": 0.2392157,
+    "max": 0.2392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_390322283",
+    "attribute": "script_304273561",
+    "min": 0.5294118,
+    "max": 0.5294118,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4262360515",
+    "attribute": "script_2526845255",
+    "min": 0.7176471,
+    "max": 0.7176471,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4071999605",
+    "attribute": "script_2526845255",
+    "min": 0.6698113,
+    "max": 0.6698113,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4262360515",
+    "attribute": "script_4215373228",
+    "min": 0.30272126,
+    "max": 0.30272126,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4071999605",
+    "attribute": "script_4215373228",
+    "min": 0.0979441,
+    "max": 0.0979441,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4262360515",
+    "attribute": "script_2334886179",
+    "min": 0.29411766,
+    "max": 0.29411766,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4071999605",
+    "attribute": "script_2334886179",
+    "min": 0.10537102,
+    "max": 0.10537102,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4262360515",
+    "attribute": "script_304273561",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_4071999605",
+    "attribute": "script_304273561",
+    "min": 0,
+    "max": 0,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1080387430",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1080387430",
+    "attribute": "script_4215373228",
+    "min": 0.37695456,
+    "max": 0.37695456,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1080387430",
+    "attribute": "script_2334886179",
+    "min": 0.33333337,
+    "max": 0.33333337,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1080387430",
+    "attribute": "script_304273561",
+    "min": 0.09019608,
+    "max": 0.09019608,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1617195487",
+    "attribute": "script_2526845255",
+    "min": 0.754717,
+    "max": 0.754717,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1617195487",
+    "attribute": "script_4215373228",
+    "min": 0.2523839,
+    "max": 0.2523839,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1617195487",
+    "attribute": "script_2334886179",
+    "min": 0.24207903,
+    "max": 0.24207903,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1617195487",
+    "attribute": "script_304273561",
+    "min": 0.27450982,
+    "max": 0.27450982,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_3526065200",
+    "attribute": "script_2526845255",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_3526065200",
+    "attribute": "script_4215373228",
+    "min": 0.6392157,
+    "max": 0.6392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_3526065200",
+    "attribute": "script_2334886179",
+    "min": 0.7254902,
+    "max": 0.7254902,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_3526065200",
+    "attribute": "script_304273561",
+    "min": 0.76862746,
+    "max": 0.76862746,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4262360515",
+    "attribute": "script_2526845255",
+    "min": 0.29423285,
+    "max": 0.29423285,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4262360515",
+    "attribute": "script_4215373228",
+    "min": 0.3674115,
+    "max": 0.3674115,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4262360515",
+    "attribute": "script_2334886179",
+    "min": 0.7169812,
+    "max": 0.7169812,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4262360515",
+    "attribute": "script_304273561",
+    "min": 0.101960786,
+    "max": 0.101960786,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4071999605",
+    "attribute": "script_2526845255",
+    "min": 0.71444464,
+    "max": 0.71444464,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4071999605",
+    "attribute": "script_4215373228",
+    "min": 0.7404134,
+    "max": 0.7404134,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4071999605",
+    "attribute": "script_2334886179",
+    "min": 0.8962264,
+    "max": 0.8962264,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_4071999605",
+    "attribute": "script_304273561",
+    "min": 0.5176471,
+    "max": 0.5176471,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1080387430",
+    "attribute": "script_2526845255",
+    "min": 0.33490568,
+    "max": 0.33490568,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1617195487",
+    "attribute": "script_2526845255",
+    "min": 0.6392157,
+    "max": 0.6392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1080387430",
+    "attribute": "script_4215373228",
+    "min": 0.48930264,
+    "max": 0.48930264,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1617195487",
+    "attribute": "script_4215373228",
+    "min": 0.7647059,
+    "max": 0.7647059,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1080387430",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1617195487",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1080387430",
+    "attribute": "script_304273561",
+    "min": 0.09019608,
+    "max": 0.09019608,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1617195487",
+    "attribute": "script_304273561",
+    "min": 0.27450982,
+    "max": 0.27450982,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_3526065200",
+    "attribute": "script_2526845255",
+    "min": 0.6392157,
+    "max": 0.6392157,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_3526065200",
+    "attribute": "script_4215373228",
+    "min": 0.7647059,
+    "max": 0.7647059,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_3526065200",
+    "attribute": "script_2334886179",
+    "min": 1,
+    "max": 1,
+    "keys": 2
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_3526065200",
+    "attribute": "script_304273561",
+    "min": 0.76862746,
+    "max": 0.76862746,
+    "keys": 2
+  }
+]

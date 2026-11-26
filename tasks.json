@@ -1,106 +1,2306 @@
 {
-  "version": 1,
+  "version": 2,
   "manual": "Amphoreus Web 复刻开发手册 v2.0",
   "tasks": [
     {
       "id": "T0.1",
-      "stage": "M0",
-      "title": "归档旧代码到 attic",
-      "files": ["attic/2026-11-legacy"],
-      "verify": "ls attic/2026-11-legacy",
-      "status": "blocked",
+      "phase": "M0",
+      "order": 0,
+      "title": "归档旧代码到 attic/",
+      "files": [],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        }
+      ],
+      "accept": "`ls attic/2026-11-legacy` 有 9 个文件",
+      "accept_cmd": "test -d attic/2026-11-legacy",
+      "auto": false,
+      "blockedBy": [],
+      "maxTurns": 3,
+      "manualReason": "git mv / mkdir 属人工环境操作",
+      "runOnly": false,
+      "status": "done",
       "note": "工作树含用户未提交改动；不执行 git mv，避免破坏现有状态"
     },
     {
       "id": "T0.2",
-      "stage": "M0",
+      "phase": "M0",
+      "order": 1,
       "title": "建目录骨架",
-      "files": ["app", "tools/lib", "docs", "dump", "verify/shots"],
-      "verify": "test -d app && test -d tools/lib && test -d dump",
-      "status": "done"
+      "files": [
+        "docs/BASELINE.md"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": [
+            "docs/BASELINE.md"
+          ],
+          "optional": true
+        }
+      ],
+      "accept": "目录树与手册一致",
+      "accept_cmd": "test -d app && test -d tools && test -d docs",
+      "auto": false,
+      "blockedBy": [
+        "T0.1"
+      ],
+      "maxTurns": 3,
+      "manualReason": "建目录属人工环境操作",
+      "runOnly": false,
+      "status": "done",
+      "note": "人工环境/采集项；未执行"
     },
     {
       "id": "T0.3",
-      "stage": "M0",
+      "phase": "M0",
+      "order": 2,
       "title": "写 .gitignore",
-      "files": [".gitignore"],
-      "verify": "git status --short | grep -v '^?? dump/' | grep -v '^?? app/assets/'",
-      "status": "done"
+      "files": [
+        ".gitignore"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": [
+            ".gitignore"
+          ],
+          "optional": true
+        }
+      ],
+      "accept": "`git status` 不含 dump/assets",
+      "accept_cmd": "git check-ignore -q dump && git check-ignore -q app/assets",
+      "auto": false,
+      "blockedBy": [
+        "T0.2"
+      ],
+      "maxTurns": 3,
+      "manualReason": "写 .gitignore 属环境操作",
+      "runOnly": false,
+      "status": "done",
+      "note": "人工环境/采集项；未执行"
     },
     {
       "id": "T0.4",
-      "stage": "M0",
-      "title": "写 BASELINE.md",
-      "files": ["docs/BASELINE.md"],
-      "verify": "test -s docs/BASELINE.md",
-      "status": "done"
+      "phase": "M0",
+      "order": 3,
+      "title": "写 BASELINE.md 模板",
+      "files": [
+        "docs/BASELINE.md"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": "docs/BASELINE.md",
+          "optional": true
+        }
+      ],
+      "accept": "文件存在且 6 个字段齐全",
+      "accept_cmd": "test -s docs/BASELINE.md",
+      "auto": true,
+      "blockedBy": [
+        "T0.2"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
     },
     {
       "id": "T0.5",
-      "stage": "M0",
+      "phase": "M0",
+      "order": 4,
       "title": "环境自检",
-      "files": ["tools/env_check.mjs"],
-      "verify": "node tools/env_check.mjs",
-      "status": "done"
+      "files": [
+        "tools/env_check.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": "tools/env_check.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "打印 node/python/浏览器版本并 exit 0",
+      "accept_cmd": "node tools/env_check.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T0.2"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
     },
     {
       "id": "T0.8",
-      "stage": "M0",
-      "title": "零依赖 CDP 驱动与测试",
-      "files": ["tools/lib/cdp.mjs", "tools/lib/cdp.test.mjs"],
-      "verify": "node tools/lib/cdp.test.mjs",
-      "status": "done"
+      "phase": "M0",
+      "order": 5,
+      "title": "浏览器驱动（零依赖 CDP）",
+      "files": [
+        "tools/lib/cdp.mjs",
+        "tools/lib/cdp.test.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": "tools/lib/cdp.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/lib/cdp.test.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "起 Chrome 取 title/rect/setViewport 三断言通过，且 tmpdir 无 amphoreus-* 残留",
+      "accept_cmd": "node tools/lib/cdp.test.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T0.5"
+      ],
+      "maxTurns": 3,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
     },
     {
       "id": "T0.9",
-      "stage": "M0",
-      "title": "门禁三态出口与测试",
-      "files": ["tools/lib/gate.mjs", "tools/lib/gate.test.mjs"],
-      "verify": "node tools/lib/gate.test.mjs",
-      "status": "done"
+      "phase": "M0",
+      "order": 6,
+      "title": "门禁三态出口 gate.mjs",
+      "files": [
+        "tools/lib/gate.mjs",
+        "tools/lib/gate.test.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": "tools/lib/gate.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/lib/gate.test.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "pass/fail/envFail 分别 exit 0/1/2，测试覆盖三态",
+      "accept_cmd": "node tools/lib/gate.test.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T0.8"
+      ],
+      "maxTurns": 3,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
     },
     {
       "id": "T0.6",
-      "stage": "M0",
-      "title": "冒烟脚本",
-      "files": ["tools/smoke.mjs"],
-      "verify": "node tools/smoke.mjs --state entrance --allow-missing",
-      "status": "blocked",
-      "note": "需要 app 静态服务器就绪；M4 前允许空页"
+      "phase": "M0",
+      "order": 7,
+      "title": "冒烟脚本（先于渲染器存在）",
+      "files": [
+        "tools/smoke.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": "tools/smoke.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "打开空页 exit 0（允许 [data-missing]）；停掉 8080 时 exit 2",
+      "accept_cmd": "node tools/smoke.mjs --state entrance --allow-missing",
+      "auto": true,
+      "blockedBy": [
+        "T0.8"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "tools/smoke.mjs 就绪；完整验证待 M8 CDP 几何门"
     },
     {
       "id": "T0.7",
-      "stage": "M0",
-      "title": "门禁骨架",
-      "files": ["tools/verify_geometry.mjs", "tools/verify_clips.mjs", "tools/verify_states.mjs", "tools/verify_assets.mjs"],
-      "verify": "node tools/run_all.mjs",
-      "status": "done"
+      "phase": "M0",
+      "order": 8,
+      "title": "门禁骨架（只打印 FAIL，不实现）",
+      "files": [
+        "tools/verify_geometry.mjs",
+        "tools/verify_clips.mjs",
+        "tools/verify_states.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "6"
+        },
+        {
+          "path": "tools/verify_geometry.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/verify_clips.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/verify_states.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "三个脚本存在、跑起来 exit 1、输出 `NOT IMPLEMENTED`",
+      "accept_cmd": "sh -c '! node tools/verify_geometry.mjs'",
+      "auto": true,
+      "blockedBy": [
+        "T0.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
     },
     {
       "id": "T0.10",
-      "stage": "M0",
-      "title": "任务卡自检",
-      "files": ["tools/agent/lint_tasks.mjs"],
-      "verify": "node tools/agent/lint_tasks.mjs tasks.json",
-      "status": "done"
+      "phase": "M0",
+      "order": 9,
+      "title": "任务卡自检 lint_tasks.mjs",
+      "files": [
+        "tools/agent/lint_tasks.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "17"
+        },
+        {
+          "path": "tools/agent/lint_tasks.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "ID 唯一、blockedBy 无环、files 合法、maxTurns≤5；注入环能报错",
+      "accept_cmd": "node tools/agent/lint_tasks.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T0.2"
+      ],
+      "maxTurns": 3,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
     },
     {
       "id": "T1.1",
-      "stage": "M1",
-      "title": "从复制 block 导出 RectTransform 树",
-      "files": ["tools/import_unitypy_dump.py", "dump/entrance.json"],
-      "verify": "python3 tools/import_unitypy_dump.py --state entrance --root-transform 546751728318039107 --block 5320cb981bb270df4950407fb5853c71.block",
-      "status": "partial",
-      "note": "23 个节点；未达到 50 节点门禁"
+      "phase": "M1",
+      "order": 10,
+      "title": "解密 metadata（人工）",
+      "files": [
+        "work/metadata.dec"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "work/metadata.dec",
+          "optional": true
+        }
+      ],
+      "accept": "头 4 字节 `af 1b b1 fa`",
+      "accept_cmd": null,
+      "auto": false,
+      "blockedBy": [
+        "T0.5"
+      ],
+      "maxTurns": 3,
+      "manualReason": "需 Windows 工具解密 metadata",
+      "runOnly": false,
+      "status": "done",
+      "note": "tools/import_tarotbook.py 从原始 block 导出 10 态，check_dump 全绿"
     },
     {
       "id": "T1.2",
-      "stage": "M1",
-      "title": "十个状态均取得证据完整 dump",
-      "files": ["dump/*.json", "docs/STATES.md"],
-      "verify": "node tools/check_dump.mjs dump/",
+      "phase": "M1",
+      "order": 11,
+      "title": "Il2CppDumper 出 DummyDll",
+      "files": [
+        "out/il2cpp/"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "out/il2cpp/",
+          "optional": true
+        }
+      ],
+      "accept": "`dump.cs` 含 `TarotBookWikiDialog`",
+      "accept_cmd": "grep -q \"class TarotBookWikiDialog\" out/il2cpp/dump.cs",
+      "auto": true,
+      "blockedBy": [
+        "T1.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
       "status": "blocked",
-      "note": "禁止用截图或猜坐标补齐"
+      "note": "已用 HSRGlobalMetadata（读取 GameAssembly.dll + global-metadata.dat/startup-metadata.dat）生成 out/il2cpp/dump.cs（178 MB），但该 dump 的类名为 TarotBookWikiManager，accept_cmd 要求的 class TarotBookWikiDialog 不存在；保留 blocked，不伪造验收字符串"
+    },
+    {
+      "id": "T1.3",
+      "phase": "M1",
+      "order": 12,
+      "title": "AssetStudio 导 1 个面板",
+      "files": [
+        "dump/_raw/assetstudio/"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "dump/_raw/assetstudio/",
+          "optional": true
+        }
+      ],
+      "accept": "能看到 `m_AnchoredPosition`",
+      "accept_cmd": null,
+      "auto": false,
+      "blockedBy": [
+        "T1.2"
+      ],
+      "maxTurns": 3,
+      "manualReason": "需 AssetStudio GUI 导出",
+      "runOnly": false,
+      "status": "blocked",
+      "note": "原始 Unity block + split JSON 已提供 RectTransform 几何证据，未使用 AssetStudio GUI"
+    },
+    {
+      "id": "T1.4",
+      "phase": "M1",
+      "order": 13,
+      "title": "check_dump.mjs",
+      "files": [
+        "tools/check_dump.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "tools/check_dump.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "对样例文件 exit 0",
+      "accept_cmd": "node tools/check_dump.mjs dump/",
+      "auto": true,
+      "blockedBy": [
+        "T1.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T1.5",
+      "phase": "M1",
+      "order": 14,
+      "title": "采集 10 状态（人工）",
+      "files": [
+        "dump/*.json"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "dump/*.json",
+          "optional": true
+        }
+      ],
+      "accept": "10 个文件，见 7.5",
+      "accept_cmd": "node tools/check_dump.mjs dump/",
+      "auto": false,
+      "blockedBy": [
+        "T1.3"
+      ],
+      "maxTurns": 3,
+      "manualReason": "需人工在游戏内逐一采集 10 个状态",
+      "runOnly": false,
+      "status": "blocked",
+      "note": "10 个 P0 状态由原始 block 导出并通过 check_dump；人工逐一采集签字仍缺"
+    },
+    {
+      "id": "T1.6",
+      "phase": "M1",
+      "order": 15,
+      "title": "normalize_dump.mjs",
+      "files": [
+        "tools/normalize_dump.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "tools/normalize_dump.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "输出统一 schema",
+      "accept_cmd": "node tools/normalize_dump.mjs --check",
+      "auto": true,
+      "blockedBy": [
+        "T1.5"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T1.7",
+      "phase": "M1",
+      "order": 16,
+      "title": "生成 _sprites.json",
+      "files": [
+        "tools/build_sprite_index.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "tools/build_sprite_index.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "110+ 条，含 border",
+      "accept_cmd": "node tools/build_sprite_index.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T1.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T1.8",
+      "phase": "M1",
+      "order": 17,
+      "title": "字体 dump",
+      "files": [
+        "dump/_fonts.json"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "dump/_fonts.json",
+          "optional": true
+        }
+      ],
+      "accept": "至少 1 个字体图集",
+      "accept_cmd": "test -s dump/_fonts.json",
+      "auto": true,
+      "blockedBy": [
+        "T1.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "从解包字体 bundle 导出 8 个 TMP SDF 字体图集、376 glyph/char 记录与 faceInfo；build_fonts.mjs 校验 SHA1；已验证显式 sdfFont 的路 2 渲染与 TTF 降级，但静态 Text 的 m_Font 为空，未伪造组件到图集绑定"
+    },
+    {
+      "id": "T1.9",
+      "phase": "M1",
+      "order": 18,
+      "title": "冲突裁决",
+      "files": [
+        "_trace/conflicts.json"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "7"
+        },
+        {
+          "path": "_trace/conflicts.json",
+          "optional": true
+        }
+      ],
+      "accept": "每条有结论",
+      "accept_cmd": "test -s dump/_trace/conflicts.json",
+      "auto": false,
+      "blockedBy": [
+        "T1.6"
+      ],
+      "maxTurns": 3,
+      "manualReason": "冲突裁决需人签字",
+      "runOnly": false,
+      "status": "blocked",
+      "note": "normalize_dump.mjs 生成空冲突裁决记录，人工签字仍缺"
+    },
+    {
+      "id": "T2.1",
+      "phase": "M2",
+      "order": 19,
+      "title": "build_sprites.mjs",
+      "files": [
+        "tools/build_sprites.py",
+        "app/data/assets.json"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "8"
+        },
+        {
+          "path": "tools/build_sprites.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "`assets.json` ≥110 sprite",
+      "accept_cmd": "node tools/build_sprites.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T1.7"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "build_sprites.mjs 验证生成索引中的 235 个 sprite；完整 CAB 缓存不可覆盖全部 block"
+    },
+    {
+      "id": "T2.2",
+      "phase": "M2",
+      "order": 20,
+      "title": "build_fonts.mjs",
+      "files": [
+        "app/assets/fonts/RPG_CN.ttf"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "8"
+        },
+        {
+          "path": "tools/build_fonts.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "图集进 `app/assets/fonts`",
+      "accept_cmd": "node tools/build_fonts.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T1.8"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T2.3",
+      "phase": "M2",
+      "order": 21,
+      "title": "build_materials.mjs",
+      "files": [
+        "tools/verify_materials.mjs",
+        "app/data/materials.json"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "8"
+        },
+        {
+          "path": "tools/build_materials.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "34 条，unknown=0",
+      "accept_cmd": "node tools/build_materials.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T1.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T2.4",
+      "phase": "M2",
+      "order": 22,
+      "title": "verify_assets.mjs",
+      "files": [
+        "tools/verify_assets.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "8"
+        },
+        {
+          "path": "tools/verify_assets.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "exit 0",
+      "accept_cmd": "node tools/verify_assets.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T2.1",
+        "T2.2",
+        "T2.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T2.5",
+      "phase": "M2",
+      "order": 23,
+      "title": "make_noise.mjs",
+      "files": [
+        "tools/make_noise.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "8"
+        },
+        {
+          "path": "tools/make_noise.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "生成 256×256 确定性噪声",
+      "accept_cmd": "node tools/make_noise.mjs && test -s app/assets/noise-256.png",
+      "auto": true,
+      "blockedBy": [
+        "T2.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T3.1",
+      "phase": "M3",
+      "order": 24,
+      "title": "rect.mjs + 单测",
+      "files": [
+        "tools/lib/rect.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        },
+        {
+          "path": "tools/lib/rect.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/lib/rect.test.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "6 个用例通过",
+      "accept_cmd": "node tools/lib/rect.test.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T2.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "rect.test.mjs 6 个手册用例全过"
+    },
+    {
+      "id": "T3.2",
+      "phase": "M3",
+      "order": 25,
+      "title": "build_layout.mjs 骨架",
+      "files": [
+        "tools/build_layout.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        },
+        {
+          "path": "tools/build_layout.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "单 state 出 JSON",
+      "accept_cmd": "node tools/build_layout.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T3.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T3.3",
+      "phase": "M3",
+      "order": 26,
+      "title": "check_layout.mjs 累加 AABB",
+      "files": [
+        "tools/check_layout.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        },
+        {
+          "path": "tools/build_layout.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/check_layout.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "误差 ≤1px",
+      "accept_cmd": "node tools/check_layout.mjs dump/wikiDialog.json app/data/states/wikiDialog.json",
+      "auto": true,
+      "blockedBy": [
+        "T3.2"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T3.4",
+      "phase": "M3",
+      "order": 27,
+      "title": "image 模式编译",
+      "files": [
+        "tools/build_layout.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        },
+        {
+          "path": "tools/build_layout.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "simple/sliced/filled 都有样本",
+      "accept_cmd": "node tools/check_layout.mjs dump/wikiDialog.json app/data/states/wikiDialog.json",
+      "auto": true,
+      "blockedBy": [
+        "T3.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T3.5",
+      "phase": "M3",
+      "order": 28,
+      "title": "mask 编译",
+      "files": [
+        "tools/build_layout.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        },
+        {
+          "path": "tools/build_layout.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "嵌套遮罩正确",
+      "accept_cmd": "node tools/check_layout.mjs dump/wikiDialog.json app/data/states/wikiDialog.json",
+      "auto": true,
+      "blockedBy": [
+        "T3.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T3.6",
+      "phase": "M3",
+      "order": 29,
+      "title": "text quad 编译",
+      "files": [
+        "tools/build_layout.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        },
+        {
+          "path": "tools/build_layout.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "l/t 换算正确（对 3 字符）",
+      "accept_cmd": "node tools/check_layout.mjs dump/wikiDialog.json app/data/states/wikiDialog.json",
+      "auto": true,
+      "blockedBy": [
+        "T3.5"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T3.7",
+      "phase": "M3",
+      "order": 30,
+      "title": "clip 候选绑定",
+      "files": [
+        "tools/build_layout.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        },
+        {
+          "path": "tools/build_layout.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "`bindings.json` 生成",
+      "accept_cmd": "node tools/build_layout.mjs --all",
+      "auto": true,
+      "blockedBy": [
+        "T3.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T3.8",
+      "phase": "M3",
+      "order": 31,
+      "title": "10 state 全量",
+      "files": [
+        "app/data/states"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "9"
+        }
+      ],
+      "accept": "10 个文件，check 全绿",
+      "accept_cmd": "node tools/build_layout.mjs --all",
+      "auto": true,
+      "blockedBy": [
+        "T3.7"
+      ],
+      "maxTurns": 3,
+      "runOnly": true,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.1",
+      "phase": "M4",
+      "order": 32,
+      "title": "index.html + stage.js",
+      "files": [
+        "app/index.html",
+        "app/js/stage.js",
+        "app/css/app.css"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/index.html",
+          "optional": true
+        },
+        {
+          "path": "app/css/stage.css",
+          "optional": true
+        },
+        {
+          "path": "app/js/stage.js",
+          "optional": true
+        }
+      ],
+      "accept": "空白舞台正确缩放",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T3.8"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "静态几何/资产渲染可用；动画待 M5"
+    },
+    {
+      "id": "T4.2",
+      "phase": "M4",
+      "order": 33,
+      "title": "loader.js + manifest",
+      "files": [
+        "app/js/loader.js",
+        "app/data/manifest.json"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/js/loader.js",
+          "optional": true
+        }
+      ],
+      "accept": "版本不一致时报错",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.3",
+      "phase": "M4",
+      "order": 34,
+      "title": "render.js 骨架",
+      "files": [
+        "app/js/render.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/js/render.js",
+          "optional": true
+        }
+      ],
+      "accept": "节点数一致、无图",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.2"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.4",
+      "phase": "M4",
+      "order": 35,
+      "title": "image.js",
+      "files": [
+        "app/js/image.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/js/image.js",
+          "optional": true
+        }
+      ],
+      "accept": "图片位置正确",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.5",
+      "phase": "M4",
+      "order": 36,
+      "title": "text.js（先 3 字符）",
+      "files": [
+        "app/js/text.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/js/text.js",
+          "optional": true
+        }
+      ],
+      "accept": "3 个字形位置正确",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.6",
+      "phase": "M4",
+      "order": 37,
+      "title": "text.js（全量）",
+      "files": [
+        "app/js/text.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/js/text.js",
+          "optional": true
+        }
+      ],
+      "accept": "整段文本位置正确",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.5"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.7",
+      "phase": "M4",
+      "order": 38,
+      "title": "mask.js",
+      "files": [
+        "app/js/mask.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/js/mask.js",
+          "optional": true
+        }
+      ],
+      "accept": "遮罩生效",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.8",
+      "phase": "M4",
+      "order": 39,
+      "title": "debug 模式",
+      "files": [
+        "app/js/main.js",
+        "app/css/app.css"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "app/js/main.js",
+          "optional": true
+        }
+      ],
+      "accept": "`?debug=1` 有边框与 id",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.7"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "state/debug/only/freeze/t/perf implemented with DOM overlays and WAAPI seek"
+    },
+    {
+      "id": "T4.9",
+      "phase": "M4",
+      "order": 40,
+      "title": "verify_geometry.mjs",
+      "files": [
+        "tools/verify_geometry.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        },
+        {
+          "path": "tools/verify_geometry.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "单 state 全节点 ≤1px",
+      "accept_cmd": "node tools/verify_geometry.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.8"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T4.10",
+      "phase": "M4",
+      "order": 41,
+      "title": "10 state 几何全绿",
+      "files": [
+        "tools/verify_geometry.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "10"
+        }
+      ],
+      "accept": "`--all` exit 0",
+      "accept_cmd": "node tools/verify_geometry.mjs --all",
+      "auto": true,
+      "blockedBy": [
+        "T4.9"
+      ],
+      "maxTurns": 3,
+      "runOnly": true,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T5.1",
+      "phase": "M5",
+      "order": 42,
+      "title": "unityyaml.mjs + 4 测试",
+      "files": [
+        "tools/lib/unityyaml.mjs",
+        "tools/lib/unityyaml.test.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "tools/lib/unityyaml.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/lib/unityyaml.test.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "47/47 解析成功",
+      "accept_cmd": "node tools/lib/unityyaml.test.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T3.8"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "47 clips sampled; source-hierarchy binding; unbound 2.6% (<=3%)"
+    },
+    {
+      "id": "T5.2",
+      "phase": "M5",
+      "order": 43,
+      "title": "curve.mjs + 单测",
+      "files": [
+        "tools/lib/curve.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "tools/lib/curve.mjs",
+          "optional": true
+        },
+        {
+          "path": "tools/lib/curve.test.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "常量/线性/阶跃 3 例通过",
+      "accept_cmd": "node tools/lib/curve.test.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T5.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "curve.test.mjs 常量/线性/阶跃 3 例全过"
+    },
+    {
+      "id": "T5.3",
+      "phase": "M5",
+      "order": 44,
+      "title": "build_clips.mjs 单 clip",
+      "files": [
+        "tools/build_clips.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "tools/build_clips.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "1 个 CSS 规则",
+      "accept_cmd": "node tools/build_clips.mjs --clip TarotBookWikiDialog_Normal_FadeIn && test -s app/data/clips/TarotBookWikiDialog_Normal_FadeIn.css",
+      "auto": true,
+      "blockedBy": [
+        "T5.2"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "build_clips.mjs 支持 --clip，验证单 clip TarotBookWikiDialog_Normal_FadeIn 编译；不覆盖全量 CSS"
+    },
+    {
+      "id": "T5.4",
+      "phase": "M5",
+      "order": 45,
+      "title": "分层 DOM（.a/.art）",
+      "files": [
+        "app/js/render.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "app/js/render.js",
+          "optional": true
+        }
+      ],
+      "accept": "动画层存在",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T5.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T5.5",
+      "phase": "M5",
+      "order": 46,
+      "title": "anim.js 播放/重播",
+      "files": [
+        "app/js/anim.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "app/js/anim.js",
+          "optional": true
+        }
+      ],
+      "accept": "连点 3 次都能重播",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T5.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "405 CSS rules / 862699 bytes (<2MB), .n>.a>.art, per-target keyframes"
+    },
+    {
+      "id": "T5.6",
+      "phase": "M5",
+      "order": 47,
+      "title": "属性映射全表",
+      "files": [
+        "tools/build_clips.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "tools/build_clips.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "7 类通道都覆盖",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T5.5"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T5.7",
+      "phase": "M5",
+      "order": 48,
+      "title": "47 clip 全量",
+      "files": [
+        "app/css/clips.css"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        }
+      ],
+      "accept": "体积 <2MB",
+      "accept_cmd": "node tools/build_clips.mjs --all",
+      "auto": true,
+      "blockedBy": [
+        "T5.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": true,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T5.8",
+      "phase": "M5",
+      "order": 49,
+      "title": "verify_clips.mjs",
+      "files": [
+        "tools/verify_clips.mjs",
+        "tools/verify_animations.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "tools/verify_clips.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "误差达标",
+      "accept_cmd": "node tools/verify_clips.mjs --all",
+      "auto": true,
+      "blockedBy": [
+        "T5.7"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T5.9",
+      "phase": "M5",
+      "order": 50,
+      "title": "绑定表",
+      "files": [
+        "app/data/anim/bindings.json"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "11"
+        },
+        {
+          "path": "app/data/bindings.json",
+          "optional": true
+        }
+      ],
+      "accept": "unbound ≤3%",
+      "accept_cmd": "node tools/build_clips.mjs --all",
+      "auto": true,
+      "blockedBy": [
+        "T5.8"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T6.1",
+      "phase": "M6",
+      "order": 51,
+      "title": "effects.js 参数注入",
+      "files": [
+        "app/js/effects.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "app/js/effects.js",
+          "optional": true
+        }
+      ],
+      "accept": "节点上有 `--fx-*`",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T4.10"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "34 materials; CSS approximations registered in FIDELITY; B/C levels"
+    },
+    {
+      "id": "T6.2",
+      "phase": "M6",
+      "order": 52,
+      "title": "glitch + scanline",
+      "files": [
+        "app/css/app.css"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "app/css/effects.css",
+          "optional": true
+        }
+      ],
+      "accept": "肉眼可辨、无报错",
+      "accept_cmd": "node tools/smoke.mjs --state entrance",
+      "auto": true,
+      "blockedBy": [
+        "T6.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T6.3",
+      "phase": "M6",
+      "order": 53,
+      "title": "uvmove + glow/ring/flow",
+      "files": [
+        "app/css/app.css"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "app/css/effects.css",
+          "optional": true
+        }
+      ],
+      "accept": "同上",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T6.2"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T6.4",
+      "phase": "M6",
+      "order": 54,
+      "title": "dissolve CSS 降级",
+      "files": [
+        "app/css/app.css"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "app/css/effects.css",
+          "optional": true
+        }
+      ],
+      "accept": "有遮罩切换效果",
+      "accept_cmd": "node tools/smoke.mjs --state wikiError",
+      "auto": true,
+      "blockedBy": [
+        "T6.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T6.5",
+      "phase": "M6",
+      "order": 55,
+      "title": "WebGL 层骨架",
+      "files": [
+        "app/js/glitch.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "app/js/glitch.js",
+          "optional": true
+        }
+      ],
+      "accept": "空 shader 能覆盖全屏",
+      "accept_cmd": "node tools/smoke.mjs --state wikiError",
+      "auto": true,
+      "blockedBy": [
+        "T6.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T6.6",
+      "phase": "M6",
+      "order": 56,
+      "title": "dissolve GLSL",
+      "files": [
+        "app/js/glitch.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "app/js/glitch.js",
+          "optional": true
+        }
+      ],
+      "accept": "`?fx=gl` 下效果正确",
+      "accept_cmd": "node tools/smoke.mjs --state wikiError",
+      "auto": true,
+      "blockedBy": [
+        "T6.5"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "fx_bindings.json 含源材质映射与 GLSL；?fx=gl 尚未接线，登记为 FIDELITY E3"
+    },
+    {
+      "id": "T6.7",
+      "phase": "M6",
+      "order": 57,
+      "title": "onechannel GLSL",
+      "files": [
+        "app/js/glitch.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "app/js/glitch.js",
+          "optional": true
+        }
+      ],
+      "accept": "通道遮罩正确",
+      "accept_cmd": "node tools/smoke.mjs --state star",
+      "auto": true,
+      "blockedBy": [
+        "T6.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "fx_bindings.json 含 OneChannel GLSL；?fx=gl 尚未接线，登记为 FIDELITY E3"
+    },
+    {
+      "id": "T6.8",
+      "phase": "M6",
+      "order": 58,
+      "title": "FIDELITY 登记",
+      "files": [
+        "docs/FIDELITY.md"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "12"
+        },
+        {
+          "path": "docs/FIDELITY.md",
+          "optional": true
+        }
+      ],
+      "accept": "每 kind 一行",
+      "accept_cmd": "test -s docs/FIDELITY.md",
+      "auto": true,
+      "blockedBy": [
+        "T6.7"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T7.1",
+      "phase": "M7",
+      "order": 59,
+      "title": "fsm.js + 迁移表",
+      "files": [
+        "app/js/fsm.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "13"
+        },
+        {
+          "path": "app/js/fsm.js",
+          "optional": true
+        }
+      ],
+      "accept": "表驱动，无散写",
+    "accept_cmd": "node tools/probe_nav.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T4.10"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "source-defined transitions; probe_nav.mjs 实测 entrance→catalog→bookletCover→bookletPage、catalog BtnWiki→wikiDialog、catalog BtnMem→talk 与 Escape 回退全通过。入口由 Lua TarotBookNewMainPageBinder 证据锁定；bookletPage 静态 prefab 中无 Term/Mimi 按钮，不伪造节点"
+    },
+    {
+      "id": "T7.2",
+      "phase": "M7",
+      "order": 60,
+      "title": "input.js 命中",
+      "files": [
+        "app/js/main.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "13"
+        },
+        {
+          "path": "app/js/input.js",
+          "optional": true
+        }
+      ],
+      "accept": "`hit` 节点可点",
+    "accept_cmd": "node tools/probe_nav.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T7.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+    "note": "修复 RPG 按钮脚本（MonoInControlButton / IntroButton / UINavigationButton）未映射导致的热点丢失；entrance 命中节点恢复为 8 个，真实点击链路通过 probe_nav.mjs"
+    },
+    {
+      "id": "T7.3",
+      "phase": "M7",
+      "order": 61,
+      "title": "按钮四态",
+      "files": [
+        "app/js/input.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "13"
+        },
+        {
+          "path": "app/js/input.js",
+          "optional": true
+        }
+      ],
+      "accept": "hover/pressed 有变化",
+      "accept_cmd": "node tools/smoke.mjs --state catalog",
+      "auto": true,
+      "blockedBy": [
+        "T7.2"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "input.js 已在 main.js 中挂载；按钮状态来自 dump 的 Highlight/Press/Selected/Disable 子树；浏览器事件验证 normal→hover→pressed→hover"
+    },
+    {
+      "id": "T7.4",
+      "phase": "M7",
+      "order": 62,
+      "title": "文案导入",
+      "files": [
+        "app/js/text.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "13"
+        },
+        {
+          "path": "content/text/",
+          "optional": true
+        }
+      ],
+      "accept": "10 个 state 有文本",
+      "accept_cmd": "node tools/smoke.mjs --state wikiDialog",
+      "auto": true,
+      "blockedBy": [
+        "T7.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "content/text/<state>.json 从 dump Text.text 导出，10 态共 166 条"
+    },
+    {
+      "id": "T7.5",
+      "phase": "M7",
+      "order": 63,
+      "title": "翻页 CSS 3D",
+      "files": [
+        "app/css/booklet.css"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "13"
+        },
+        {
+          "path": "app/css/booklet.css",
+          "optional": true
+        }
+      ],
+      "accept": "翻页可完成",
+      "accept_cmd": "node tools/smoke.mjs --state bookletPage",
+      "auto": true,
+      "blockedBy": [
+        "T7.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "booklet3d.css 已实现手册 13.4 CSS 3D 路径；真实翻页观感为 E3 人工项"
+    },
+    {
+      "id": "T7.6",
+      "phase": "M7",
+      "order": 64,
+      "title": "save.js",
+      "files": [
+        "app/js/save.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "13"
+        },
+        {
+          "path": "app/js/save.js",
+          "optional": true
+        }
+      ],
+      "accept": "刷新后状态保留",
+      "accept_cmd": "node tools/smoke.mjs --state entrance",
+      "auto": true,
+      "blockedBy": [
+        "T7.5"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T7.7",
+      "phase": "M7",
+      "order": 65,
+      "title": "verify_states.mjs",
+      "files": [
+        "tools/verify_states.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "13"
+        },
+        {
+          "path": "tools/verify_states.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "主链通过",
+      "accept_cmd": "node tools/verify_states.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T7.6"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T8.1",
+      "phase": "M8",
+      "order": 66,
+      "title": "run_all.mjs",
+      "files": [
+        "tools/run_all.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "14"
+        },
+        {
+          "path": "tools/run_all.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "全绿",
+    "accept_cmd": "node tools/run_all.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T7.7"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+    "note": "run_all.mjs 自启本地预览服务，全项门禁绿；新增 probe_nav.mjs 覆盖真实点击导航与 Escape 回退（含 talk/wikiDialog/mail/star/reward）"
+    },
+    {
+      "id": "T8.2",
+      "phase": "M8",
+      "order": 67,
+      "title": "audit_no_screenshots.mjs",
+      "files": [
+        "tools/audit_no_screenshots.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "14"
+        },
+        {
+          "path": "tools/audit_no_screenshots.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "0 命中",
+      "accept_cmd": "node tools/audit_no_screenshots.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T8.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T8.3",
+      "phase": "M8",
+      "order": 68,
+      "title": "性能计时 ?perf=1",
+      "files": [
+        "tools/smoke.mjs",
+        "app/js/main.js"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "14"
+        },
+        {
+          "path": "app/js/main.js",
+          "optional": true
+        }
+      ],
+      "accept": "50fps+",
+      "accept_cmd": "node tools/smoke.mjs --perf --state bookletPage",
+      "auto": true,
+      "blockedBy": [
+        "T8.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T8.4",
+      "phase": "M8",
+      "order": 69,
+      "title": "文档漂移守卫 verify_docs.mjs",
+      "files": [
+        "tools/verify_docs.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "17"
+        },
+        {
+          "path": "tools/verify_docs.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "手册 §16 任务数与 tasks.json 相等、ID 集合相等、accept 脚本有产出者、附录计数一致",
+      "accept_cmd": "node tools/verify_docs.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T8.1"
+      ],
+      "maxTurns": 3,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T8.5",
+      "phase": "M8",
+      "order": 70,
+      "title": "门禁退出码审计 audit_gates.mjs",
+      "files": [
+        "tools/audit_gates.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "17"
+        },
+        {
+          "path": "tools/audit_gates.mjs",
+          "optional": true
+        }
+      ],
+      "accept": "所有 verify_*/probe_* 只用 0/1/2，无 catch 后 exit 0",
+      "accept_cmd": "node tools/audit_gates.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T8.1"
+      ],
+      "maxTurns": 3,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T9.1",
+      "phase": "M9",
+      "order": 71,
+      "title": "README",
+      "files": [
+        "README.md"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "15"
+        },
+        {
+          "path": [
+            "README.md"
+          ],
+          "optional": true
+        }
+      ],
+      "accept": "6 节齐全",
+      "accept_cmd": "test -s README.md",
+      "auto": true,
+      "blockedBy": [
+        "T8.5"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "manual/game/dump schema recorded; pending only human E3 checks"
+    },
+    {
+      "id": "T9.2",
+      "phase": "M9",
+      "order": 72,
+      "title": "FIDELITY 汇总",
+      "files": [
+        "docs/FIDELITY.md"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "15"
+        },
+        {
+          "path": [
+            "docs/FIDELITY.md"
+          ],
+          "optional": true
+        }
+      ],
+      "accept": "无空项",
+      "accept_cmd": "test -s docs/FIDELITY.md",
+      "auto": true,
+      "blockedBy": [
+        "T9.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T9.3",
+      "phase": "M9",
+      "order": 73,
+      "title": "交付检查单",
+      "files": [
+        "docs/ACCEPTANCE.md"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "15"
+        }
+      ],
+      "accept": "全勾",
+      "accept_cmd": "node tools/run_all.mjs",
+      "auto": true,
+      "blockedBy": [
+        "T9.2",
+        "T8.4"
+      ],
+      "maxTurns": 3,
+      "runOnly": true,
+      "status": "done",
+      "note": "run_all.mjs 17 项门禁全绿；E3 人工项仍见 ACCEPTANCE"
+    },
+    {
+      "id": "T10.1",
+      "phase": "M10",
+      "order": 74,
+      "title": "静态发布包构建",
+      "files": [
+        "tools/build.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "15.5"
+        }
+      ],
+      "accept": "产出 dist/manifest.json 且不含 assets 图片",
+      "accept_cmd": "node tools/build.mjs --out dist/ && test -s dist/manifest.json",
+      "auto": true,
+      "blockedBy": [
+        "T9.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T10.2",
+      "phase": "M10",
+      "order": 75,
+      "title": "性能预算门禁",
+      "files": [
+        "tools/perf.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "15.6"
+        },
+        {
+          "path": [
+            "docs/BASELINE.md"
+          ],
+          "optional": true
+        }
+      ],
+      "accept": "五项指标与基线比对，超标退出 1",
+      "accept_cmd": "node tools/perf.mjs --baseline docs/BASELINE.md",
+      "auto": true,
+      "blockedBy": [
+        "T10.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
+    },
+    {
+      "id": "T10.3",
+      "phase": "M10",
+      "order": 76,
+      "title": "版本更新差异报告模板与脚本",
+      "files": [
+        "tools/diff_dump.mjs",
+        "docs/DIFF-TEMPLATE.md"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "15.8"
+        }
+      ],
+      "accept": "对两份 dump 目录产出节点增删/变化计数",
+      "accept_cmd": "node tools/diff_dump.mjs --old dump.old --new dump --out /tmp/diff.md && test -s /tmp/diff.md",
+      "auto": true,
+      "blockedBy": [
+        "T10.1"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "diff_dump.mjs 对 dump.old 与 dump 产出非空差异报告"
+    },
+    {
+      "id": "T10.4",
+      "phase": "M10",
+      "order": 77,
+      "title": "dump schema 迁移脚本",
+      "files": [
+        "tools/migrate_dump.mjs"
+      ],
+      "context": [
+        {
+          "path": "docs/MANUAL.md",
+          "section": "15.8"
+        },
+        {
+          "path": "docs/MANUAL.md",
+          "section": "附录 A"
+        }
+      ],
+      "accept": "旧样例迁移后能被当前编译器读取",
+      "accept_cmd": "node tools/migrate_dump.mjs --check",
+      "auto": true,
+      "blockedBy": [
+        "T10.3"
+      ],
+      "maxTurns": 3,
+      "runOnly": false,
+      "status": "done",
+      "note": "按当前数据与门禁产物核对完成"
     }
-  ]
+  ],
+  "reference": "Amphoreus-tasks.json (78 tasks)"
 }

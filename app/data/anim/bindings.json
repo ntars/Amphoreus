@@ -1,0 +1,1097 @@
+{
+  "entrance": {
+    "onEnter": [
+      {
+        "clip": "CardItemNone",
+        "targets": [
+          "n-0315",
+          null
+        ]
+      },
+      {
+        "clip": "CardItemShow",
+        "targets": [
+          "n-0315",
+          null
+        ]
+      },
+      {
+        "clip": "TarotBookDialogueSelectPanelFadeIn",
+        "targets": [
+          "n-0000"
+        ]
+      },
+      {
+        "clip": "TarotBookGuideTalkDialogFadeIn",
+        "targets": [
+          null,
+          "n-0026",
+          "n-0039",
+          "n-0007"
+        ]
+      },
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeIn",
+        "targets": [
+          "n-0249",
+          "n-0002",
+          "n-0000",
+          "n-0141",
+          "n-0040",
+          "n-0292",
+          "n-0026",
+          "n-0047",
+          null
+        ]
+      },
+      {
+        "clip": "TarotBookMimiTalkPage_FadeIn2",
+        "targets": [
+          null
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_FadeIn",
+        "targets": [
+          "n-0000",
+          "n-0291",
+          "n-0002",
+          "n-0141",
+          "n-0293",
+          "n-0004",
+          "n-0335",
+          "n-0311"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_ScreenFadeIn",
+        "targets": [
+          "n-0000",
+          "n-0291",
+          "n-0002",
+          "n-0141",
+          "n-0293",
+          "n-0004",
+          "n-0335",
+          "n-0311"
+        ]
+      },
+      {
+        "clip": "TarotBookTalkInfoItem_FadeIn",
+        "targets": [
+          "n-0100"
+        ]
+      },
+      {
+        "clip": "TarotBookTimelineInfoItem_FadeIn",
+        "targets": [
+          null,
+          "n-0311",
+          "n-0039",
+          "n-0319"
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_Error_FadeIn",
+        "targets": [
+          null
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_Normal_FadeIn",
+        "targets": [
+          null
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookDialogueSelectPanelFadeOut",
+        "targets": [
+          "n-0000"
+        ]
+      },
+      {
+        "clip": "TarotBookGuideBtnTypeRect_FadeOut",
+        "targets": [
+          "n-0000"
+        ]
+      },
+      {
+        "clip": "TarotBookGuideTalkDialogFadeOut",
+        "targets": [
+          "n-0026",
+          null,
+          "n-0039",
+          "n-0007"
+        ]
+      },
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeOut",
+        "targets": [
+          "n-0142",
+          "n-0002",
+          "n-0000",
+          null,
+          "n-0249"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_FadeOut",
+        "targets": [
+          "n-0000",
+          "n-0291",
+          "n-0002",
+          "n-0311",
+          "n-0141",
+          "n-0004"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_ScreenFadeOut",
+        "targets": [
+          "n-0000",
+          "n-0291",
+          "n-0002",
+          "n-0311",
+          "n-0141",
+          "n-0004"
+        ]
+      }
+    ],
+    "loops": [
+      {
+        "clip": "TarotBookGuideBtnTypeRect_Loop",
+        "targets": [
+          null
+        ]
+      },
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_Loop",
+        "targets": [
+          "n-0141",
+          "n-0249"
+        ]
+      },
+      {
+        "clip": "TarotBookVoiceLoop",
+        "targets": [
+          null
+        ]
+      }
+    ],
+    "onStateChange": [
+      {
+        "clip": "TarotBookWikiDialog_ErrorToNormTransition",
+        "targets": [
+          null
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_NormToErrorTransition",
+        "targets": [
+          null
+        ]
+      }
+    ],
+    "buttons": {},
+    "manual": [
+      {
+        "clip": "TarotBookGuideBtnTypeRect",
+        "targets": [
+          "n-0141",
+          "n-0000"
+        ]
+      },
+      {
+        "clip": "TarotBookMailDilalogShowLeftTab",
+        "targets": [
+          "n-0026",
+          "n-0237"
+        ]
+      },
+      {
+        "clip": "TarotBookStoryStarShow",
+        "targets": [
+          "n-0141"
+        ]
+      },
+      {
+        "clip": "TarotBookTalkSelectTab_UnlockHint",
+        "targets": [
+          null
+        ]
+      }
+    ]
+  },
+  "catalog": {
+    "onEnter": [
+      {
+        "clip": "TarotBookDialogueSelectPanelFadeIn",
+        "targets": [
+          "n-0367"
+        ]
+      },
+      {
+        "clip": "TarotBookGuideTalkDialogFadeIn",
+        "targets": [
+          "n-0297"
+        ]
+      },
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeIn",
+        "targets": [
+          "n-0011",
+          "n-0157",
+          "n-0007"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_FadeIn",
+        "targets": [
+          "n-0332",
+          "n-0288",
+          "n-0361",
+          "n-0352",
+          "n-0020"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_ScreenFadeIn",
+        "targets": [
+          "n-0288",
+          "n-0361",
+          "n-0352",
+          "n-0020"
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookDialogueSelectPanelFadeOut",
+        "targets": [
+          "n-0367"
+        ]
+      },
+      {
+        "clip": "TarotBookGuideTalkDialogFadeOut",
+        "targets": [
+          "n-0297"
+        ]
+      },
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeOut",
+        "targets": [
+          "n-0014"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_FadeOut",
+        "targets": [
+          "n-0332",
+          "n-0352",
+          "n-0020"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_ScreenFadeOut",
+        "targets": [
+          "n-0352",
+          "n-0020"
+        ]
+      }
+    ],
+    "loops": [
+      {
+        "clip": "TarotBookAssistantIconLoop_Normal",
+        "targets": [
+          "n-0236",
+          "n-0238"
+        ]
+      },
+      {
+        "clip": "TarotBookAssistantIconLoop_SP",
+        "targets": [
+          "n-0236"
+        ]
+      },
+      {
+        "clip": "TarotBookGuideBtnTypeRect_Loop",
+        "targets": [
+          "n-0223"
+        ]
+      }
+    ],
+    "onStateChange": [],
+    "buttons": {},
+    "manual": [
+      {
+        "clip": "TarotBookStoryStarShow",
+        "targets": [
+          "n-0154"
+        ]
+      }
+    ]
+  },
+  "bookletCover": {
+    "onEnter": [
+      {
+        "clip": "TarotBookBookletPage_FadeIn",
+        "targets": [
+          "n-0008",
+          "n-0069",
+          "n-0061",
+          "n-0062",
+          "n-0064",
+          "n-0065",
+          "n-0217",
+          "n-0218",
+          "n-0010",
+          "n-0145",
+          "n-0198",
+          "n-0009",
+          "n-0136",
+          "n-0057",
+          "n-0060",
+          "n-0063",
+          "n-0066",
+          "n-0067",
+          "n-0006",
+          "n-0395",
+          "n-0387",
+          "n-0402"
+        ]
+      },
+      {
+        "clip": "TarotBookBookletPage_FadeIn3",
+        "targets": [
+          "n-0008",
+          "n-0069",
+          "n-0061",
+          "n-0062",
+          "n-0064",
+          "n-0065",
+          "n-0217",
+          "n-0218",
+          "n-0010",
+          "n-0145",
+          "n-0198",
+          "n-0009",
+          "n-0136",
+          "n-0057",
+          "n-0060",
+          "n-0063",
+          "n-0066",
+          "n-0067",
+          "n-0006",
+          "n-0402",
+          "n-0395",
+          "n-0387"
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookBookletPage_FadeOut",
+        "targets": [
+          "n-0008",
+          "n-0069",
+          "n-0061",
+          "n-0062",
+          "n-0064",
+          "n-0065",
+          "n-0010",
+          "n-0145",
+          "n-0060",
+          "n-0063",
+          "n-0066",
+          "n-0067",
+          "n-0009",
+          "n-0217",
+          "n-0198",
+          "n-0218",
+          "n-0402",
+          "n-0395",
+          "n-0387"
+        ]
+      }
+    ],
+    "loops": [],
+    "onStateChange": [],
+    "buttons": {},
+    "manual": [
+      {
+        "clip": "TarotBookMailDilalogShowLeftTab",
+        "targets": [
+          "n-0011"
+        ]
+      },
+      {
+        "clip": "TarotBookTalkSelectTab_UnlockHint",
+        "targets": [
+          "n-0041"
+        ]
+      }
+    ]
+  },
+  "bookletPage": {
+    "onEnter": [
+      {
+        "clip": "TarotBookBookletPage_FadeIn",
+        "targets": [
+          "n-0008",
+          "n-0069",
+          "n-0061",
+          "n-0062",
+          "n-0064",
+          "n-0065",
+          "n-0217",
+          "n-0218",
+          "n-0010",
+          "n-0145",
+          "n-0198",
+          "n-0009",
+          "n-0136",
+          "n-0057",
+          "n-0060",
+          "n-0063",
+          "n-0066",
+          "n-0067",
+          "n-0006",
+          "n-0395",
+          "n-0387",
+          "n-0402"
+        ]
+      },
+      {
+        "clip": "TarotBookBookletPage_FadeIn3",
+        "targets": [
+          "n-0008",
+          "n-0069",
+          "n-0061",
+          "n-0062",
+          "n-0064",
+          "n-0065",
+          "n-0217",
+          "n-0218",
+          "n-0010",
+          "n-0145",
+          "n-0198",
+          "n-0009",
+          "n-0136",
+          "n-0057",
+          "n-0060",
+          "n-0063",
+          "n-0066",
+          "n-0067",
+          "n-0006",
+          "n-0402",
+          "n-0395",
+          "n-0387"
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookBookletPage_FadeOut",
+        "targets": [
+          "n-0008",
+          "n-0069",
+          "n-0061",
+          "n-0062",
+          "n-0064",
+          "n-0065",
+          "n-0010",
+          "n-0145",
+          "n-0060",
+          "n-0063",
+          "n-0066",
+          "n-0067",
+          "n-0009",
+          "n-0217",
+          "n-0198",
+          "n-0218",
+          "n-0402",
+          "n-0395",
+          "n-0387"
+        ]
+      }
+    ],
+    "loops": [],
+    "onStateChange": [],
+    "buttons": {},
+    "manual": []
+  },
+  "talk": {
+    "onEnter": [
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeIn",
+        "targets": [
+          "n-0056",
+          "n-0209"
+        ]
+      },
+      {
+        "clip": "TarotBookMimiTalkPage_FadeIn2",
+        "targets": [
+          "n-0054",
+          "n-0019",
+          "n-0020",
+          "n-0011",
+          "n-0012",
+          "n-0166",
+          "n-0180",
+          "n-0181",
+          "n-0062",
+          "n-0014",
+          "n-0022",
+          "n-0050",
+          "n-0026",
+          "n-0192",
+          "n-0179",
+          "n-0182",
+          "n-0178",
+          "n-0177",
+          "n-0184",
+          "n-0186",
+          "n-0099",
+          "n-0021",
+          "n-0013",
+          "n-0009",
+          "n-0248",
+          "n-0263",
+          "n-0056",
+          "n-0096",
+          "n-0197",
+          "n-0255",
+          "n-0193"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_FadeIn",
+        "targets": [
+          "n-0209",
+          "n-0056"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_ScreenFadeIn",
+        "targets": [
+          "n-0209",
+          "n-0056"
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookSPTalkPage_FadeOut",
+        "targets": [
+          "n-0056"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_ScreenFadeOut",
+        "targets": [
+          "n-0056"
+        ]
+      }
+    ],
+    "loops": [],
+    "onStateChange": [],
+    "buttons": {},
+    "manual": [
+      {
+        "clip": "TarotBookMailDilalogShowLeftTab",
+        "targets": [
+          "n-0209"
+        ]
+      },
+      {
+        "clip": "TarotBookTalkSelectTab_UnlockHint",
+        "targets": [
+          "n-0179"
+        ]
+      }
+    ]
+  },
+  "wikiDialog": {
+    "onEnter": [
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeIn",
+        "targets": [
+          "n-0067",
+          "n-0141",
+          "n-0135",
+          "n-0206",
+          "n-0161"
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_Error_FadeIn",
+        "targets": [
+          "n-0173",
+          "n-0174",
+          "n-0210",
+          "n-0211",
+          "n-0219",
+          "n-0160",
+          "n-0177",
+          "n-0000",
+          "n-0229",
+          "n-0002",
+          "n-0170",
+          "n-0171",
+          "n-0169",
+          "n-0172",
+          "n-0175",
+          "n-0168",
+          "n-0202",
+          "n-0205",
+          "n-0203",
+          "n-0208",
+          "n-0206",
+          "n-0209",
+          "n-0207",
+          "n-0212",
+          "n-0161",
+          "n-0135",
+          "n-0166",
+          "n-0200",
+          "n-0068",
+          "n-0237",
+          "n-0005",
+          "n-0020",
+          "n-0022",
+          "n-0162",
+          "n-0057",
+          "n-0157",
+          "n-0151",
+          "n-0149",
+          "n-0152",
+          "n-0140",
+          "n-0144",
+          "n-0143",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180"
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_Normal_FadeIn",
+        "targets": [
+          "n-0173",
+          "n-0174",
+          "n-0210",
+          "n-0211",
+          "n-0219",
+          "n-0160",
+          "n-0177",
+          "n-0000",
+          "n-0229",
+          "n-0002",
+          "n-0170",
+          "n-0171",
+          "n-0169",
+          "n-0172",
+          "n-0175",
+          "n-0168",
+          "n-0202",
+          "n-0205",
+          "n-0203",
+          "n-0208",
+          "n-0206",
+          "n-0209",
+          "n-0207",
+          "n-0212",
+          "n-0161",
+          "n-0135",
+          "n-0166",
+          "n-0200",
+          "n-0068",
+          "n-0237",
+          "n-0005",
+          "n-0020",
+          "n-0162",
+          "n-0048",
+          "n-0157",
+          "n-0151",
+          "n-0149",
+          "n-0152",
+          "n-0140",
+          "n-0144",
+          "n-0143",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180"
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeOut",
+        "targets": [
+          "n-0067",
+          "n-0004",
+          "n-0206",
+          "n-0161"
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_FadeOut",
+        "targets": [
+          "n-0000",
+          "n-0229",
+          "n-0177",
+          "n-0002"
+        ]
+      }
+    ],
+    "loops": [],
+    "onStateChange": [
+      {
+        "clip": "TarotBookWikiDialog_ErrorToNormTransition",
+        "targets": [
+          "n-0150",
+          "n-0005",
+          "n-0020",
+          "n-0151",
+          "n-0157",
+          "n-0152",
+          "n-0149",
+          "n-0140",
+          "n-0143",
+          "n-0144",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180",
+          "n-0219"
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_NormToErrorTransition",
+        "targets": [
+          "n-0150",
+          "n-0005",
+          "n-0020",
+          "n-0067",
+          "n-0022",
+          "n-0038",
+          "n-0152",
+          "n-0149",
+          "n-0151",
+          "n-0157",
+          "n-0140",
+          "n-0144",
+          "n-0143",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180",
+          "n-0219"
+        ]
+      }
+    ],
+    "buttons": {},
+    "manual": [
+      {
+        "clip": "TarotBookMailDilalogShowLeftTab",
+        "targets": [
+          "n-0206"
+        ]
+      },
+      {
+        "clip": "TarotBookStoryStarShow",
+        "targets": [
+          "n-0215"
+        ]
+      },
+      {
+        "clip": "TarotBookTalkSelectTab_UnlockHint",
+        "targets": [
+          "n-0215"
+        ]
+      }
+    ]
+  },
+  "wikiError": {
+    "onEnter": [
+      {
+        "clip": "TarotBookWikiDialog_Error_FadeIn",
+        "targets": [
+          "n-0173",
+          "n-0174",
+          "n-0210",
+          "n-0211",
+          "n-0219",
+          "n-0160",
+          "n-0177",
+          "n-0000",
+          "n-0229",
+          "n-0002",
+          "n-0170",
+          "n-0171",
+          "n-0169",
+          "n-0172",
+          "n-0175",
+          "n-0168",
+          "n-0202",
+          "n-0205",
+          "n-0203",
+          "n-0208",
+          "n-0206",
+          "n-0209",
+          "n-0207",
+          "n-0212",
+          "n-0161",
+          "n-0135",
+          "n-0166",
+          "n-0200",
+          "n-0068",
+          "n-0237",
+          "n-0005",
+          "n-0020",
+          "n-0022",
+          "n-0162",
+          "n-0057",
+          "n-0157",
+          "n-0151",
+          "n-0149",
+          "n-0152",
+          "n-0140",
+          "n-0144",
+          "n-0143",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180"
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_Normal_FadeIn",
+        "targets": [
+          "n-0173",
+          "n-0174",
+          "n-0210",
+          "n-0211",
+          "n-0219",
+          "n-0160",
+          "n-0177",
+          "n-0000",
+          "n-0229",
+          "n-0002",
+          "n-0170",
+          "n-0171",
+          "n-0169",
+          "n-0172",
+          "n-0175",
+          "n-0168",
+          "n-0202",
+          "n-0205",
+          "n-0203",
+          "n-0208",
+          "n-0206",
+          "n-0209",
+          "n-0207",
+          "n-0212",
+          "n-0161",
+          "n-0135",
+          "n-0166",
+          "n-0200",
+          "n-0068",
+          "n-0237",
+          "n-0005",
+          "n-0020",
+          "n-0162",
+          "n-0048",
+          "n-0157",
+          "n-0151",
+          "n-0149",
+          "n-0152",
+          "n-0140",
+          "n-0144",
+          "n-0143",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180"
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookWikiDialog_FadeOut",
+        "targets": [
+          "n-0000",
+          "n-0229",
+          "n-0177",
+          "n-0002"
+        ]
+      }
+    ],
+    "loops": [],
+    "onStateChange": [
+      {
+        "clip": "TarotBookWikiDialog_ErrorToNormTransition",
+        "targets": [
+          "n-0150",
+          "n-0005",
+          "n-0020",
+          "n-0151",
+          "n-0157",
+          "n-0152",
+          "n-0149",
+          "n-0140",
+          "n-0143",
+          "n-0144",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180",
+          "n-0219"
+        ]
+      },
+      {
+        "clip": "TarotBookWikiDialog_NormToErrorTransition",
+        "targets": [
+          "n-0150",
+          "n-0005",
+          "n-0020",
+          "n-0067",
+          "n-0022",
+          "n-0038",
+          "n-0152",
+          "n-0149",
+          "n-0151",
+          "n-0157",
+          "n-0140",
+          "n-0144",
+          "n-0143",
+          "n-0077",
+          "n-0076",
+          "n-0072",
+          "n-0071",
+          "n-0180",
+          "n-0219"
+        ]
+      }
+    ],
+    "buttons": {},
+    "manual": []
+  },
+  "mail": {
+    "onEnter": [
+      {
+        "clip": "TarotBookMailDialog_FadeIn",
+        "targets": [
+          "n-0024",
+          "n-0005",
+          "n-0056",
+          "n-0069",
+          "n-0067",
+          "n-0000",
+          "n-0094",
+          "n-0002",
+          "n-0004",
+          "n-0023",
+          "n-0110",
+          "n-0045",
+          "n-0102",
+          "n-0046",
+          "n-0072",
+          "n-0058",
+          "n-0059",
+          "n-0060",
+          "n-0063",
+          "n-0066",
+          "n-0068",
+          "n-0025",
+          "n-0028"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_FadeIn",
+        "targets": [
+          "n-0110"
+        ]
+      },
+      {
+        "clip": "TarotBookSPTalkPage_ScreenFadeIn",
+        "targets": [
+          "n-0110"
+        ]
+      }
+    ],
+    "onLeave": [
+      {
+        "clip": "TarotBookMailDialog_FadeOut",
+        "targets": [
+          "n-0000",
+          "n-0094",
+          "n-0002",
+          "n-0004",
+          "n-0046",
+          "n-0023",
+          "n-0024",
+          "n-0025"
+        ]
+      }
+    ],
+    "loops": [],
+    "onStateChange": [],
+    "buttons": {},
+    "manual": [
+      {
+        "clip": "TarotBookGuideBtnTypeRect",
+        "targets": [
+          "n-0068"
+        ]
+      },
+      {
+        "clip": "TarotBookMailDilalogShowLeftTab",
+        "targets": [
+          "n-0057"
+        ]
+      }
+    ]
+  },
+  "star": {
+    "onEnter": [],
+    "onLeave": [],
+    "loops": [
+      {
+        "clip": "TarotBookVoiceLoop",
+        "targets": [
+          "n-0009"
+        ]
+      }
+    ],
+    "onStateChange": [],
+    "buttons": {},
+    "manual": []
+  },
+  "reward": {
+    "onEnter": [],
+    "onLeave": [
+      {
+        "clip": "TarotBookMainEntranceErrorDialog_FadeOut",
+        "targets": [
+          "n-0230"
+        ]
+      }
+    ],
+    "loops": [],
+    "onStateChange": [],
+    "buttons": {},
+    "manual": []
+  }
+}

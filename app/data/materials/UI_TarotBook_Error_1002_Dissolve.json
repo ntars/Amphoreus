@@ -1,0 +1,81 @@
+{
+  "name": "UI_TarotBook_Error_1002_Dissolve",
+  "kind": "Dissolve",
+  "sourceFile": "UI_TarotBook_Error_1002_Dissolve.json",
+  "sha1": "c75d98b90a4720bbc8281c30cf07d0701e44fefb",
+  "floats": {
+    "_Cull": 0,
+    "_CustomData": 0,
+    "_DstBlend": 10,
+    "_MaskON": 1,
+    "_Mid": 1,
+    "_SrcBlend": 5,
+    "_ZWrite": 0
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_DisGSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_DisRSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": -0.3,
+      "a": 0
+    },
+    "_MaskChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_MidColor": {
+      "r": 1.7179477,
+      "g": 0.14488715,
+      "b": 0,
+      "a": 0.14901961
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0.2,
+      "b": -0.3,
+      "a": 0
+    },
+    "_SmoothStep": {
+      "r": 0.1,
+      "g": 0.44,
+      "b": 0,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_DisTex": {
+      "scale": {
+        "X": 1,
+        "Y": -1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0.83
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1.5
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

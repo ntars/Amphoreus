@@ -1,0 +1,22 @@
+/* Manual 13.4 path 2. Geometry comes from dump/bookletPage.json and the
+   authored Spine clip duration; no screenshot or hand-tuned coordinate. */
+#stage[data-booklet-page] .node[data-path$="/PagePanel/PageFrame/Left"]>.a,
+#stage[data-booklet-page] .node[data-path$="/PagePanel/PageFrame/Right"]>.a{
+  transform-style:preserve-3d;
+  backface-visibility:hidden;
+}
+#stage[data-booklet-page][data-flip="1"] .node[data-path$="/PagePanel/PageFrame/Right"]>.a{
+  transform-origin:left center;
+  animation:booklet-right-turn var(--page-duration,1333.333ms) linear both;
+}
+#stage[data-booklet-page][data-flip="1"] .node[data-path$="/PagePanel/PageFrame/Left"]>.a{
+  animation:booklet-left-reveal var(--page-duration,1333.333ms) linear both;
+}
+@keyframes booklet-right-turn{
+  from{transform:rotateY(0deg)}
+  to{transform:rotateY(-170deg)}
+}
+@keyframes booklet-left-reveal{
+  from{opacity:0.45}
+  to{opacity:1}
+}

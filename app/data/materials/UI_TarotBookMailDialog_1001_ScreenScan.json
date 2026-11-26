@@ -1,0 +1,83 @@
+{
+  "name": "UI_TarotBookMailDialog_1001_ScreenScan",
+  "kind": "Scanline",
+  "sourceFile": "UI_TarotBookMailDialog_1001_ScreenScan.json",
+  "sha1": "8825f65c44db0f9e03b52815c2d3e5517827f9fd",
+  "floats": {
+    "_CL2": 2,
+    "_DstBlend": 10,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 1,
+      "g": 1,
+      "b": 0,
+      "a": 0
+    },
+    "_MainChannel": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MainChannelRGB": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.078431375
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0.08,
+      "b": 1,
+      "a": 1
+    },
+    "_MaskChannel": {
+      "r": 1,
+      "g": 0,
+      "b": -0.22,
+      "a": 0.05
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_NoiseSpeedG": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 2,
+        "Y": 4
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 0,
+        "Y": 0
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

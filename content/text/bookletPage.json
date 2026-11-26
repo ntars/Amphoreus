@@ -1,0 +1,156 @@
+{
+  "state": "bookletPage",
+  "source": "dump/bookletPage.json",
+  "entries": [
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel/Text",
+      "text": "回到目录",
+      "key": "UIText_TarotBook_StoryTemplatePage_ToCata",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/BookTabPanel/RightTabArea/TBMainCataTab/StatePanel/TextPanel/DecoText",
+      "text": "C a t a l o g u e",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page7/Text",
+      "text": "DevUI_Page5",
+      "key": "DevUI_Page5",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page6/Text",
+      "text": "DevUI_Page5",
+      "key": "DevUI_Page5",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page5/Text",
+      "text": "DevUI_Page5",
+      "key": "DevUI_Page5",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page4/Text",
+      "text": "DevUI_Page4",
+      "key": "DevUI_Page4",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page3/Text",
+      "text": "DevUI_Page3",
+      "key": "DevUI_Page3",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page2/Text",
+      "text": "DevUI_Page2",
+      "key": "DevUI_Page2",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page1/Text",
+      "text": "DevUI_Page1",
+      "key": "DevUI_Page1",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/BookPage/BookPro/Page0/Text",
+      "text": "DevUI_Page0",
+      "key": "DevUI_Page0",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/MainBookPanel/PagePanel/FinishText/Text",
+      "text": "本节完",
+      "key": "UIText_TarotBook_StoryTemplatePage_Finish",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel/Text",
+      "text": "点击书页继续",
+      "key": "UIText_TarotBook_StoryTemplatePage_Click",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/HintPanel/KeyMapHIntInfo/Text",
+      "text": "点击书页继续",
+      "key": "UIText_TarotBook_StoryTemplatePage_Click",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text/BackText",
+      "text": "上一节",
+      "key": "UIText_TarotBook_StoryTemplatePage_Back",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/PreBtn/Root/TextPanel/Text/DecoText",
+      "text": "Previous Section",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text/BackText",
+      "text": "下一节",
+      "key": "UIText_TarotBook_StoryTemplatePage_Next",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/BtnPanel/NextBtn/Root/TextPanel/Text/DecoText",
+      "text": "Next Section",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text/BackText",
+      "text": "上一节",
+      "key": "UIText_TarotBook_StoryTemplatePage_Back",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnLeft/Root/TextPanel/Text/DecoText",
+      "text": "Flip Page",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text/BackText",
+      "text": "上一节",
+      "key": "UIText_TarotBook_StoryTemplatePage_Back",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Root/PanelContent/FunctionPanel/Root/ArrowPanel/BtnRight/Root/TextPanel/Text/DecoText",
+      "text": "Flip Page",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Bg/ScreenBg/BottomBar/CountText",
+      "text": "DevUI_CountText",
+      "key": "DevUI_CountText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Bg/ScreenBg/BottomBar/TimeText",
+      "text": "0000",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Outside/PageInfo/Title/TitleText",
+      "text": "如我所书",
+      "key": "UIText_TarotBook_Title",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookBookletPage/Outside/PageInfo/TitleType/Text",
+      "text": "翁法罗斯英雄纪",
+      "key": "UIText_TarotBook_MainPage_StoryBook",
+      "source": "dump/Text.text"
+    }
+  ]
+}

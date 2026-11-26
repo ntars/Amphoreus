@@ -1,0 +1,17 @@
+/* Manual 12: CSS fallback material effects. Parameter names come from
+   app/data/materials.json; the WebGL layer uses app/data/fx_bindings.json. */
+.fx-layer{position:absolute;left:0;top:0;width:1920px;height:1080px;pointer-events:none;z-index:900}
+.fx-fallback{position:fixed;right:8px;bottom:8px;z-index:901;color:#d8ddea;background:#000a;font:12px monospace;padding:6px 10px;pointer-events:none}
+#stage .node[data-fx="Dissolve"]>.a>.art>.img{
+  -webkit-mask-image:url(../assets/noise-256.png),url(../assets/noise-256.png);
+  mask-image:url(../assets/noise-256.png),url(../assets/noise-256.png);
+  -webkit-mask-composite:source-in;
+  mask-composite:intersect;
+  -webkit-mask-size:180% 180%,100% 100%;
+  mask-size:180% 180%,100% 100%;
+  mask-position:calc(var(--fx-dis-g-speed, 0) * 40%) 0,0 0;
+  filter:contrast(calc(1 + var(--fx-smooth-step, 0) * 6));
+}
+#stage .node[data-fx="OneChannel"]>.a>.art>.img{
+  filter:grayscale(1) contrast(calc(1 + var(--fx-emission-intensity, 1)));
+}

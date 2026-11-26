@@ -1,0 +1,15 @@
+/* Manual 13.4 path 2: CSS 3D fallback when Spine runtime is unavailable.
+   Duration is supplied from the source clip at runtime via --page-duration;
+   no screenshot or hand-tuned easing is used. */
+#stage[data-flip] #viewport-book {
+  perspective: 1600px;
+  transform-style: preserve-3d;
+}
+#stage[data-flip] #viewport-book > .a {
+  transform-origin: left center;
+  animation: booklet-flip var(--page-duration, 420ms) linear both;
+}
+@keyframes booklet-flip {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-170deg); }
+}

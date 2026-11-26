@@ -1,0 +1,96 @@
+{
+  "state": "catalog",
+  "source": "dump/catalog.json",
+  "entries": [
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/FunctionList/BtnBook/Root/TextPanel/FunctionName",
+      "text": "翁法罗斯英雄纪.exe",
+      "key": "UIText_TarotBook_Appname_StoryBook",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/FunctionList/BtnStar/Root/TextPanel/FunctionName",
+      "text": "逐火者的命路.exe",
+      "key": "UIText_TarotBook_Appname_Star",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/FunctionList/BtnMem/Root/TextPanel/FunctionName",
+      "text": "迷迷.exe",
+      "key": "UIText_TarotBook_Appname_Mimilog",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/FunctionList/BtnPaper/Root/TextPanel/FunctionName",
+      "text": "管理员批注.wav",
+      "key": "UIText_TarotBook_Appname_Specialfile",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/FunctionList/BtnWiki/Root/TextPanel/FunctionName",
+      "text": "δ-me<ub>13</ub>.exe",
+      "key": "UIText_TarotBook_Appname_Wiki",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/FunctionList/BtnMail/Root/TextPanel/FunctionName",
+      "text": "邮箱.exe",
+      "key": "UIText_TarotBook_Appname_Mailbox",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/DesktopPanel/NewMailHint/BtnGo/TextPanel/Text",
+      "text": "前往查看",
+      "key": "UIText_AvatarSkinGoto",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/GoToPanel/HintPanel/TextPanel/HintText",
+      "text": "DevUI_TipContent",
+      "key": "DevUI_TipContent",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Root/PanelContent/GoToPanel/HintPanel/BtnPanel/BtnGo/TextPanel/Text",
+      "text": "载入",
+      "key": "UIText_TarotBook_Newenergy_Button",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Bg/ScreenBg/BottomBar/CountText",
+      "text": "主界面",
+      "key": "UIText_TarotBook_Desktop_AppNum",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Bg/ScreenBg/BottomBar/TimeText",
+      "text": "0000",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Outside/Content/SwitchPanel/BtnSwitch/Root/TextPanel/Text",
+      "text": "翻开《如我所书》",
+      "key": "UIText_TarotBook_Change_Hint2",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Outside/RewardPanel/BtnReward/TextPanel/Root/Text",
+      "text": "著者的菲仪",
+      "key": "UIText_TarotBook_MainPage_Reward",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Outside/PageInfo/Title/TitleText",
+      "text": "如我所书",
+      "key": "UIText_TarotBook_Title",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookRealMainPage/Outside/PageInfo/TitleType/Text",
+      "text": "神话之外",
+      "key": "UIText_TarotBook_Title_Updated",
+      "source": "dump/Text.text"
+    }
+  ]
+}

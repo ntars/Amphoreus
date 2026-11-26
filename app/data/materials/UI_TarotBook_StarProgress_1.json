@@ -1,0 +1,19 @@
+{
+  "name": "UI_TarotBook_StarProgress_1",
+  "kind": "Other",
+  "sourceFile": "UI_TarotBook_StarProgress_1.json",
+  "sha1": "dd3e948a18a401b760b55a2cfadb31210fc578c2",
+  "floats": {
+    "_Offset": 0,
+    "_Percent": 1
+  },
+  "colors": {
+    "_NoFillColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0
+    }
+  },
+  "textures": {}
+}

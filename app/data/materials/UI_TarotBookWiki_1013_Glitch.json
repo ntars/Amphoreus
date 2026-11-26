@@ -1,0 +1,68 @@
+{
+  "name": "UI_TarotBookWiki_1013_Glitch",
+  "kind": "Glitch",
+  "sourceFile": "UI_TarotBookWiki_1013_Glitch.json",
+  "sha1": "cbafd88d5515637f2b4f67b90ca35d9f1061d685",
+  "floats": {
+    "_Cull": 0,
+    "_DstBlend": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5,
+    "_Stencil": 7,
+    "_StencilComp": 0
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_MainChannel": {
+      "r": 0,
+      "g": 1,
+      "b": 0,
+      "a": 1
+    },
+    "_MainChannelRGB": {
+      "r": 0,
+      "g": 1,
+      "b": 0,
+      "a": 0
+    },
+    "_MaskChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_NoiseSpeed": {
+      "r": -1,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 2
+      },
+      "offset": {
+        "X": 0,
+        "Y": -0.73
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 0,
+        "Y": 2
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

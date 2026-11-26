@@ -1,0 +1,240 @@
+{
+  "state": "reward",
+  "source": "dump/reward.json",
+  "entries": [
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/AvatarInfo/NamePanel/RoleNameInfo/Text",
+      "text": "DevUI_Text",
+      "key": "DevUI_Text",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/AvatarInfo/NamePanel/RoleNameInfo/BtnTipsDisable/Text",
+      "text": "详情",
+      "key": "UIText_Equipment_Detail",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/AvatarlnfoPanel/ProfessionPanel/TitlePanel/Text",
+      "text": "巡猎",
+      "key": "AvatarBaseType_2",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/BtnGo/TextPanel/Text",
+      "text": "前往星魂同调",
+      "key": "UIText_ActivitySword_RankReward_Goto_Btn",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/HintPanel/HintText",
+      "text": "翻阅故事可获得",
+      "key": "UIText_TarotBook_Reward_Tab1_Detail1",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/LeftPanel/BtnPanel/HintPanel/RankPanel/ItemName",
+      "text": "「开拓者•记忆」的星魂×2",
+      "key": "UIText_TarotBook_Reward_Tab1_Detail2",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/TipText",
+      "text": "DevUI_LockTip:",
+      "key": "DevUI_LockTip:",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Day",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/DayText",
+      "text": "天",
+      "key": "UIText_ItemDetail_RemainTime_Day",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Hour",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/HourText",
+      "text": "时",
+      "key": "UIText_ItemDetail_RemainTime_Hour",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Minute",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/MinuteText",
+      "text": "分钟",
+      "key": "UIText_ItemDetail_RemainTime_Minute",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Second",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/ReadRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/SecondText",
+      "text": "秒",
+      "key": "UIText_ItemDetail_RemainTime_Second",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/DecoPanel/DecoItem/TextPanel/ProgressText",
+      "text": "可揽集逐火者",
+      "key": "UIText_TarotBook_Reward_UnlockProgress_1",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/RankPanel/NumPanel/Num1",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/RankPanel/NumPanel/Slash",
+      "text": "/",
+      "key": "TextmapInput_Slash",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/RankPanel/NumPanel/Num2",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/LeftPanel/HintPanel/HintText",
+      "text": "DevUI_HintText",
+      "key": "DevUI_HintText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/TipText",
+      "text": "DevUI_LockTip:",
+      "key": "DevUI_LockTip:",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Day",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/DayText",
+      "text": "天",
+      "key": "UIText_ItemDetail_RemainTime_Day",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Hour",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/HourText",
+      "text": "小时",
+      "key": "UIText_ItemDetail_RemainTime_Hour",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Minute",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/MinuteText",
+      "text": "分钟",
+      "key": "UIText_ItemDetail_RemainTime_Minute",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/Second",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PanelContent/CollectRewardPanel/RightPanel/LockTipPanel/Root/RemainTime/SecondText",
+      "text": "秒",
+      "key": "UIText_ItemDetail_RemainTime_Second",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/Title/TitleText",
+      "text": "如我所书",
+      "key": "UIText_TarotBook_Title",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Day",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/DayText",
+      "text": "天",
+      "key": "UIText_ItemDetail_RemainTime_Day",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Hour",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/HourText",
+      "text": "小时",
+      "key": "UIText_ItemDetail_RemainTime_Hour",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Minute",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/MinuteText",
+      "text": "分钟",
+      "key": "UIText_ItemDetail_RemainTime_Minute",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/Second",
+      "text": "00",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/ExtraContent/RemainTimeIcon/RemainTime/SecondText",
+      "text": "秒",
+      "key": "UIText_ItemDetail_RemainTime_Second",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookQuestRewardPage/Root/PageInfo/TitleType/Text",
+      "text": "著者的菲仪",
+      "key": "UIText_TarotBook_MainPage_Reward",
+      "source": "dump/Text.text"
+    }
+  ]
+}

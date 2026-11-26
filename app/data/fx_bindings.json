@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "source": "app/data/materials.json",
+  "effects": {
+    "dissolve": {
+      "materials": ["UI_TarotBook_1009_DissolveSwirl_New", "UI_TarotBook_1069_DissolveSwirl_New", "UI_TarotBook_Error_1002_Dissolve"],
+      "fragment": "precision mediump float;uniform sampler2D uMain;uniform sampler2D uNoise;uniform float uTime;uniform float uSmooth;uniform vec2 uNoiseScale;uniform vec2 uNoiseSpeed;uniform vec2 uRadialSpeed;varying vec2 vUv;void main(){vec4 base=texture2D(uMain,vUv);vec2 nuv=vUv*uNoiseScale+uNoiseSpeed*uTime;float n=texture2D(uNoise,nuv).r;vec2 c=vUv-0.5;float r=length(c)*(1.0+uRadialSpeed.x*uTime);float th=clamp(uTime*0.35,0.0,1.0);float m=smoothstep(n-uSmooth,n+uSmooth,th+r*0.1);gl_FragColor=vec4(base.rgb*m*base.a*m,base.a*m);}",
+      "uniforms": {
+        "uSmooth": ["_SmoothStep", "r"],
+        "uNoiseScale": ["_DisTex", "scale"],
+        "uNoiseSpeed": ["_DisGSpeed", "rg"],
+        "uRadialSpeed": ["_DisRSpeed", "rg"]
+      }
+    },
+    "onechannel": {
+      "materials": ["UI_TarotBook_1071_OneChannel", "UI_TarotBook_Aura_33_OneChannel_641", "UI_TarotBook__Aura_33_OneChannel_642"],
+      "fragment": "precision mediump float;uniform sampler2D uMain;uniform float uTime;uniform vec3 uMainChannel;varying vec2 vUv;void main(){vec4 base=texture2D(uMain,vUv);float m=dot(base.rgb,uMainChannel);gl_FragColor=vec4(base.rgb*m,base.a*m);}",
+      "uniforms": {
+        "uMainChannel": ["_MainChannel", "rgb"]
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "UI_TarotBook_1009_DissolveSwirl_New",
+  "kind": "Dissolve",
+  "sourceFile": "UI_TarotBook_1009_DissolveSwirl_New.json",
+  "sha1": "bb3f9ba21fe8e2743aa212b1601bf7e3dfa96638",
+  "floats": {
+    "_CL": 2,
+    "_Cull": 0,
+    "_DstBlend": 10,
+    "_Saturate": 1,
+    "_SrcBlend": 5,
+    "_ZWrite": 0
+  },
+  "colors": {
+    "_DisGSpeed": {
+      "r": 0,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_DisRSpeed": {
+      "r": -0.2,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_MainChannel": {
+      "r": 0,
+      "g": 1,
+      "b": 0,
+      "a": 0
+    },
+    "_MainChannelRGB": {
+      "r": 0,
+      "g": 1,
+      "b": 0,
+      "a": 0
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 1
+    },
+    "_SmoothStep": {
+      "r": 0.77,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_DisTex": {
+      "scale": {
+        "X": 2,
+        "Y": 0.01
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 2,
+        "Y": 2
+      }
+    }
+  }
+}

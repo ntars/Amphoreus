@@ -1,0 +1,41 @@
+{
+  "name": "UI_TarotBook_1068_RoundGlow",
+  "kind": "Glow",
+  "sourceFile": "UI_TarotBook_1068_RoundGlow.json",
+  "sha1": "f9d6d9985d306f125ec01873c6f2cc0e71099e7d",
+  "floats": {
+    "_DstBlend": 1,
+    "_EmissionIntensity": 5,
+    "_RenderingMode": 1,
+    "_Saturate": 1,
+    "_SrcBlend": 5,
+    "_Stencil": 0,
+    "_StencilComp": 8
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.101960786
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

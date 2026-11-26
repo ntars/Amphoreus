@@ -1,0 +1,78 @@
+{
+  "state": "talk",
+  "source": "dump/talk.json",
+  "entries": [
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/BookPanel/TitlePanel/TitleText",
+      "text": "DevUI_TitleText",
+      "key": "DevUI_TitleText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/BookPanel/BtnPanel/BtnReview/TextPanel/Text",
+      "text": "回顾",
+      "key": "UIText_TarotBook_Mimi_Backlog",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/BtnPanel/BtnGo/TextPanel/Text",
+      "text": "合上书本",
+      "key": "UIText_TarotBook_Mimi_Finish",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/BtnPanel/BtnList/TextPanel/Text",
+      "text": "切换",
+      "key": "UIText_TarotBook_Interaction_Expand_Button",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel/TextPanel/DescrText",
+      "text": "DevUI_Text",
+      "key": "DevUI_Text",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/TalkPanel/HintPanel/HintText",
+      "text": "继续",
+      "key": "UIText_TarotBook_Mimi_Click",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/EndHint/TitleText",
+      "text": "本节完",
+      "key": "UIText_TarotBook_Interaction_Finish_Hint",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Root/PanelContent/FunctionPanel/DialogueSelectPanel/ListPanel/Content/LeftTabArea/ListTitle/TitleText",
+      "text": "接触记录",
+      "key": "UIText_TarotBook_Interaction_ListTitle",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Bg/ScreenBg/BottomBar/CountText",
+      "text": "DevUI_CountText",
+      "key": "DevUI_CountText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Bg/ScreenBg/BottomBar/TimeText",
+      "text": "0000",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Outside/PageInfo/Title/TitleText",
+      "text": "神话之外",
+      "key": "UIText_TarotBook_Title_Updated",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMimiTalkPage/Outside/PageInfo/TitleType/Text",
+      "text": "迷迷.exe",
+      "key": "UIText_TarotBook_Appname_Mimilog",
+      "source": "dump/Text.text"
+    }
+  ]
+}

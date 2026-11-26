@@ -1,0 +1,108 @@
+{
+  "state": "entrance",
+  "source": "dump/entrance.json",
+  "entries": [
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance1/Root/TextPanel/TextPanel/Text",
+      "text": "翁法罗斯英雄纪",
+      "key": "UIText_TarotBook_MainPage_StoryBook",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance1/Root/TextPanel/TextPanel/DecoText",
+      "text": "S a g a   o f   H e r o e s",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance2/Root/TextPanel/TextPanel/Text",
+      "text": "逐火者的命路",
+      "key": "UIText_TarotBook_MainPage_Star",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance2/Root/TextPanel/TextPanel/DecoText",
+      "text": "F l a m e   C h a s e r",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/TextPanel/Text",
+      "text": "书写故事",
+      "key": "UIText_TarotBook_MainPage_WriteStory",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/TextPanel/DecoText",
+      "text": "DevUI_Text",
+      "key": "DevUI_Text",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/MainText/Text",
+      "text": "书写故事",
+      "key": "UIText_TarotBook_MainPage_WriteStory",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/BtnEntrance3/Root/TextPanel/MainText/DecoText",
+      "text": "W r i t e   S t o r y",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/TextPanel/Text",
+      "text": "书写故事",
+      "key": "UIText_TarotBook_MainPage_WriteStory",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/TextPanel/DecoText",
+      "text": "DevUI_Text",
+      "key": "DevUI_Text",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/MainText/Text",
+      "text": "故事已落下句点",
+      "key": "UIText_TarotBook_FinalPack_Hint",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/FunctionPanel/EndEntrance/Root/TextPanel/MainText/DecoText",
+      "text": "W r i t e   S t o r y",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/RewardPanel/BtnReward/TextPanel/Root/Text",
+      "text": "著者的菲仪",
+      "key": "UIText_TarotBook_MainPage_Reward",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/HintPanel/Root/DescrText",
+      "text": "[ErrTextID]:UIText_TarotBook_Intro_MainPage",
+      "key": "UIText_TarotBook_Intro_MainPage",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PanelContent/SwitchPanel/BtnSwitch/Root/TextPanel/Text",
+      "text": "载入「神话之外」",
+      "key": "UIText_TarotBook_Change_Hint1",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/PageInfo/Title/TitleText",
+      "text": "如我所书",
+      "key": "UIText_TarotBook_Title",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookMainEntrancePage/Root/TopBarArea/AreaPanel/TopBtnList/BtnRuleTip_ResBar/TextPanel/Text",
+      "text": "规则说明",
+      "key": "UIText_Setting_Intro_Text",
+      "source": "dump/Text.text"
+    }
+  ]
+}

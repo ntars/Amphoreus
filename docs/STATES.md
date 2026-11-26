@@ -1,16 +1,17 @@
 # P0 状态清单与证据状态
 
-| state | 游戏内对应 | 当前证据 | 判定 |
-|---|---|---|---|
-| entrance | TarotBookMainEntrancePage | `dump/entrance.json` 23 个节点，源自主 block | BLOCKED：节点数 < 50，组件缺失 |
-| catalog | TarotBookMainCatalogPanel | 仅资产与 Lua 名称线索 | BLOCKED：无完整 dump |
-| bookletCover | TarotBookCoverPanel / TBBookletCoverPage | 仅资产与 Lua 名称线索 | BLOCKED：无完整 dump |
-| bookletPage | TarotBookBookletPage | 仅资产与 Spine 文件 | BLOCKED：无完整 dump |
-| talk | TarotBookMimiTalkPage | 仅资产与动画文件 | BLOCKED：无完整 dump |
-| wikiDialog | TarotBookWikiDialog | 仅资产与动画文件 | BLOCKED：无完整 dump |
-| wikiError | TarotBookWikiDialog error 态 | 仅资产与动画文件 | BLOCKED：无完整 dump |
-| mail | TarotBookMailBoxPage / MailDialog | 仅资产与动画文件 | BLOCKED：无完整 dump |
-| star | TarotBookStarPage / StarPanel | 仅资产与动画文件 | BLOCKED：无完整 dump |
-| reward | TarotBookRewardMainPage | 仅资产与动画文件 | BLOCKED：无完整 dump |
+| state | 游戏内对应 | dump 节点 | 布局/资产 | 判定 |
+|---|---|---:|---|---|
+| entrance | TarotBookMainEntrancePage | 342 | 编译通过 | READY（无动画） |
+| catalog | TarotBookRealMainPage | 457 | 编译通过 | READY（无动画） |
+| bookletCover | TarotBookBookletPage / Cover | 410 | 编译通过 | READY（无动画） |
+| bookletPage | TarotBookBookletPage / Page | 410 | 编译通过 | READY（无动画） |
+| talk | TarotBookMimiTalkPage | 271 | 编译通过 | READY（无动画） |
+| wikiDialog | TarotBookWikiDialog / Normal | 246 | 编译通过 | READY（无动画） |
+| wikiError | TarotBookWikiDialog / Error | 246 | 编译通过 | READY（无动画） |
+| mail | TarotBookMailDialog | 118 | 编译通过 | READY（无动画） |
+| star | TarotBookStarPanelPage | 147 | 编译通过 | READY（无动画） |
+| reward | TarotBookQuestRewardPage | 336 | 编译通过 | READY（无动画） |
 
-`BLOCKED` 状态不提供导航入口，也不允许用近似坐标生成页面。
+`READY` 表示静态几何、源 sprite、字体与可导航运行时就绪；不包含 M5 动画与 M6 特效保真。
+

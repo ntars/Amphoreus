@@ -1,0 +1,97 @@
+{
+  "name": "UI_TarotBook_Error_1006_Glitch",
+  "kind": "Glitch",
+  "sourceFile": "UI_TarotBook_Error_1006_Glitch.json",
+  "sha1": "f5a53f4feb81a782f65022ae030eced514b550d6",
+  "floats": {
+    "_CL": 2,
+    "_CL2": 2,
+    "_Cull": 0,
+    "_DstBlend": 10,
+    "_SrcBlend": 5,
+    "_Stencil": 7,
+    "_StencilComp": 0
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 1
+    },
+    "_MainChannelRGB": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.14901961
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0.2,
+      "b": 1,
+      "a": 1
+    },
+    "_MaskChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_MaskSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0.75,
+      "a": 1
+    },
+    "_NoiseSpeed": {
+      "r": 0.2,
+      "g": 0.2,
+      "b": 0.2,
+      "a": 1
+    },
+    "_NoiseSpeedG": {
+      "r": -0.51,
+      "g": -0.1,
+      "b": 0.4,
+      "a": 0.5
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 0,
+        "Y": 0.6
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "name": "UI_TarotBookSiri_1004_Ring",
+  "kind": "Ring",
+  "sourceFile": "UI_TarotBookSiri_1004_Ring.json",
+  "sha1": "fa629d0e975d75ef2104cb7033b396b68946d518",
+  "floats": {
+    "_Cull": 1,
+    "_CustomData": 0,
+    "_Disappear": 0.033,
+    "_DstBlend": 1,
+    "_MaskON": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5,
+    "_ZWrite": 0
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_DisRSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": -0.4,
+      "b": 1,
+      "a": 1
+    },
+    "_MaskChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_MidColor": {
+      "r": 1.4980392,
+      "g": 1.4980392,
+      "b": 1.4980392,
+      "a": 0.34901962
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_SmoothStep": {
+      "r": 0.5,
+      "g": 0,
+      "b": 0.5,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_DisTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MainTex": {
+      "scale": {
+        "X": 0,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0.5,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,2190 @@
+[
+  {
+    "name": "UI_TarotBookEntry_1001_Glitch",
+    "kind": "Glitch",
+    "sourceFile": "UI_TarotBookEntry_1001_Glitch.json",
+    "sha1": "31cdeb04772e98a3fe2e0017feec01f02ab3a0b1",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5,
+      "_Stencil": 7,
+      "_StencilComp": 0
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_MainChannel": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 0.3,
+        "b": 0,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": -2,
+        "g": 0,
+        "b": 0.03,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 5
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 0,
+          "Y": 8
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookEntry_1002_UVMove_Data",
+    "kind": "UVMove",
+    "sourceFile": "UI_TarotBookEntry_1002_UVMove_Data.json",
+    "sha1": "121ecb0e667f49579c52415171fde38619534e13",
+    "floats": {
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.12941177
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0.06,
+        "b": 2,
+        "a": 1
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 1,
+        "b": 0.2,
+        "a": 1
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 0.3
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookMailDialog_1001_ScreenScan",
+    "kind": "Scanline",
+    "sourceFile": "UI_TarotBookMailDialog_1001_ScreenScan.json",
+    "sha1": "8825f65c44db0f9e03b52815c2d3e5517827f9fd",
+    "floats": {
+      "_CL2": 2,
+      "_DstBlend": 10,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 1,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainChannel": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.078431375
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0.08,
+        "b": 1,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 1,
+        "g": 0,
+        "b": -0.22,
+        "a": 0.05
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_NoiseSpeedG": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 2,
+          "Y": 4
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 0,
+          "Y": 0
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookSiri_1001_Airflow",
+    "kind": "Flow",
+    "sourceFile": "UI_TarotBookSiri_1001_Airflow.json",
+    "sha1": "131c74e27a897b4472de14e2d3e9baeaee06922d",
+    "floats": {
+      "_CL2": 2,
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5,
+      "_Stencil": 7,
+      "_StencilComp": 0
+    },
+    "colors": {
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.23921569
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 1,
+        "g": 1,
+        "b": -5,
+        "a": 0
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 2
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0.2,
+        "b": 0.05,
+        "a": 0.05
+      },
+      "_NoiseSpeedG": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": -0.2
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 0.5,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookSiri_1002_Ring",
+    "kind": "Ring",
+    "sourceFile": "UI_TarotBookSiri_1002_Ring.json",
+    "sha1": "89c39c61e631817dc3e33ebe8502be232eba9870",
+    "floats": {
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannelRGB": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.13725491
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 2,
+        "a": 1
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_NoiseSpeed": {
+        "r": 0.2,
+        "g": 1,
+        "b": 0.2,
+        "a": 1
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 0.2,
+          "Y": 0.2
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookSiri_1003_Trail",
+    "kind": "Trail",
+    "sourceFile": "UI_TarotBookSiri_1003_Trail.json",
+    "sha1": "8844dd314bc72d1fd620944d2fd54f58bbf74da9",
+    "floats": {
+      "_CL": 1,
+      "_Cull": 0,
+      "_DstBlend": 10,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 1.5,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookSiri_1004_Ring",
+    "kind": "Ring",
+    "sourceFile": "UI_TarotBookSiri_1004_Ring.json",
+    "sha1": "fa629d0e975d75ef2104cb7033b396b68946d518",
+    "floats": {
+      "_Cull": 1,
+      "_CustomData": 0,
+      "_Disappear": 0.033,
+      "_DstBlend": 1,
+      "_MaskON": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5,
+      "_ZWrite": 0
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_DisRSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": -0.4,
+        "b": 1,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MidColor": {
+        "r": 1.4980392,
+        "g": 1.4980392,
+        "b": 1.4980392,
+        "a": 0.34901962
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_SmoothStep": {
+        "r": 0.5,
+        "g": 0,
+        "b": 0.5,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_DisTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MainTex": {
+        "scale": {
+          "X": 0,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0.5,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookSiri_1007_Flow",
+    "kind": "Flow",
+    "sourceFile": "UI_TarotBookSiri_1007_Flow.json",
+    "sha1": "198c4185ed206884fbca456f701d0894e4bb27d6",
+    "floats": {
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.078431375
+      },
+      "_MainSpeed": {
+        "r": -0.2,
+        "g": -0.1,
+        "b": 1,
+        "a": 1
+      },
+      "_MaskSpeed": {
+        "r": 0.15,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0.1,
+        "b": 0.1,
+        "a": 1
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 0.2
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookWiki_1006_UVMove_Glitch",
+    "kind": "Glitch",
+    "sourceFile": "UI_TarotBookWiki_1006_UVMove_Glitch.json",
+    "sha1": "175f62c086a214a6b62cee45838782ee292c5013",
+    "floats": {
+      "_CL": 1,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannelRGB": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.13725491
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0.4,
+        "b": 1,
+        "a": 1
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": -0.04,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": -2,
+        "g": 0,
+        "b": 0.1,
+        "a": 1
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 8
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 0,
+          "Y": 12
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBookWiki_1013_Glitch",
+    "kind": "Glitch",
+    "sourceFile": "UI_TarotBookWiki_1013_Glitch.json",
+    "sha1": "cbafd88d5515637f2b4f67b90ca35d9f1061d685",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5,
+      "_Stencil": 7,
+      "_StencilComp": 0
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_MainChannel": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_NoiseSpeed": {
+        "r": -1,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 2
+        },
+        "offset": {
+          "X": 0,
+          "Y": -0.73
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 0,
+          "Y": 2
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1009_DissolveSwirl_New",
+    "kind": "Dissolve",
+    "sourceFile": "UI_TarotBook_1009_DissolveSwirl_New.json",
+    "sha1": "bb3f9ba21fe8e2743aa212b1601bf7e3dfa96638",
+    "floats": {
+      "_CL": 2,
+      "_Cull": 0,
+      "_DstBlend": 10,
+      "_Saturate": 1,
+      "_SrcBlend": 5,
+      "_ZWrite": 0
+    },
+    "colors": {
+      "_DisGSpeed": {
+        "r": 0,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_DisRSpeed": {
+        "r": -0.2,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MainChannel": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainChannelRGB": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 1
+      },
+      "_SmoothStep": {
+        "r": 0.77,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_DisTex": {
+        "scale": {
+          "X": 2,
+          "Y": 0.01
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 2,
+          "Y": 2
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1038_Circle",
+    "kind": "Other",
+    "sourceFile": "UI_TarotBook_1038_Circle.json",
+    "sha1": "393d28f65cd62d8990b4bb823c774b2439f7d0de",
+    "floats": {
+      "_AlwaysOnTop": 0,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.627451
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1039_Dissolve_1",
+    "kind": "Dissolve",
+    "sourceFile": "UI_TarotBook_1039_Dissolve_1.json",
+    "sha1": "48abebca67dec82efddc5c2a568d8cc28c2a1e0f",
+    "floats": {
+      "_Cull": 0,
+      "_CustomData": 0,
+      "_DstBlend": 10,
+      "_Mid": 1,
+      "_SrcBlend": 5,
+      "_Stencil": 7,
+      "_StencilComp": 0,
+      "_ZWrite": 0
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_DisGSpeed": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_DisRSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0.65,
+        "a": 0
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0.5
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MidColor": {
+        "r": 3.6622117,
+        "g": 1.6336331,
+        "b": 0.5176948,
+        "a": 0.101960786
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0.05,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_DisTex": {
+        "scale": {
+          "X": 0.5,
+          "Y": 0.5
+        },
+        "offset": {
+          "X": 0.25,
+          "Y": 0.45
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 3,
+          "Y": 3
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1046_Dissolve_1",
+    "kind": "Dissolve",
+    "sourceFile": "UI_TarotBook_1046_Dissolve_1.json",
+    "sha1": "0ec88f993e68ea5bf2cf507690650efdbfec49d9",
+    "floats": {
+      "_Cull": 0,
+      "_CustomData": 0,
+      "_DstBlend": 10,
+      "_Mid": 1,
+      "_SrcBlend": 5,
+      "_Stencil": 7,
+      "_StencilComp": 0,
+      "_ZWrite": 0
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_DisGSpeed": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_DisRSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0.65,
+        "a": 0
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0.5
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MidColor": {
+        "r": 3.6622117,
+        "g": 1.6336331,
+        "b": 0.5176948,
+        "a": 0.101960786
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0.05,
+        "a": 0
+      },
+      "_SmoothStep": {
+        "r": 0,
+        "g": 0.012,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_DisTex": {
+        "scale": {
+          "X": 0.6,
+          "Y": 0.4
+        },
+        "offset": {
+          "X": 0.25,
+          "Y": 0.45
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 3,
+          "Y": 3
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1064_UVMove",
+    "kind": "UVMove",
+    "sourceFile": "UI_TarotBook_1064_UVMove.json",
+    "sha1": "99bb569618f6ce1b02ca462e4b612fbf67c42a43",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0.2,
+        "b": 1,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0.1
+      },
+      "_NoiseSpeedG": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1066_UVmove_Data",
+    "kind": "UVMove",
+    "sourceFile": "UI_TarotBook_1066_UVmove_Data.json",
+    "sha1": "0f9f927c24e3dbab1d24e793bc5e375aeb587861",
+    "floats": {
+      "_CL2": 0,
+      "_DstBlend": 10,
+      "_SrcBlend": 5,
+      "_Stencil": 0,
+      "_StencilComp": 8
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.12941177
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 6,
+        "a": 0
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": -0.45,
+        "b": 0.3,
+        "a": 1
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 0.2,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1068_RoundGlow",
+    "kind": "Glow",
+    "sourceFile": "UI_TarotBook_1068_RoundGlow.json",
+    "sha1": "f9d6d9985d306f125ec01873c6f2cc0e71099e7d",
+    "floats": {
+      "_DstBlend": 1,
+      "_EmissionIntensity": 5,
+      "_RenderingMode": 1,
+      "_Saturate": 1,
+      "_SrcBlend": 5,
+      "_Stencil": 0,
+      "_StencilComp": 8
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.101960786
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1069_DissolveSwirl_New",
+    "kind": "Dissolve",
+    "sourceFile": "UI_TarotBook_1069_DissolveSwirl_New.json",
+    "sha1": "e21c3d9d30482f56afd573cbd9db8e8429ed7228",
+    "floats": {
+      "_CL": 2,
+      "_Cull": 0,
+      "_DstBlend": 10,
+      "_Saturate": 1,
+      "_SrcBlend": 5,
+      "_ZWrite": 0
+    },
+    "colors": {
+      "_DisGSpeed": {
+        "r": 0,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_DisRSpeed": {
+        "r": -0.2,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MainChannel": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainChannelRGB": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 2,
+        "a": 1
+      },
+      "_SmoothStep": {
+        "r": 0.77,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_DisTex": {
+        "scale": {
+          "X": 2,
+          "Y": 0.01
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 2,
+          "Y": 2
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1070_UVMove",
+    "kind": "UVMove",
+    "sourceFile": "UI_TarotBook_1070_UVMove.json",
+    "sha1": "fe3e862b7d3ccf336abd57744fe4b16799a21969",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_MeshUV2": 0,
+      "_RenderingMode": 1,
+      "_Saturate": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.101960786
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 10,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 6,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": -0.1,
+        "b": 0,
+        "a": 0.9
+      },
+      "_MaskUVoffset": {
+        "r": 2,
+        "g": 0.2,
+        "b": -0.03,
+        "a": 0
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": -0.2,
+        "b": 0.18,
+        "a": 1
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 2,
+          "Y": 0.6
+        },
+        "offset": {
+          "X": 1,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 15,
+          "Y": 5
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 0.6
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1071_OneChannel",
+    "kind": "OneChannel",
+    "sourceFile": "UI_TarotBook_1071_OneChannel.json",
+    "sha1": "df7b01e44faeb46356271476261d7ec33f1e368d",
+    "floats": {
+      "_CL": 1,
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_EmissionIntensity": 5,
+      "_RenderingMode": 1,
+      "_Saturate": 1,
+      "_SrcBlend": 5,
+      "_StencilComp": 8
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 0,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.101960786
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1072_Glow_On",
+    "kind": "Glow",
+    "sourceFile": "UI_TarotBook_1072_Glow_On.json",
+    "sha1": "f516335b48579b34a55ca27f1541c3c7d6a5fc5e",
+    "floats": {
+      "_AlwaysOnTop": 0,
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_EmissionIntensity": 1.1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 1,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.21568628
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1073_Glow_On",
+    "kind": "Glow",
+    "sourceFile": "UI_TarotBook_1073_Glow_On.json",
+    "sha1": "cbce77be2321855c63da4a4ceebb16818b1e9f00",
+    "floats": {
+      "_AlwaysOnTop": 0,
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.11764706
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_1074_UVMove",
+    "kind": "UVMove",
+    "sourceFile": "UI_TarotBook_1074_UVMove.json",
+    "sha1": "1ca8f609f2c7721c650d2b33dab416d8bdde888d",
+    "floats": {
+      "_CL2": 2,
+      "_Cull": 0,
+      "_CustomData": 1,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5,
+      "_Stencil": 7,
+      "_StencilComp": 0
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 1,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.101960786
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 3.25,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 2,
+        "g": 0,
+        "b": 1,
+        "a": 1
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0.7
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0.2,
+        "b": 0.3,
+        "a": 0.3
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 2,
+          "Y": 0.8
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 2,
+          "Y": -1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 1.04
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 2
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_Aura_33_OneChannel_641",
+    "kind": "OneChannel",
+    "sourceFile": "UI_TarotBook_Aura_33_OneChannel_641.json",
+    "sha1": "e463bebae2143b17b5f89566272e5e36073d816f",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 10,
+      "_Saturate": 1,
+      "_SoftFar": 0,
+      "_SoftNear": -1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 1
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.101960786
+      },
+      "_MaskSpeed": {
+        "r": 0.2,
+        "g": -0.05,
+        "b": 1,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_NoiseSpeedG": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_Card_Dark",
+    "kind": "Other",
+    "sourceFile": "UI_TarotBook_Card_Dark.json",
+    "sha1": "d4b1ac5da0df979582f346bf7e417583b813782b",
+    "floats": {
+      "_CL": 2,
+      "_DstBlend": 10,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 1,
+        "g": 0.6,
+        "b": 0,
+        "a": 0
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0.35,
+        "a": 1
+      }
+    },
+    "textures": {}
+  },
+  {
+    "name": "UI_TarotBook_Error_1001_Scanline",
+    "kind": "Scanline",
+    "sourceFile": "UI_TarotBook_Error_1001_Scanline.json",
+    "sha1": "defc1e7e307af637f5db270a6a9b7330e926b54e",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.2
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": -0.1,
+        "b": 1,
+        "a": 0
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 2,
+        "a": 0
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": -0.3,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 2
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 0.71,
+          "Y": -1
+        },
+        "offset": {
+          "X": 0.18,
+          "Y": 1.01
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 0.5,
+          "Y": 0.6
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_Error_1002_Dissolve",
+    "kind": "Dissolve",
+    "sourceFile": "UI_TarotBook_Error_1002_Dissolve.json",
+    "sha1": "c75d98b90a4720bbc8281c30cf07d0701e44fefb",
+    "floats": {
+      "_Cull": 0,
+      "_CustomData": 0,
+      "_DstBlend": 10,
+      "_MaskON": 1,
+      "_Mid": 1,
+      "_SrcBlend": 5,
+      "_ZWrite": 0
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_DisGSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_DisRSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": -0.3,
+        "a": 0
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MidColor": {
+        "r": 1.7179477,
+        "g": 0.14488715,
+        "b": 0,
+        "a": 0.14901961
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0.2,
+        "b": -0.3,
+        "a": 0
+      },
+      "_SmoothStep": {
+        "r": 0.1,
+        "g": 0.44,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_DisTex": {
+        "scale": {
+          "X": 1,
+          "Y": -1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0.83
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1.5
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_Error_1006_Glitch",
+    "kind": "Glitch",
+    "sourceFile": "UI_TarotBook_Error_1006_Glitch.json",
+    "sha1": "f5a53f4feb81a782f65022ae030eced514b550d6",
+    "floats": {
+      "_CL": 2,
+      "_CL2": 2,
+      "_Cull": 0,
+      "_DstBlend": 10,
+      "_SrcBlend": 5,
+      "_Stencil": 7,
+      "_StencilComp": 0
+    },
+    "colors": {
+      "_MainChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.14901961
+      },
+      "_MainSpeed": {
+        "r": 0,
+        "g": 0.2,
+        "b": 1,
+        "a": 1
+      },
+      "_MaskChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 0
+      },
+      "_MaskSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0.75,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": 0.2,
+        "g": 0.2,
+        "b": 0.2,
+        "a": 1
+      },
+      "_NoiseSpeedG": {
+        "r": -0.51,
+        "g": -0.1,
+        "b": 0.4,
+        "a": 0.5
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_MaskTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 0,
+          "Y": 0.6
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_Progress_Eff1",
+    "kind": "Other",
+    "sourceFile": "UI_TarotBook_Progress_Eff1.json",
+    "sha1": "b37b5d55ba87b9b3fa93bdbd9444ca7d69a94cf3",
+    "floats": {
+      "_CL": 2,
+      "_DstBlend": 1,
+      "_RenderingMode": 1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_MainSpeed": {
+        "r": -0.15,
+        "g": 0,
+        "b": 1,
+        "a": 1
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 10,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook_StarProgress_1",
+    "kind": "Other",
+    "sourceFile": "UI_TarotBook_StarProgress_1.json",
+    "sha1": "dd3e948a18a401b760b55a2cfadb31210fc578c2",
+    "floats": {
+      "_Offset": 0,
+      "_Percent": 1
+    },
+    "colors": {
+      "_NoFillColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0
+      }
+    },
+    "textures": {}
+  },
+  {
+    "name": "UI_TarotBook_StarProgress_ComOutline1",
+    "kind": "Other",
+    "sourceFile": "UI_TarotBook_StarProgress_ComOutline1.json",
+    "sha1": "34cad577767918fa84acdb41ac3b082d7b7669f3",
+    "floats": {
+      "_Offset": 0,
+      "_Percent": 1
+    },
+    "colors": {
+      "_NoFillColor": {
+        "r": 0.31764707,
+        "g": 0.3372549,
+        "b": 0.36078432,
+        "a": 1
+      }
+    },
+    "textures": {}
+  },
+  {
+    "name": "UI_TarotBook_StarProgress_ComOutline2",
+    "kind": "Other",
+    "sourceFile": "UI_TarotBook_StarProgress_ComOutline2.json",
+    "sha1": "56c462038cf19ecd2f4df7e7e383771c23843306",
+    "floats": {
+      "_Offset": 0,
+      "_Percent": 1
+    },
+    "colors": {
+      "_NoFillColor": {
+        "r": 0.31764707,
+        "g": 0.3372549,
+        "b": 0.36078432,
+        "a": 1
+      }
+    },
+    "textures": {}
+  },
+  {
+    "name": "UI_TarotBook_UVMove_02",
+    "kind": "UVMove",
+    "sourceFile": "UI_TarotBook_UVMove_02.json",
+    "sha1": "fafc0aab328ae914fccee02b8672851db1ed79de",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 10,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 1,
+        "g": 2,
+        "b": 0,
+        "a": 1.37
+      },
+      "_MainChannel": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainChannelRGB": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.29803923
+      },
+      "_MainSpeed": {
+        "r": 0.5,
+        "g": 0,
+        "b": 1,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "_NoiseSpeedG": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 50,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "UI_TarotBook__Aura_33_OneChannel_642",
+    "kind": "OneChannel",
+    "sourceFile": "UI_TarotBook__Aura_33_OneChannel_642.json",
+    "sha1": "56cf764fe91e2dab5defd939affc3957940afa16",
+    "floats": {
+      "_Cull": 0,
+      "_DstBlend": 10,
+      "_Saturate": 1,
+      "_SoftFar": 0,
+      "_SoftNear": -1,
+      "_SrcBlend": 5
+    },
+    "colors": {
+      "_CustomUV": {
+        "r": 0,
+        "g": 1,
+        "b": 0,
+        "a": 0
+      },
+      "_MainChannel": {
+        "r": 0,
+        "g": 0,
+        "b": 1,
+        "a": 1
+      },
+      "_MainColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.101960786
+      },
+      "_MaskSpeed": {
+        "r": 0.2,
+        "g": -0.05,
+        "b": 1,
+        "a": 1
+      },
+      "_NoiseSpeed": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      },
+      "_NoiseSpeedG": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    "textures": {
+      "_MainTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      },
+      "_NoiseTex": {
+        "scale": {
+          "X": 1,
+          "Y": 1
+        },
+        "offset": {
+          "X": 0,
+          "Y": 0
+        }
+      }
+    }
+  }
+]

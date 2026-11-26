@@ -21,7 +21,7 @@ export async function launch({ headless = true } = {}) {
   const profile = mkdtempSync(join(tmpdir(), 'amphoreus-'));
   const child = spawn(findChrome(), [
     headless ? '--headless=new' : '--new-window',
-    '--no-sandbox', '--disable-gpu', '--remote-debugging-port=0',
+    '--no-sandbox', '--remote-debugging-port=0', '--enable-unsafe-swiftshader',
     '--no-first-run', '--no-default-browser-check', '--hide-scrollbars',
     '--force-device-scale-factor=1', `--user-data-dir=${profile}`,
   ], { stdio: ['ignore', 'ignore', 'pipe'] });
@@ -88,7 +88,7 @@ export async function launch({ headless = true } = {}) {
     async evaluate(expression) {
       const result = await send('Runtime.evaluate',
         { expression, returnByValue: true, awaitPromise: true }, sessionId);
-      if (result.exceptionDetails) throw new Error(result.exceptionDetails.text);
+      if (result.exceptionDetails) throw new Error(result.exceptionDetails.text + ' ' + (result.exceptionDetails.exception?.description || ''));
       return result.result.value;
     },
     async close() {

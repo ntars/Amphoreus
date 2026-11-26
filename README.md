@@ -144,6 +144,32 @@ HTTP 冒烟通过
 
 升级：`git pull`。卸载：删除目录即可；`python3 main.py uninstall` 可先移除 launchd 开机自启。
 
+
+## 数据驱动复刻（M0–M9）
+
+新的「如我所书」复刻位于 `app/`，由原始解包数据驱动，不再使用截图或手调 CSS：
+
+```bash
+# 生成/校验静态数据（源数据在 ~/Downloads/hsr-ui-extract，不入库）
+python3 tools/import_tarotbook.py --cache /tmp/amphoreus-m1-v2 --out dump
+python3 tools/build_sprites.py --cache /tmp/amphoreus-m1-v2 --dump dump --app app
+python3 tools/extract_fonts.py --block /tmp/amph-font-block --dump dump --assets app/assets/fonts --quiet
+/Applications/ChatGPT.app/Contents/Resources/node tools/build_layout.mjs dump app/data/states
+/Applications/ChatGPT.app/Contents/Resources/node tools/build_clips.mjs app/data/anim
+/Applications/ChatGPT.app/Contents/Resources/node tools/verify_materials.mjs
+/Applications/ChatGPT.app/Contents/Resources/node tools/run_all.mjs
+/Applications/ChatGPT.app/Contents/Resources/node tools/build.mjs --out /tmp/amph-dist-verify
+/Applications/ChatGPT.app/Contents/Resources/node tools/perf.mjs --baseline docs/BASELINE.md
+
+# 浏览器打开十个状态之一
+python3 -m http.server 8080 --directory app
+# http://127.0.0.1:8080/?state=wikiDialog
+```
+
+当前状态：M0–M9 的可验证 E1 门禁已覆盖 78 张任务卡（其中 4 张早期采集/签字卡仍为 `blocked`）：十态 AABB 最大约 0.03–0.06px、47 个 clip / 405 条 CSS 规则、8 个 TMP SDF 字体图集 / 376 字形（含显式绑定探针）、浏览器动画采样最大误差 0.0742px、catalog 约 55–56fps。逐像素人工 E3、shader 级材质与运行时预制体未绑定路径仍见 `docs/FIDELITY.md` 与 `docs/ACCEPTANCE.md`；不宣称逐像素一致或全部人工验收完成。仓库只提交 MIT 代码与原创文档；游戏素材与提取产物均不入库。
+
+复跑动画验收时可依次执行 `node tools/build_clips.mjs --clip TarotBookWikiDialog_Normal_FadeIn`、`node tools/verify_clips.mjs --all`。单 clip 产物写入 `app/data/clips/`；全量样式表仅由 `node tools/build_clips.mjs --all --compile-css` 重建。`docs/REGRESSION.json` 已随当前产物更新，但不是门禁输入。
+
 ## 快速开始
 
 启动世界并打开仪表盘：
@@ -271,7 +297,7 @@ Amphoreus/
 | 功能 | 未实现原因 | 计划状态 |
 | --- | --- | --- |
 | 官方四张标准基准的逐像素比对 | 需使用者从游戏内逐帧截取 | 待外部输入 |
-| 3D 书页与 Spine 翻页 | Web 无骨骼蒙皮与全局光照 | 仅以 CSS 3D 近似 |
+| 3D 书页与 Spine 翻页 | Web 无骨骼蒙皮与全局光照 | Spine 时长/元数据已从解包源验证；翻页仅以 CSS 3D 近似 |
 
 ## 更新日志
 

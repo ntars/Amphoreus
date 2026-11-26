@@ -1,0 +1,48 @@
+{
+  "name": "UI_TarotBook_1071_OneChannel",
+  "kind": "OneChannel",
+  "sourceFile": "UI_TarotBook_1071_OneChannel.json",
+  "sha1": "df7b01e44faeb46356271476261d7ec33f1e368d",
+  "floats": {
+    "_CL": 1,
+    "_Cull": 0,
+    "_DstBlend": 1,
+    "_EmissionIntensity": 5,
+    "_RenderingMode": 1,
+    "_Saturate": 1,
+    "_SrcBlend": 5,
+    "_StencilComp": 8
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 0,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MainChannelRGB": {
+      "r": 0,
+      "g": 1,
+      "b": 0,
+      "a": 0
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.101960786
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

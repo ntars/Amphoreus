@@ -1,0 +1,77 @@
+{
+  "name": "UI_TarotBook_UVMove_02",
+  "kind": "UVMove",
+  "sourceFile": "UI_TarotBook_UVMove_02.json",
+  "sha1": "fafc0aab328ae914fccee02b8672851db1ed79de",
+  "floats": {
+    "_Cull": 0,
+    "_DstBlend": 10,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 1,
+      "g": 2,
+      "b": 0,
+      "a": 1.37
+    },
+    "_MainChannel": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MainChannelRGB": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.29803923
+    },
+    "_MainSpeed": {
+      "r": 0.5,
+      "g": 0,
+      "b": 1,
+      "a": 1
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_NoiseSpeedG": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 50,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

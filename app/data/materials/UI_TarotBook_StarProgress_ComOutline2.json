@@ -1,0 +1,19 @@
+{
+  "name": "UI_TarotBook_StarProgress_ComOutline2",
+  "kind": "Other",
+  "sourceFile": "UI_TarotBook_StarProgress_ComOutline2.json",
+  "sha1": "56c462038cf19ecd2f4df7e7e383771c23843306",
+  "floats": {
+    "_Offset": 0,
+    "_Percent": 1
+  },
+  "colors": {
+    "_NoFillColor": {
+      "r": 0.31764707,
+      "g": 0.3372549,
+      "b": 0.36078432,
+      "a": 1
+    }
+  },
+  "textures": {}
+}

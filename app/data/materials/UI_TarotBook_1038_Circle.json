@@ -1,0 +1,44 @@
+{
+  "name": "UI_TarotBook_1038_Circle",
+  "kind": "Other",
+  "sourceFile": "UI_TarotBook_1038_Circle.json",
+  "sha1": "393d28f65cd62d8990b4bb823c774b2439f7d0de",
+  "floats": {
+    "_AlwaysOnTop": 0,
+    "_DstBlend": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MainChannelRGB": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.627451
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

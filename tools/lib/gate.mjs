@@ -16,3 +16,7 @@ export function envFail(message) {
 export function assert(condition, message) {
   if (!condition) fail(message);
 }
+
+export function near(actual, expected, tolerance) {
+  return Math.abs(actual - expected) <= tolerance;
+}

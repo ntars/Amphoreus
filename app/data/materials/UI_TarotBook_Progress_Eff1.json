@@ -1,0 +1,32 @@
+{
+  "name": "UI_TarotBook_Progress_Eff1",
+  "kind": "Other",
+  "sourceFile": "UI_TarotBook_Progress_Eff1.json",
+  "sha1": "b37b5d55ba87b9b3fa93bdbd9444ca7d69a94cf3",
+  "floats": {
+    "_CL": 2,
+    "_DstBlend": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_MainSpeed": {
+      "r": -0.15,
+      "g": 0,
+      "b": 1,
+      "a": 1
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 10,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

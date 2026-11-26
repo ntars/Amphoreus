@@ -98,9 +98,14 @@ def parse_game_object(data: bytes) -> dict:
     cursor += length
     if cursor > len(data):
         raise BadLayout("GameObject name overruns object")
+    trailing = data[cursor:]
+    # NoTarget Unity serialization writes m_Tag (u16) followed by m_IsActive.
+    # The prefab blocks in this game contain exactly those three bytes.
+    is_active = bool(trailing[2]) if len(trailing) == 3 else True
     return {
         "components": components,
         "layer": layer,
         "name": name,
-        "trailing": len(data) - cursor,
+        "isActive": is_active,
+        "trailing": len(trailing),
     }

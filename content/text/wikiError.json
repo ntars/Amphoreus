@@ -1,0 +1,54 @@
+{
+  "state": "wikiError",
+  "source": "dump/wikiError.json",
+  "entries": [
+    {
+      "path": "TarotBookWikiDialog/Root/Contents/Timeline/ProgressPanel/ProgressBar/FillArea/HandleRect/NumText",
+      "text": "0000",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookWikiDialog/Root/Contents/Timeline/ProgressPanel/ProgressBar/FillArea/HandleRect/ErrorDesc",
+      "text": "test_程序无响应…",
+      "key": "UIText_TarotBook_Wiki_Error",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/LeftPanel/Content/TitleItem/Root/TextPanel/TitleText",
+      "text": "DevUI_TitleText",
+      "key": "DevUI_TitleText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/LeftPanel/Content/TitleItem/Root/TextPanel/TitleTextSelect",
+      "text": "DevUI_TitleText",
+      "key": "DevUI_TitleText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/TitlePanel/TitleText",
+      "text": "DevUI_TitleText",
+      "key": "DevUI_TitleText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookWikiDialog/Root/Contents/DetailPanel/RightPanel/Content/ScrollView/Viewport/Content/TextContent",
+      "text": "DevUI_TextContent",
+      "key": "DevUI_TextContent",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookWikiDialog/Root/PageInfo/Title/TitleText",
+      "text": "如我所书",
+      "key": "UIText_TarotBook_Title",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookWikiDialog/Root/PageInfo/TitleType/Text",
+      "text": "δ-me<ub>13</ub>.exe",
+      "key": "UIText_TarotBook_Appname_Wiki",
+      "source": "dump/Text.text"
+    }
+  ]
+}

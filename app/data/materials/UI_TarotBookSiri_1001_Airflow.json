@@ -1,0 +1,85 @@
+{
+  "name": "UI_TarotBookSiri_1001_Airflow",
+  "kind": "Flow",
+  "sourceFile": "UI_TarotBookSiri_1001_Airflow.json",
+  "sha1": "131c74e27a897b4472de14e2d3e9baeaee06922d",
+  "floats": {
+    "_CL2": 2,
+    "_Cull": 0,
+    "_DstBlend": 1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5,
+    "_Stencil": 7,
+    "_StencilComp": 0
+  },
+  "colors": {
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.23921569
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_MaskChannel": {
+      "r": 1,
+      "g": 1,
+      "b": -5,
+      "a": 0
+    },
+    "_MaskSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 2
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0.2,
+      "b": 0.05,
+      "a": 0.05
+    },
+    "_NoiseSpeedG": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": -0.2
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 0.5,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

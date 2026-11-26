@@ -1,0 +1,98 @@
+{
+  "name": "UI_TarotBook_1046_Dissolve_1",
+  "kind": "Dissolve",
+  "sourceFile": "UI_TarotBook_1046_Dissolve_1.json",
+  "sha1": "0ec88f993e68ea5bf2cf507690650efdbfec49d9",
+  "floats": {
+    "_Cull": 0,
+    "_CustomData": 0,
+    "_DstBlend": 10,
+    "_Mid": 1,
+    "_SrcBlend": 5,
+    "_Stencil": 7,
+    "_StencilComp": 0,
+    "_ZWrite": 0
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_DisGSpeed": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "_DisRSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0.65,
+      "a": 0
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0.5
+    },
+    "_MaskChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 0
+    },
+    "_MidColor": {
+      "r": 3.6622117,
+      "g": 1.6336331,
+      "b": 0.5176948,
+      "a": 0.101960786
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0.05,
+      "a": 0
+    },
+    "_SmoothStep": {
+      "r": 0,
+      "g": 0.012,
+      "b": 0,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_DisTex": {
+      "scale": {
+        "X": 0.6,
+        "Y": 0.4
+      },
+      "offset": {
+        "X": 0.25,
+        "Y": 0.45
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 3,
+        "Y": 3
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

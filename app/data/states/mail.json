@@ -1,0 +1,7029 @@
+{
+  "schema": 1,
+  "state": "mail",
+  "canvas": {
+    "name": "UIRoot",
+    "renderMode": "ScreenSpaceCamera",
+    "scaleFactor": 1,
+    "refW": 1920,
+    "refH": 1080,
+    "match": 0.5,
+    "scalerMode": "ScaleWithScreenSize"
+  },
+  "rootId": "n-0000",
+  "nodes": [
+    {
+      "id": "n-0000",
+      "path": "mail",
+      "cls": "n-mail-mail",
+      "parent": null,
+      "depth": 0,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0001",
+      "path": "TarotBookMailDialog/UIFrame",
+      "cls": "n-mail-tarotbookmaildialog-uiframe",
+      "parent": "n-0000",
+      "depth": 1,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0002",
+      "path": "TarotBookMailDialog/UIFrame/Audio",
+      "cls": "n-mail-tarotbookmaildialog-uiframe-audio",
+      "parent": "n-0001",
+      "depth": 2,
+      "box": {
+        "l": 910,
+        "t": 490,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          910,
+          490,
+          1010,
+          590
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0003",
+      "path": "TarotBookMailDialog/Bg",
+      "cls": "n-mail-tarotbookmaildialog-bg",
+      "parent": "n-0000",
+      "depth": 1,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0004",
+      "path": "TarotBookMailDialog/Bg/ScreenBg",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg",
+      "parent": "n-0003",
+      "depth": 2,
+      "box": {
+        "l": 134.4,
+        "t": 55.6,
+        "w": 1651.2,
+        "h": 928.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          134.4,
+          55.6,
+          1785.6,
+          984.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.07,
+          0.07
+        ],
+        "anchorMax": [
+          0.93,
+          0.93
+        ],
+        "anchoredPosition": [
+          0,
+          -20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0005",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask",
+      "parent": "n-0004",
+      "depth": 3,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1651.2,
+        "h": 928.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          134.4,
+          55.6,
+          1785.6,
+          984.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "mask": "rect-round",
+      "maskKind": "SmoothMask",
+      "maskType": "Rectangle",
+      "maskRadius": 0,
+      "reverseMask": true,
+      "smoothMaskReverse": true,
+      "showMaskGraphic": true,
+      "smoothMask": {
+        "sprite": null,
+        "source": {
+          "scriptPathId": "-3307589612467742685",
+          "layout": "smooth-mask-136",
+          "typeOffset": 32,
+          "radiusOffset": 36,
+          "reverseMaskOffset": 40,
+          "spriteFileId": 0,
+          "spritePathId": "0",
+          "textureContainer": ""
+        }
+      }
+    },
+    {
+      "id": "n-0006",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0005",
+      "depth": 4,
+      "box": {
+        "l": -135.3984,
+        "t": -56.1616,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          -0.082,
+          -0.082
+        ],
+        "anchorMax": [
+          1.082,
+          1.082
+        ],
+        "anchoredPosition": [
+          0,
+          20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0007",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0006",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1097
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5481
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "aspectFitInParent"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookrealmainbg2-2aa56ec1.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0008",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/PictureBg/BgLine2",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0007",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1097
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5481
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/ui-noise-57-c935ae93.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.049,
+          0.1354,
+          0.5472,
+          0.2196
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0009",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0006",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0010",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0009",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0011",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/SquareL",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": -50,
+        "t": 647.5616,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -50.9984,
+          647,
+          49.0016,
+          747
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          0,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          157
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0012",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/SquareF",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": 1871.9968,
+        "t": 450.5616,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1870.9984,
+          450,
+          1970.9984,
+          550
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          -40
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0013",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/data_mid",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": 910.9985,
+        "t": 807.1571,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          909.7468,
+          806.3422,
+          1010.2533,
+          906.8487
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          316.5955
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0014",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/data_right",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": 2061.1648,
+        "t": 613.5617,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          2059.9132,
+          612.7468,
+          2160.4197,
+          713.2533
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          189.168,
+          123
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0015",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/data_left",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": -140.1679,
+        "t": 747.8583,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 4,
+      "source": {
+        "aabb": [
+          -141.4196,
+          747.0434,
+          -40.9131,
+          847.5499
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          0,
+          0.5
+        ],
+        "anchoredPosition": [
+          -90.168,
+          257.2966
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0016",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/BgParticles",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": 1226.1648,
+        "t": -426.4679,
+        "w": 1391.6641,
+        "h": 740.9359
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 5,
+      "source": {
+        "aabb": [
+          1225.1664,
+          -427.0296,
+          2616.8305,
+          313.9064
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          -56
+        ],
+        "sizeDelta": [
+          1391.6641,
+          740.9359
+        ]
+      }
+    },
+    {
+      "id": "n-0017",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/BgParticles3",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": -695.832,
+        "t": -426.4679,
+        "w": 1391.6641,
+        "h": 740.9359
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 6,
+      "source": {
+        "aabb": [
+          -696.8304,
+          -427.0296,
+          694.8336,
+          313.9064
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          -56
+        ],
+        "sizeDelta": [
+          1391.6641,
+          740.9359
+        ]
+      }
+    },
+    {
+      "id": "n-0018",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/BgParticles4",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-bgroo",
+      "parent": "n-0010",
+      "depth": 7,
+      "box": {
+        "l": 265.1664,
+        "t": -480.4679,
+        "w": 1391.6641,
+        "h": 740.9359
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 7,
+      "source": {
+        "aabb": [
+          264.168,
+          -481.0296,
+          1655.8321,
+          259.9064
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          -110
+        ],
+        "sizeDelta": [
+          1391.6641,
+          740.9359
+        ]
+      }
+    },
+    {
+      "id": "n-0019",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/ErrorBg",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-error",
+      "parent": "n-0005",
+      "depth": 4,
+      "box": {
+        "l": -135.3984,
+        "t": -56.1616,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          -0.082,
+          -0.082
+        ],
+        "anchorMax": [
+          1.082,
+          1.082
+        ],
+        "anchoredPosition": [
+          0,
+          20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0020",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/ErrorBg/Gra1",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-error",
+      "parent": "n-0019",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": -300,
+        "w": 1921.9968,
+        "h": 1056.7862
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -300.5616,
+          1920.9984,
+          756.2246
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0.7
+        ],
+        "anchoredPosition": [
+          0,
+          -150
+        ],
+        "sizeDelta": [
+          0,
+          300
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/gradualmini-8bcf5e5e.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          0.2275,
+          0.1686,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0021",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/RevertMask/ErrorBg/Gra1/Gra2",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-revertmask-error",
+      "parent": "n-0020",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": -300,
+        "w": 1921.9968,
+        "h": 1356.7862
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -600.5616,
+          1920.9984,
+          756.2246
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -150
+        ],
+        "sizeDelta": [
+          0,
+          300
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/gradualmini-8bcf5e5e.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          0.2275,
+          0.1686,
+          0.5686
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0022",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/ScreenFrame",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-screenframe",
+      "parent": "n-0004",
+      "depth": 3,
+      "box": {
+        "l": -12,
+        "t": -12,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "id": "n-0023",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/ScreenFrame/Frame",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-screenframe-fram",
+      "parent": "n-0022",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookmainscreenframe-adc10bc3.png",
+        "mode": "sliced",
+        "slice": [
+          96,
+          24,
+          96,
+          24
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0024",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/ScreenFrame/Gra",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-screenframe-gra",
+      "parent": "n-0022",
+      "depth": 4,
+      "box": {
+        "l": 14,
+        "t": 14,
+        "w": 1647.2,
+        "h": 924.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          136.4,
+          57.6,
+          1783.6,
+          982.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -28,
+          -28
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0025",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/ScreenFrame02",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-screenframe02",
+      "parent": "n-0004",
+      "depth": 3,
+      "box": {
+        "l": -12,
+        "t": -12,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 2,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "id": "n-0026",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/ScreenFrame02/Gra",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-screenframe02-gr",
+      "parent": "n-0025",
+      "depth": 4,
+      "box": {
+        "l": 14,
+        "t": 14,
+        "w": 1647.2,
+        "h": 924.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          136.4,
+          57.6,
+          1783.6,
+          982.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -28,
+          -28
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0027",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/ScreenFrame02/Frame",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-screenframe02-fr",
+      "parent": "n-0025",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookmainscreenframe-adc10bc3.png",
+        "mode": "sliced",
+        "slice": [
+          96,
+          24,
+          96,
+          24
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0028",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-bottombar",
+      "parent": "n-0004",
+      "depth": 3,
+      "box": {
+        "l": 1,
+        "t": 1,
+        "w": 1649.2,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          135.4,
+          56.6,
+          1784.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          1
+        ],
+        "sizeDelta": [
+          -2,
+          52
+        ]
+      }
+    },
+    {
+      "id": "n-0029",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar/Bg",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-bottombar-bg",
+      "parent": "n-0028",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1649.2,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          135.4,
+          56.6,
+          1784.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0030",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar/Bg/Right",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-bottombar-bg-rig",
+      "parent": "n-0029",
+      "depth": 5,
+      "box": {
+        "l": 1535.2,
+        "t": 0,
+        "w": 114,
+        "h": 52
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1670.6,
+          56.6,
+          1784.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          114,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0031",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar/Bg/Line",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-bottombar-bg-lin",
+      "parent": "n-0029",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 50,
+        "w": 1649.2,
+        "h": 4
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          135.4,
+          106.6,
+          1784.6,
+          110.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          4
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/decoline2px-3x-90d2ab42.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          3,
+          0,
+          3
+        ],
+        "color": [
+          0.7529,
+          0.7922,
+          1,
+          0.2902
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0032",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar/CountText",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-bottombar-countt",
+      "parent": "n-0028",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1513.2,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          135.4,
+          56.6,
+          1648.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -68,
+          0
+        ],
+        "sizeDelta": [
+          -136,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.451
+        ],
+        "raw": "test_1封邮件",
+        "key": "UIText_TarotBook_Desktop_MailNum",
+        "alignment": "middleRight",
+        "preferredSize": [
+          180,
+          19
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0033",
+      "path": "TarotBookMailDialog/Bg/ScreenBg/BottomBar/TimeText",
+      "cls": "n-mail-tarotbookmaildialog-bg-screenbg-bottombar-timete",
+      "parent": "n-0028",
+      "depth": 4,
+      "box": {
+        "l": 1543.2,
+        "t": 6,
+        "w": 98,
+        "h": 40
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1678.6,
+          62.6,
+          1776.6,
+          102.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -8,
+          0
+        ],
+        "sizeDelta": [
+          98,
+          -12
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.451
+        ],
+        "raw": "0000",
+        "key": null,
+        "alignment": "middleCenter",
+        "preferredSize": [
+          80,
+          19
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0034",
+      "path": "TarotBookMailDialog/Bg/BgEff",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff",
+      "parent": "n-0003",
+      "depth": 2,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.9999,
+        0.9999
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          0.0961,
+          0.054,
+          1919.9039,
+          1079.946
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0035",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop",
+      "parent": "n-0034",
+      "depth": 3,
+      "box": {
+        "l": 910,
+        "t": 490,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          910.005,
+          490.005,
+          1009.995,
+          589.995
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0036",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop",
+      "parent": "n-0035",
+      "depth": 4,
+      "box": {
+        "l": -730,
+        "t": -310,
+        "w": 1560,
+        "h": 720
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.995,
+        0.995
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          184.0084,
+          181.85,
+          1735.9916,
+          898.15
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          1560,
+          720
+        ]
+      }
+    },
+    {
+      "id": "n-0037",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/SquareL",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-square",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": 20.4524,
+        "t": 515.0251,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          204.0757,
+          693.9846,
+          304.0657,
+          793.9746
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          -709.5759,
+          205.0332
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0038",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/SquareF",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-square",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": 1456.6332,
+        "t": 476.8342,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1632.9327,
+          655.9884,
+          1732.9227,
+          755.9784
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          726.662,
+          166.8408
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0039",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/data_mid",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-data-m",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": 730,
+        "t": 626.5829,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          910.005,
+          804.9735,
+          1009.995,
+          904.9635
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          316.5955
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0040",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/data_right",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-data-r",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": 1486.7839,
+        "t": 567.2864,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          1662.9297,
+          745.9794,
+          1762.9197,
+          845.9694
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          756.814,
+          257.2966
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0041",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/data_left",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-data-l",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": -21.1558,
+        "t": 567.2864,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 4,
+      "source": {
+        "aabb": [
+          162.6798,
+          745.9794,
+          262.6697,
+          845.9694
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          -751.1856,
+          257.2966
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0042",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/BgGlow",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-bgglow",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": -47.9981,
+        "t": -6.9997,
+        "w": 1560,
+        "h": 720
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 5,
+      "source": {
+        "aabb": [
+          136.2551,
+          174.886,
+          1688.2382,
+          891.1859
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -48,
+          -7
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0043",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/BgParticles",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-bgpart",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1560,
+        "h": 720
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 6,
+      "source": {
+        "aabb": [
+          184.0084,
+          181.85,
+          1735.9916,
+          898.15
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0044",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffLoop/Loop/Line02",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effloop-loop-line02",
+      "parent": "n-0036",
+      "depth": 5,
+      "box": {
+        "l": 732.997,
+        "t": 305.0153,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1809.1168,
+        1005.0649
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 7,
+      "source": {
+        "aabb": [
+          -89028.0045,
+          -49459.9536,
+          90953.9679,
+          50530.0351
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          2.9971,
+          -4.9849
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0045",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen",
+      "parent": "n-0034",
+      "depth": 3,
+      "box": {
+        "l": 0.1397,
+        "t": 17.9566,
+        "w": 1919.7205,
+        "h": 1044.0867
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          0.2358,
+          18.0089,
+          1919.7642,
+          1061.9911
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -0.2795,
+          -35.9133
+        ]
+      }
+    },
+    {
+      "id": "n-0046",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root",
+      "parent": "n-0045",
+      "depth": 4,
+      "box": {
+        "l": 909.8603,
+        "t": 472.0434,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          910.005,
+          490.005,
+          1009.995,
+          589.995
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0047",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root/ScanLine",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root-scanli",
+      "parent": "n-0046",
+      "depth": 5,
+      "box": {
+        "l": -529.9984,
+        "t": -251,
+        "w": 1159.9968,
+        "h": 602
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 180,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          380.0596,
+          239.0301,
+          1539.9404,
+          840.9699
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          1159.9968,
+          602
+        ]
+      }
+    },
+    {
+      "id": "n-0048",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root/DataLine",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root-datali",
+      "parent": "n-0046",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        300,
+        300
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          -14038.4973,
+          -14458.4973,
+          15958.4973,
+          15538.4973
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0049",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root/RedDark",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root-reddar",
+      "parent": "n-0046",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        15,
+        8.34
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          210.075,
+          123.0417,
+          1709.925,
+          956.9583
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0050",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root/Dark",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root-dark",
+      "parent": "n-0046",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        15,
+        8.34
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          210.075,
+          123.0417,
+          1709.925,
+          956.9583
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0051",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root/BgGlow",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root-bgglow",
+      "parent": "n-0046",
+      "depth": 5,
+      "box": {
+        "l": -777.9027,
+        "t": -316.9112,
+        "w": 1560,
+        "h": 720
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.9955,
+        0.9955
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 4,
+      "source": {
+        "aabb": [
+          135.6901,
+          174.7455,
+          1688.514,
+          891.4334
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -47.9027,
+          -6.9112
+        ],
+        "sizeDelta": [
+          1460,
+          620
+        ]
+      }
+    },
+    {
+      "id": "n-0052",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root/DataLineG",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root-datali",
+      "parent": "n-0046",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        300,
+        300
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 5,
+      "source": {
+        "aabb": [
+          -14038.4973,
+          -14458.4973,
+          15958.4973,
+          15538.4973
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0053",
+      "path": "TarotBookMailDialog/Bg/BgEff/EffOpen/Root/DateSquare",
+      "cls": "n-mail-tarotbookmaildialog-bg-bgeff-effopen-root-datesq",
+      "parent": "n-0046",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        300,
+        300
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 6,
+      "source": {
+        "aabb": [
+          -14038.4973,
+          -14458.4973,
+          15958.4973,
+          15538.4973
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0054",
+      "path": "TarotBookMailDialog/Root",
+      "cls": "n-mail-tarotbookmaildialog-root",
+      "parent": "n-0000",
+      "depth": 1,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0055",
+      "path": "TarotBookMailDialog/Root/Contents",
+      "cls": "n-mail-tarotbookmaildialog-root-contents",
+      "parent": "n-0054",
+      "depth": 2,
+      "box": {
+        "l": 134.4,
+        "t": 55.6,
+        "w": 1651.2,
+        "h": 928.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          134.4,
+          55.6,
+          1785.6,
+          984.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.07,
+          0.07
+        ],
+        "anchorMax": [
+          0.93,
+          0.93
+        ],
+        "anchoredPosition": [
+          0,
+          -20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0056",
+      "path": "TarotBookMailDialog/Root/Contents/Line",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-line",
+      "parent": "n-0055",
+      "depth": 3,
+      "box": {
+        "l": 34,
+        "t": 774.8,
+        "w": 1583.2,
+        "h": 2
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          168.4,
+          830.4,
+          1751.6,
+          832.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -154
+        ],
+        "sizeDelta": [
+          -68,
+          2
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          0.7725,
+          0.8078,
+          1,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0057",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent",
+      "parent": "n-0055",
+      "depth": 3,
+      "box": {
+        "l": 451.6,
+        "t": 64,
+        "w": 748,
+        "h": 832.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          586,
+          119.6,
+          1334,
+          952.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          16
+        ],
+        "sizeDelta": [
+          748,
+          -96
+        ]
+      }
+    },
+    {
+      "id": "n-0058",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0057",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 712.8,
+        "w": 748,
+        "h": 120
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          1334,
+          952.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "layoutGroupWidth"
+        ],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          120
+        ]
+      }
+    },
+    {
+      "id": "n-0059",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/TitleText",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0058",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 390,
+        "h": 40
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          976,
+          872.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 26,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "raw": "DevUI_MailTitle",
+        "key": "DevUI_MailTitle",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          390,
+          24.7
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0060",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0058",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 160,
+        "h": 24
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          746,
+          856.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0061",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From/DescText",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0060",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 48,
+        "h": 15.2
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          634,
+          847.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 16,
+        "color": [
+          1,
+          1,
+          1,
+          0.7059
+        ],
+        "raw": "发件人",
+        "key": "UIText_TarotBook_Mail_SenderName",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          48,
+          15.2
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0062",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/From/NameText",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0060",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 160,
+        "h": 15.2
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          746,
+          847.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 16,
+        "color": [
+          1,
+          1,
+          1,
+          0.7059
+        ],
+        "raw": "DevUI_Name",
+        "key": "DevUI_Name",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          160,
+          15.2
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0063",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0058",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 160,
+        "h": 24
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          746,
+          856.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0064",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To/DescText",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0063",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 48,
+        "h": 15.2
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          634,
+          847.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 16,
+        "color": [
+          1,
+          1,
+          1,
+          0.7059
+        ],
+        "raw": "收件人",
+        "key": "UIText_TarotBook_Mail_ReceiverName",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          48,
+          15.2
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0065",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/To/NameText",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0063",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 160,
+        "h": 15.2
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          586,
+          832.4,
+          746,
+          847.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 16,
+        "color": [
+          1,
+          1,
+          1,
+          0.7059
+        ],
+        "raw": "DevUI_Name",
+        "key": "DevUI_Name",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          160,
+          15.2
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0066",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/IconPanel",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0058",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 36,
+        "w": 100,
+        "h": 80
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          586,
+          868.4,
+          686,
+          948.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -44
+        ],
+        "sizeDelta": [
+          100,
+          80
+        ]
+      }
+    },
+    {
+      "id": "n-0067",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/IconPanel/Frame",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0066",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 80
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          586,
+          868.4,
+          686,
+          948.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe12r-fe31bc4e.png",
+        "mode": "sliced",
+        "slice": [
+          11,
+          11,
+          11,
+          11
+        ],
+        "color": [
+          0.3176,
+          0.3608,
+          0.4235,
+          0.1216
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0068",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/IconPanel/Frame/FrameWhite",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0067",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 80
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 0,
+      "source": {
+        "aabb": [
+          586,
+          868.4,
+          686,
+          948.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe12r-fe31bc4e.png",
+        "mode": "sliced",
+        "slice": [
+          11,
+          11,
+          11,
+          11
+        ],
+        "color": [
+          0.7594,
+          0.8575,
+          1,
+          0.3686
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0069",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/IconPanel/Icon",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0066",
+      "depth": 6,
+      "box": {
+        "l": 13,
+        "t": 3,
+        "w": 74,
+        "h": 74
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          599,
+          871.4,
+          673,
+          945.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          74,
+          74
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookmainiconmail-7a844a17.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0070",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/IconPanel/StarIcon",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0066",
+      "depth": 6,
+      "box": {
+        "l": 58,
+        "t": 8,
+        "w": 24,
+        "h": 24
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          644,
+          876.4,
+          668,
+          900.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          8,
+          -20
+        ],
+        "sizeDelta": [
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "id": "n-0071",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/BaseInfo/IconPanel/StarIcon/Icon",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-ba",
+      "parent": "n-0070",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 24,
+        "h": 24
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          644,
+          876.4,
+          668,
+          900.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookmailstaricon-02cdedfa.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0072",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0057",
+      "depth": 4,
+      "box": {
+        "l": 72,
+        "t": 32,
+        "w": 676,
+        "h": 646.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          658,
+          151.6,
+          1334,
+          798.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          36,
+          -61
+        ],
+        "sizeDelta": [
+          -72,
+          -186
+        ]
+      },
+      "mask": "sprite",
+      "maskKind": "RectMask2D",
+      "showMaskGraphic": true
+    },
+    {
+      "id": "n-0073",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView/Viewport",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0072",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 676,
+        "h": 646.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          658,
+          151.6,
+          1334,
+          798.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0074",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView/Viewport/Content",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0073",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 446.8,
+        "w": 676,
+        "h": 200
+      },
+      "pivot": [
+        0,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          658,
+          598.4,
+          1334,
+          798.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          200
+        ]
+      }
+    },
+    {
+      "id": "n-0075",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView/Scrollbar",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0072",
+      "depth": 5,
+      "box": {
+        "l": 676,
+        "t": -6,
+        "w": 20,
+        "h": 652.8
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1334,
+          145.6,
+          1354,
+          798.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -3
+        ],
+        "sizeDelta": [
+          20,
+          6
+        ]
+      }
+    },
+    {
+      "id": "n-0076",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView/Scrollbar/BgLine",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0075",
+      "depth": 6,
+      "box": {
+        "l": 8,
+        "t": 0,
+        "w": 4,
+        "h": 652.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1342,
+          145.6,
+          1346,
+          798.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          4,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.102
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0077",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView/Scrollbar/SlidingArea",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0075",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 20,
+        "h": 652.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1334,
+          145.6,
+          1354,
+          798.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0078",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView/Scrollbar/SlidingArea/Handle",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0077",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 0,
+        "h": 0
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1334,
+          145.6,
+          1334,
+          145.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0079",
+      "path": "TarotBookMailDialog/Root/Contents/MailContent/ScrollView/Scrollbar/SlidingArea/Handle/Img",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-mailcontent-sc",
+      "parent": "n-0078",
+      "depth": 8,
+      "box": {
+        "l": -2,
+        "t": 0,
+        "w": 4,
+        "h": 0
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1332,
+          145.6,
+          1336,
+          145.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          4,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.3922
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0080",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea",
+      "parent": "n-0055",
+      "depth": 3,
+      "box": {
+        "l": -60,
+        "t": 32,
+        "w": 272,
+        "h": 864.8
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 2,
+      "source": {
+        "aabb": [
+          74.4,
+          87.6,
+          346.4,
+          952.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          -60,
+          0
+        ],
+        "sizeDelta": [
+          272,
+          -64
+        ]
+      }
+    },
+    {
+      "id": "n-0081",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/Bg",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-bg",
+      "parent": "n-0080",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 272,
+        "h": 864.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          74.4,
+          87.6,
+          346.4,
+          952.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0082",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/Bg/Fill",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-bg",
+      "parent": "n-0081",
+      "depth": 5,
+      "box": {
+        "l": -32,
+        "t": -32,
+        "w": 336,
+        "h": 928.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          42.4,
+          55.6,
+          378.4,
+          984.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          64,
+          64
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbooksubscreenframe-3f1a6065.png",
+        "mode": "sliced",
+        "slice": [
+          51,
+          72,
+          51,
+          72
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0083",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/Bg/Fill/Deco",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-bg",
+      "parent": "n-0082",
+      "depth": 6,
+      "box": {
+        "l": 32,
+        "t": 32,
+        "w": 272,
+        "h": 864.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          74.4,
+          87.6,
+          346.4,
+          952.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -64,
+          -64
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbooksubscreenframe01-ffc78746.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.7294,
+          0.7569,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0084",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/Bg/ScanEff",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-bg",
+      "parent": "n-0081",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 272,
+        "h": 864.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          74.4,
+          87.6,
+          346.4,
+          952.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": null,
+        "mode": "simple",
+        "slice": null,
+        "color": [
+          0.5536,
+          0.6337,
+          0.8208,
+          0.3216
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Graphic",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0085",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/Bg/FillWhite",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-bg",
+      "parent": "n-0081",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 272,
+        "h": 864.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          74.4,
+          87.6,
+          346.4,
+          952.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          0.7192,
+          0.7102,
+          0.7882,
+          0.3255
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0086",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0080",
+      "depth": 4,
+      "box": {
+        "l": 16,
+        "t": 16,
+        "w": 240,
+        "h": 832.8
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 1,
+      "source": {
+        "aabb": [
+          90.4,
+          103.6,
+          330.4,
+          936.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -16
+        ],
+        "sizeDelta": [
+          -32,
+          -32
+        ]
+      },
+      "mask": "sprite",
+      "maskKind": "RectMask2D",
+      "showMaskGraphic": true
+    },
+    {
+      "id": "n-0087",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView/Viewport",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0086",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 240,
+        "h": 832.8
+      },
+      "pivot": [
+        0,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          90.4,
+          103.6,
+          330.4,
+          936.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0088",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView/Viewport/Content",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0087",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 768.801,
+        "w": 240,
+        "h": 64
+      },
+      "pivot": [
+        0,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          90.4,
+          872.401,
+          330.4,
+          936.401
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "fitterHeight"
+        ],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0.001
+        ],
+        "sizeDelta": [
+          0,
+          64
+        ]
+      }
+    },
+    {
+      "id": "n-0089",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView/Scrollbar",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0086",
+      "depth": 5,
+      "box": {
+        "l": 240,
+        "t": 0,
+        "w": 16,
+        "h": 832.8
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          330.4,
+          103.6,
+          346.4,
+          936.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          16,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0090",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView/Scrollbar/BgLine",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0089",
+      "depth": 6,
+      "box": {
+        "l": 6,
+        "t": 0,
+        "w": 4,
+        "h": 832.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          336.4,
+          103.6,
+          340.4,
+          936.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          4,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.102
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0091",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView/Scrollbar/SlidingArea",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0089",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": 0,
+        "w": 20,
+        "h": 832.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          328.4,
+          103.6,
+          348.4,
+          936.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0092",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView/Scrollbar/SlidingArea/Handle",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0091",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 0,
+        "h": 0
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          328.4,
+          103.6,
+          328.4,
+          103.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0093",
+      "path": "TarotBookMailDialog/Root/Contents/LeftTabArea/ScrollView/Scrollbar/SlidingArea/Handle/Img",
+      "cls": "n-mail-tarotbookmaildialog-root-contents-lefttabarea-sc",
+      "parent": "n-0092",
+      "depth": 8,
+      "box": {
+        "l": -2,
+        "t": 0,
+        "w": 4,
+        "h": 0
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          326.4,
+          103.6,
+          330.4,
+          103.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          4,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.698
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0094",
+      "path": "TarotBookMailDialog/Root/PageInfo",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo",
+      "parent": "n-0054",
+      "depth": 2,
+      "box": {
+        "l": 0,
+        "t": 36,
+        "w": 1920,
+        "h": 1008
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          0,
+          36,
+          1920,
+          1044
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.1
+        ],
+        "anchorMax": [
+          1,
+          0.9
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          144
+        ]
+      }
+    },
+    {
+      "id": "n-0095",
+      "path": "TarotBookMailDialog/Root/PageInfo/Title",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo-title",
+      "parent": "n-0094",
+      "depth": 3,
+      "box": {
+        "l": 87,
+        "t": 972,
+        "w": 240,
+        "h": 21
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          87,
+          1008,
+          327,
+          1029
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          87,
+          -36
+        ],
+        "sizeDelta": [
+          240,
+          21
+        ]
+      }
+    },
+    {
+      "id": "n-0096",
+      "path": "TarotBookMailDialog/Root/PageInfo/Title/TitleText",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo-title-titletex",
+      "parent": "n-0095",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 64,
+        "h": 15.2
+      },
+      "pivot": [
+        0,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          87,
+          1008,
+          151,
+          1023.2
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 16,
+        "color": [
+          0.9906,
+          0.8754,
+          0.6308,
+          0.902
+        ],
+        "raw": "如我所书",
+        "key": "UIText_TarotBook_Title_Entrance",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          64,
+          15.2
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0097",
+      "path": "TarotBookMailDialog/Root/PageInfo/TitleType",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo-titletype",
+      "parent": "n-0094",
+      "depth": 3,
+      "box": {
+        "l": 87,
+        "t": 946,
+        "w": 240,
+        "h": 26
+      },
+      "pivot": [
+        0,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          87,
+          982,
+          327,
+          1008
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          87,
+          -36
+        ],
+        "sizeDelta": [
+          240,
+          26
+        ]
+      }
+    },
+    {
+      "id": "n-0098",
+      "path": "TarotBookMailDialog/Root/PageInfo/TitleType/ExtraContent",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo-titletype-extr",
+      "parent": "n-0097",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 0,
+        "h": 0
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          87,
+          982,
+          87,
+          982
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "layoutPaddingWidth",
+          "layoutPaddingHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0099",
+      "path": "TarotBookMailDialog/Root/PageInfo/TitleType/Text",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo-titletype-text",
+      "parent": "n-0097",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 120,
+        "h": 17.1
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          87,
+          982,
+          207,
+          999.1
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.902
+        ],
+        "raw": "邮箱.exe",
+        "key": "UIText_TarotBook_Appname_Mailbox",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          120,
+          17.1
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0100",
+      "path": "TarotBookMailDialog/Root/PageInfo/IconPanel",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo-iconpanel",
+      "parent": "n-0094",
+      "depth": 3,
+      "box": {
+        "l": 35,
+        "t": 949,
+        "w": 44,
+        "h": 44
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          35,
+          985,
+          79,
+          1029
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          57,
+          -37
+        ],
+        "sizeDelta": [
+          44,
+          44
+        ]
+      }
+    },
+    {
+      "id": "n-0101",
+      "path": "TarotBookMailDialog/Root/PageInfo/IconPanel/Icon",
+      "cls": "n-mail-tarotbookmaildialog-root-pageinfo-iconpanel-icon",
+      "parent": "n-0100",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 44,
+        "h": 44
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          35,
+          985,
+          79,
+          1029
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          22,
+          -22
+        ],
+        "sizeDelta": [
+          44,
+          44
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookicon-8af7a8d8.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.9906,
+          0.8754,
+          0.6308,
+          0.902
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0102",
+      "path": "TarotBookMailDialog/Root/BtnClose",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose",
+      "parent": "n-0054",
+      "depth": 2,
+      "box": {
+        "l": 1820,
+        "t": 980,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        1,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1820,
+          980,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      },
+      "hit": true
+    },
+    {
+      "id": "n-0103",
+      "path": "TarotBookMailDialog/Root/BtnClose/Root",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose-root",
+      "parent": "n-0102",
+      "depth": 3,
+      "box": {
+        "l": 16,
+        "t": 33,
+        "w": 72,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1836,
+          1013,
+          1908,
+          1073
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -48,
+          -37
+        ],
+        "sizeDelta": [
+          72,
+          60
+        ]
+      }
+    },
+    {
+      "id": "n-0104",
+      "path": "TarotBookMailDialog/Root/BtnClose/Root/Glow",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose-root-glow",
+      "parent": "n-0103",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 72,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1836,
+          1013,
+          1908,
+          1073
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          72,
+          60
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/lightglow-98624ce1.png",
+        "mode": "simple",
+        "slice": [
+          64,
+          64,
+          64,
+          64
+        ],
+        "color": [
+          0.1226,
+          0.1226,
+          0.1226,
+          0.051
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0105",
+      "path": "TarotBookMailDialog/Root/BtnClose/Root/Icon",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose-root-icon",
+      "parent": "n-0103",
+      "depth": 4,
+      "box": {
+        "l": 20,
+        "t": 14,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1856,
+          1027,
+          1888,
+          1059
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "n-0106",
+      "path": "TarotBookMailDialog/Root/BtnClose/Root/Icon/Dot",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose-root-icon-dot",
+      "parent": "n-0105",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 1.5,
+        "w": 5,
+        "h": 5
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1856,
+          1028.5,
+          1861,
+          1033.5
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          -16,
+          -12
+        ],
+        "sizeDelta": [
+          5,
+          5
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe3r-3x-360d8064.png",
+        "mode": "simple",
+        "slice": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0107",
+      "path": "TarotBookMailDialog/Root/BtnClose/Root/Icon/Arrow",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose-root-icon-arro",
+      "parent": "n-0105",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1856,
+          1027,
+          1888,
+          1059
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconbtnback-f02a55ce.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0108",
+      "path": "TarotBookMailDialog/Root/BtnClose/Root/ClickArea",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose-root-clickarea",
+      "parent": "n-0103",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 72,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1836,
+          1013,
+          1908,
+          1073
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0109",
+      "path": "TarotBookMailDialog/Root/BtnClose/Root/KeyMapInfo",
+      "cls": "n-mail-tarotbookmaildialog-root-btnclose-root-keymapinf",
+      "parent": "n-0103",
+      "depth": 4,
+      "box": {
+        "l": -10,
+        "t": 14,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.8,
+        0.8
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 3,
+      "source": {
+        "aabb": [
+          1829.2,
+          1030.2,
+          1854.8,
+          1055.8
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          -30,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "n-0110",
+      "path": "TarotBookMailDialog/Root/AutoMode",
+      "cls": "n-mail-tarotbookmaildialog-root-automode",
+      "parent": "n-0054",
+      "depth": 2,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0111",
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen",
+      "cls": "n-mail-tarotbookmaildialog-root-automode-btnfulscreen",
+      "parent": "n-0110",
+      "depth": 3,
+      "box": {
+        "l": -200,
+        "t": -200,
+        "w": 2320,
+        "h": 1480
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -200,
+          -200,
+          2120,
+          1280
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          400,
+          400
+        ]
+      },
+      "hit": true
+    },
+    {
+      "id": "n-0112",
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel",
+      "cls": "n-mail-tarotbookmaildialog-root-automode-btnfulscreen-b",
+      "parent": "n-0111",
+      "depth": 4,
+      "box": {
+        "l": 300,
+        "t": 240,
+        "w": 1720,
+        "h": 80
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          100,
+          40,
+          1820,
+          120
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "layoutGroupWidth"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          240
+        ],
+        "sizeDelta": [
+          -600,
+          80
+        ]
+      }
+    },
+    {
+      "id": "n-0113",
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/Text",
+      "cls": "n-mail-tarotbookmaildialog-root-automode-btnfulscreen-b",
+      "parent": "n-0112",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 140,
+        "h": 19
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          100,
+          40,
+          240,
+          59
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.902
+        ],
+        "raw": "点击空白处继续",
+        "key": "UIText_RogueExploreBattleFinishDialog_Tips",
+        "alignment": "middleCenter",
+        "preferredSize": [
+          140,
+          19
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0114",
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/KeyMapHIntInfo",
+      "cls": "n-mail-tarotbookmaildialog-root-automode-btnfulscreen-b",
+      "parent": "n-0112",
+      "depth": 5,
+      "box": {
+        "l": 590,
+        "t": 0,
+        "w": 84,
+        "h": 80
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          690,
+          40,
+          774,
+          120
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          632,
+          -40
+        ],
+        "sizeDelta": [
+          84,
+          80
+        ]
+      }
+    },
+    {
+      "id": "n-0115",
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/KeyMapHIntInfo/LeftExtra",
+      "cls": "n-mail-tarotbookmaildialog-root-automode-btnfulscreen-b",
+      "parent": "n-0114",
+      "depth": 6,
+      "box": {
+        "l": -8,
+        "t": -10,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          682,
+          30,
+          782,
+          130
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0116",
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/KeyMapHIntInfo/KeyMapInfo",
+      "cls": "n-mail-tarotbookmaildialog-root-automode-btnfulscreen-b",
+      "parent": "n-0114",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 0,
+        "h": 80
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          690,
+          40,
+          690,
+          120
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "layoutPaddingWidth"
+        ],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -40
+        ],
+        "sizeDelta": [
+          0,
+          80
+        ]
+      }
+    },
+    {
+      "id": "n-0117",
+      "path": "TarotBookMailDialog/Root/AutoMode/BtnFulScreen/BottomHintPanel/KeyMapHIntInfo/Text",
+      "cls": "n-mail-tarotbookmaildialog-root-automode-btnfulscreen-b",
+      "parent": "n-0114",
+      "depth": 6,
+      "box": {
+        "l": 4,
+        "t": 0,
+        "w": 80,
+        "h": 80
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          694,
+          40,
+          774,
+          120
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          44,
+          -40
+        ],
+        "sizeDelta": [
+          80,
+          80
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.902
+        ],
+        "raw": "按下关闭",
+        "key": "UIText_JoyStickClose",
+        "alignment": "middleCenter",
+        "preferredSize": [
+          80,
+          19
+        ],
+        "quads": []
+      }
+    }
+  ]
+}

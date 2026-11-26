@@ -1,0 +1,61 @@
+{
+  "name": "UI_TarotBook_1066_UVmove_Data",
+  "kind": "UVMove",
+  "sourceFile": "UI_TarotBook_1066_UVmove_Data.json",
+  "sha1": "0f9f927c24e3dbab1d24e793bc5e375aeb587861",
+  "floats": {
+    "_CL2": 0,
+    "_DstBlend": 10,
+    "_SrcBlend": 5,
+    "_Stencil": 0,
+    "_StencilComp": 8
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.12941177
+    },
+    "_MainSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 6,
+      "a": 0
+    },
+    "_MaskSpeed": {
+      "r": 0,
+      "g": -0.45,
+      "b": 0.3,
+      "a": 1
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_MaskTex": {
+      "scale": {
+        "X": 0.2,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

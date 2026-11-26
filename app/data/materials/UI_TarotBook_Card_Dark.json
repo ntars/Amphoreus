@@ -1,0 +1,32 @@
+{
+  "name": "UI_TarotBook_Card_Dark",
+  "kind": "Other",
+  "sourceFile": "UI_TarotBook_Card_Dark.json",
+  "sha1": "d4b1ac5da0df979582f346bf7e417583b813782b",
+  "floats": {
+    "_CL": 2,
+    "_DstBlend": 10,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "_MaskChannel": {
+      "r": 1,
+      "g": 0.6,
+      "b": 0,
+      "a": 0
+    },
+    "_MaskSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0.35,
+      "a": 1
+    }
+  },
+  "textures": {}
+}

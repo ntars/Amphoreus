@@ -1,0 +1,40 @@
+{
+  "name": "UI_TarotBook_1072_Glow_On",
+  "kind": "Glow",
+  "sourceFile": "UI_TarotBook_1072_Glow_On.json",
+  "sha1": "f516335b48579b34a55ca27f1541c3c7d6a5fc5e",
+  "floats": {
+    "_AlwaysOnTop": 0,
+    "_Cull": 0,
+    "_DstBlend": 1,
+    "_EmissionIntensity": 1.1,
+    "_RenderingMode": 1,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_MainChannel": {
+      "r": 1,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.21568628
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

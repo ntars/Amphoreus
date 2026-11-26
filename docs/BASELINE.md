@@ -9,9 +9,9 @@
 - 全局元数据：`global-metadata.dat`，106840192 bytes
 - 全局元数据 SHA256：`315707b69ff5eb76773e5ba1c889082e36e06a3ea5aa601fe7eaf683630a4fc9`
 - 元数据头：`4d48590000000000`（MHY，加密）
-- Node：当前执行环境 Node 22+
+- Node：当前执行环境 Node 24.22.3（手册要求 ≥22）
 - Python：3.15，UnityPy 1.25.4，Pillow 13，NumPy，lz4
-- Oodle：`~/Downloads/hsr-ui-extract/tools/libooz.dylib`
+- Oodle：外部 `unoodle` 解码器（不入库、不随仓库分发）
 - 解包源码：AnimeStudio `AnimeStudio-src-35036`
 
 ## TarotBook 主 block
@@ -31,6 +31,30 @@
 - TarotBook 动画导出：`~/Downloads/hsr-ui-extract/exports/convert-all/assets/asbres/ui/animation/tarotbook`
 - TarotBook 材质导出：`~/Downloads/hsr-ui-extract/exports/convert-all/assets/asbres/ui/materials/tarotbook`
 
+## 官方本地化表（TextMap）
+
+- 文件：`StarRail_Data/Persistent/DesignData/Windows/cn/2992a81e50e9f57b177c31317600ada3.bytes`
+- 大小：56,511,712 bytes
+- SHA256：`21188bb8e32f2108edd2264037113d7f90cd84e0ca888e4394df30fdd45cbf88`
+- 记录形状：`<u8 len><UTF-8 text>0x03<4B LE TextID.hash>`，周围有可选 `0x01` 组标记与不透明尾部
+- 提取：`python3 tools/extract_textmap.py` → `dump/_textmap.json`（只读源，不入库）
+- 当前结果：373,873 个候选，373,708 个唯一 hash，165 个 32-bit 碰撞（保留首条并计数）
+- 门禁：`tools/verify_textmap.mjs` 锁定 5 条 `UIText_TarotBook_StoryTemplatePage_*` 文本及章节 ID `1` / `1-1`
+
+`TextID` 构造器已由 `GameAssembly.dll` 反汇编确认：UTF-16 码元，两个累加器都从
+`0x1505` 开始，按 `h = h*33 ^ c` 更新，最终 `hash = h1 + h2*1566083941`（.NET
+`string.GetHashCode()` 的 x86 变体）。TextMap 的 4 字节尾部与配置 blob 的章节行
+共用同一 hash 空间；因此正文/词条解析使用配置行携带的 hash 反查 TextMap，
+不再猜测哈希函数。
+
+## 完整本机证据副本
+
+- 用户已明确：完整游戏数据位于 `~/Downloads/hsr-ui-extract/StarRailGame-full/`，后续直接只读使用该目录，不再重复提取。
+- IL2CPP 基线已由 `HSRGlobalMetadata` 从同一目录生成到 `out/il2cpp/dump.cs`（178 MB）；该目录被 `.gitignore` 排除，不进入仓库。dump 中存在 `RPG.Client.TarotBookWikiManager`，但不存在任务卡字符串要求的 `class TarotBookWikiDialog`，因此 `T1.2` 仍保持 blocked。
+- 为便于后续只读复现，此前已把 `~/Downloads/hsr-ui-extract` 的全部 150,959 个条目（忽略 `.DS_Store`，约 191 GB）复制到 `~/Downloads/hsr-ui-extract-all`。
+- 复核：源目录所有文件在副本中存在且字节数一致；15 个关键数据项额外做了 SHA-256 或目录文件清单比对，结果 0 差异。
+- 副本仅用于本机取证，不进入仓库；项目运行和门禁仍以用户指定的原始完整目录为真相。
+
 ## 数据真相分层
 
 1. `RectTransform` 的 anchor/pivot/size/position 来自原始 block 的 Unity 序列化对象。
@@ -38,11 +62,12 @@
 3. `~/Downloads/hsr-ui-extract/source-dump/probe-prefab-json/.../tarotbook` 的 951 个 JSON 提供父子关系证据，但不含几何字段，不能单独满足 dump schema。
 4. 完整游戏截图只允许人工放在 `verify/shots/`，永不进入 `app/`，也不作为数据来源。
 
-## 当前 M1 状态
+## 当前 M1–M3 状态
 
-- `dump/entrance.json` 已从原始主 block 生成，共 23 个节点，几何字段来自 block 中可读的 RectTransform。
-- 该 dump 未达到手册 7.7 的 50 节点门槛，因此 `entrance` 当前状态为 **BLOCKED**，不得据此宣称 M1 通过或进入 M3。
-- 其余 9 个 P0 状态尚无证据完整的 dump，状态为 **BLOCKED**。
-- 2026-11-25 补核：`source-dump/probe-prefab-json/.../tarotbook` 950 份 JSON 与 `source-dump/tarot-main-json/.../tarotbook` 32 份 JSON 中，六个 RectTransform 几何关键字段出现次数均为 0；`tarot-prefabs`、`tarot-main-dump`、`tarot-main-dump2` 三个目录为空。
-- 当前唯一可信的补齐方式是手册路径 B 的运行时对象树 dump；该步骤按手册 0.3 必须由人工在游戏内触发，模型不得假造。
-- 禁止用截图或手调坐标补齐。
+- `python3 tools/import_tarotbook.py` 从原始 block 直接反序列化 10 个 P0 状态的 RectTransform / GameObject / Image / Text / 布局组件；`node tools/check_dump.mjs dump/` 全绿。
+- `python3 tools/build_sprites.py` 从 30 个 block 抽取 235 个 sprite 引用，字体 `RPG_CN.ttf` 已复制；`missing.json` 只剩 1 条无 sprite 的纯色 Graphic 记录。
+- `node tools/build_layout.mjs dump app/data/states` 产出十态扁平布局；`tools/check_layout.mjs` 对十态通过，maxAabbErr=0px。
+- 静态路径 A 无 `textQuads`，`check_dump.mjs` 仅告警；Unicode 文本使用源字体直接渲染，字形位置精度登记在 `docs/FIDELITY.md`。
+- M4 runtime 已安装原生 ES Module 入口、舞台缩放、图片/文本/遮罩渲染；M5 动画、M6 材质近似与 M7 状态机已落地。
+- 性能预算：本地 Chromium 1920×1080 冷缓存下 `tools/perf.mjs --state catalog` 实测约 55–56fps、DOM 1402、堆约 3–4MB；门禁阈值为 ≥50fps、DOM ≤6000。
+

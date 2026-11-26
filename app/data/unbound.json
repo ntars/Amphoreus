@@ -1,0 +1,126 @@
+[
+  {
+    "clip": "CardItemNone",
+    "path": "Color"
+  },
+  {
+    "clip": "CardItemNone",
+    "path": "Eff_Show"
+  },
+  {
+    "clip": "CardItemShow",
+    "path": "Color"
+  },
+  {
+    "clip": "CardItemShow",
+    "path": "Eff_Show"
+  },
+  {
+    "clip": "Checked",
+    "path": "path_1893270669"
+  },
+  {
+    "clip": "Checked",
+    "path": "path_3465042689"
+  },
+  {
+    "clip": "Disabled",
+    "path": "path_1499414294"
+  },
+  {
+    "clip": "Highlighted",
+    "path": "path_1499414294"
+  },
+  {
+    "clip": "Normal",
+    "path": "path_1499414294"
+  },
+  {
+    "clip": "Pressed",
+    "path": "path_1499414294"
+  },
+  {
+    "clip": "Selected",
+    "path": "path_1499414294"
+  },
+  {
+    "clip": "TarotBookBookletPage_FadeIn",
+    "path": "Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCatalogContent(Clone)"
+  },
+  {
+    "clip": "TarotBookBookletPage_FadeIn",
+    "path": "Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCoverPageContent(Clone)"
+  },
+  {
+    "clip": "TarotBookBookletPage_FadeIn3",
+    "path": "Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCatalogContent(Clone)"
+  },
+  {
+    "clip": "TarotBookBookletPage_FadeIn3",
+    "path": "Root/PanelContent/MainBookPanel/PagePanel/AbovePage/TBBookletCoverPageContent(Clone)"
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1294807864"
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_4151058068"
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Error",
+    "path": "path_1119974553"
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_4151058068"
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1294807864"
+  },
+  {
+    "clip": "TarotBookTimelineInfoItemColor_Normal",
+    "path": "path_1119974553"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1177151398"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_997027524"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_1089987130"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Error",
+    "path": "path_2832325101"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1177151398"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_997027524"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_1089987130"
+  },
+  {
+    "clip": "TarotBookTimelineTimeBlockColor_Normal",
+    "path": "path_2832325101"
+  },
+  {
+    "clip": "Unchecked",
+    "path": "path_1893270669"
+  },
+  {
+    "clip": "Unchecked",
+    "path": "path_3465042689"
+  }
+]

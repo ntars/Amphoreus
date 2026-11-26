@@ -1,0 +1,9396 @@
+{
+  "schema": 1,
+  "state": "star",
+  "canvas": {
+    "name": "UIRoot",
+    "renderMode": "ScreenSpaceCamera",
+    "scaleFactor": 1,
+    "refW": 1920,
+    "refH": 1080,
+    "match": 0.5,
+    "scalerMode": "ScaleWithScreenSize"
+  },
+  "rootId": "n-0000",
+  "nodes": [
+    {
+      "id": "n-0000",
+      "path": "star",
+      "cls": "n-star-star",
+      "parent": null,
+      "depth": 0,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0001",
+      "path": "TarotBookStarPanelPage/UIFrame",
+      "cls": "n-star-tarotbookstarpanelpage-uiframe",
+      "parent": "n-0000",
+      "depth": 1,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0002",
+      "path": "TarotBookStarPanelPage/UIFrame/Audio",
+      "cls": "n-star-tarotbookstarpanelpage-uiframe-audio",
+      "parent": "n-0001",
+      "depth": 2,
+      "box": {
+        "l": 910,
+        "t": 490,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          910,
+          490,
+          1010,
+          590
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0003",
+      "path": "TarotBookStarPanelPage/Root",
+      "cls": "n-star-tarotbookstarpanelpage-root",
+      "parent": "n-0000",
+      "depth": 1,
+      "box": {
+        "l": 0,
+        "t": -20,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.86,
+        0.86
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          134.4,
+          55.6,
+          1785.6,
+          984.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0004",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer",
+      "parent": "n-0003",
+      "depth": 2,
+      "box": {
+        "l": 60,
+        "t": 60,
+        "w": 1800,
+        "h": 960
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          186,
+          107.2,
+          1734,
+          932.8
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -120,
+          -120
+        ]
+      }
+    },
+    {
+      "id": "n-0005",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/MoveRect",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-move",
+      "parent": "n-0004",
+      "depth": 3,
+      "box": {
+        "l": 40,
+        "t": 40,
+        "w": 1720,
+        "h": 880
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          220.4,
+          141.6,
+          1699.6,
+          898.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -80,
+          -80
+        ]
+      }
+    },
+    {
+      "id": "n-0006",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0004",
+      "depth": 3,
+      "box": {
+        "l": 850,
+        "t": 430,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.8,
+        0.8
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          925.6,
+          485.6,
+          994.4,
+          554.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0007",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor/Root",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0006",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          925.6,
+          485.6,
+          994.4,
+          554.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0008",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor/Root/Cursor",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0007",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          925.6,
+          485.6,
+          994.4,
+          554.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0009",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor/Root/Cursor/Circle",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0008",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          925.6,
+          485.6,
+          994.4,
+          554.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/curcorcircle-1d45c0ab.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0010",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor/Root/Cursor/Arrow",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0008",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          925.6,
+          485.6,
+          994.4,
+          554.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/curcorarrow-ef3e63f4.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0011",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor/Root/Change",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0007",
+      "depth": 5,
+      "box": {
+        "l": 30,
+        "t": 30,
+        "w": 40,
+        "h": 40
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 1,
+      "source": {
+        "aabb": [
+          946.24,
+          506.24,
+          973.76,
+          533.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          40,
+          40
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/curcorchange-d90cd3f3.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0012",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor/Root/Center",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0007",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 2,
+      "source": {
+        "aabb": [
+          925.6,
+          485.6,
+          994.4,
+          554.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0013",
+      "path": "TarotBookStarPanelPage/Root/CursorContainer/CommonVirtualCursor/Root/Center/Img",
+      "cls": "n-star-tarotbookstarpanelpage-root-cursorcontainer-comm",
+      "parent": "n-0012",
+      "depth": 6,
+      "box": {
+        "l": 42,
+        "t": 42,
+        "w": 16,
+        "h": 16
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          954.496,
+          514.496,
+          965.504,
+          525.504
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          16,
+          16
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/curcordot-cb32bfe9.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0014",
+      "path": "TarotBookStarPanelPage/Root/HintPanel",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel",
+      "parent": "n-0003",
+      "depth": 2,
+      "box": {
+        "l": 0,
+        "t": 102,
+        "w": 1920,
+        "h": 120
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          134.4,
+          143.32,
+          1785.6,
+          246.52
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.15
+        ],
+        "anchorMax": [
+          1,
+          0.15
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          120
+        ]
+      }
+    },
+    {
+      "id": "n-0015",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root",
+      "parent": "n-0014",
+      "depth": 3,
+      "box": {
+        "l": 732,
+        "t": 36,
+        "w": 456,
+        "h": 48
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 0,
+      "source": {
+        "aabb": [
+          763.92,
+          174.28,
+          1156.08,
+          215.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          456,
+          48
+        ]
+      }
+    },
+    {
+      "id": "n-0016",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0015",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 456,
+        "h": 48
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          763.92,
+          174.28,
+          1156.08,
+          215.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0017",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0016",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": -4,
+        "w": 456,
+        "h": 56
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          763.92,
+          170.84,
+          1156.08,
+          219
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          56
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          0.0863,
+          0.1137,
+          0.2039,
+          0.8
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0018",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Bg/Line1",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0017",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 52.6,
+        "w": 456,
+        "h": 1.4
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0.9,
+      "order": 0,
+      "source": {
+        "aabb": [
+          763.92,
+          216.076,
+          1156.08,
+          217.28
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -2
+        ],
+        "sizeDelta": [
+          0,
+          1.4
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          0.7098,
+          0.6824,
+          0.9176,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0019",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Bg/Line2",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0017",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 50.5,
+        "w": 456,
+        "h": 1.5
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0.54,
+      "order": 1,
+      "source": {
+        "aabb": [
+          763.92,
+          214.27,
+          1156.08,
+          215.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -4
+        ],
+        "sizeDelta": [
+          0,
+          1.5
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          0.2745,
+          0.2392,
+          0.5176,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0020",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Bg/Line3",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0017",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 1.86,
+        "w": 456,
+        "h": 1.4
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0.9,
+      "order": 2,
+      "source": {
+        "aabb": [
+          763.92,
+          172.4396,
+          1156.08,
+          173.6436
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          1.86
+        ],
+        "sizeDelta": [
+          0,
+          1.4
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          0.7098,
+          0.6824,
+          0.9176,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0021",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Pattern",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0016",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 8,
+        "w": 456,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0.05,
+      "order": 1,
+      "source": {
+        "aabb": [
+          763.92,
+          181.16,
+          1156.08,
+          208.68
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          32
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbooktoasticon-b1b95744.png",
+        "mode": "tiled",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.6157,
+          0.6118,
+          0.9137,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0022",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Deco",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0016",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 456,
+        "h": 48
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          763.92,
+          174.28,
+          1156.08,
+          215.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0023",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Deco/Left",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0022",
+      "depth": 6,
+      "box": {
+        "l": 6.8,
+        "t": 12,
+        "w": 32,
+        "h": 24
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          769.768,
+          184.6,
+          797.288,
+          205.24
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.05,
+          0.5
+        ],
+        "anchorMax": [
+          0.05,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          24
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookcomtoaststardeco-ba2b9fce.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0024",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Deco/Right",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0022",
+      "depth": 6,
+      "box": {
+        "l": 417.2,
+        "t": 12,
+        "w": 32,
+        "h": 24
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        -1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1122.712,
+          184.6,
+          1150.232,
+          205.24
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.95,
+          0.5
+        ],
+        "anchorMax": [
+          0.95,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          24
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookcomtoaststardeco-ba2b9fce.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0025",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/Frame/Bg1",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-frame",
+      "parent": "n-0016",
+      "depth": 5,
+      "box": {
+        "l": -32,
+        "t": -36,
+        "w": 520,
+        "h": 120
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          736.4,
+          143.32,
+          1183.6,
+          246.52
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          520,
+          120
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookcomhintpanelbg-5bf9118f.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.6157,
+          0.6118,
+          0.9137,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0026",
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/DescrText",
+      "cls": "n-star-tarotbookstarpanelpage-root-hintpanel-root-descr",
+      "parent": "n-0015",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 774,
+        "h": 17.1
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          763.92,
+          174.28,
+          1429.56,
+          188.986
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 18,
+        "color": [
+          0.8039,
+          0.8314,
+          0.9686,
+          1
+        ],
+        "raw": "[ErrTextID]:UIText_TarotBook_Intro_SignPage",
+        "key": "UIText_TarotBook_Intro_SignPage",
+        "alignment": "middleCenter",
+        "preferredSize": [
+          774,
+          17.1
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0027",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel",
+      "parent": "n-0003",
+      "depth": 2,
+      "box": {
+        "l": 735,
+        "t": 36,
+        "w": 450,
+        "h": 80
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          766.5,
+          86.56,
+          1153.5,
+          155.36
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.1
+        ],
+        "anchorMax": [
+          0.5,
+          0.1
+        ],
+        "anchoredPosition": [
+          0,
+          -32
+        ],
+        "sizeDelta": [
+          450,
+          80
+        ]
+      }
+    },
+    {
+      "id": "n-0028",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-bg",
+      "parent": "n-0027",
+      "depth": 3,
+      "box": {
+        "l": -2,
+        "t": 23,
+        "w": 454,
+        "h": 34
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          764.78,
+          106.34,
+          1155.22,
+          135.58
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          4,
+          34
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe20rhd-eab88408.png",
+        "mode": "sliced",
+        "slice": [
+          20,
+          20,
+          20,
+          20
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.2353
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0029",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0027",
+      "depth": 3,
+      "box": {
+        "l": 405,
+        "t": 10,
+        "w": 60,
+        "h": 60
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1114.8,
+          95.16,
+          1166.4,
+          146.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          15,
+          0
+        ],
+        "sizeDelta": [
+          60,
+          60
+        ]
+      },
+      "hit": true
+    },
+    {
+      "id": "n-0030",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0029",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 60,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1114.8,
+          95.16,
+          1166.4,
+          146.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0031",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0030",
+      "depth": 5,
+      "box": {
+        "l": 18,
+        "t": 18,
+        "w": 24,
+        "h": 24
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1130.28,
+          110.64,
+          1150.92,
+          131.28
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "id": "n-0032",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/Shadow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0031",
+      "depth": 6,
+      "box": {
+        "l": -6,
+        "t": -6,
+        "w": 36,
+        "h": 36
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0.05,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1125.12,
+          105.48,
+          1156.08,
+          136.44
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          36,
+          36
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/shadowoutline2px30r-3x-d6054f72.png",
+        "mode": "simple",
+        "slice": [
+          44,
+          44,
+          44,
+          44
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0033",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/Checked",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0031",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          4,
+          4
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe18rfhd-aa988a47.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.298
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0034",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/Checked/Outline",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0033",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/outline2px18rfhd-6ffbddba.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0035",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/Disable",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0031",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": "disabled",
+        "src": "sprites/outline2px18rfhd-6ffbddba.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0036",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/FrameBg",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0031",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      }
+    },
+    {
+      "id": "n-0037",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/FrameBg/Fill",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0036",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe18rfhd-aa988a47.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          0.9647,
+          0.9647,
+          0.9647,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0038",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/BgHint",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0031",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 4,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe18rfhd-aa988a47.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0039",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/Highlight",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0031",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 5,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": "hover",
+        "src": "sprites/outlinecomglow-53b04a2c.png",
+        "mode": "sliced",
+        "slice": [
+          39,
+          39,
+          39,
+          39
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0040",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/Frame/Highlight/Outline",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0039",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1128.56,
+          108.92,
+          1152.64,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/outline4px34rfhd-22639111.png",
+        "mode": "sliced",
+        "slice": [
+          36,
+          36,
+          36,
+          36
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0041",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/IconPanel",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0030",
+      "depth": 5,
+      "box": {
+        "l": 20,
+        "t": 20,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1132,
+          112.36,
+          1149.2,
+          129.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "id": "n-0042",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/IconPanel/IconCheck",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0041",
+      "depth": 6,
+      "box": {
+        "l": 4,
+        "t": 4,
+        "w": 12,
+        "h": 12
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1135.44,
+          115.8,
+          1145.76,
+          126.12
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          12,
+          12
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconglowstar-3x-e6678930.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0043",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/IconPanel/Icon",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0041",
+      "depth": 6,
+      "box": {
+        "l": 4,
+        "t": 4,
+        "w": 12,
+        "h": 12
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1135.44,
+          115.8,
+          1145.76,
+          126.12
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          12,
+          12
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/addicon-3x-daf3d3ed.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.0706,
+          0.0706,
+          0.0706,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0044",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Root/RedDot",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0030",
+      "depth": 5,
+      "box": {
+        "l": 34,
+        "t": 34,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1144.04,
+          124.4,
+          1161.24,
+          141.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          14,
+          14
+        ],
+        "sizeDelta": [
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "id": "n-0045",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Selected",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0029",
+      "depth": 4,
+      "box": {
+        "l": 20,
+        "t": 20,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1132,
+          112.36,
+          1149.2,
+          129.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "id": "n-0046",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Selected/SelectedHint_Once",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0045",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1132,
+          112.36,
+          1149.2,
+          129.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe32r-3x-53b869bd.png",
+        "mode": "sliced",
+        "slice": [
+          33,
+          33,
+          33,
+          33
+        ],
+        "color": [
+          1,
+          0.898,
+          0.7333,
+          0.298
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0047",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Selected/OutlineGlow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0045",
+      "depth": 5,
+      "box": {
+        "l": -16,
+        "t": -16,
+        "w": 52,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1118.24,
+          98.6,
+          1162.96,
+          143.32
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/outlineglow7px39r-3x-356afae5.png",
+        "mode": "sliced",
+        "slice": [
+          57,
+          57,
+          57,
+          57
+        ],
+        "color": [
+          0.9686,
+          0.7451,
+          0.3922,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0048",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Selected/ArrowContainer",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0045",
+      "depth": 5,
+      "box": {
+        "l": 5,
+        "t": 16,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1136.3,
+          126.12,
+          1144.9,
+          134.72
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          1
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          6
+        ],
+        "sizeDelta": [
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "id": "n-0049",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Selected/ArrowContainer/Arrow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0048",
+      "depth": 6,
+      "box": {
+        "l": -6,
+        "t": -2,
+        "w": 22,
+        "h": 22
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1131.14,
+          124.4,
+          1150.06,
+          143.32
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          4
+        ],
+        "sizeDelta": [
+          22,
+          22
+        ]
+      }
+    },
+    {
+      "id": "n-0050",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Selected/ArrowContainer/Arrow/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0049",
+      "depth": 7,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 26,
+        "h": 26
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1129.42,
+          122.68,
+          1151.78,
+          145.04
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          1
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -11
+        ],
+        "sizeDelta": [
+          26,
+          26
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconselectedarrowbg-331166fe.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          0.7843,
+          0.4392,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0051",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/Selected/ArrowContainer/Arrow/Icon",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0049",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 22,
+        "h": 22
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1131.14,
+          124.4,
+          1150.06,
+          143.32
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          1
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -11
+        ],
+        "sizeDelta": [
+          22,
+          22
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconselectedarrow-bbac9039.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.0706,
+          0.0706,
+          0.0706,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0052",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/ClickArea",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0029",
+      "depth": 4,
+      "box": {
+        "l": -10,
+        "t": 0,
+        "w": 80,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1106.2,
+          95.16,
+          1175,
+          146.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          60
+        ]
+      }
+    },
+    {
+      "id": "n-0053",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonPlus/KeyMapInfo",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonpl",
+      "parent": "n-0029",
+      "depth": 4,
+      "box": {
+        "l": 14,
+        "t": 14,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.8,
+        0.8
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          1129.592,
+          109.952,
+          1151.608,
+          131.968
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "n-0054",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0027",
+      "depth": 3,
+      "box": {
+        "l": -15,
+        "t": 10,
+        "w": 60,
+        "h": 60
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          753.6,
+          95.16,
+          805.2,
+          146.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          0,
+          0.5
+        ],
+        "anchoredPosition": [
+          -15,
+          0
+        ],
+        "sizeDelta": [
+          60,
+          60
+        ]
+      },
+      "hit": true
+    },
+    {
+      "id": "n-0055",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0054",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 60,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          753.6,
+          95.16,
+          805.2,
+          146.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0056",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0055",
+      "depth": 5,
+      "box": {
+        "l": 18,
+        "t": 18,
+        "w": 24,
+        "h": 24
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          769.08,
+          110.64,
+          789.72,
+          131.28
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "id": "n-0057",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/Shadow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0056",
+      "depth": 6,
+      "box": {
+        "l": -6,
+        "t": -6,
+        "w": 36,
+        "h": 36
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0.05,
+      "order": 0,
+      "source": {
+        "aabb": [
+          763.92,
+          105.48,
+          794.88,
+          136.44
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          36,
+          36
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/shadowoutline2px30r-3x-d6054f72.png",
+        "mode": "simple",
+        "slice": [
+          44,
+          44,
+          44,
+          44
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0058",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/Checked",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0056",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          4,
+          4
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe18rfhd-aa988a47.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.298
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0059",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/Checked/Outline",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0058",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/outline2px18rfhd-6ffbddba.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0060",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/Disable",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0056",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 2,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": "disabled",
+        "src": "sprites/outline2px18rfhd-6ffbddba.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0061",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/FrameBg",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0056",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      }
+    },
+    {
+      "id": "n-0062",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/FrameBg/Fill",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0061",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe18rfhd-aa988a47.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          0.9647,
+          0.9647,
+          0.9647,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0063",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/BgHint",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0056",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 4,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe18rfhd-aa988a47.png",
+        "mode": "simple",
+        "slice": [
+          21,
+          21,
+          21,
+          21
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0064",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/Highlight",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0056",
+      "depth": 6,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 5,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          28,
+          28
+        ]
+      },
+      "img": {
+        "buttonState": "hover",
+        "src": "sprites/outlinecomglow-53b04a2c.png",
+        "mode": "sliced",
+        "slice": [
+          39,
+          39,
+          39,
+          39
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0065",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/Frame/Highlight/Outline",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0064",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 28,
+        "h": 28
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          767.36,
+          108.92,
+          791.44,
+          133
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/outline4px34rfhd-22639111.png",
+        "mode": "sliced",
+        "slice": [
+          36,
+          36,
+          36,
+          36
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0066",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/IconPanel",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0055",
+      "depth": 5,
+      "box": {
+        "l": 20,
+        "t": 20,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          770.8,
+          112.36,
+          788,
+          129.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "id": "n-0067",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/IconPanel/IconCheck",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0066",
+      "depth": 6,
+      "box": {
+        "l": 4,
+        "t": 4,
+        "w": 12,
+        "h": 12
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          774.24,
+          115.8,
+          784.56,
+          126.12
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          12,
+          12
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconglowstar-3x-e6678930.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0068",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/IconPanel/Icon",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0066",
+      "depth": 6,
+      "box": {
+        "l": 4,
+        "t": 4,
+        "w": 12,
+        "h": 12
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          774.24,
+          115.8,
+          784.56,
+          126.12
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          12,
+          12
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/minusicon-57a4d164.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.0706,
+          0.0706,
+          0.0706,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0069",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Root/RedDot",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0055",
+      "depth": 5,
+      "box": {
+        "l": 34,
+        "t": 34,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          782.84,
+          124.4,
+          800.04,
+          141.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          14,
+          14
+        ],
+        "sizeDelta": [
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "id": "n-0070",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Selected",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0054",
+      "depth": 4,
+      "box": {
+        "l": 20,
+        "t": 20,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0,
+      "order": 1,
+      "source": {
+        "aabb": [
+          770.8,
+          112.36,
+          788,
+          129.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "id": "n-0071",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Selected/SelectedHint_Once",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0070",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 20,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 0,
+      "order": 0,
+      "source": {
+        "aabb": [
+          770.8,
+          112.36,
+          788,
+          129.56
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe32r-3x-53b869bd.png",
+        "mode": "sliced",
+        "slice": [
+          33,
+          33,
+          33,
+          33
+        ],
+        "color": [
+          1,
+          0.898,
+          0.7333,
+          0.298
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0072",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Selected/OutlineGlow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0070",
+      "depth": 5,
+      "box": {
+        "l": -16,
+        "t": -16,
+        "w": 52,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          757.04,
+          98.6,
+          801.76,
+          143.32
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/outlineglow7px39r-3x-356afae5.png",
+        "mode": "sliced",
+        "slice": [
+          57,
+          57,
+          57,
+          57
+        ],
+        "color": [
+          0.9686,
+          0.7451,
+          0.3922,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0073",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Selected/ArrowContainer",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0070",
+      "depth": 5,
+      "box": {
+        "l": 5,
+        "t": 16,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          775.1,
+          126.12,
+          783.7,
+          134.72
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          1
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          6
+        ],
+        "sizeDelta": [
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "id": "n-0074",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Selected/ArrowContainer/Arrow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0073",
+      "depth": 6,
+      "box": {
+        "l": -6,
+        "t": -2,
+        "w": 22,
+        "h": 22
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          769.94,
+          124.4,
+          788.86,
+          143.32
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          4
+        ],
+        "sizeDelta": [
+          22,
+          22
+        ]
+      }
+    },
+    {
+      "id": "n-0075",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Selected/ArrowContainer/Arrow/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0074",
+      "depth": 7,
+      "box": {
+        "l": -2,
+        "t": -2,
+        "w": 26,
+        "h": 26
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          768.22,
+          122.68,
+          790.58,
+          145.04
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          1
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -11
+        ],
+        "sizeDelta": [
+          26,
+          26
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconselectedarrowbg-331166fe.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          0.7843,
+          0.4392,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0076",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/Selected/ArrowContainer/Arrow/Icon",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0074",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 22,
+        "h": 22
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          769.94,
+          124.4,
+          788.86,
+          143.32
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          1
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -11
+        ],
+        "sizeDelta": [
+          22,
+          22
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconselectedarrow-bbac9039.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.0706,
+          0.0706,
+          0.0706,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0077",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/ClickArea",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0054",
+      "depth": 4,
+      "box": {
+        "l": -10,
+        "t": 0,
+        "w": 80,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          745,
+          95.16,
+          813.8,
+          146.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          20,
+          60
+        ]
+      }
+    },
+    {
+      "id": "n-0078",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/ButtonMinus/KeyMapInfo",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-buttonmi",
+      "parent": "n-0054",
+      "depth": 4,
+      "box": {
+        "l": 14,
+        "t": 14,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.8,
+        0.8
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          768.392,
+          109.952,
+          790.408,
+          131.968
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "n-0079",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider",
+      "parent": "n-0027",
+      "depth": 3,
+      "box": {
+        "l": 48,
+        "t": 16,
+        "w": 354,
+        "h": 48
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          807.78,
+          100.32,
+          1112.22,
+          141.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -96,
+          48
+        ]
+      }
+    },
+    {
+      "id": "n-0080",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0079",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 20.7,
+        "w": 336,
+        "h": 6.6
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          807.78,
+          118.122,
+          1096.74,
+          123.798
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          -9,
+          0
+        ],
+        "sizeDelta": [
+          -18,
+          6.6
+        ]
+      }
+    },
+    {
+      "id": "n-0081",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0080",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 354,
+        "h": 6.6
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          807.78,
+          118.122,
+          1112.22,
+          123.798
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          9,
+          0
+        ],
+        "sizeDelta": [
+          18,
+          6.6
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "simple",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0.1216
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": null,
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0082",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Fill",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0080",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 0,
+        "h": 0
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          807.78,
+          118.122,
+          807.78,
+          118.122
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "simple",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          0.9412,
+          0.5961,
+          0.2235,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": null,
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0083",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0080",
+      "depth": 5,
+      "box": {
+        "l": 5,
+        "t": 0,
+        "w": 8,
+        "h": 0
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          812.08,
+          118.122,
+          818.96,
+          118.122
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          9,
+          0
+        ],
+        "sizeDelta": [
+          8,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0084",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0083",
+      "depth": 6,
+      "box": {
+        "l": -7,
+        "t": -11,
+        "w": 22,
+        "h": 22
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          806.06,
+          108.662,
+          824.98,
+          127.582
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          22,
+          22
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe15r-3x-88a8f779.png",
+        "mode": "simple",
+        "slice": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "color": [
+          0.9412,
+          0.5961,
+          0.2235,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": null,
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0085",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Shadow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0084",
+      "depth": 7,
+      "box": {
+        "l": -4,
+        "t": -4,
+        "w": 30,
+        "h": 30
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          802.62,
+          105.222,
+          828.42,
+          131.022
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          8,
+          8
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/shadowoutline2px30r-3x-d6054f72.png",
+        "mode": "simple",
+        "slice": [
+          44,
+          44,
+          44,
+          44
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.1216
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": null,
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0086",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Inner",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0084",
+      "depth": 7,
+      "box": {
+        "l": 4,
+        "t": 4,
+        "w": 14,
+        "h": 14
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          809.5,
+          112.102,
+          821.54,
+          124.142
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          14,
+          14
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe15r-3x-88a8f779.png",
+        "mode": "simple",
+        "slice": [
+          16,
+          16,
+          16,
+          16
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": null,
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0087",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Effect",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0084",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 22,
+        "h": 22
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          806.06,
+          108.662,
+          824.98,
+          127.582
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0088",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Effect/Outline",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0087",
+      "depth": 8,
+      "box": {
+        "l": -1.5,
+        "t": -1.5,
+        "w": 25,
+        "h": 25
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 0,
+      "source": {
+        "aabb": [
+          804.77,
+          107.372,
+          826.27,
+          128.872
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          25,
+          25
+        ]
+      }
+    },
+    {
+      "id": "n-0089",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Effect/Outline/OutlineAdd",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0088",
+      "depth": 9,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 25,
+        "h": 25
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          804.77,
+          107.372,
+          826.27,
+          128.872
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/dmcircleglow-71a6f1b6.png",
+        "mode": "sliced",
+        "slice": [
+          64,
+          0,
+          64,
+          0
+        ],
+        "color": [
+          1,
+          0.854,
+          0.4824,
+          0.7098
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0090",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Effect/Outline/OutlineAdd2",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0088",
+      "depth": 9,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 25,
+        "h": 25
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          804.77,
+          107.372,
+          826.27,
+          128.872
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/dmcircleglow-71a6f1b6.png",
+        "mode": "sliced",
+        "slice": [
+          64,
+          0,
+          64,
+          0
+        ],
+        "color": [
+          1,
+          0.854,
+          0.4824,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0091",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Effect/Outline/OutlineAdd2/OutlineAdd2",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0090",
+      "depth": 10,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 25,
+        "h": 25
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          804.77,
+          107.372,
+          826.27,
+          128.872
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/dmcircleglow-71a6f1b6.png",
+        "mode": "sliced",
+        "slice": [
+          64,
+          0,
+          64,
+          0
+        ],
+        "color": [
+          1,
+          0.854,
+          0.4824,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0092",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Effect/Glow2",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0087",
+      "depth": 8,
+      "box": {
+        "l": -10.8,
+        "t": -12.2,
+        "w": 44,
+        "h": 46
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 1,
+      "source": {
+        "aabb": [
+          796.772,
+          98.17,
+          834.612,
+          137.73
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0.2,
+          -0.2
+        ],
+        "sizeDelta": [
+          22,
+          24
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/dmcircleoutglow-2f936ace.png",
+        "mode": "sliced",
+        "slice": [
+          64,
+          0,
+          64,
+          0
+        ],
+        "color": [
+          1,
+          0.7125,
+          0.3396,
+          0.5569
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0093",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/Circle/Effect/Glow3",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0087",
+      "depth": 8,
+      "box": {
+        "l": -25,
+        "t": -25,
+        "w": 72,
+        "h": 72
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 2,
+      "source": {
+        "aabb": [
+          784.56,
+          87.162,
+          846.48,
+          149.082
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          50,
+          50
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/lightglow-98624ce1.png",
+        "mode": "simple",
+        "slice": [
+          64,
+          64,
+          64,
+          64
+        ],
+        "color": [
+          1,
+          0.7125,
+          0.3396,
+          0.5412
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0094",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/ClickArea",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0083",
+      "depth": 6,
+      "box": {
+        "l": -26,
+        "t": -30,
+        "w": 60,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          789.72,
+          92.322,
+          841.32,
+          143.922
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          60,
+          60
+        ]
+      }
+    },
+    {
+      "id": "n-0095",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/NumPanel",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0083",
+      "depth": 6,
+      "box": {
+        "l": -33.4,
+        "t": 16,
+        "w": 74.8,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          783.356,
+          131.882,
+          847.684,
+          149.082
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "fitterWidth"
+        ],
+        "anchorMin": [
+          0.5,
+          1
+        ],
+        "anchorMax": [
+          0.5,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          16
+        ],
+        "sizeDelta": [
+          74.8,
+          20
+        ]
+      }
+    },
+    {
+      "id": "n-0096",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/NumPanel/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0095",
+      "depth": 7,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 74.8,
+        "h": 20
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          783.356,
+          131.882,
+          847.684,
+          149.082
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebgv2-674b16df.png",
+        "mode": "sliced",
+        "slice": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.702
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0097",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/NumPanel/Arrow",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0095",
+      "depth": 7,
+      "box": {
+        "l": 32.4,
+        "t": -12,
+        "w": 10,
+        "h": 6
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        -1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          811.22,
+          126.722,
+          819.82,
+          131.882
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          10,
+          6
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconarrowtips-b5af1384.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.702
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0098",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/NumPanel/Volume",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0095",
+      "depth": 7,
+      "box": {
+        "l": 1,
+        "t": -1,
+        "w": 128,
+        "h": 22
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          784.216,
+          131.022,
+          894.296,
+          149.942
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          73.8,
+          -10
+        ],
+        "sizeDelta": [
+          72.8,
+          22
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 16,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "raw": "DevUI_00",
+        "key": "DevUI_00",
+        "alignment": "middleCenter",
+        "preferredSize": [
+          128,
+          15.2
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0099",
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/ClickArea",
+      "cls": "n-star-tarotbookstarpanelpage-root-sliderpanel-slider-l",
+      "parent": "n-0080",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": -26.7,
+        "w": 336,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          807.78,
+          95.16,
+          1096.74,
+          146.76
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          60
+        ]
+      }
+    },
+    {
+      "id": "n-0100",
+      "path": "TarotBookStarPanelPage/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-bg",
+      "parent": "n-0000",
+      "depth": 1,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1080
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          0,
+          0,
+          1920,
+          1080
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0101",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg",
+      "parent": "n-0100",
+      "depth": 2,
+      "box": {
+        "l": 134.4,
+        "t": 55.6,
+        "w": 1651.2,
+        "h": 928.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          134.4,
+          55.6,
+          1785.6,
+          984.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.07,
+          0.07
+        ],
+        "anchorMax": [
+          0.93,
+          0.93
+        ],
+        "anchoredPosition": [
+          0,
+          -20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0102",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask",
+      "parent": "n-0101",
+      "depth": 3,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1651.2,
+        "h": 928.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          134.4,
+          55.6,
+          1785.6,
+          984.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "mask": "rect-round",
+      "maskKind": "SmoothMask",
+      "maskType": "Rectangle",
+      "maskRadius": 0,
+      "reverseMask": true,
+      "smoothMaskReverse": true,
+      "showMaskGraphic": true,
+      "smoothMask": {
+        "sprite": null,
+        "source": {
+          "scriptPathId": "-3307589612467742685",
+          "layout": "smooth-mask-136",
+          "typeOffset": 32,
+          "radiusOffset": 36,
+          "reverseMaskOffset": 40,
+          "spriteFileId": 0,
+          "spritePathId": "0",
+          "textureContainer": ""
+        }
+      }
+    },
+    {
+      "id": "n-0103",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0102",
+      "depth": 4,
+      "box": {
+        "l": -135.3984,
+        "t": -56.1616,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          -0.082,
+          -0.082
+        ],
+        "anchorMax": [
+          1.082,
+          1.082
+        ],
+        "anchoredPosition": [
+          0,
+          20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0104",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/PictureBg",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0103",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1097
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5481
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "aspectFitInParent"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookrealmainbg2-2aa56ec1.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0105",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/PictureBg/BgLine2",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0104",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1097
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5481
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/ui-noise-57-c935ae93.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.049,
+          0.1354,
+          0.5472,
+          0.2196
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0106",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0103",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0107",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0106",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0108",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/SquareL",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": -50,
+        "t": 647.5616,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -50.9984,
+          647,
+          49.0016,
+          747
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          0,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          157
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0109",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/SquareF",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": 1871.9968,
+        "t": 450.5616,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1870.9984,
+          450,
+          1970.9984,
+          550
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          -40
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0110",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/data_mid",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": 910.9985,
+        "t": 807.1571,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          909.7468,
+          806.3422,
+          1010.2533,
+          906.8487
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          316.5955
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0111",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/data_right",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": 2061.1648,
+        "t": 613.5617,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          2059.9132,
+          612.7468,
+          2160.4197,
+          713.2533
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0.5
+        ],
+        "anchorMax": [
+          1,
+          0.5
+        ],
+        "anchoredPosition": [
+          189.168,
+          123
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0112",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/data_left",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": -140.1679,
+        "t": 747.8583,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1.0051,
+        1.0051
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 4,
+      "source": {
+        "aabb": [
+          -141.4196,
+          747.0434,
+          -40.9131,
+          847.5499
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.5
+        ],
+        "anchorMax": [
+          0,
+          0.5
+        ],
+        "anchoredPosition": [
+          -90.168,
+          257.2966
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      }
+    },
+    {
+      "id": "n-0113",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/BgParticles",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": 1226.1648,
+        "t": -426.4679,
+        "w": 1391.6641,
+        "h": 740.9359
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 5,
+      "source": {
+        "aabb": [
+          1225.1664,
+          -427.0296,
+          2616.8305,
+          313.9064
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          -56
+        ],
+        "sizeDelta": [
+          1391.6641,
+          740.9359
+        ]
+      }
+    },
+    {
+      "id": "n-0114",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/BgParticles3",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": -695.832,
+        "t": -426.4679,
+        "w": 1391.6641,
+        "h": 740.9359
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 6,
+      "source": {
+        "aabb": [
+          -696.8304,
+          -427.0296,
+          694.8336,
+          313.9064
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          -56
+        ],
+        "sizeDelta": [
+          1391.6641,
+          740.9359
+        ]
+      }
+    },
+    {
+      "id": "n-0115",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/BgRoot/EffLoop/Loop/BgParticles4",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-bg",
+      "parent": "n-0107",
+      "depth": 7,
+      "box": {
+        "l": 265.1664,
+        "t": -480.4679,
+        "w": 1391.6641,
+        "h": 740.9359
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 7,
+      "source": {
+        "aabb": [
+          264.168,
+          -481.0296,
+          1655.8321,
+          259.9064
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0
+        ],
+        "anchorMax": [
+          0.5,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          -110
+        ],
+        "sizeDelta": [
+          1391.6641,
+          740.9359
+        ]
+      }
+    },
+    {
+      "id": "n-0116",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/ErrorBg",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-er",
+      "parent": "n-0102",
+      "depth": 4,
+      "box": {
+        "l": -135.3984,
+        "t": -56.1616,
+        "w": 1921.9968,
+        "h": 1081.1232
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -0.5616,
+          1920.9984,
+          1080.5616
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          -0.082,
+          -0.082
+        ],
+        "anchorMax": [
+          1.082,
+          1.082
+        ],
+        "anchoredPosition": [
+          0,
+          20
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0117",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/ErrorBg/Gra1",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-er",
+      "parent": "n-0116",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": -300,
+        "w": 1921.9968,
+        "h": 1056.7862
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -300.5616,
+          1920.9984,
+          756.2246
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0.7
+        ],
+        "anchoredPosition": [
+          0,
+          -150
+        ],
+        "sizeDelta": [
+          0,
+          300
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/gradualmini-8bcf5e5e.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          0.2275,
+          0.1686,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0118",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/RevertMask/ErrorBg/Gra1/Gra2",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-revertmask-er",
+      "parent": "n-0117",
+      "depth": 6,
+      "box": {
+        "l": 0,
+        "t": -300,
+        "w": 1921.9968,
+        "h": 1356.7862
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          -0.9984,
+          -600.5616,
+          1920.9984,
+          756.2246
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          -150
+        ],
+        "sizeDelta": [
+          0,
+          300
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/gradualmini-8bcf5e5e.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          0.2275,
+          0.1686,
+          0.5686
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0119",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/ScreenFrame",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-screenframe",
+      "parent": "n-0101",
+      "depth": 3,
+      "box": {
+        "l": -12,
+        "t": -12,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "id": "n-0120",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/ScreenFrame/Frame",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-screenframe-f",
+      "parent": "n-0119",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookmainscreenframe-adc10bc3.png",
+        "mode": "sliced",
+        "slice": [
+          96,
+          24,
+          96,
+          24
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0121",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/ScreenFrame02",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-screenframe02",
+      "parent": "n-0101",
+      "depth": 3,
+      "box": {
+        "l": -12,
+        "t": -12,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 2,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          24,
+          24
+        ]
+      }
+    },
+    {
+      "id": "n-0122",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/ScreenFrame02/Gra",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-screenframe02",
+      "parent": "n-0121",
+      "depth": 4,
+      "box": {
+        "l": 14,
+        "t": 14,
+        "w": 1647.2,
+        "h": 924.8
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          136.4,
+          57.6,
+          1783.6,
+          982.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          -28,
+          -28
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0123",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/ScreenFrame02/Frame",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-screenframe02",
+      "parent": "n-0121",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1675.2,
+        "h": 952.8
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          122.4,
+          43.6,
+          1797.6,
+          996.4
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookmainscreenframe-adc10bc3.png",
+        "mode": "sliced",
+        "slice": [
+          96,
+          24,
+          96,
+          24
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0124",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-bottombar",
+      "parent": "n-0101",
+      "depth": 3,
+      "box": {
+        "l": 1,
+        "t": 1,
+        "w": 1649.2,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          135.4,
+          56.6,
+          1784.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          1
+        ],
+        "sizeDelta": [
+          -2,
+          52
+        ]
+      }
+    },
+    {
+      "id": "n-0125",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar/Bg",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-bottombar-bg",
+      "parent": "n-0124",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1649.2,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          135.4,
+          56.6,
+          1784.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0126",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar/Bg/Right",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-bottombar-bg-",
+      "parent": "n-0125",
+      "depth": 5,
+      "box": {
+        "l": 1535.2,
+        "t": 0,
+        "w": 114,
+        "h": 52
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1670.6,
+          56.6,
+          1784.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          114,
+          0
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/whitebg-f87ef5fb.png",
+        "mode": "simple",
+        "slice": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "color": [
+          0,
+          0,
+          0,
+          0.2
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0127",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar/Bg/Line",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-bottombar-bg-",
+      "parent": "n-0125",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 50,
+        "w": 1649.2,
+        "h": 4
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          135.4,
+          106.6,
+          1784.6,
+          110.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          4
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/decoline2px-3x-90d2ab42.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          3,
+          0,
+          3
+        ],
+        "color": [
+          0.7529,
+          0.7922,
+          1,
+          0.2902
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0128",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar/CountText",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-bottombar-cou",
+      "parent": "n-0124",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1513.2,
+        "h": 52
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          135.4,
+          56.6,
+          1648.6,
+          108.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -68,
+          0
+        ],
+        "sizeDelta": [
+          -136,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.451
+        ],
+        "raw": "DevUI_CountText",
+        "key": "DevUI_CountText",
+        "alignment": "middleRight",
+        "preferredSize": [
+          300,
+          19
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0129",
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar/TimeText",
+      "cls": "n-star-tarotbookstarpanelpage-bg-screenbg-bottombar-tim",
+      "parent": "n-0124",
+      "depth": 4,
+      "box": {
+        "l": 1543.2,
+        "t": 6,
+        "w": 98,
+        "h": 40
+      },
+      "pivot": [
+        1,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": false,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1678.6,
+          62.6,
+          1776.6,
+          102.6
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          1,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -8,
+          0
+        ],
+        "sizeDelta": [
+          98,
+          -12
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.451
+        ],
+        "raw": "0000",
+        "key": null,
+        "alignment": "middleCenter",
+        "preferredSize": [
+          80,
+          19
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0130",
+      "path": "TarotBookStarPanelPage/Outside",
+      "cls": "n-star-tarotbookstarpanelpage-outside",
+      "parent": "n-0000",
+      "depth": 1,
+      "box": {
+        "l": 0,
+        "t": 36,
+        "w": 1920,
+        "h": 1008
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 3,
+      "source": {
+        "aabb": [
+          0,
+          36,
+          1920,
+          1044
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0.1
+        ],
+        "anchorMax": [
+          1,
+          0.9
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          144
+        ]
+      }
+    },
+    {
+      "id": "n-0131",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo",
+      "parent": "n-0130",
+      "depth": 2,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 1920,
+        "h": 1008
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          0,
+          36,
+          1920,
+          1044
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0132",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/Title",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo-title",
+      "parent": "n-0131",
+      "depth": 3,
+      "box": {
+        "l": 87,
+        "t": 972,
+        "w": 240,
+        "h": 21
+      },
+      "pivot": [
+        0,
+        0
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          87,
+          1008,
+          327,
+          1029
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          87,
+          -36
+        ],
+        "sizeDelta": [
+          240,
+          21
+        ]
+      }
+    },
+    {
+      "id": "n-0133",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/Title/TitleText",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo-title-ti",
+      "parent": "n-0132",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 64,
+        "h": 15.2
+      },
+      "pivot": [
+        0,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          87,
+          1008,
+          151,
+          1023.2
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 16,
+        "color": [
+          0.9906,
+          0.8754,
+          0.6308,
+          0.902
+        ],
+        "raw": "如我所书",
+        "key": "UIText_TarotBook_Title_Entrance",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          64,
+          15.2
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0134",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/TitleType",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo-titletyp",
+      "parent": "n-0131",
+      "depth": 3,
+      "box": {
+        "l": 87,
+        "t": 946,
+        "w": 240,
+        "h": 26
+      },
+      "pivot": [
+        0,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          87,
+          982,
+          327,
+          1008
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          87,
+          -36
+        ],
+        "sizeDelta": [
+          240,
+          26
+        ]
+      }
+    },
+    {
+      "id": "n-0135",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/TitleType/ExtraContent",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo-titletyp",
+      "parent": "n-0134",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 0,
+        "h": 0
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          87,
+          982,
+          87,
+          982
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "layoutPaddingWidth",
+          "layoutPaddingHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0136",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/TitleType/Text",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo-titletyp",
+      "parent": "n-0134",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 120,
+        "h": 17.1
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          87,
+          982,
+          207,
+          999.1
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [
+          "textPreferredWidth",
+          "textPreferredHeight"
+        ],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          0,
+          0
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      },
+      "text": {
+        "font": "rpg-cn",
+        "size": 20,
+        "color": [
+          1,
+          1,
+          1,
+          0.902
+        ],
+        "raw": "逐火者的命路",
+        "key": "UIText_TarotBook_Star_Subtitle",
+        "alignment": "middleLeft",
+        "preferredSize": [
+          120,
+          17.1
+        ],
+        "quads": []
+      }
+    },
+    {
+      "id": "n-0137",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/IconPanel",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo-iconpane",
+      "parent": "n-0131",
+      "depth": 3,
+      "box": {
+        "l": 35,
+        "t": 949,
+        "w": 44,
+        "h": 44
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          35,
+          985,
+          79,
+          1029
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          57,
+          -37
+        ],
+        "sizeDelta": [
+          44,
+          44
+        ]
+      }
+    },
+    {
+      "id": "n-0138",
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/IconPanel/Icon",
+      "cls": "n-star-tarotbookstarpanelpage-outside-pageinfo-iconpane",
+      "parent": "n-0137",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 44,
+        "h": 44
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          35,
+          985,
+          79,
+          1029
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          1
+        ],
+        "anchorMax": [
+          0,
+          1
+        ],
+        "anchoredPosition": [
+          22,
+          -22
+        ],
+        "sizeDelta": [
+          44,
+          44
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/tarotbookicon-8af7a8d8.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          0.9906,
+          0.8754,
+          0.6308,
+          0.902
+        ],
+        "alignment": "",
+        "aspect": true,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0139",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback",
+      "parent": "n-0130",
+      "depth": 2,
+      "box": {
+        "l": 1820,
+        "t": 908,
+        "w": 100,
+        "h": 100
+      },
+      "pivot": [
+        1,
+        1
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1820,
+          944,
+          1920,
+          1044
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          100,
+          100
+        ]
+      },
+      "hit": true
+    },
+    {
+      "id": "n-0140",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack/Root",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback-root",
+      "parent": "n-0139",
+      "depth": 3,
+      "box": {
+        "l": 16,
+        "t": 33,
+        "w": 72,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1836,
+          977,
+          1908,
+          1037
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          1,
+          1
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          -48,
+          -37
+        ],
+        "sizeDelta": [
+          72,
+          60
+        ]
+      }
+    },
+    {
+      "id": "n-0141",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack/Root/Glow",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback-root-glow",
+      "parent": "n-0140",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 72,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1836,
+          977,
+          1908,
+          1037
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          72,
+          60
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/lightglow-98624ce1.png",
+        "mode": "simple",
+        "slice": [
+          64,
+          64,
+          64,
+          64
+        ],
+        "color": [
+          0.1226,
+          0.1226,
+          0.1226,
+          0.051
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0142",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack/Root/Icon",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback-root-icon",
+      "parent": "n-0140",
+      "depth": 4,
+      "box": {
+        "l": 20,
+        "t": 14,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1856,
+          991,
+          1888,
+          1023
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "n-0143",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack/Root/Icon/Dot",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback-root-icon",
+      "parent": "n-0142",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 1.5,
+        "w": 5,
+        "h": 5
+      },
+      "pivot": [
+        0,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 0,
+      "source": {
+        "aabb": [
+          1856,
+          992.5,
+          1861,
+          997.5
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          -16,
+          -12
+        ],
+        "sizeDelta": [
+          5,
+          5
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/comcircleframe3r-3x-360d8064.png",
+        "mode": "simple",
+        "slice": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0144",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack/Root/Icon/Arrow",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback-root-icon",
+      "parent": "n-0142",
+      "depth": 5,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 1,
+      "source": {
+        "aabb": [
+          1856,
+          991,
+          1888,
+          1023
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      },
+      "img": {
+        "buttonState": null,
+        "src": "sprites/iconbtnback-f02a55ce.png",
+        "mode": "simple",
+        "slice": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "alignment": "",
+        "aspect": false,
+        "fill": {
+          "method": 4,
+          "amount": 1
+        },
+        "raycast": false,
+        "kind": "Image",
+        "material": null
+      }
+    },
+    {
+      "id": "n-0145",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack/Root/ClickArea",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback-root-clic",
+      "parent": "n-0140",
+      "depth": 4,
+      "box": {
+        "l": 0,
+        "t": 0,
+        "w": 72,
+        "h": 60
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        1,
+        1
+      ],
+      "active": true,
+      "alpha": 1,
+      "order": 2,
+      "source": {
+        "aabb": [
+          1836,
+          977,
+          1908,
+          1037
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0,
+          0
+        ],
+        "anchorMax": [
+          1,
+          1
+        ],
+        "anchoredPosition": [
+          0,
+          0
+        ],
+        "sizeDelta": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "n-0146",
+      "path": "TarotBookStarPanelPage/Outside/BtnBack/Root/KeyMapInfo",
+      "cls": "n-star-tarotbookstarpanelpage-outside-btnback-root-keym",
+      "parent": "n-0140",
+      "depth": 4,
+      "box": {
+        "l": -10,
+        "t": 14,
+        "w": 32,
+        "h": 32
+      },
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "rot": 0,
+      "scale": [
+        0.8,
+        0.8
+      ],
+      "active": true,
+      "alpha": 0,
+      "order": 3,
+      "source": {
+        "aabb": [
+          1829.2,
+          994.2,
+          1854.8,
+          1019.8
+        ],
+        "aabbUnscaled": null,
+        "layoutSources": [],
+        "anchorMin": [
+          0.5,
+          0.5
+        ],
+        "anchorMax": [
+          0.5,
+          0.5
+        ],
+        "anchoredPosition": [
+          -30,
+          0
+        ],
+        "sizeDelta": [
+          32,
+          32
+        ]
+      }
+    }
+  ]
+}

@@ -1,48 +1,69 @@
 // Minimal Unity YAML reader for the exported AnimationClip subset.
-// It intentionally supports only the shapes emitted by convert-all.
+// Supports mappings, sequences, and the inline "- key: value" list form.
 export function parseUnityYaml(text) {
-  const lines = text.split(/\r?\n/);
-  const root = {};
-  const stack = [{ indent: -1, value: root }];
-  for (const line of lines) {
+  const lines = [];
+  for (const line of text.split(/\r?\n/)) {
     if (!line.trim() || line.trimStart().startsWith('%') || line.trimStart().startsWith('---')) continue;
     const indent = line.match(/^ */)[0].length;
-    const m = /^(-\s+)?([^:]+):\s*(.*)$/.exec(line.slice(indent));
+    const body = line.slice(indent);
+    const m = /^(-\s+)?([^:]+):\s*(.*)$/.exec(body);
     if (!m) continue;
-    const isList = Boolean(m[1]);
-    const key = m[2].trim();
-    const raw = m[3].trim();
-    while (stack.length > 1 && stack.at(-1).indent >= indent) stack.pop();
-    const parent = stack.at(-1).value;
-    let value;
-    if (raw === '') value = isList ? [] : {};
-    else if (/^\d+$/.test(raw)) value = Number(raw);
-    else if (/^-?\d+\.\d+(e[-+]?\d+)?$/i.test(raw)) value = Number(raw);
-    else if (raw === 'true') value = true;
-    else if (raw === 'false') value = false;
-    else if (raw.startsWith('{') && raw.endsWith('}')) {
-      value = Object.fromEntries(raw.slice(1, -1).split(',').map(pair => {
-        const [k, ...rest] = pair.split(':');
-        return [k.trim(), parseScalar(rest.join(':').trim())];
-      }));
-    } else value = raw;
-    if (isList) {
-      if (!Array.isArray(parent[key])) parent[key] = [];
-      parent[key].push(value);
-      if (value && typeof value === 'object') stack.push({ indent, value });
-    } else {
-      parent[key] = value;
-      if (value && typeof value === 'object') stack.push({ indent, value });
-    }
+    lines.push({ indent, list: Boolean(m[1]), key: m[2].trim(), raw: m[3].trim() });
   }
-  return root;
+  let pos = 0;
+  const value = minIndent => {
+    if (pos >= lines.length || lines[pos].indent < minIndent) return '';
+    return lines[pos].list ? list(lines[pos].indent) : map(lines[pos].indent);
+  };
+  const map = indent => {
+    const out = {};
+    while (pos < lines.length && lines[pos].indent === indent && !lines[pos].list) {
+      const { key, raw } = lines[pos++];
+      if (raw !== '') out[key] = parseScalar(raw);
+      else if (pos < lines.length && lines[pos].list && lines[pos].indent >= indent && lines[pos].indent <= indent + 2) out[key] = list(lines[pos].indent);
+      else if (pos < lines.length && lines[pos].indent > indent) out[key] = map(lines[pos].indent);
+      else out[key] = '';
+    }
+    return out;
+  };
+  const list = indent => {
+    const out = [];
+    while (pos < lines.length && lines[pos].indent === indent && lines[pos].list) {
+      const first = lines[pos++];
+      const item = {};
+      if (first.raw !== '') {
+        item[first.key] = parseScalar(first.raw);
+      } else if (pos < lines.length && lines[pos].indent > indent + 2) {
+        item[first.key] = value(indent + 4);
+      } else {
+        item[first.key] = '';
+      }
+      // Remaining fields of a "- key:" item live at indent+2.
+      while (pos < lines.length && lines[pos].indent === indent + 2 && !lines[pos].list) {
+        const field = lines[pos++];
+        if (field.raw !== '') item[field.key] = parseScalar(field.raw);
+        else if (pos < lines.length && lines[pos].list && lines[pos].indent >= indent + 2 && lines[pos].indent <= indent + 4) item[field.key] = list(lines[pos].indent);
+        else if (pos < lines.length && lines[pos].indent > indent + 2) item[field.key] = map(lines[pos].indent);
+        else item[field.key] = '';
+      }
+      out.push(item);
+    }
+    return out;
+  };
+  return map(lines[0]?.indent ?? 0);
 }
 
 function parseScalar(raw) {
   if (raw === '') return '';
-  if (/^-?\d+\.\d+$/.test(raw)) return Number(raw);
-  if (/^\d+$/.test(raw)) return Number(raw);
+  if (raw === '[]') return [];
+  if (/^-?\d+\.\d+(e[-+]?\d+)?$/i.test(raw) || /^\d+$/.test(raw)) return Number(raw);
   if (raw === 'true') return true;
   if (raw === 'false') return false;
+  if (raw.startsWith('{') && raw.endsWith('}')) {
+    return Object.fromEntries(raw.slice(1, -1).split(',').map(pair => {
+      const i = pair.indexOf(':');
+      return [pair.slice(0, i).trim(), parseScalar(pair.slice(i + 1).trim())];
+    }));
+  }
   return raw.replace(/^['"]|['"]$/g, '');
 }

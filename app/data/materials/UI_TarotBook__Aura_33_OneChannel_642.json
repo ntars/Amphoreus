@@ -1,0 +1,74 @@
+{
+  "name": "UI_TarotBook__Aura_33_OneChannel_642",
+  "kind": "OneChannel",
+  "sourceFile": "UI_TarotBook__Aura_33_OneChannel_642.json",
+  "sha1": "56cf764fe91e2dab5defd939affc3957940afa16",
+  "floats": {
+    "_Cull": 0,
+    "_DstBlend": 10,
+    "_Saturate": 1,
+    "_SoftFar": 0,
+    "_SoftNear": -1,
+    "_SrcBlend": 5
+  },
+  "colors": {
+    "_CustomUV": {
+      "r": 0,
+      "g": 1,
+      "b": 0,
+      "a": 0
+    },
+    "_MainChannel": {
+      "r": 0,
+      "g": 0,
+      "b": 1,
+      "a": 1
+    },
+    "_MainColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.101960786
+    },
+    "_MaskSpeed": {
+      "r": 0.2,
+      "g": -0.05,
+      "b": 1,
+      "a": 1
+    },
+    "_NoiseSpeed": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "_NoiseSpeedG": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    }
+  },
+  "textures": {
+    "_MainTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    "_NoiseTex": {
+      "scale": {
+        "X": 1,
+        "Y": 1
+      },
+      "offset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  }
+}

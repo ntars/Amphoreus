@@ -1,0 +1,42 @@
+{
+  "state": "star",
+  "source": "dump/star.json",
+  "entries": [
+    {
+      "path": "TarotBookStarPanelPage/Root/HintPanel/Root/DescrText",
+      "text": "[ErrTextID]:UIText_TarotBook_Intro_SignPage",
+      "key": "UIText_TarotBook_Intro_SignPage",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookStarPanelPage/Root/SliderPanel/Slider/Line/Handle/NumPanel/Volume",
+      "text": "DevUI_00",
+      "key": "DevUI_00",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar/CountText",
+      "text": "DevUI_CountText",
+      "key": "DevUI_CountText",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookStarPanelPage/Bg/ScreenBg/BottomBar/TimeText",
+      "text": "0000",
+      "key": null,
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/Title/TitleText",
+      "text": "如我所书",
+      "key": "UIText_TarotBook_Title_Entrance",
+      "source": "dump/Text.text"
+    },
+    {
+      "path": "TarotBookStarPanelPage/Outside/PageInfo/TitleType/Text",
+      "text": "逐火者的命路",
+      "key": "UIText_TarotBook_Star_Subtitle",
+      "source": "dump/Text.text"
+    }
+  ]
+}
