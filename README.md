@@ -2,7 +2,7 @@
 
 # Amphoreus · 永恒之地翁法罗斯
 
-**仓库描述**：`翁法罗斯：一个只可观看、由种子驱动的《崩坏：星穹铁道》世界模拟，附零图片的「如我所书」Web 复刻 | A watch-only, seed-driven simulation of the Honkai: Star Rail world, with a zero-image web recreation of the in-game Tarot Book.`
+**仓库描述**：`翁法罗斯：种子驱动的《崩坏：星穹铁道》世界模拟，附零图片「如我所书」Web 复刻，全 MIT 开源 | A seed-driven Honkai: Star Rail world simulation with a zero-image Tarot Book web recreation, fully MIT-licensed.`
 
 **话题标签**：`python` `simulation` `worldbuilding` `honkai-star-rail` `fan-project` `css-art` `zero-dependency` `sqlite` `deterministic` `procedural-generation` `narrative` `local-first` `web-ui` `vanilla-javascript` `creative-coding` `generative-art` `offline` `mit-license` `text-ui` `data-visualization`
 
@@ -12,6 +12,8 @@
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](./LICENSE)
 
 一个由种子驱动、只可观看的翁法罗斯世界模拟器，附一套零图片、纯 CSS 绘制的「如我所书」网页复刻。
+
+> **全 MIT 开源**：本仓库全部原创代码、文档与构建脚本统一采用 MIT 许可证，不设 Apache-2.0 或其他许可分区。可自由使用、修改、分发与再发布，仅需保留版权声明与许可声明。同人素材边界见 [NOTICE](./NOTICE)。
 
 [快速开始](#快速开始) · [核心特性](#核心特性) · [目录结构](#目录结构) · [已知问题与限制](#已知问题与限制) · [后续路线图](#后续路线图) · [许可证](#许可证)
 
@@ -325,4 +327,4 @@ Amphoreus/
 
 Copyright © 2026 Amphoreus contributors. Licensed under MIT.
 
-本项目采用 MIT 许可证，全文见 [LICENSE](./LICENSE)。仅作玩家二创，游戏名称、角色与素材版权归米哈游所有。
+本项目**全仓库采用 MIT 许可证**，全文见 [LICENSE](./LICENSE)，不设 Apache-2.0 或其他许可分区。仓库内原创代码、文档、任务清单与数据构建脚本适用同一许可；由解包数据生成的中间产物不入库。仅作玩家二创，游戏名称、角色与素材版权归米哈游所有，边界见 [NOTICE](./NOTICE)。
